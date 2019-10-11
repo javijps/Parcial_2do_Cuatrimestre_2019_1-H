@@ -1,0 +1,19 @@
+/*
+ * pedidos_de_recoleccion.c
+ *
+ *  Created on: 10 oct. 2019
+ *      Author: alumno
+ */
+
+typedef struct pedidoCliente {
+
+	int id_pedido;
+	int statusPedido;
+	int idCliente;
+	int kgTotalesArecolectar;
+	int kgHDPE;
+	int kgLDPE;
+	int kgPP;
+
+
+} pedidoCliente;

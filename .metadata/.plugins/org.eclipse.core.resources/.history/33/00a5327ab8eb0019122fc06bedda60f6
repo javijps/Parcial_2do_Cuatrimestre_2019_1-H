@@ -1,0 +1,142 @@
+/*
+ * pedidos_de_recoleccion.c
+ *
+ *  Created on: 10 oct. 2019
+ *      Author: alumno
+ */
+#include <stdio.h>
+#include <stdlib.h>
+#include <stdio.h>
+#include <stdio_ext.h>
+#include <stdlib.h>
+#include <string.h>
+#include "utn.h"
+#include "pedidos_de_recoleccion.h"
+#define STATUS_EMPTY -1
+#define STATUS_PENDIENTE 0
+#define STATUS_COMPLETADO 1
+
+
+
+/**
+* \brief Imprime la informacion correspondiente a pedidos
+* \param pedidos *aPedidos puntero a una array de estructuras pedidos.
+* \param len Cantidad del array a imprimir
+* \return Si tuvo exito al imprimir devuelve [0] o si fallo [-1]
+*/
+int imprimirPedidosActivos(pedidoCliente *aPedido, int len){
+
+	int i;
+	int retorno = -1;
+	if(aPedido != NULL && len>0)
+	{
+		retorno = 0;
+		for(i=0;i<len;i++)
+		{
+		/*	if(aPedido[i].statusCliente==STATUS_EMPTY)
+				continue;*/
+			printf("Id Pedido: %d\n"
+					" - Status Pedido: %d\n"
+					" - Kilos totales: %d\n"
+					" - kg HDPE: %d\n"
+					" - kg LDPE: %d\n"
+					" - kg PP: %d\n",
+					aPedido[i].id_pedido,
+					aPedido[i].statusPedido,
+					aPedido[i].kgTotalesArecolectar,
+					aPedido[i].kgHDPE,
+					aPedido[i].kgLDPE,
+					aPedido[i].kgPP);
+
+		}
+	}
+	return retorno;
+}
+
+/**
+* \brief Genera el ID correspondiente a una pedido.
+* \return Devuelve el ID correspondiente.
+*/
+static int generarIdpedido(void){
+	static int id = 0;
+	id++;
+	return id;
+}
+
+/**
+* \brief Solicita los datos correspondientes a una pedido.
+* \param pedido *apedido puntero a una xxxxx de la estructura pedido.
+* \param cantidad Cantidad de pedido.
+* \return Si tuvo exito al completar todos los campos devuelve [0] o si fallo [-1]
+*/
+int getDatosPedido(pedidoCliente *aPedido,int cantidad){
+
+	int retorno = -1;
+	pedidoCliente aPedidoCliente;
+	int i;
+
+	for(i=0;i<cantidad;i++)
+	{
+		if(getInt(aPedido[i].idCliente,"Ingrese id del cliente\n","Id incorrecto!\n",1,100,3)!=0)
+			break;
+		if(getInt(aPedido[i].kgTotalesArecolectar,"Ingrese la cantidada de kg totales a recolectar\n","Id incorrecto!\n",1,100,3)!=0)
+			break;
+
+		aPedido[i].idCliente = generarIdcliente();
+		aPedido[i].statusPedido = STATUS_PENDIENTE;
+
+		aCliente[i].idCliente = generarIdpedido();
+		aCliente[i].statusCliente = STATUS_NOT_EMPTY;
+
+		retorno = 0;
+	}
+	return retorno;
+}
+
+/**
+* \brief Busca una cliente sin datos cargados.
+* \param cliente *acliente puntero a una xxxxx de la estructura cliente.
+* \param cantidad Cantidad de clientes.
+* \return Si tuvo exito al encontrar una cliente vacia devuelve [0] o si fallo [-1]
+*/
+int buscarclienteLibre(cliente *acliente,int cantidad)
+{
+	int retorno = -1;
+	int i;
+
+	if(acliente != NULL && cantidad > 0)
+	{
+		for(i=0;i<cantidad;i++)
+		{
+			if(acliente[i].statusCliente==STATUS_EMPTY)
+				return i;
+		}
+	}
+	return retorno;
+}
+
+/**
+* \brief Realiza el alta de una nueva cliente.
+* \param cliente *aCliente puntero a un array de estructuras cliente.
+* \param cantidad Cantidad de clientes.
+* \return Si tuvo exito al realizar el alta devuelve [0] o si fallo [-1]
+*/
+int altaCliente(cliente *aCliente, int cantidad)
+{
+
+	int retorno = -1;
+	int index=0;
+
+	if(aCliente != NULL && cantidad>0)
+	{
+		index = buscarclienteLibre(aCliente,cantidad);
+
+		if(index!=-1)
+		{
+			if(getDatoscliente(aCliente,cantidad)==0)
+				retorno = 0;
+		}
+	}
+	return retorno;
+}
+

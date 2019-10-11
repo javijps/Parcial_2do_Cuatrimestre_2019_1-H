@@ -1,0 +1,149 @@
+/*
+ * clientes.c
+ *
+ *  Created on: 10 oct. 2019
+ *      Author: alumno
+ */
+#include <stdio.h>
+#include <stdlib.h>
+#include <stdio.h>
+#include <stdio_ext.h>
+#include <stdlib.h>
+#include <string.h>
+#include "utn.h"
+#include "clientes.h"
+#define STATUS_EMPTY  -1
+#define STATUS_NOT_EMPTY 0
+
+/**
+* \brief Imprime la informacion correspondiente a clientes activos..
+* \param cliente *aCliente puntero a una array de estructuras cliente.
+* \param len Cantidad del array a imprimir
+* \return Si tuvo exito al imprimir devuelve [0] o si fallo [-1]
+*/
+int imprimirClientesActivos(cliente *aCliente, int len){
+
+	int i;
+	int retorno = -1;
+	if(aCliente != NULL && len>0)
+	{
+		retorno = 0;
+		for(i=0;i<len;i++)
+		{
+			if(aCliente[i].statusCliente==STATUS_EMPTY)
+				continue;
+			printf("Id Cliente: %d\n"
+					" - Status Cliente: %d\n"
+					" - Empresa: %s\n"
+					" - Cuit: %d\n"
+					" - Direccion: %s\n"
+					" - Localidad: %s\n",
+					aCliente[i].idCliente,
+					aCliente[i].statusCliente,
+					aCliente[i].empresa,
+					aCliente[i].cuit,
+					aCliente[i].direccion,
+					aCliente[i].localidad);
+		}
+	}
+	return retorno;
+}
+
+
+/**
+* \brief Genera el ID correspondiente a una cliente.
+* \return Devuelve el ID correspondiente.
+*/
+static int generarIdcliente(void){
+	static int id = 0;
+	id++;
+	return id;
+}
+
+/**
+* \brief Inicializa las clientes con STATUS_EMPTY.
+* \param cliente *acliente puntero a una xxxxx de la estructura cliente.
+* \param cantidad Cantidad de clientes a inicializar
+* \return Si tuvo exito al inicializar devuelve [0] o si fallo [-1]
+*/
+int initcliente(cliente *aCliente, int cantidad)
+{
+
+	int i;
+	int retorno = -1;
+
+	if(aCliente != NULL && cantidad > 0)
+	{
+		for(i=0;i<cantidad;i++)
+		{
+			aCliente[i].statusCliente = STATUS_EMPTY;
+		}
+		retorno = 0;
+	}
+	return retorno;
+}
+/**
+* \brief Solicita los datos correspondientes a una cliente.
+* \param cliente *acliente puntero a una xxxxx de la estructura cliente.
+* \param cantidad Cantidad de clientes.
+* \return Si tuvo exito al completar todos los campos devuelve [0] o si fallo [-1]
+*/
+int getDatoscliente(cliente *aCliente,int cantidad){
+
+	int retorno = -1;
+	struct cliente bcliente;
+	int i;
+
+	for(i=0;i<cantidad;i++)
+	{
+		if(getNombre(&bcliente.empresa,50,3)!=0)
+		{
+			printf("Nombre Incorrecto\n");
+			break;
+		}
+		if(getCuit(bcliente.cuit)!=0)
+		{
+			printf("Cuit Incorrecto\n");
+			break;
+		}
+
+
+
+
+
+
+		acliente[i].tipocliente = bcliente.tipocliente;
+		acliente[i].precioPorDia = bcliente.precioPorDia;
+		strncpy(acliente[i].nombrecliente,bcliente.nombrecliente,50);
+		strncpy(acliente[i].direccioncliente,bcliente.direccioncliente,50);
+		acliente[i].id = generarIdcliente();//DEBERIA IR DENTRO DE ALTA, AL FINAL
+		acliente[i].status = STATUS_NOT_EMPTY;
+
+		retorno = 0;
+	}
+	return retorno;
+}
+
+/**
+* \brief Busca una cliente sin datos cargados.
+* \param cliente *acliente puntero a una xxxxx de la estructura cliente.
+* \param cantidad Cantidad de clientes.
+* \return Si tuvo exito al encontrar una cliente vacia devuelve [0] o si fallo [-1]
+*/
+int buscarclienteLibre(cliente *acliente,int cantidad)
+{
+	int retorno = -1;
+	int i;
+
+	if(acliente != NULL && cantidad > 0)
+	{
+		for(i=0;i<cantidad;i++)
+		{
+			if(acliente[i].status==0)
+				return i;
+		}
+	}
+	return retorno;
+}
+
+

@@ -1,0 +1,16 @@
+/*
+ * clientes.c
+ *
+ *  Created on: 10 oct. 2019
+ *      Author: alumno
+ */
+#include <stdio.h>
+#include <stdlib.h>
+#include <stdio.h>
+#include <stdio_ext.h>
+#include <stdlib.h>
+#include <string.h>
+#include "utn.h"
+#define STATUS_EMPTY  0
+#define STATUS_NOT_EMPTY 1
+

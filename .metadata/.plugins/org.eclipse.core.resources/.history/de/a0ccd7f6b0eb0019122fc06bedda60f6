@@ -1,0 +1,28 @@
+/*
+ * clientes.h
+ *
+ *  Created on: 10 oct. 2019
+ *      Author: alumno
+ */
+
+#ifndef CLIENTES_H_
+#define CLIENTES_H_
+
+typedef struct cliente {
+
+	int idCliente;
+	int statusCliente;
+	char empresa[50];
+	int cuit;
+	char direccion[50];
+	char localidad[50];
+
+}cliente;
+
+int imprimirClientes(cliente *acliente, int len);
+int initcliente(cliente *aCliente, int cantidad);
+int getDatoscliente(cliente *aCliente,int cantidad);
+int buscarclienteLibre(cliente *acliente,int cantidad);
+int altaCliente(cliente *aCliente, int cantidad);
+
+#endif /* CLIENTES_H_ */

@@ -1,0 +1,2609 @@
+18:45:15 **** Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/Primer_Parcial_1ºh.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Primer_Parcial_1ºh.d" -MT"src/Primer_Parcial_1ºh.o" -o "src/Primer_Parcial_1ºh.o" "../src/Primer_Parcial_1ºh.c"
+Finished building: ../src/Primer_Parcial_1ºh.c
+ 
+Building target: Primer_Parcial_1ºh
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_1ºh"  ./src/Primer_Parcial_1ºh.o   
+Finished building target: Primer_Parcial_1ºh
+ 
+18:45:24 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+make: No se hace nada para 'all'.
+19:14:02 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/Primer_Parcial_1ºh.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Primer_Parcial_1ºh.d" -MT"src/Primer_Parcial_1ºh.o" -o "src/Primer_Parcial_1ºh.o" "../src/Primer_Parcial_1ºh.c"
+Finished building: ../src/Primer_Parcial_1ºh.c
+ 
+Building file: ../src/clientes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/clientes.d" -MT"src/clientes.o" -o "src/clientes.o" "../src/clientes.c"
+../src/clientes.c:23:29: error: unknown type name ‘cliente’
+ int imprimirclientesActivos(cliente *aCliente, int len){
+                             ^~~~~~~
+make: *** [src/clientes.o] Error 1
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/clientes.o'
+"make all" terminated with exit code 2. Build might be incomplete.
+19:14:41 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/clientes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/clientes.d" -MT"src/clientes.o" -o "src/clientes.o" "../src/clientes.c"
+../src/clientes.c: In function ‘imprimirclientesActivos’:
+../src/clientes.c:35:11: warning: format ‘%s’ expects argument of type ‘char *’, but argument 3 has type ‘int’ [-Wformat=]
+    printf("Id Cliente: %d\n"
+           ^~~~~~~~~~~~~~~~~~
+../src/clientes.c:47:3: error: expected ‘;’ before ‘}’ token
+   }
+   ^
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/clientes.o'
+make: *** [src/clientes.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:14:53 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/clientes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/clientes.d" -MT"src/clientes.o" -o "src/clientes.o" "../src/clientes.c"
+../src/clientes.c: In function ‘imprimirclientesActivos’:
+../src/clientes.c:35:11: warning: format ‘%s’ expects argument of type ‘char *’, but argument 3 has type ‘int’ [-Wformat=]
+    printf("Id Cliente: %d\n"
+           ^~~~~~~~~~~~~~~~~~
+Finished building: ../src/clientes.c
+ 
+Building file: ../src/informes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
+Finished building: ../src/informes.c
+ 
+Building file: ../src/pedidos_de_recoleccion.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pedidos_de_recoleccion.d" -MT"src/pedidos_de_recoleccion.o" -o "src/pedidos_de_recoleccion.o" "../src/pedidos_de_recoleccion.c"
+Finished building: ../src/pedidos_de_recoleccion.c
+ 
+Building file: ../src/utn.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/utn.d" -MT"src/utn.o" -o "src/utn.o" "../src/utn.c"
+Finished building: ../src/utn.c
+ 
+Building target: Primer_Parcial_1ºh
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_1ºh"  ./src/Primer_Parcial_1ºh.o ./src/clientes.o ./src/informes.o ./src/pedidos_de_recoleccion.o ./src/utn.o   
+Finished building target: Primer_Parcial_1ºh
+ 
+19:15:29 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+make: No se hace nada para 'all'.
+19:19:32 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/clientes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/clientes.d" -MT"src/clientes.o" -o "src/clientes.o" "../src/clientes.c"
+Finished building: ../src/clientes.c
+ 
+Building file: ../src/pedidos_de_recoleccion.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pedidos_de_recoleccion.d" -MT"src/pedidos_de_recoleccion.o" -o "src/pedidos_de_recoleccion.o" "../src/pedidos_de_recoleccion.c"
+Finished building: ../src/pedidos_de_recoleccion.c
+ 
+Building target: Primer_Parcial_1ºh
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_1ºh"  ./src/Primer_Parcial_1ºh.o ./src/clientes.o ./src/informes.o ./src/pedidos_de_recoleccion.o ./src/utn.o   
+./src/pedidos_de_recoleccion.o: En la función `imprimirclientesActivos':
+/home/alumno/Parcial_2do_Cuatrimestre_2019_1ºH/Primer_Parcial_1ºh/Debug/../src/pedidos_de_recoleccion.c:22: definiciones múltiples de `imprimirclientesActivos'
+makefile:30: fallo en las instrucciones para el objetivo 'Primer_Parcial_1ºh'
+./src/clientes.o:/home/alumno/Parcial_2do_Cuatrimestre_2019_1ºH/Primer_Parcial_1ºh/Debug/../src/clientes.c:24: primero se definió aquí
+collect2: error: ld returned 1 exit status
+make: *** [Primer_Parcial_1ºh] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:19:50 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/pedidos_de_recoleccion.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pedidos_de_recoleccion.d" -MT"src/pedidos_de_recoleccion.o" -o "src/pedidos_de_recoleccion.o" "../src/pedidos_de_recoleccion.c"
+Finished building: ../src/pedidos_de_recoleccion.c
+ 
+Building target: Primer_Parcial_1ºh
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_1ºh"  ./src/Primer_Parcial_1ºh.o ./src/clientes.o ./src/informes.o ./src/pedidos_de_recoleccion.o ./src/utn.o   
+./src/pedidos_de_recoleccion.o: En la función `imprimirclientesActivos':
+/home/alumno/Parcial_2do_Cuatrimestre_2019_1ºH/Primer_Parcial_1ºh/Debug/../src/pedidos_de_recoleccion.c:22: definiciones múltiples de `imprimirclientesActivos'
+./src/clientes.o:/home/alumno/Parcial_2do_Cuatrimestre_2019_1ºH/Primer_Parcial_1ºh/Debug/../src/clientes.c:24: primero se definió aquí
+collect2: error: ld returned 1 exit status
+makefile:30: fallo en las instrucciones para el objetivo 'Primer_Parcial_1ºh'
+make: *** [Primer_Parcial_1ºh] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:20:02 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building target: Primer_Parcial_1ºh
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_1ºh"  ./src/Primer_Parcial_1ºh.o ./src/clientes.o ./src/informes.o ./src/pedidos_de_recoleccion.o ./src/utn.o   
+./src/pedidos_de_recoleccion.o: En la función `imprimirclientesActivos':
+/home/alumno/Parcial_2do_Cuatrimestre_2019_1ºH/Primer_Parcial_1ºh/Debug/../src/pedidos_de_recoleccion.c:22: definiciones múltiples de `imprimirclientesActivos'
+makefile:30: fallo en las instrucciones para el objetivo 'Primer_Parcial_1ºh'
+./src/clientes.o:/home/alumno/Parcial_2do_Cuatrimestre_2019_1ºH/Primer_Parcial_1ºh/Debug/../src/clientes.c:24: primero se definió aquí
+collect2: error: ld returned 1 exit status
+make: *** [Primer_Parcial_1ºh] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:20:06 **** Clean-only build of configuration Debug for project Primer_Parcial_1ºh ****
+make clean 
+rm -rf  ./src/Primer_Parcial_1ºh.o ./src/clientes.o ./src/informes.o ./src/pedidos_de_recoleccion.o ./src/utn.o  ./src/Primer_Parcial_1ºh.d ./src/clientes.d ./src/informes.d ./src/pedidos_de_recoleccion.d ./src/utn.d  Primer_Parcial_1ºh
+ 
+19:20:08 **** Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/Primer_Parcial_1ºh.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Primer_Parcial_1ºh.d" -MT"src/Primer_Parcial_1ºh.o" -o "src/Primer_Parcial_1ºh.o" "../src/Primer_Parcial_1ºh.c"
+Finished building: ../src/Primer_Parcial_1ºh.c
+ 
+Building file: ../src/clientes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/clientes.d" -MT"src/clientes.o" -o "src/clientes.o" "../src/clientes.c"
+Finished building: ../src/clientes.c
+ 
+Building file: ../src/informes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
+Finished building: ../src/informes.c
+ 
+Building file: ../src/pedidos_de_recoleccion.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pedidos_de_recoleccion.d" -MT"src/pedidos_de_recoleccion.o" -o "src/pedidos_de_recoleccion.o" "../src/pedidos_de_recoleccion.c"
+Finished building: ../src/pedidos_de_recoleccion.c
+ 
+Building file: ../src/utn.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/utn.d" -MT"src/utn.o" -o "src/utn.o" "../src/utn.c"
+Finished building: ../src/utn.c
+ 
+Building target: Primer_Parcial_1ºh
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_1ºh"  ./src/Primer_Parcial_1ºh.o ./src/clientes.o ./src/informes.o ./src/pedidos_de_recoleccion.o ./src/utn.o   
+./src/pedidos_de_recoleccion.o: En la función `imprimirclientesActivos':
+makefile:30: fallo en las instrucciones para el objetivo 'Primer_Parcial_1ºh'
+/home/alumno/Parcial_2do_Cuatrimestre_2019_1ºH/Primer_Parcial_1ºh/Debug/../src/pedidos_de_recoleccion.c:22: definiciones múltiples de `imprimirclientesActivos'
+./src/clientes.o:/home/alumno/Parcial_2do_Cuatrimestre_2019_1ºH/Primer_Parcial_1ºh/Debug/../src/clientes.c:24: primero se definió aquí
+collect2: error: ld returned 1 exit status
+make: *** [Primer_Parcial_1ºh] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:20:25 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building target: Primer_Parcial_1ºh
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_1ºh"  ./src/Primer_Parcial_1ºh.o ./src/clientes.o ./src/informes.o ./src/pedidos_de_recoleccion.o ./src/utn.o   
+./src/pedidos_de_recoleccion.o: En la función `imprimirclientesActivos':
+/home/alumno/Parcial_2do_Cuatrimestre_2019_1ºH/Primer_Parcial_1ºh/Debug/../src/pedidos_de_recoleccion.c:22: definiciones múltiples de `imprimirclientesActivos'
+makefile:30: fallo en las instrucciones para el objetivo 'Primer_Parcial_1ºh'
+./src/clientes.o:/home/alumno/Parcial_2do_Cuatrimestre_2019_1ºH/Primer_Parcial_1ºh/Debug/../src/clientes.c:24: primero se definió aquí
+collect2: error: ld returned 1 exit status
+make: *** [Primer_Parcial_1ºh] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:20:56 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/pedidos_de_recoleccion.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pedidos_de_recoleccion.d" -MT"src/pedidos_de_recoleccion.o" -o "src/pedidos_de_recoleccion.o" "../src/pedidos_de_recoleccion.c"
+Finished building: ../src/pedidos_de_recoleccion.c
+ 
+Building target: Primer_Parcial_1ºh
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_1ºh"  ./src/Primer_Parcial_1ºh.o ./src/clientes.o ./src/informes.o ./src/pedidos_de_recoleccion.o ./src/utn.o   
+./src/pedidos_de_recoleccion.o: En la función `imprimirclientesActivos':
+/home/alumno/Parcial_2do_Cuatrimestre_2019_1ºH/Primer_Parcial_1ºh/Debug/../src/pedidos_de_recoleccion.c:22: definiciones múltiples de `imprimirclientesActivos'
+makefile:30: fallo en las instrucciones para el objetivo 'Primer_Parcial_1ºh'
+./src/clientes.o:/home/alumno/Parcial_2do_Cuatrimestre_2019_1ºH/Primer_Parcial_1ºh/Debug/../src/clientes.c:24: primero se definió aquí
+collect2: error: ld returned 1 exit status
+make: *** [Primer_Parcial_1ºh] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:21:35 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/clientes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/clientes.d" -MT"src/clientes.o" -o "src/clientes.o" "../src/clientes.c"
+Finished building: ../src/clientes.c
+ 
+Building file: ../src/pedidos_de_recoleccion.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pedidos_de_recoleccion.d" -MT"src/pedidos_de_recoleccion.o" -o "src/pedidos_de_recoleccion.o" "../src/pedidos_de_recoleccion.c"
+Finished building: ../src/pedidos_de_recoleccion.c
+ 
+Building target: Primer_Parcial_1ºh
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_1ºh"  ./src/Primer_Parcial_1ºh.o ./src/clientes.o ./src/informes.o ./src/pedidos_de_recoleccion.o ./src/utn.o   
+Finished building target: Primer_Parcial_1ºh
+ 
+19:51:00 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/Primer_Parcial_1ºh.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Primer_Parcial_1ºh.d" -MT"src/Primer_Parcial_1ºh.o" -o "src/Primer_Parcial_1ºh.o" "../src/Primer_Parcial_1ºh.c"
+../src/Primer_Parcial_1ºh.c: In function ‘main’:
+../src/Primer_Parcial_1ºh.c:24:2: error: unknown type name ‘cliente’
+  cliente aCliente[MAX_CLIENTES];
+  ^~~~~~~
+../src/Primer_Parcial_1ºh.c:28:2: warning: implicit declaration of function ‘initcliente’ [-Wimplicit-function-declaration]
+  initcliente(aCliente,MAX_CLIENTES);
+  ^~~~~~~~~~~
+../src/Primer_Parcial_1ºh.c:48:7: warning: implicit declaration of function ‘altaCliente’ [-Wimplicit-function-declaration]
+    if(altaCliente(aCliente,1)!=0)
+       ^~~~~~~~~~~
+../src/Primer_Parcial_1ºh.c:52:4: warning: implicit declaration of function ‘imprimirClientes’ [-Wimplicit-function-declaration]
+    imprimirClientes(aCliente,5);
+    ^~~~~~~~~~~~~~~~
+make: *** [src/Primer_Parcial_1ºh.o] Error 1
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/Primer_Parcial_1ºh.o'
+"make all" terminated with exit code 2. Build might be incomplete.
+19:51:33 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/Primer_Parcial_1ºh.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Primer_Parcial_1ºh.d" -MT"src/Primer_Parcial_1ºh.o" -o "src/Primer_Parcial_1ºh.o" "../src/Primer_Parcial_1ºh.c"
+Finished building: ../src/Primer_Parcial_1ºh.c
+ 
+Building file: ../src/clientes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/clientes.d" -MT"src/clientes.o" -o "src/clientes.o" "../src/clientes.c"
+../src/clientes.c: In function ‘getDatoscliente’:
+../src/clientes.c:99:16: warning: passing argument 1 of ‘getNombre’ from incompatible pointer type [-Wincompatible-pointer-types]
+   if(getNombre(&bcliente.empresa,50,3)!=0)
+                ^
+In file included from ../src/clientes.c:13:0:
+../src/utn.h:40:5: note: expected ‘char *’ but argument is of type ‘char (*)[50]’
+ int getNombre(char pNombre[50],int limite,int reintentos);
+     ^~~~~~~~~
+../src/clientes.c:104:14: warning: passing argument 1 of ‘getCuit’ makes pointer from integer without a cast [-Wint-conversion]
+   if(getCuit(bcliente.cuit)!=0)
+              ^~~~~~~~
+In file included from ../src/clientes.c:13:0:
+../src/utn.h:43:5: note: expected ‘char *’ but argument is of type ‘int’
+ int getCuit(char *input);
+     ^~~~~~~
+../src/clientes.c:109:16: warning: passing argument 1 of ‘getString’ from incompatible pointer type [-Wincompatible-pointer-types]
+   if(getString(&bcliente.direccion,"Inrgese direccion\n","Direccion Incorrecta!\n",1,50,3)!=0)//get direccion
+                ^
+In file included from ../src/clientes.c:13:0:
+../src/utn.h:33:5: note: expected ‘char *’ but argument is of type ‘char (*)[50]’
+ int getString(char *pResultado,
+     ^~~~~~~~~
+../src/clientes.c:114:16: warning: passing argument 1 of ‘getString’ from incompatible pointer type [-Wincompatible-pointer-types]
+   if(getString(&bcliente.direccion,"Inrgese localidad\n","Direccion Incorrecta!\n",1,50,3)!=0)//get localidad
+                ^
+In file included from ../src/clientes.c:13:0:
+../src/utn.h:33:5: note: expected ‘char *’ but argument is of type ‘char (*)[50]’
+ int getString(char *pResultado,
+     ^~~~~~~~~
+../src/clientes.c:120:11: warning: passing argument 1 of ‘strncpy’ makes pointer from integer without a cast [-Wint-conversion]
+   strncpy(aCliente[i].cuit,bcliente.cuit,50);
+           ^~~~~~~~
+In file included from ../src/clientes.c:12:0:
+/usr/include/string.h:128:14: note: expected ‘char * restrict’ but argument is of type ‘int’
+ extern char *strncpy (char *__restrict __dest,
+              ^~~~~~~
+../src/clientes.c:120:28: warning: passing argument 2 of ‘strncpy’ makes pointer from integer without a cast [-Wint-conversion]
+   strncpy(aCliente[i].cuit,bcliente.cuit,50);
+                            ^~~~~~~~
+In file included from ../src/clientes.c:12:0:
+/usr/include/string.h:128:14: note: expected ‘const char * restrict’ but argument is of type ‘int’
+ extern char *strncpy (char *__restrict __dest,
+              ^~~~~~~
+../src/clientes.c: In function ‘altaCliente’:
+../src/clientes.c:167:11: warning: implicit declaration of function ‘buscarPantallaLibre’ [-Wimplicit-function-declaration]
+   index = buscarPantallaLibre(aCliente,cantidad);
+           ^~~~~~~~~~~~~~~~~~~
+../src/clientes.c:171:7: warning: implicit declaration of function ‘getDatosPantalla’ [-Wimplicit-function-declaration]
+    if(getDatosPantalla(aCliente,cantidad)==0)
+       ^~~~~~~~~~~~~~~~
+Finished building: ../src/clientes.c
+ 
+Building file: ../src/pedidos_de_recoleccion.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pedidos_de_recoleccion.d" -MT"src/pedidos_de_recoleccion.o" -o "src/pedidos_de_recoleccion.o" "../src/pedidos_de_recoleccion.c"
+Finished building: ../src/pedidos_de_recoleccion.c
+ 
+Building file: ../src/utn.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/utn.d" -MT"src/utn.o" -o "src/utn.o" "../src/utn.c"
+../src/utn.c: In function ‘getInt’:
+../src/utn.c:29:21: error: ‘NULL’ undeclared (first use in this function)
+  if(     pNumero != NULL &&
+                     ^~~~
+../src/utn.c:29:21: note: each undeclared identifier is reported only once for each function it appears in
+../src/utn.c:38:4: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+    printf("%s",mensaje);
+    ^~~~~~
+../src/utn.c:38:4: warning: incompatible implicit declaration of built-in function ‘printf’
+../src/utn.c:38:4: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+../src/utn.c:39:4: warning: implicit declaration of function ‘__fpurge’ [-Wimplicit-function-declaration]
+    __fpurge(stdin);
+    ^~~~~~~~
+../src/utn.c:39:13: error: ‘stdin’ undeclared (first use in this function)
+    __fpurge(stdin);
+             ^~~~~
+../src/utn.c:40:8: warning: implicit declaration of function ‘scanf’ [-Wimplicit-function-declaration]
+    if((scanf("%d",&buffer)==1) && buffer >= minimo && buffer <= maximo)
+        ^~~~~
+../src/utn.c:40:8: warning: incompatible implicit declaration of built-in function ‘scanf’
+../src/utn.c:40:8: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+../src/utn.c: In function ‘getFloat’:
+../src/utn.c:78:21: error: ‘NULL’ undeclared (first use in this function)
+  if(     pNumero != NULL &&
+                     ^~~~
+../src/utn.c:87:4: warning: incompatible implicit declaration of built-in function ‘printf’
+    printf("%s",mensaje);
+    ^~~~~~
+../src/utn.c:87:4: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+../src/utn.c:88:13: error: ‘stdin’ undeclared (first use in this function)
+    __fpurge(stdin);
+             ^~~~~
+../src/utn.c:89:8: warning: incompatible implicit declaration of built-in function ‘scanf’
+    if((scanf("%f",&buffer)==1) && buffer >= minimo && buffer <= maximo)
+        ^~~~~
+../src/utn.c:89:8: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+../src/utn.c: In function ‘getChar’:
+../src/utn.c:126:19: error: ‘NULL’ undeclared (first use in this function)
+  if(     pChar != NULL &&
+                   ^~~~
+../src/utn.c:136:4: warning: incompatible implicit declaration of built-in function ‘printf’
+    printf("%s",mensaje);
+    ^~~~~~
+../src/utn.c:136:4: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+../src/utn.c:137:13: error: ‘stdin’ undeclared (first use in this function)
+    __fpurge(stdin);
+             ^~~~~
+../src/utn.c:138:7: warning: incompatible implicit declaration of built-in function ‘scanf’
+    if(scanf("%c",&buffer)==1 &&  buffer >= minimo && buffer <= maximo)
+       ^~~~~
+../src/utn.c:138:7: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+../src/utn.c: In function ‘getLetter’:
+../src/utn.c:174:19: error: ‘NULL’ undeclared (first use in this function)
+  if(     pChar != NULL &&
+                   ^~~~
+../src/utn.c:183:4: warning: incompatible implicit declaration of built-in function ‘printf’
+    printf("%s",mensaje);
+    ^~~~~~
+../src/utn.c:183:4: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+../src/utn.c:184:13: error: ‘stdin’ undeclared (first use in this function)
+    __fpurge(stdin);
+             ^~~~~
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/utn.o'
+../src/utn.c:185:7: warning: incompatible implicit declaration of built-in function ‘scanf’
+    if(scanf("%c",&buffer)==1 &&//reemplazar scanf
+       ^~~~~
+../src/utn.c:185:7: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+../src/utn.c: In function ‘getString’:
+../src/utn.c:222:19: error: ‘NULL’ undeclared (first use in this function)
+  if(pResultado != NULL &&
+                   ^~~~
+../src/utn.c:230:4: warning: incompatible implicit declaration of built-in function ‘printf’
+    printf("%s",pMensaje);
+    ^~~~~~
+../src/utn.c:230:4: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+../src/utn.c:231:13: error: ‘stdin’ undeclared (first use in this function)
+    __fpurge(stdin);
+             ^~~~~
+../src/utn.c:232:4: warning: implicit declaration of function ‘fgets’ [-Wimplicit-function-declaration]
+    fgets(buffer,sizeof(buffer),stdin);
+    ^~~~~
+../src/utn.c:233:11: warning: implicit declaration of function ‘strlen’ [-Wimplicit-function-declaration]
+    buffer[strlen(buffer)-1] = '\0';
+           ^~~~~~
+../src/utn.c:233:11: warning: incompatible implicit declaration of built-in function ‘strlen’
+../src/utn.c:233:11: note: include ‘<string.h>’ or provide a declaration of ‘strlen’
+../src/utn.c:236:5: warning: implicit declaration of function ‘strncpy’ [-Wimplicit-function-declaration]
+     strncpy(pResultado,buffer,maximo+1);
+     ^~~~~~~
+../src/utn.c:236:5: warning: incompatible implicit declaration of built-in function ‘strncpy’
+../src/utn.c:236:5: note: include ‘<string.h>’ or provide a declaration of ‘strncpy’
+../src/utn.c: In function ‘esNombre’:
+../src/utn.c:258:14: error: ‘NULL’ undeclared (first use in this function)
+  if(pNombre!=NULL)
+              ^~~~
+../src/utn.c:271:5: warning: incompatible implicit declaration of built-in function ‘printf’
+     printf("Error, los datos ingresados no corresponden a un nombre!!\n");
+     ^~~~~~
+../src/utn.c:271:5: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+../src/utn.c: In function ‘esCuit’:
+../src/utn.c:318:5: warning: incompatible implicit declaration of built-in function ‘printf’
+     printf("\nNumero de cuit incorrecto!\n");
+     ^~~~~~
+../src/utn.c:318:5: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+../src/utn.c: In function ‘getStringNumeros’:
+../src/utn.c:333:8: warning: implicit declaration of function ‘esNumerico’ [-Wimplicit-function-declaration]
+     if(esNumerico(aux))
+        ^~~~~~~~~~
+../src/utn.c:335:9: warning: incompatible implicit declaration of built-in function ‘strncpy’
+         strncpy(input,aux,50);
+         ^~~~~~~
+../src/utn.c:335:9: note: include ‘<string.h>’ or provide a declaration of ‘strncpy’
+../src/utn.c: In function ‘getCuit’:
+../src/utn.c:354:9: warning: incompatible implicit declaration of built-in function ‘strncpy’
+         strncpy(input,aux,50);
+         ^~~~~~~
+../src/utn.c:354:9: note: include ‘<string.h>’ or provide a declaration of ‘strncpy’
+make: *** [src/utn.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:52:28 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/utn.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/utn.d" -MT"src/utn.o" -o "src/utn.o" "../src/utn.c"
+../src/utn.c: In function ‘getStringNumeros’:
+../src/utn.c:338:8: warning: implicit declaration of function ‘esNumerico’ [-Wimplicit-function-declaration]
+     if(esNumerico(aux))
+        ^~~~~~~~~~
+Finished building: ../src/utn.c
+ 
+Building target: Primer_Parcial_1ºh
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_1ºh"  ./src/Primer_Parcial_1ºh.o ./src/clientes.o ./src/informes.o ./src/pedidos_de_recoleccion.o ./src/utn.o   
+./src/Primer_Parcial_1ºh.o: En la función `main':
+/home/alumno/Parcial_2do_Cuatrimestre_2019_1ºH/Primer_Parcial_1ºh/Debug/../src/Primer_Parcial_1ºh.c:54: referencia a `imprimirClientes' sin definir
+makefile:30: fallo en las instrucciones para el objetivo 'Primer_Parcial_1ºh'
+./src/clientes.o: En la función `altaCliente':
+/home/alumno/Parcial_2do_Cuatrimestre_2019_1ºH/Primer_Parcial_1ºh/Debug/../src/clientes.c:167: referencia a `buscarPantallaLibre' sin definir
+/home/alumno/Parcial_2do_Cuatrimestre_2019_1ºH/Primer_Parcial_1ºh/Debug/../src/clientes.c:171: referencia a `getDatosPantalla' sin definir
+./src/utn.o: En la función `getStringNumeros':
+/home/alumno/Parcial_2do_Cuatrimestre_2019_1ºH/Primer_Parcial_1ºh/Debug/../src/utn.c:338: referencia a `esNumerico' sin definir
+collect2: error: ld returned 1 exit status
+make: *** [Primer_Parcial_1ºh] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:53:03 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/clientes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/clientes.d" -MT"src/clientes.o" -o "src/clientes.o" "../src/clientes.c"
+../src/clientes.c: In function ‘getDatoscliente’:
+../src/clientes.c:99:16: warning: passing argument 1 of ‘getNombre’ from incompatible pointer type [-Wincompatible-pointer-types]
+   if(getNombre(&bcliente.empresa,50,3)!=0)
+                ^
+In file included from ../src/clientes.c:13:0:
+../src/utn.h:40:5: note: expected ‘char *’ but argument is of type ‘char (*)[50]’
+ int getNombre(char pNombre[50],int limite,int reintentos);
+     ^~~~~~~~~
+../src/clientes.c:104:14: warning: passing argument 1 of ‘getCuit’ makes pointer from integer without a cast [-Wint-conversion]
+   if(getCuit(bcliente.cuit)!=0)
+              ^~~~~~~~
+In file included from ../src/clientes.c:13:0:
+../src/utn.h:43:5: note: expected ‘char *’ but argument is of type ‘int’
+ int getCuit(char *input);
+     ^~~~~~~
+../src/clientes.c:109:16: warning: passing argument 1 of ‘getString’ from incompatible pointer type [-Wincompatible-pointer-types]
+   if(getString(&bcliente.direccion,"Inrgese direccion\n","Direccion Incorrecta!\n",1,50,3)!=0)//get direccion
+                ^
+In file included from ../src/clientes.c:13:0:
+../src/utn.h:33:5: note: expected ‘char *’ but argument is of type ‘char (*)[50]’
+ int getString(char *pResultado,
+     ^~~~~~~~~
+../src/clientes.c:114:16: warning: passing argument 1 of ‘getString’ from incompatible pointer type [-Wincompatible-pointer-types]
+   if(getString(&bcliente.direccion,"Inrgese localidad\n","Direccion Incorrecta!\n",1,50,3)!=0)//get localidad
+                ^
+In file included from ../src/clientes.c:13:0:
+../src/utn.h:33:5: note: expected ‘char *’ but argument is of type ‘char (*)[50]’
+ int getString(char *pResultado,
+     ^~~~~~~~~
+../src/clientes.c:120:11: warning: passing argument 1 of ‘strncpy’ makes pointer from integer without a cast [-Wint-conversion]
+   strncpy(aCliente[i].cuit,bcliente.cuit,50);
+           ^~~~~~~~
+In file included from ../src/clientes.c:12:0:
+/usr/include/string.h:128:14: note: expected ‘char * restrict’ but argument is of type ‘int’
+ extern char *strncpy (char *__restrict __dest,
+              ^~~~~~~
+../src/clientes.c:120:28: warning: passing argument 2 of ‘strncpy’ makes pointer from integer without a cast [-Wint-conversion]
+   strncpy(aCliente[i].cuit,bcliente.cuit,50);
+                            ^~~~~~~~
+In file included from ../src/clientes.c:12:0:
+/usr/include/string.h:128:14: note: expected ‘const char * restrict’ but argument is of type ‘int’
+ extern char *strncpy (char *__restrict __dest,
+              ^~~~~~~
+../src/clientes.c: In function ‘altaCliente’:
+../src/clientes.c:171:7: warning: implicit declaration of function ‘getDatosPantalla’ [-Wimplicit-function-declaration]
+    if(getDatosPantalla(aCliente,cantidad)==0)
+       ^~~~~~~~~~~~~~~~
+Finished building: ../src/clientes.c
+ 
+Building target: Primer_Parcial_1ºh
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_1ºh"  ./src/Primer_Parcial_1ºh.o ./src/clientes.o ./src/informes.o ./src/pedidos_de_recoleccion.o ./src/utn.o   
+./src/Primer_Parcial_1ºh.o: En la función `main':
+/home/alumno/Parcial_2do_Cuatrimestre_2019_1ºH/Primer_Parcial_1ºh/Debug/../src/Primer_Parcial_1ºh.c:54: referencia a `imprimirClientes' sin definir
+./src/clientes.o: En la función `altaCliente':
+/home/alumno/Parcial_2do_Cuatrimestre_2019_1ºH/Primer_Parcial_1ºh/Debug/../src/clientes.c:171: referencia a `getDatosPantalla' sin definir
+makefile:30: fallo en las instrucciones para el objetivo 'Primer_Parcial_1ºh'
+./src/utn.o: En la función `getStringNumeros':
+/home/alumno/Parcial_2do_Cuatrimestre_2019_1ºH/Primer_Parcial_1ºh/Debug/../src/utn.c:338: referencia a `esNumerico' sin definir
+collect2: error: ld returned 1 exit status
+make: *** [Primer_Parcial_1ºh] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:53:24 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/clientes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/clientes.d" -MT"src/clientes.o" -o "src/clientes.o" "../src/clientes.c"
+../src/clientes.c: In function ‘getDatoscliente’:
+../src/clientes.c:99:16: warning: passing argument 1 of ‘getNombre’ from incompatible pointer type [-Wincompatible-pointer-types]
+   if(getNombre(&bcliente.empresa,50,3)!=0)
+                ^
+In file included from ../src/clientes.c:13:0:
+../src/utn.h:40:5: note: expected ‘char *’ but argument is of type ‘char (*)[50]’
+ int getNombre(char pNombre[50],int limite,int reintentos);
+     ^~~~~~~~~
+../src/clientes.c:104:14: warning: passing argument 1 of ‘getCuit’ makes pointer from integer without a cast [-Wint-conversion]
+   if(getCuit(bcliente.cuit)!=0)
+              ^~~~~~~~
+In file included from ../src/clientes.c:13:0:
+../src/utn.h:43:5: note: expected ‘char *’ but argument is of type ‘int’
+ int getCuit(char *input);
+     ^~~~~~~
+../src/clientes.c:109:16: warning: passing argument 1 of ‘getString’ from incompatible pointer type [-Wincompatible-pointer-types]
+   if(getString(&bcliente.direccion,"Inrgese direccion\n","Direccion Incorrecta!\n",1,50,3)!=0)//get direccion
+                ^
+In file included from ../src/clientes.c:13:0:
+../src/utn.h:33:5: note: expected ‘char *’ but argument is of type ‘char (*)[50]’
+ int getString(char *pResultado,
+     ^~~~~~~~~
+../src/clientes.c:114:16: warning: passing argument 1 of ‘getString’ from incompatible pointer type [-Wincompatible-pointer-types]
+   if(getString(&bcliente.direccion,"Inrgese localidad\n","Direccion Incorrecta!\n",1,50,3)!=0)//get localidad
+                ^
+In file included from ../src/clientes.c:13:0:
+../src/utn.h:33:5: note: expected ‘char *’ but argument is of type ‘char (*)[50]’
+ int getString(char *pResultado,
+     ^~~~~~~~~
+../src/clientes.c:120:11: warning: passing argument 1 of ‘strncpy’ makes pointer from integer without a cast [-Wint-conversion]
+   strncpy(aCliente[i].cuit,bcliente.cuit,50);
+           ^~~~~~~~
+In file included from ../src/clientes.c:12:0:
+/usr/include/string.h:128:14: note: expected ‘char * restrict’ but argument is of type ‘int’
+ extern char *strncpy (char *__restrict __dest,
+              ^~~~~~~
+../src/clientes.c:120:28: warning: passing argument 2 of ‘strncpy’ makes pointer from integer without a cast [-Wint-conversion]
+   strncpy(aCliente[i].cuit,bcliente.cuit,50);
+                            ^~~~~~~~
+In file included from ../src/clientes.c:12:0:
+/usr/include/string.h:128:14: note: expected ‘const char * restrict’ but argument is of type ‘int’
+ extern char *strncpy (char *__restrict __dest,
+              ^~~~~~~
+Finished building: ../src/clientes.c
+ 
+Building target: Primer_Parcial_1ºh
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_1ºh"  ./src/Primer_Parcial_1ºh.o ./src/clientes.o ./src/informes.o ./src/pedidos_de_recoleccion.o ./src/utn.o   
+./src/Primer_Parcial_1ºh.o: En la función `main':
+/home/alumno/Parcial_2do_Cuatrimestre_2019_1ºH/Primer_Parcial_1ºh/Debug/../src/Primer_Parcial_1ºh.c:54: referencia a `imprimirClientes' sin definir
+./src/utn.o: En la función `getStringNumeros':
+makefile:30: fallo en las instrucciones para el objetivo 'Primer_Parcial_1ºh'
+/home/alumno/Parcial_2do_Cuatrimestre_2019_1ºH/Primer_Parcial_1ºh/Debug/../src/utn.c:338: referencia a `esNumerico' sin definir
+collect2: error: ld returned 1 exit status
+make: *** [Primer_Parcial_1ºh] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:54:57 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/Primer_Parcial_1ºh.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Primer_Parcial_1ºh.d" -MT"src/Primer_Parcial_1ºh.o" -o "src/Primer_Parcial_1ºh.o" "../src/Primer_Parcial_1ºh.c"
+In file included from ../src/Primer_Parcial_1ºh.c:18:0:
+../src/clientes.h: In function ‘esNumerico’:
+../src/clientes.h:20:2: error: storage class specified for parameter ‘cliente’
+ }cliente;
+  ^~~~~~~
+../src/clientes.h:22:29: error: expected declaration specifiers or ‘...’ before ‘cliente’
+ int imprimirClientesActivos(cliente *acliente, int len);
+                             ^~~~~~~
+../src/clientes.h:23:17: error: expected declaration specifiers or ‘...’ before ‘cliente’
+ int initcliente(cliente *aCliente, int cantidad);
+                 ^~~~~~~
+../src/clientes.h:24:21: error: expected declaration specifiers or ‘...’ before ‘cliente’
+ int getDatoscliente(cliente *aCliente,int cantidad);
+                     ^~~~~~~
+../src/clientes.h:25:24: error: expected declaration specifiers or ‘...’ before ‘cliente’
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/Primer_Parcial_1ºh.o'
+ int buscarclienteLibre(cliente *acliente,int cantidad);
+                        ^~~~~~~
+../src/clientes.h:26:17: error: expected declaration specifiers or ‘...’ before ‘cliente’
+ int altaCliente(cliente *aCliente, int cantidad);
+                 ^~~~~~~
+../src/Primer_Parcial_1ºh.c:23:16: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ int main(void) {
+                ^
+In file included from ../src/Primer_Parcial_1ºh.c:17:0:
+../src/utn.h:42:5: error: old-style parameter declarations in prototyped function definition
+ int esNumerico(char str[])
+     ^~~~~~~~~~
+../src/Primer_Parcial_1ºh.c:61:1: error: expected ‘{’ at end of input
+ }
+ ^
+../src/Primer_Parcial_1ºh.c:61:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/Primer_Parcial_1ºh.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:55:20 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/Primer_Parcial_1ºh.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Primer_Parcial_1ºh.d" -MT"src/Primer_Parcial_1ºh.o" -o "src/Primer_Parcial_1ºh.o" "../src/Primer_Parcial_1ºh.c"
+In file included from ../src/Primer_Parcial_1ºh.c:18:0:
+../src/clientes.h: In function ‘esNumerico’:
+../src/clientes.h:20:2: error: storage class specified for parameter ‘cliente’
+ }cliente;
+  ^~~~~~~
+../src/clientes.h:22:29: error: expected declaration specifiers or ‘...’ before ‘cliente’
+ int imprimirClientesActivos(cliente *acliente, int len);
+                             ^~~~~~~
+../src/clientes.h:23:17: error: expected declaration specifiers or ‘...’ before ‘cliente’
+ int initcliente(cliente *aCliente, int cantidad);
+                 ^~~~~~~
+../src/clientes.h:24:21: error: expected declaration specifiers or ‘...’ before ‘cliente’
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/Primer_Parcial_1ºh.o'
+ int getDatoscliente(cliente *aCliente,int cantidad);
+                     ^~~~~~~
+../src/clientes.h:25:24: error: expected declaration specifiers or ‘...’ before ‘cliente’
+ int buscarclienteLibre(cliente *acliente,int cantidad);
+                        ^~~~~~~
+../src/clientes.h:26:17: error: expected declaration specifiers or ‘...’ before ‘cliente’
+ int altaCliente(cliente *aCliente, int cantidad);
+                 ^~~~~~~
+../src/Primer_Parcial_1ºh.c:23:16: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ int main(void) {
+                ^
+../src/Primer_Parcial_1ºh.c:59:3: error: expected declaration specifiers before ‘while’
+  }while(option!=9);
+   ^~~~~
+../src/Primer_Parcial_1ºh.c:60:2: error: expected declaration specifiers before ‘return’
+  return EXIT_SUCCESS;
+  ^~~~~~
+../src/Primer_Parcial_1ºh.c:61:1: error: expected declaration specifiers before ‘}’ token
+ }
+ ^
+In file included from ../src/Primer_Parcial_1ºh.c:17:0:
+../src/utn.h:42:5: error: old-style parameter declarations in prototyped function definition
+ int esNumerico(char str[])
+     ^~~~~~~~~~
+../src/Primer_Parcial_1ºh.c:61:1: error: expected ‘{’ at end of input
+ }
+ ^
+../src/Primer_Parcial_1ºh.c:61:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/Primer_Parcial_1ºh.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:55:28 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/Primer_Parcial_1ºh.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Primer_Parcial_1ºh.d" -MT"src/Primer_Parcial_1ºh.o" -o "src/Primer_Parcial_1ºh.o" "../src/Primer_Parcial_1ºh.c"
+In file included from ../src/Primer_Parcial_1ºh.c:18:0:
+../src/clientes.h: In function ‘esNumerico’:
+../src/clientes.h:20:2: error: storage class specified for parameter ‘cliente’
+ }cliente;
+  ^~~~~~~
+../src/clientes.h:22:29: error: expected declaration specifiers or ‘...’ before ‘cliente’
+ int imprimirClientesActivos(cliente *acliente, int len);
+                             ^~~~~~~
+../src/clientes.h:23:17: error: expected declaration specifiers or ‘...’ before ‘cliente’
+ int initcliente(cliente *aCliente, int cantidad);
+                 ^~~~~~~
+../src/clientes.h:24:21: error: expected declaration specifiers or ‘...’ before ‘cliente’
+ int getDatoscliente(cliente *aCliente,int cantidad);
+                     ^~~~~~~
+../src/clientes.h:25:24: error: expected declaration specifiers or ‘...’ before ‘cliente’
+ int buscarclienteLibre(cliente *acliente,int cantidad);
+                        ^~~~~~~
+../src/clientes.h:26:17: error: expected declaration specifiers or ‘...’ before ‘cliente’
+ int altaCliente(cliente *aCliente, int cantidad);
+                 ^~~~~~~
+../src/Primer_Parcial_1ºh.c:23:16: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/Primer_Parcial_1ºh.o'
+ int main(void) {
+                ^
+In file included from ../src/Primer_Parcial_1ºh.c:17:0:
+../src/utn.h:42:5: error: old-style parameter declarations in prototyped function definition
+ int esNumerico(char str[])
+     ^~~~~~~~~~
+../src/Primer_Parcial_1ºh.c:60:1: error: expected ‘{’ at end of input
+ }
+ ^
+../src/Primer_Parcial_1ºh.c:60:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/Primer_Parcial_1ºh.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:56:19 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/Primer_Parcial_1ºh.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Primer_Parcial_1ºh.d" -MT"src/Primer_Parcial_1ºh.o" -o "src/Primer_Parcial_1ºh.o" "../src/Primer_Parcial_1ºh.c"
+In file included from ../src/Primer_Parcial_1ºh.c:18:0:
+../src/clientes.h: In function ‘esNumerico’:
+../src/clientes.h:11:1: warning: empty declaration
+ typedef struct cliente {
+ ^~~~~~~
+../src/clientes.h:22:29: error: unknown type name ‘cliente’
+ int imprimirClientesActivos(cliente *acliente, int len);
+                             ^~~~~~~
+../src/clientes.h:23:17: error: unknown type name ‘cliente’
+ int initcliente(cliente *aCliente, int cantidad);
+                 ^~~~~~~
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/Primer_Parcial_1ºh.o'
+../src/clientes.h:24:21: error: unknown type name ‘cliente’
+ int getDatoscliente(cliente *aCliente,int cantidad);
+                     ^~~~~~~
+../src/clientes.h:25:24: error: unknown type name ‘cliente’
+ int buscarclienteLibre(cliente *acliente,int cantidad);
+                        ^~~~~~~
+../src/clientes.h:26:17: error: unknown type name ‘cliente’
+ int altaCliente(cliente *aCliente, int cantidad);
+                 ^~~~~~~
+../src/Primer_Parcial_1ºh.c:23:16: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ int main(void) {
+                ^
+In file included from ../src/Primer_Parcial_1ºh.c:17:0:
+../src/utn.h:42:5: error: old-style parameter declarations in prototyped function definition
+ int esNumerico(char str[])
+     ^~~~~~~~~~
+../src/Primer_Parcial_1ºh.c:58:1: error: expected ‘{’ at end of input
+ }
+ ^
+../src/Primer_Parcial_1ºh.c:58:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/Primer_Parcial_1ºh.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:57:06 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/Primer_Parcial_1ºh.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Primer_Parcial_1ºh.d" -MT"src/Primer_Parcial_1ºh.o" -o "src/Primer_Parcial_1ºh.o" "../src/Primer_Parcial_1ºh.c"
+In file included from ../src/Primer_Parcial_1ºh.c:18:0:
+../src/clientes.h: In function ‘esNumerico’:
+../src/clientes.h:20:2: error: storage class specified for parameter ‘cliente’
+ }cliente;
+  ^~~~~~~
+../src/clientes.h:22:29: error: expected declaration specifiers or ‘...’ before ‘cliente’
+ int imprimirClientesActivos(cliente *acliente, int len);
+                             ^~~~~~~
+../src/clientes.h:23:17: error: expected declaration specifiers or ‘...’ before ‘cliente’
+ int initcliente(cliente *aCliente, int cantidad);
+                 ^~~~~~~
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/Primer_Parcial_1ºh.o'
+../src/clientes.h:24:21: error: expected declaration specifiers or ‘...’ before ‘cliente’
+ int getDatoscliente(cliente *aCliente,int cantidad);
+                     ^~~~~~~
+../src/clientes.h:25:24: error: expected declaration specifiers or ‘...’ before ‘cliente’
+ int buscarclienteLibre(cliente *acliente,int cantidad);
+                        ^~~~~~~
+../src/clientes.h:26:17: error: expected declaration specifiers or ‘...’ before ‘cliente’
+ int altaCliente(cliente *aCliente, int cantidad);
+                 ^~~~~~~
+../src/Primer_Parcial_1ºh.c:23:16: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ int main(void) {
+                ^
+../src/Primer_Parcial_1ºh.c:60:1: error: expected declaration specifiers before ‘return’
+ return EXIT_SUCCESS;}
+ ^~~~~~
+../src/Primer_Parcial_1ºh.c:60:21: error: expected declaration specifiers before ‘}’ token
+ return EXIT_SUCCESS;}
+                     ^
+In file included from ../src/Primer_Parcial_1ºh.c:17:0:
+../src/utn.h:42:5: error: old-style parameter declarations in prototyped function definition
+ int esNumerico(char str[])
+     ^~~~~~~~~~
+../src/Primer_Parcial_1ºh.c:60:21: error: expected ‘{’ at end of input
+ return EXIT_SUCCESS;}
+                     ^
+../src/Primer_Parcial_1ºh.c:60:21: warning: control reaches end of non-void function [-Wreturn-type]
+ return EXIT_SUCCESS;}
+                     ^
+make: *** [src/Primer_Parcial_1ºh.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:57:13 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/Primer_Parcial_1ºh.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Primer_Parcial_1ºh.d" -MT"src/Primer_Parcial_1ºh.o" -o "src/Primer_Parcial_1ºh.o" "../src/Primer_Parcial_1ºh.c"
+In file included from ../src/Primer_Parcial_1ºh.c:18:0:
+../src/clientes.h: In function ‘esNumerico’:
+../src/clientes.h:20:2: error: storage class specified for parameter ‘cliente’
+ }cliente;
+  ^~~~~~~
+../src/clientes.h:22:29: error: expected declaration specifiers or ‘...’ before ‘cliente’
+ int imprimirClientesActivos(cliente *acliente, int len);
+                             ^~~~~~~
+../src/clientes.h:23:17: error: expected declaration specifiers or ‘...’ before ‘cliente’
+ int initcliente(cliente *aCliente, int cantidad);
+                 ^~~~~~~
+../src/clientes.h:24:21: error: expected declaration specifiers or ‘...’ before ‘cliente’
+ int getDatoscliente(cliente *aCliente,int cantidad);
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/Primer_Parcial_1ºh.o'
+                     ^~~~~~~
+../src/clientes.h:25:24: error: expected declaration specifiers or ‘...’ before ‘cliente’
+ int buscarclienteLibre(cliente *acliente,int cantidad);
+                        ^~~~~~~
+../src/clientes.h:26:17: error: expected declaration specifiers or ‘...’ before ‘cliente’
+ int altaCliente(cliente *aCliente, int cantidad);
+                 ^~~~~~~
+../src/Primer_Parcial_1ºh.c:23:16: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ int main(void) {
+                ^
+../src/Primer_Parcial_1ºh.c:60:1: error: expected declaration specifiers before ‘return’
+ return EXIT_SUCCESS
+ ^~~~~~
+In file included from ../src/Primer_Parcial_1ºh.c:17:0:
+../src/utn.h:42:5: error: old-style parameter declarations in prototyped function definition
+ int esNumerico(char str[])
+     ^~~~~~~~~~
+../src/Primer_Parcial_1ºh.c:61:2: error: expected ‘{’ at end of input
+  }
+  ^
+../src/Primer_Parcial_1ºh.c:61:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+make: *** [src/Primer_Parcial_1ºh.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:57:30 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/Primer_Parcial_1ºh.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Primer_Parcial_1ºh.d" -MT"src/Primer_Parcial_1ºh.o" -o "src/Primer_Parcial_1ºh.o" "../src/Primer_Parcial_1ºh.c"
+In file included from ../src/Primer_Parcial_1ºh.c:18:0:
+../src/clientes.h: In function ‘esNumerico’:
+../src/clientes.h:20:2: error: storage class specified for parameter ‘cliente’
+ }cliente;
+  ^~~~~~~
+../src/clientes.h:22:29: error: expected declaration specifiers or ‘...’ before ‘cliente’
+ int imprimirClientesActivos(cliente *acliente, int len);
+                             ^~~~~~~
+../src/clientes.h:23:17: error: expected declaration specifiers or ‘...’ before ‘cliente’
+ int initcliente(cliente *aCliente, int cantidad);
+                 ^~~~~~~
+../src/clientes.h:24:21: error: expected declaration specifiers or ‘...’ before ‘cliente’
+ int getDatoscliente(cliente *aCliente,int cantidad);
+                     ^~~~~~~
+../src/clientes.h:25:24: error: expected declaration specifiers or ‘...’ before ‘cliente’
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/Primer_Parcial_1ºh.o'
+ int buscarclienteLibre(cliente *acliente,int cantidad);
+                        ^~~~~~~
+../src/clientes.h:26:17: error: expected declaration specifiers or ‘...’ before ‘cliente’
+ int altaCliente(cliente *aCliente, int cantidad);
+                 ^~~~~~~
+../src/Primer_Parcial_1ºh.c:23:16: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ int main(void) {
+                ^
+In file included from ../src/Primer_Parcial_1ºh.c:17:0:
+../src/utn.h:42:5: error: old-style parameter declarations in prototyped function definition
+ int esNumerico(char str[])
+     ^~~~~~~~~~
+../src/Primer_Parcial_1ºh.c:58:1: error: expected ‘{’ at end of input
+ }
+ ^
+../src/Primer_Parcial_1ºh.c:58:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/Primer_Parcial_1ºh.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:57:43 **** Clean-only build of configuration Debug for project Primer_Parcial_1ºh ****
+make clean 
+rm -rf  ./src/Primer_Parcial_1ºh.o ./src/clientes.o ./src/informes.o ./src/pedidos_de_recoleccion.o ./src/utn.o  ./src/Primer_Parcial_1ºh.d ./src/clientes.d ./src/informes.d ./src/pedidos_de_recoleccion.d ./src/utn.d  Primer_Parcial_1ºh
+ 
+19:57:46 **** Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/Primer_Parcial_1ºh.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Primer_Parcial_1ºh.d" -MT"src/Primer_Parcial_1ºh.o" -o "src/Primer_Parcial_1ºh.o" "../src/Primer_Parcial_1ºh.c"
+In file included from ../src/Primer_Parcial_1ºh.c:18:0:
+../src/clientes.h: In function ‘esNumerico’:
+../src/clientes.h:20:2: error: storage class specified for parameter ‘cliente’
+ }cliente;
+  ^~~~~~~
+../src/clientes.h:22:29: error: expected declaration specifiers or ‘...’ before ‘cliente’
+ int imprimirClientesActivos(cliente *acliente, int len);
+                             ^~~~~~~
+../src/clientes.h:23:17: error: expected declaration specifiers or ‘...’ before ‘cliente’
+ int initcliente(cliente *aCliente, int cantidad);
+                 ^~~~~~~
+../src/clientes.h:24:21: error: expected declaration specifiers or ‘...’ before ‘cliente’
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/Primer_Parcial_1ºh.o'
+ int getDatoscliente(cliente *aCliente,int cantidad);
+                     ^~~~~~~
+../src/clientes.h:25:24: error: expected declaration specifiers or ‘...’ before ‘cliente’
+ int buscarclienteLibre(cliente *acliente,int cantidad);
+                        ^~~~~~~
+../src/clientes.h:26:17: error: expected declaration specifiers or ‘...’ before ‘cliente’
+ int altaCliente(cliente *aCliente, int cantidad);
+                 ^~~~~~~
+../src/Primer_Parcial_1ºh.c:23:16: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ int main(void) {
+                ^
+In file included from ../src/Primer_Parcial_1ºh.c:17:0:
+../src/utn.h:42:5: error: old-style parameter declarations in prototyped function definition
+ int esNumerico(char str[])
+     ^~~~~~~~~~
+../src/Primer_Parcial_1ºh.c:58:1: error: expected ‘{’ at end of input
+ }
+ ^
+../src/Primer_Parcial_1ºh.c:58:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/Primer_Parcial_1ºh.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:58:32 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/Primer_Parcial_1ºh.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Primer_Parcial_1ºh.d" -MT"src/Primer_Parcial_1ºh.o" -o "src/Primer_Parcial_1ºh.o" "../src/Primer_Parcial_1ºh.c"
+In file included from ../src/Primer_Parcial_1ºh.c:18:0:
+../src/clientes.h: In function ‘esNumerico’:
+../src/clientes.h:20:2: error: storage class specified for parameter ‘cliente’
+ }cliente;
+  ^~~~~~~
+../src/clientes.h:22:29: error: expected declaration specifiers or ‘...’ before ‘cliente’
+ int imprimirClientesActivos(cliente *acliente, int len);
+                             ^~~~~~~
+../src/clientes.h:23:17: error: expected declaration specifiers or ‘...’ before ‘cliente’
+ int initcliente(cliente *aCliente, int cantidad);
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/Primer_Parcial_1ºh.o'
+                 ^~~~~~~
+../src/clientes.h:24:21: error: expected declaration specifiers or ‘...’ before ‘cliente’
+ int getDatoscliente(cliente *aCliente,int cantidad);
+                     ^~~~~~~
+../src/clientes.h:25:24: error: expected declaration specifiers or ‘...’ before ‘cliente’
+ int buscarclienteLibre(cliente *acliente,int cantidad);
+                        ^~~~~~~
+../src/clientes.h:26:17: error: expected declaration specifiers or ‘...’ before ‘cliente’
+ int altaCliente(cliente *aCliente, int cantidad);
+                 ^~~~~~~
+../src/Primer_Parcial_1ºh.c:23:16: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ int main(void) {
+                ^
+In file included from ../src/Primer_Parcial_1ºh.c:17:0:
+../src/utn.h:42:5: error: old-style parameter declarations in prototyped function definition
+ int esNumerico(char str[])
+     ^~~~~~~~~~
+../src/Primer_Parcial_1ºh.c:58:1: error: expected ‘{’ at end of input
+ }
+ ^
+../src/Primer_Parcial_1ºh.c:58:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/Primer_Parcial_1ºh.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:59:00 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/Primer_Parcial_1ºh.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Primer_Parcial_1ºh.d" -MT"src/Primer_Parcial_1ºh.o" -o "src/Primer_Parcial_1ºh.o" "../src/Primer_Parcial_1ºh.c"
+In file included from ../src/Primer_Parcial_1ºh.c:18:0:
+../src/clientes.h: In function ‘esNumerico’:
+../src/clientes.h:20:2: error: storage class specified for parameter ‘cliente’
+ }cliente;
+  ^~~~~~~
+../src/clientes.h:22:29: error: expected declaration specifiers or ‘...’ before ‘cliente’
+ int imprimirClientesActivos(cliente *acliente, int len);
+                             ^~~~~~~
+../src/clientes.h:23:17: error: expected declaration specifiers or ‘...’ before ‘cliente’
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/Primer_Parcial_1ºh.o'
+ int initcliente(cliente *aCliente, int cantidad);
+                 ^~~~~~~
+../src/clientes.h:24:21: error: expected declaration specifiers or ‘...’ before ‘cliente’
+ int getDatoscliente(cliente *aCliente,int cantidad);
+                     ^~~~~~~
+../src/clientes.h:25:24: error: expected declaration specifiers or ‘...’ before ‘cliente’
+ int buscarclienteLibre(cliente *acliente,int cantidad);
+                        ^~~~~~~
+../src/clientes.h:26:17: error: expected declaration specifiers or ‘...’ before ‘cliente’
+ int altaCliente(cliente *aCliente, int cantidad);
+                 ^~~~~~~
+../src/Primer_Parcial_1ºh.c:23:16: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ int main(void) {
+                ^
+In file included from ../src/Primer_Parcial_1ºh.c:17:0:
+../src/utn.h:42:5: error: old-style parameter declarations in prototyped function definition
+ int esNumerico(char str[])
+     ^~~~~~~~~~
+../src/Primer_Parcial_1ºh.c:58:1: error: expected ‘{’ at end of input
+ }
+ ^
+../src/Primer_Parcial_1ºh.c:58:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/Primer_Parcial_1ºh.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:00:30 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/Primer_Parcial_1ºh.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Primer_Parcial_1ºh.d" -MT"src/Primer_Parcial_1ºh.o" -o "src/Primer_Parcial_1ºh.o" "../src/Primer_Parcial_1ºh.c"
+Finished building: ../src/Primer_Parcial_1ºh.c
+ 
+Building file: ../src/clientes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/clientes.d" -MT"src/clientes.o" -o "src/clientes.o" "../src/clientes.c"
+../src/clientes.c: In function ‘getDatoscliente’:
+../src/clientes.c:94:17: error: storage size of ‘bcliente’ isn’t known
+  struct cliente bcliente;
+                 ^~~~~~~~
+../src/clientes.c:120:11: warning: passing argument 1 of ‘strncpy’ makes pointer from integer without a cast [-Wint-conversion]
+   strncpy(aCliente[i].cuit,bcliente.cuit,50);
+           ^~~~~~~~
+In file included from ../src/clientes.c:12:0:
+/usr/include/string.h:128:14: note: expected ‘char * restrict’ but argument is of type ‘int’
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/clientes.o'
+ extern char *strncpy (char *__restrict __dest,
+              ^~~~~~~
+../src/clientes.c:94:17: warning: unused variable ‘bcliente’ [-Wunused-variable]
+  struct cliente bcliente;
+                 ^~~~~~~~
+make: *** [src/clientes.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:01:00 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/clientes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/clientes.d" -MT"src/clientes.o" -o "src/clientes.o" "../src/clientes.c"
+../src/clientes.c: In function ‘getDatoscliente’:
+../src/clientes.c:99:16: warning: passing argument 1 of ‘getNombre’ from incompatible pointer type [-Wincompatible-pointer-types]
+   if(getNombre(&bcliente.empresa,50,3)!=0)
+                ^
+In file included from ../src/clientes.c:13:0:
+../src/utn.h:40:5: note: expected ‘char *’ but argument is of type ‘char (*)[50]’
+ int getNombre(char pNombre[50],int limite,int reintentos);
+     ^~~~~~~~~
+../src/clientes.c:104:14: warning: passing argument 1 of ‘getCuit’ makes pointer from integer without a cast [-Wint-conversion]
+   if(getCuit(bcliente.cuit)!=0)
+              ^~~~~~~~
+In file included from ../src/clientes.c:13:0:
+../src/utn.h:44:5: note: expected ‘char *’ but argument is of type ‘int’
+ int getCuit(char *input);
+     ^~~~~~~
+../src/clientes.c:109:16: warning: passing argument 1 of ‘getString’ from incompatible pointer type [-Wincompatible-pointer-types]
+   if(getString(&bcliente.direccion,"Inrgese direccion\n","Direccion Incorrecta!\n",1,50,3)!=0)//get direccion
+                ^
+In file included from ../src/clientes.c:13:0:
+../src/utn.h:33:5: note: expected ‘char *’ but argument is of type ‘char (*)[50]’
+ int getString(char *pResultado,
+     ^~~~~~~~~
+../src/clientes.c:114:16: warning: passing argument 1 of ‘getString’ from incompatible pointer type [-Wincompatible-pointer-types]
+   if(getString(&bcliente.direccion,"Inrgese localidad\n","Direccion Incorrecta!\n",1,50,3)!=0)//get localidad
+                ^
+In file included from ../src/clientes.c:13:0:
+../src/utn.h:33:5: note: expected ‘char *’ but argument is of type ‘char (*)[50]’
+ int getString(char *pResultado,
+     ^~~~~~~~~
+../src/clientes.c:120:11: warning: passing argument 1 of ‘strncpy’ makes pointer from integer without a cast [-Wint-conversion]
+   strncpy(aCliente[i].cuit,bcliente.cuit,50);
+           ^~~~~~~~
+In file included from ../src/clientes.c:12:0:
+/usr/include/string.h:128:14: note: expected ‘char * restrict’ but argument is of type ‘int’
+ extern char *strncpy (char *__restrict __dest,
+              ^~~~~~~
+../src/clientes.c:120:28: warning: passing argument 2 of ‘strncpy’ makes pointer from integer without a cast [-Wint-conversion]
+   strncpy(aCliente[i].cuit,bcliente.cuit,50);
+                            ^~~~~~~~
+In file included from ../src/clientes.c:12:0:
+/usr/include/string.h:128:14: note: expected ‘const char * restrict’ but argument is of type ‘int’
+ extern char *strncpy (char *__restrict __dest,
+              ^~~~~~~
+Finished building: ../src/clientes.c
+ 
+Building file: ../src/informes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
+Finished building: ../src/informes.c
+ 
+Building file: ../src/pedidos_de_recoleccion.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pedidos_de_recoleccion.d" -MT"src/pedidos_de_recoleccion.o" -o "src/pedidos_de_recoleccion.o" "../src/pedidos_de_recoleccion.c"
+Finished building: ../src/pedidos_de_recoleccion.c
+ 
+Building file: ../src/utn.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/utn.d" -MT"src/utn.o" -o "src/utn.o" "../src/utn.c"
+Finished building: ../src/utn.c
+ 
+Building target: Primer_Parcial_1ºh
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_1ºh"  ./src/Primer_Parcial_1ºh.o ./src/clientes.o ./src/informes.o ./src/pedidos_de_recoleccion.o ./src/utn.o   
+Finished building target: Primer_Parcial_1ºh
+ 
+20:01:20 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/clientes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/clientes.d" -MT"src/clientes.o" -o "src/clientes.o" "../src/clientes.c"
+../src/clientes.c: In function ‘getDatoscliente’:
+../src/clientes.c:104:14: warning: passing argument 1 of ‘getCuit’ makes pointer from integer without a cast [-Wint-conversion]
+   if(getCuit(bcliente.cuit)!=0)
+              ^~~~~~~~
+In file included from ../src/clientes.c:13:0:
+../src/utn.h:44:5: note: expected ‘char *’ but argument is of type ‘int’
+ int getCuit(char *input);
+     ^~~~~~~
+../src/clientes.c:109:16: warning: passing argument 1 of ‘getString’ from incompatible pointer type [-Wincompatible-pointer-types]
+   if(getString(&bcliente.direccion,"Inrgese direccion\n","Direccion Incorrecta!\n",1,50,3)!=0)//get direccion
+                ^
+In file included from ../src/clientes.c:13:0:
+../src/utn.h:33:5: note: expected ‘char *’ but argument is of type ‘char (*)[50]’
+ int getString(char *pResultado,
+     ^~~~~~~~~
+../src/clientes.c:114:16: warning: passing argument 1 of ‘getString’ from incompatible pointer type [-Wincompatible-pointer-types]
+   if(getString(&bcliente.direccion,"Inrgese localidad\n","Direccion Incorrecta!\n",1,50,3)!=0)//get localidad
+                ^
+In file included from ../src/clientes.c:13:0:
+../src/utn.h:33:5: note: expected ‘char *’ but argument is of type ‘char (*)[50]’
+ int getString(char *pResultado,
+     ^~~~~~~~~
+../src/clientes.c:120:11: warning: passing argument 1 of ‘strncpy’ makes pointer from integer without a cast [-Wint-conversion]
+   strncpy(aCliente[i].cuit,bcliente.cuit,50);
+           ^~~~~~~~
+In file included from ../src/clientes.c:12:0:
+/usr/include/string.h:128:14: note: expected ‘char * restrict’ but argument is of type ‘int’
+ extern char *strncpy (char *__restrict __dest,
+              ^~~~~~~
+../src/clientes.c:120:28: warning: passing argument 2 of ‘strncpy’ makes pointer from integer without a cast [-Wint-conversion]
+   strncpy(aCliente[i].cuit,bcliente.cuit,50);
+                            ^~~~~~~~
+In file included from ../src/clientes.c:12:0:
+/usr/include/string.h:128:14: note: expected ‘const char * restrict’ but argument is of type ‘int’
+ extern char *strncpy (char *__restrict __dest,
+              ^~~~~~~
+Finished building: ../src/clientes.c
+ 
+Building target: Primer_Parcial_1ºh
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_1ºh"  ./src/Primer_Parcial_1ºh.o ./src/clientes.o ./src/informes.o ./src/pedidos_de_recoleccion.o ./src/utn.o   
+Finished building target: Primer_Parcial_1ºh
+ 
+20:01:35 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/clientes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/clientes.d" -MT"src/clientes.o" -o "src/clientes.o" "../src/clientes.c"
+../src/clientes.c: In function ‘getDatoscliente’:
+../src/clientes.c:104:14: warning: passing argument 1 of ‘getCuit’ makes pointer from integer without a cast [-Wint-conversion]
+   if(getCuit(bcliente.cuit)!=0)
+              ^~~~~~~~
+In file included from ../src/clientes.c:13:0:
+../src/utn.h:44:5: note: expected ‘char *’ but argument is of type ‘int’
+ int getCuit(char *input);
+     ^~~~~~~
+../src/clientes.c:120:11: warning: passing argument 1 of ‘strncpy’ makes pointer from integer without a cast [-Wint-conversion]
+   strncpy(aCliente[i].cuit,bcliente.cuit,50);
+           ^~~~~~~~
+In file included from ../src/clientes.c:12:0:
+/usr/include/string.h:128:14: note: expected ‘char * restrict’ but argument is of type ‘int’
+ extern char *strncpy (char *__restrict __dest,
+              ^~~~~~~
+../src/clientes.c:120:28: warning: passing argument 2 of ‘strncpy’ makes pointer from integer without a cast [-Wint-conversion]
+   strncpy(aCliente[i].cuit,bcliente.cuit,50);
+                            ^~~~~~~~
+In file included from ../src/clientes.c:12:0:
+/usr/include/string.h:128:14: note: expected ‘const char * restrict’ but argument is of type ‘int’
+ extern char *strncpy (char *__restrict __dest,
+              ^~~~~~~
+Finished building: ../src/clientes.c
+ 
+Building target: Primer_Parcial_1ºh
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_1ºh"  ./src/Primer_Parcial_1ºh.o ./src/clientes.o ./src/informes.o ./src/pedidos_de_recoleccion.o ./src/utn.o   
+Finished building target: Primer_Parcial_1ºh
+ 
+20:02:08 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/clientes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/clientes.d" -MT"src/clientes.o" -o "src/clientes.o" "../src/clientes.c"
+../src/clientes.c: In function ‘getDatoscliente’:
+../src/clientes.c:104:14: warning: passing argument 1 of ‘getCuit’ makes pointer from integer without a cast [-Wint-conversion]
+   if(getCuit(bcliente.cuit)!=0)
+              ^~~~~~~~
+In file included from ../src/clientes.c:13:0:
+../src/utn.h:44:5: note: expected ‘char *’ but argument is of type ‘int’
+ int getCuit(char *input);
+     ^~~~~~~
+Finished building: ../src/clientes.c
+ 
+Building target: Primer_Parcial_1ºh
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_1ºh"  ./src/Primer_Parcial_1ºh.o ./src/clientes.o ./src/informes.o ./src/pedidos_de_recoleccion.o ./src/utn.o   
+Finished building target: Primer_Parcial_1ºh
+ 
+20:02:20 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/clientes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/clientes.d" -MT"src/clientes.o" -o "src/clientes.o" "../src/clientes.c"
+../src/clientes.c: In function ‘getDatoscliente’:
+../src/clientes.c:104:14: warning: passing argument 1 of ‘getCuit’ from incompatible pointer type [-Wincompatible-pointer-types]
+   if(getCuit(&bcliente.cuit)!=0)
+              ^
+In file included from ../src/clientes.c:13:0:
+../src/utn.h:44:5: note: expected ‘char *’ but argument is of type ‘int *’
+ int getCuit(char *input);
+     ^~~~~~~
+Finished building: ../src/clientes.c
+ 
+Building target: Primer_Parcial_1ºh
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_1ºh"  ./src/Primer_Parcial_1ºh.o ./src/clientes.o ./src/informes.o ./src/pedidos_de_recoleccion.o ./src/utn.o   
+Finished building target: Primer_Parcial_1ºh
+ 
+20:03:39 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/Primer_Parcial_1ºh.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Primer_Parcial_1ºh.d" -MT"src/Primer_Parcial_1ºh.o" -o "src/Primer_Parcial_1ºh.o" "../src/Primer_Parcial_1ºh.c"
+Finished building: ../src/Primer_Parcial_1ºh.c
+ 
+Building file: ../src/clientes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/clientes.d" -MT"src/clientes.o" -o "src/clientes.o" "../src/clientes.c"
+../src/clientes.c: In function ‘imprimirClientesActivos’:
+../src/clientes.c:35:11: warning: format ‘%s’ expects argument of type ‘char *’, but argument 5 has type ‘int’ [-Wformat=]
+    printf("Id Cliente: %d\n"
+           ^~~~~~~~~~~~~~~~~~
+../src/clientes.c: In function ‘getDatoscliente’:
+../src/clientes.c:104:14: warning: passing argument 1 of ‘getCuit’ makes pointer from integer without a cast [-Wint-conversion]
+   if(getCuit(bcliente.cuit)!=0)
+              ^~~~~~~~
+In file included from ../src/clientes.c:13:0:
+../src/utn.h:44:5: note: expected ‘char *’ but argument is of type ‘char’
+ int getCuit(char *input);
+     ^~~~~~~
+../src/clientes.c:120:11: warning: passing argument 1 of ‘strncpy’ makes pointer from integer without a cast [-Wint-conversion]
+   strncpy(aCliente[i].cuit,bcliente.cuit,50);
+           ^~~~~~~~
+In file included from ../src/clientes.c:12:0:
+/usr/include/string.h:128:14: note: expected ‘char * restrict’ but argument is of type ‘char’
+ extern char *strncpy (char *__restrict __dest,
+              ^~~~~~~
+../src/clientes.c:120:28: warning: passing argument 2 of ‘strncpy’ makes pointer from integer without a cast [-Wint-conversion]
+   strncpy(aCliente[i].cuit,bcliente.cuit,50);
+                            ^~~~~~~~
+In file included from ../src/clientes.c:12:0:
+/usr/include/string.h:128:14: note: expected ‘const char * restrict’ but argument is of type ‘char’
+ extern char *strncpy (char *__restrict __dest,
+              ^~~~~~~
+Finished building: ../src/clientes.c
+ 
+Building target: Primer_Parcial_1ºh
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_1ºh"  ./src/Primer_Parcial_1ºh.o ./src/clientes.o ./src/informes.o ./src/pedidos_de_recoleccion.o ./src/utn.o   
+Finished building target: Primer_Parcial_1ºh
+ 
+20:04:23 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+make: No se hace nada para 'all'.
+20:04:26 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+make: No se hace nada para 'all'.
+20:04:33 **** Clean-only build of configuration Debug for project Primer_Parcial_1ºh ****
+make clean 
+rm -rf  ./src/Primer_Parcial_1ºh.o ./src/clientes.o ./src/informes.o ./src/pedidos_de_recoleccion.o ./src/utn.o  ./src/Primer_Parcial_1ºh.d ./src/clientes.d ./src/informes.d ./src/pedidos_de_recoleccion.d ./src/utn.d  Primer_Parcial_1ºh
+ 
+20:04:35 **** Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/Primer_Parcial_1ºh.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Primer_Parcial_1ºh.d" -MT"src/Primer_Parcial_1ºh.o" -o "src/Primer_Parcial_1ºh.o" "../src/Primer_Parcial_1ºh.c"
+Finished building: ../src/Primer_Parcial_1ºh.c
+ 
+Building file: ../src/clientes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/clientes.d" -MT"src/clientes.o" -o "src/clientes.o" "../src/clientes.c"
+../src/clientes.c: In function ‘imprimirClientesActivos’:
+../src/clientes.c:35:11: warning: format ‘%s’ expects argument of type ‘char *’, but argument 5 has type ‘int’ [-Wformat=]
+    printf("Id Cliente: %d\n"
+           ^~~~~~~~~~~~~~~~~~
+../src/clientes.c: In function ‘getDatoscliente’:
+../src/clientes.c:104:14: warning: passing argument 1 of ‘getCuit’ makes pointer from integer without a cast [-Wint-conversion]
+   if(getCuit(bcliente.cuit)!=0)
+              ^~~~~~~~
+In file included from ../src/clientes.c:13:0:
+../src/utn.h:44:5: note: expected ‘char *’ but argument is of type ‘char’
+ int getCuit(char *input);
+     ^~~~~~~
+../src/clientes.c:120:11: warning: passing argument 1 of ‘strncpy’ makes pointer from integer without a cast [-Wint-conversion]
+   strncpy(aCliente[i].cuit,bcliente.cuit,50);
+           ^~~~~~~~
+In file included from ../src/clientes.c:12:0:
+/usr/include/string.h:128:14: note: expected ‘char * restrict’ but argument is of type ‘char’
+ extern char *strncpy (char *__restrict __dest,
+              ^~~~~~~
+../src/clientes.c:120:28: warning: passing argument 2 of ‘strncpy’ makes pointer from integer without a cast [-Wint-conversion]
+   strncpy(aCliente[i].cuit,bcliente.cuit,50);
+                            ^~~~~~~~
+In file included from ../src/clientes.c:12:0:
+/usr/include/string.h:128:14: note: expected ‘const char * restrict’ but argument is of type ‘char’
+ extern char *strncpy (char *__restrict __dest,
+              ^~~~~~~
+Finished building: ../src/clientes.c
+ 
+Building file: ../src/informes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
+Finished building: ../src/informes.c
+ 
+Building file: ../src/pedidos_de_recoleccion.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pedidos_de_recoleccion.d" -MT"src/pedidos_de_recoleccion.o" -o "src/pedidos_de_recoleccion.o" "../src/pedidos_de_recoleccion.c"
+Finished building: ../src/pedidos_de_recoleccion.c
+ 
+Building file: ../src/utn.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/utn.d" -MT"src/utn.o" -o "src/utn.o" "../src/utn.c"
+Finished building: ../src/utn.c
+ 
+Building target: Primer_Parcial_1ºh
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_1ºh"  ./src/Primer_Parcial_1ºh.o ./src/clientes.o ./src/informes.o ./src/pedidos_de_recoleccion.o ./src/utn.o   
+Finished building target: Primer_Parcial_1ºh
+ 
+20:05:47 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/Primer_Parcial_1ºh.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Primer_Parcial_1ºh.d" -MT"src/Primer_Parcial_1ºh.o" -o "src/Primer_Parcial_1ºh.o" "../src/Primer_Parcial_1ºh.c"
+Finished building: ../src/Primer_Parcial_1ºh.c
+ 
+Building file: ../src/clientes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/clientes.d" -MT"src/clientes.o" -o "src/clientes.o" "../src/clientes.c"
+../src/clientes.c: In function ‘imprimirClientesActivos’:
+../src/clientes.c:35:11: warning: format ‘%s’ expects argument of type ‘char *’, but argument 5 has type ‘int’ [-Wformat=]
+    printf("Id Cliente: %d\n"
+           ^~~~~~~~~~~~~~~~~~
+../src/clientes.c: In function ‘getDatoscliente’:
+../src/clientes.c:120:11: warning: passing argument 1 of ‘strncpy’ makes pointer from integer without a cast [-Wint-conversion]
+   strncpy(aCliente[i].cuit,bcliente.cuit,50);
+           ^~~~~~~~
+In file included from ../src/clientes.c:12:0:
+/usr/include/string.h:128:14: note: expected ‘char * restrict’ but argument is of type ‘char’
+ extern char *strncpy (char *__restrict __dest,
+              ^~~~~~~
+../src/clientes.c:120:28: warning: passing argument 2 of ‘strncpy’ makes pointer from integer without a cast [-Wint-conversion]
+   strncpy(aCliente[i].cuit,bcliente.cuit,50);
+                            ^~~~~~~~
+In file included from ../src/clientes.c:12:0:
+/usr/include/string.h:128:14: note: expected ‘const char * restrict’ but argument is of type ‘char’
+ extern char *strncpy (char *__restrict __dest,
+              ^~~~~~~
+Finished building: ../src/clientes.c
+ 
+Building file: ../src/pedidos_de_recoleccion.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pedidos_de_recoleccion.d" -MT"src/pedidos_de_recoleccion.o" -o "src/pedidos_de_recoleccion.o" "../src/pedidos_de_recoleccion.c"
+Finished building: ../src/pedidos_de_recoleccion.c
+ 
+Building file: ../src/utn.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/utn.d" -MT"src/utn.o" -o "src/utn.o" "../src/utn.c"
+../src/utn.c: In function ‘getCuit’:
+../src/utn.c:372:17: warning: passing argument 1 of ‘strncpy’ makes pointer from integer without a cast [-Wint-conversion]
+         strncpy(input,aux,50);
+                 ^~~~~
+In file included from ../src/utn.c:11:0:
+/usr/include/string.h:128:14: note: expected ‘char * restrict’ but argument is of type ‘char’
+ extern char *strncpy (char *__restrict __dest,
+              ^~~~~~~
+Finished building: ../src/utn.c
+ 
+Building target: Primer_Parcial_1ºh
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_1ºh"  ./src/Primer_Parcial_1ºh.o ./src/clientes.o ./src/informes.o ./src/pedidos_de_recoleccion.o ./src/utn.o   
+Finished building target: Primer_Parcial_1ºh
+ 
+20:06:46 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+make: No se hace nada para 'all'.
+20:06:53 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+make: No se hace nada para 'all'.
+20:07:12 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+make: No se hace nada para 'all'.
+20:07:49 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/utn.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/utn.d" -MT"src/utn.o" -o "src/utn.o" "../src/utn.c"
+../src/utn.c: In function ‘getCuit’:
+../src/utn.c:372:17: warning: passing argument 1 of ‘strncpy’ makes pointer from integer without a cast [-Wint-conversion]
+         strncpy(input,aux,50);
+                 ^~~~~
+In file included from ../src/utn.c:11:0:
+/usr/include/string.h:128:14: note: expected ‘char * restrict’ but argument is of type ‘char’
+ extern char *strncpy (char *__restrict __dest,
+              ^~~~~~~
+Finished building: ../src/utn.c
+ 
+Building target: Primer_Parcial_1ºh
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_1ºh"  ./src/Primer_Parcial_1ºh.o ./src/clientes.o ./src/informes.o ./src/pedidos_de_recoleccion.o ./src/utn.o   
+Finished building target: Primer_Parcial_1ºh
+ 
+20:07:52 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+make: No se hace nada para 'all'.
+20:08:26 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/clientes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/clientes.d" -MT"src/clientes.o" -o "src/clientes.o" "../src/clientes.c"
+../src/clientes.c: In function ‘imprimirClientesActivos’:
+../src/clientes.c:35:11: warning: format ‘%s’ expects argument of type ‘char *’, but argument 5 has type ‘int’ [-Wformat=]
+    printf("Id Cliente: %d\n"
+           ^~~~~~~~~~~~~~~~~~
+../src/clientes.c: In function ‘getDatoscliente’:
+../src/clientes.c:120:11: warning: passing argument 1 of ‘strncpy’ makes pointer from integer without a cast [-Wint-conversion]
+   strncpy(aCliente[i].cuit,bcliente.cuit,50);
+           ^~~~~~~~
+In file included from ../src/clientes.c:12:0:
+/usr/include/string.h:128:14: note: expected ‘char * restrict’ but argument is of type ‘char’
+ extern char *strncpy (char *__restrict __dest,
+              ^~~~~~~
+../src/clientes.c:120:28: warning: passing argument 2 of ‘strncpy’ makes pointer from integer without a cast [-Wint-conversion]
+   strncpy(aCliente[i].cuit,bcliente.cuit,50);
+                            ^~~~~~~~
+In file included from ../src/clientes.c:12:0:
+/usr/include/string.h:128:14: note: expected ‘const char * restrict’ but argument is of type ‘char’
+ extern char *strncpy (char *__restrict __dest,
+              ^~~~~~~
+Finished building: ../src/clientes.c
+ 
+Building target: Primer_Parcial_1ºh
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_1ºh"  ./src/Primer_Parcial_1ºh.o ./src/clientes.o ./src/informes.o ./src/pedidos_de_recoleccion.o ./src/utn.o   
+Finished building target: Primer_Parcial_1ºh
+ 
+20:08:51 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/clientes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/clientes.d" -MT"src/clientes.o" -o "src/clientes.o" "../src/clientes.c"
+../src/clientes.c: In function ‘imprimirClientesActivos’:
+../src/clientes.c:35:11: warning: format ‘%s’ expects argument of type ‘char *’, but argument 5 has type ‘int’ [-Wformat=]
+    printf("Id Cliente: %d\n"
+           ^~~~~~~~~~~~~~~~~~
+Finished building: ../src/clientes.c
+ 
+Building target: Primer_Parcial_1ºh
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_1ºh"  ./src/Primer_Parcial_1ºh.o ./src/clientes.o ./src/informes.o ./src/pedidos_de_recoleccion.o ./src/utn.o   
+Finished building target: Primer_Parcial_1ºh
+ 
+20:11:01 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/Primer_Parcial_1ºh.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Primer_Parcial_1ºh.d" -MT"src/Primer_Parcial_1ºh.o" -o "src/Primer_Parcial_1ºh.o" "../src/Primer_Parcial_1ºh.c"
+Finished building: ../src/Primer_Parcial_1ºh.c
+ 
+Building file: ../src/clientes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/clientes.d" -MT"src/clientes.o" -o "src/clientes.o" "../src/clientes.c"
+../src/clientes.c: In function ‘getDatoscliente’:
+../src/clientes.c:104:14: warning: passing argument 1 of ‘getCuit’ makes integer from pointer without a cast [-Wint-conversion]
+   if(getCuit(bcliente.cuit)!=0)
+              ^~~~~~~~
+In file included from ../src/clientes.c:13:0:
+../src/utn.h:44:5: note: expected ‘char’ but argument is of type ‘char *’
+ int getCuit(char input);
+     ^~~~~~~
+Finished building: ../src/clientes.c
+ 
+Building file: ../src/utn.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/utn.d" -MT"src/utn.o" -o "src/utn.o" "../src/utn.c"
+../src/utn.c: In function ‘getCuit’:
+../src/utn.c:372:17: warning: passing argument 1 of ‘strncpy’ makes pointer from integer without a cast [-Wint-conversion]
+         strncpy(input,aux,50);
+                 ^~~~~
+In file included from ../src/utn.c:11:0:
+/usr/include/string.h:128:14: note: expected ‘char * restrict’ but argument is of type ‘char’
+ extern char *strncpy (char *__restrict __dest,
+              ^~~~~~~
+Finished building: ../src/utn.c
+ 
+Building target: Primer_Parcial_1ºh
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_1ºh"  ./src/Primer_Parcial_1ºh.o ./src/clientes.o ./src/informes.o ./src/pedidos_de_recoleccion.o ./src/utn.o   
+Finished building target: Primer_Parcial_1ºh
+ 
+20:11:15 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+make: No se hace nada para 'all'.
+20:11:59 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/clientes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/clientes.d" -MT"src/clientes.o" -o "src/clientes.o" "../src/clientes.c"
+Finished building: ../src/clientes.c
+ 
+Building target: Primer_Parcial_1ºh
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_1ºh"  ./src/Primer_Parcial_1ºh.o ./src/clientes.o ./src/informes.o ./src/pedidos_de_recoleccion.o ./src/utn.o   
+Finished building target: Primer_Parcial_1ºh
+ 
+20:12:03 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+make: No se hace nada para 'all'.
+20:12:50 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/clientes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/clientes.d" -MT"src/clientes.o" -o "src/clientes.o" "../src/clientes.c"
+Finished building: ../src/clientes.c
+ 
+Building target: Primer_Parcial_1ºh
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_1ºh"  ./src/Primer_Parcial_1ºh.o ./src/clientes.o ./src/informes.o ./src/pedidos_de_recoleccion.o ./src/utn.o   
+Finished building target: Primer_Parcial_1ºh
+ 
+20:12:52 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+make: No se hace nada para 'all'.
+20:22:07 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/Primer_Parcial_1ºh.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Primer_Parcial_1ºh.d" -MT"src/Primer_Parcial_1ºh.o" -o "src/Primer_Parcial_1ºh.o" "../src/Primer_Parcial_1ºh.c"
+Finished building: ../src/Primer_Parcial_1ºh.c
+ 
+Building file: ../src/clientes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/clientes.d" -MT"src/clientes.o" -o "src/clientes.o" "../src/clientes.c"
+../src/clientes.c: In function ‘modificarClientePorId’:
+../src/clientes.c:239:5: error: duplicate case value
+     case 2:
+     ^~~~
+../src/clientes.c:228:5: error: previously used here
+     case 2:
+     ^~~~
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/clientes.o'
+make: *** [src/clientes.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:22:19 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/clientes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/clientes.d" -MT"src/clientes.o" -o "src/clientes.o" "../src/clientes.c"
+Finished building: ../src/clientes.c
+ 
+Building target: Primer_Parcial_1ºh
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_1ºh"  ./src/Primer_Parcial_1ºh.o ./src/clientes.o ./src/informes.o ./src/pedidos_de_recoleccion.o ./src/utn.o   
+Finished building target: Primer_Parcial_1ºh
+ 
+20:22:28 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+make: No se hace nada para 'all'.
+20:25:47 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/Primer_Parcial_1ºh.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Primer_Parcial_1ºh.d" -MT"src/Primer_Parcial_1ºh.o" -o "src/Primer_Parcial_1ºh.o" "../src/Primer_Parcial_1ºh.c"
+../src/Primer_Parcial_1ºh.c: In function ‘main’:
+../src/Primer_Parcial_1ºh.c:58:8: error: too few arguments to function ‘modificarClientePorId’
+     if(modificarClientePorId(aCliente,bId)!=0);
+        ^~~~~~~~~~~~~~~~~~~~~
+In file included from ../src/Primer_Parcial_1ºh.c:18:0:
+../src/clientes.h:28:5: note: declared here
+ int modificarClientePorId(cliente *acliente, int cantidad,int id);
+     ^~~~~~~~~~~~~~~~~~~~~
+../src/Primer_Parcial_1ºh.c:58:5: warning: this ‘if’ clause does not guard... [-Wmisleading-indentation]
+     if(modificarClientePorId(aCliente,bId)!=0);
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/Primer_Parcial_1ºh.o'
+     ^~
+../src/Primer_Parcial_1ºh.c:59:5: note: ...this statement, but the latter is misleadingly indented as if it is guarded by the ‘if’
+     {
+     ^
+make: *** [src/Primer_Parcial_1ºh.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:25:50 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/Primer_Parcial_1ºh.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Primer_Parcial_1ºh.d" -MT"src/Primer_Parcial_1ºh.o" -o "src/Primer_Parcial_1ºh.o" "../src/Primer_Parcial_1ºh.c"
+../src/Primer_Parcial_1ºh.c: In function ‘main’:
+../src/Primer_Parcial_1ºh.c:58:8: error: too few arguments to function ‘modificarClientePorId’
+     if(modificarClientePorId(aCliente,bId)!=0)
+        ^~~~~~~~~~~~~~~~~~~~~
+In file included from ../src/Primer_Parcial_1ºh.c:18:0:
+../src/clientes.h:28:5: note: declared here
+ int modificarClientePorId(cliente *acliente, int cantidad,int id);
+     ^~~~~~~~~~~~~~~~~~~~~
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/Primer_Parcial_1ºh.o'
+make: *** [src/Primer_Parcial_1ºh.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:25:54 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/Primer_Parcial_1ºh.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Primer_Parcial_1ºh.d" -MT"src/Primer_Parcial_1ºh.o" -o "src/Primer_Parcial_1ºh.o" "../src/Primer_Parcial_1ºh.c"
+../src/Primer_Parcial_1ºh.c: In function ‘main’:
+../src/Primer_Parcial_1ºh.c:58:8: error: too few arguments to function ‘modificarClientePorId’
+     if(modificarClientePorId(aCliente,bId)!=0)
+        ^~~~~~~~~~~~~~~~~~~~~
+In file included from ../src/Primer_Parcial_1ºh.c:18:0:
+../src/clientes.h:28:5: note: declared here
+ int modificarClientePorId(cliente *acliente, int cantidad,int id);
+     ^~~~~~~~~~~~~~~~~~~~~
+make: *** [src/Primer_Parcial_1ºh.o] Error 1
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/Primer_Parcial_1ºh.o'
+"make all" terminated with exit code 2. Build might be incomplete.
+20:26:20 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/Primer_Parcial_1ºh.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Primer_Parcial_1ºh.d" -MT"src/Primer_Parcial_1ºh.o" -o "src/Primer_Parcial_1ºh.o" "../src/Primer_Parcial_1ºh.c"
+Finished building: ../src/Primer_Parcial_1ºh.c
+ 
+Building target: Primer_Parcial_1ºh
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_1ºh"  ./src/Primer_Parcial_1ºh.o ./src/clientes.o ./src/informes.o ./src/pedidos_de_recoleccion.o ./src/utn.o   
+Finished building target: Primer_Parcial_1ºh
+ 
+20:26:22 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+make: No se hace nada para 'all'.
+20:27:26 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/Primer_Parcial_1ºh.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Primer_Parcial_1ºh.d" -MT"src/Primer_Parcial_1ºh.o" -o "src/Primer_Parcial_1ºh.o" "../src/Primer_Parcial_1ºh.c"
+Finished building: ../src/Primer_Parcial_1ºh.c
+ 
+Building target: Primer_Parcial_1ºh
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_1ºh"  ./src/Primer_Parcial_1ºh.o ./src/clientes.o ./src/informes.o ./src/pedidos_de_recoleccion.o ./src/utn.o   
+Finished building target: Primer_Parcial_1ºh
+ 
+20:29:44 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/clientes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/clientes.d" -MT"src/clientes.o" -o "src/clientes.o" "../src/clientes.c"
+../src/clientes.c: In function ‘modificarClientePorId’:
+../src/clientes.c:254:3: error: expected ‘}’ before ‘else’
+   else(printf("no encuentra id\n"))
+   ^~~~
+../src/clientes.c:255:2: error: expected ‘;’ before ‘}’ token
+  }
+  ^
+../src/clientes.c:209:6: warning: variable ‘retorno’ set but not used [-Wunused-but-set-variable]
+  int retorno = -1;
+      ^~~~~~~
+../src/clientes.c: At top level:
+../src/clientes.c:256:2: error: expected identifier or ‘(’ before ‘else’
+  else
+  ^~~~
+../src/clientes.c:258:2: error: expected identifier or ‘(’ before ‘return’
+  return retorno;
+  ^~~~~~
+../src/clientes.c:259:1: error: expected identifier or ‘(’ before ‘}’ token
+ }
+ ^
+../src/clientes.c: In function ‘modificarClientePorId’:
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/clientes.o'
+../src/clientes.c:255:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+make: *** [src/clientes.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:29:58 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/clientes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/clientes.d" -MT"src/clientes.o" -o "src/clientes.o" "../src/clientes.c"
+../src/clientes.c: In function ‘modificarClientePorId’:
+../src/clientes.c:254:3: error: expected ‘}’ before ‘else’
+   else
+   ^~~~
+../src/clientes.c:209:6: warning: variable ‘retorno’ set but not used [-Wunused-but-set-variable]
+  int retorno = -1;
+      ^~~~~~~
+../src/clientes.c: At top level:
+../src/clientes.c:257:2: error: expected identifier or ‘(’ before ‘else’
+  else
+  ^~~~
+../src/clientes.c:259:2: error: expected identifier or ‘(’ before ‘return’
+  return retorno;
+  ^~~~~~
+../src/clientes.c:260:1: error: expected identifier or ‘(’ before ‘}’ token
+ }
+ ^
+../src/clientes.c: In function ‘modificarClientePorId’:
+../src/clientes.c:256:2: warning: control reaches end of non-void function [-Wreturn-type]
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/clientes.o'
+  }
+  ^
+make: *** [src/clientes.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:30:12 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/clientes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/clientes.d" -MT"src/clientes.o" -o "src/clientes.o" "../src/clientes.c"
+Finished building: ../src/clientes.c
+ 
+Building target: Primer_Parcial_1ºh
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_1ºh"  ./src/Primer_Parcial_1ºh.o ./src/clientes.o ./src/informes.o ./src/pedidos_de_recoleccion.o ./src/utn.o   
+Finished building target: Primer_Parcial_1ºh
+ 
+20:30:18 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+make: No se hace nada para 'all'.
+20:30:52 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/Primer_Parcial_1ºh.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Primer_Parcial_1ºh.d" -MT"src/Primer_Parcial_1ºh.o" -o "src/Primer_Parcial_1ºh.o" "../src/Primer_Parcial_1ºh.c"
+Finished building: ../src/Primer_Parcial_1ºh.c
+ 
+Building target: Primer_Parcial_1ºh
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_1ºh"  ./src/Primer_Parcial_1ºh.o ./src/clientes.o ./src/informes.o ./src/pedidos_de_recoleccion.o ./src/utn.o   
+Finished building target: Primer_Parcial_1ºh
+ 
+20:33:24 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/Primer_Parcial_1ºh.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Primer_Parcial_1ºh.d" -MT"src/Primer_Parcial_1ºh.o" -o "src/Primer_Parcial_1ºh.o" "../src/Primer_Parcial_1ºh.c"
+Finished building: ../src/Primer_Parcial_1ºh.c
+ 
+Building file: ../src/clientes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/clientes.d" -MT"src/clientes.o" -o "src/clientes.o" "../src/clientes.c"
+../src/clientes.c: In function ‘bajaClientePorId’:
+../src/clientes.c:275:11: warning: implicit declaration of function ‘buscarclientePorId’ [-Wimplicit-function-declaration]
+   index = buscarclientePorId(acliente,cantidad,id);
+           ^~~~~~~~~~~~~~~~~~
+Finished building: ../src/clientes.c
+ 
+Building target: Primer_Parcial_1ºh
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_1ºh"  ./src/Primer_Parcial_1ºh.o ./src/clientes.o ./src/informes.o ./src/pedidos_de_recoleccion.o ./src/utn.o   
+./src/clientes.o: En la función `bajaClientePorId':
+/home/alumno/Parcial_2do_Cuatrimestre_2019_1ºH/Primer_Parcial_1ºh/Debug/../src/clientes.c:275: referencia a `buscarclientePorId' sin definir
+makefile:30: fallo en las instrucciones para el objetivo 'Primer_Parcial_1ºh'
+collect2: error: ld returned 1 exit status
+make: *** [Primer_Parcial_1ºh] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:33:42 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/clientes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/clientes.d" -MT"src/clientes.o" -o "src/clientes.o" "../src/clientes.c"
+Finished building: ../src/clientes.c
+ 
+Building target: Primer_Parcial_1ºh
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_1ºh"  ./src/Primer_Parcial_1ºh.o ./src/clientes.o ./src/informes.o ./src/pedidos_de_recoleccion.o ./src/utn.o   
+Finished building target: Primer_Parcial_1ºh
+ 
+20:34:44 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/Primer_Parcial_1ºh.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Primer_Parcial_1ºh.d" -MT"src/Primer_Parcial_1ºh.o" -o "src/Primer_Parcial_1ºh.o" "../src/Primer_Parcial_1ºh.c"
+Finished building: ../src/Primer_Parcial_1ºh.c
+ 
+Building target: Primer_Parcial_1ºh
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_1ºh"  ./src/Primer_Parcial_1ºh.o ./src/clientes.o ./src/informes.o ./src/pedidos_de_recoleccion.o ./src/utn.o   
+Finished building target: Primer_Parcial_1ºh
+ 
+20:35:01 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/Primer_Parcial_1ºh.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Primer_Parcial_1ºh.d" -MT"src/Primer_Parcial_1ºh.o" -o "src/Primer_Parcial_1ºh.o" "../src/Primer_Parcial_1ºh.c"
+Finished building: ../src/Primer_Parcial_1ºh.c
+ 
+Building target: Primer_Parcial_1ºh
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_1ºh"  ./src/Primer_Parcial_1ºh.o ./src/clientes.o ./src/informes.o ./src/pedidos_de_recoleccion.o ./src/utn.o   
+Finished building target: Primer_Parcial_1ºh
+ 
+20:35:55 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/Primer_Parcial_1ºh.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Primer_Parcial_1ºh.d" -MT"src/Primer_Parcial_1ºh.o" -o "src/Primer_Parcial_1ºh.o" "../src/Primer_Parcial_1ºh.c"
+Finished building: ../src/Primer_Parcial_1ºh.c
+ 
+Building target: Primer_Parcial_1ºh
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_1ºh"  ./src/Primer_Parcial_1ºh.o ./src/clientes.o ./src/informes.o ./src/pedidos_de_recoleccion.o ./src/utn.o   
+Finished building target: Primer_Parcial_1ºh
+ 
+20:48:41 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/Primer_Parcial_1ºh.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Primer_Parcial_1ºh.d" -MT"src/Primer_Parcial_1ºh.o" -o "src/Primer_Parcial_1ºh.o" "../src/Primer_Parcial_1ºh.c"
+../src/Primer_Parcial_1ºh.c: In function ‘main’:
+../src/Primer_Parcial_1ºh.c:28:6: warning: unused variable ‘bkgTotales’ [-Wunused-variable]
+  int bkgTotales;
+      ^~~~~~~~~~
+Finished building: ../src/Primer_Parcial_1ºh.c
+ 
+Building file: ../src/pedidos_de_recoleccion.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pedidos_de_recoleccion.d" -MT"src/pedidos_de_recoleccion.o" -o "src/pedidos_de_recoleccion.o" "../src/pedidos_de_recoleccion.c"
+../src/pedidos_de_recoleccion.c: In function ‘getDatosPedido’:
+../src/pedidos_de_recoleccion.c:80:27: error: subscripted value is neither array nor pointer nor vector
+   if(getInt(bPedidoCliente[i].idCliente,"Ingrese id del cliente\n","Id incorrecto!\n",1,100,3)!=0)
+                           ^
+../src/pedidos_de_recoleccion.c:82:27: error: subscripted value is neither array nor pointer nor vector
+   if(getInt(bPedidoCliente[i].kgTotalesArecolectar,"Ingrese la cantidada de kg totales a recolectar\n","Id incorrecto!\n",1,100,3)!=0)
+                           ^
+../src/pedidos_de_recoleccion.c: At top level:
+../src/pedidos_de_recoleccion.c:101:24: error: unknown type name ‘cliente’
+ int buscarclienteLibre(cliente *acliente,int cantidad)
+                        ^~~~~~~
+../src/pedidos_de_recoleccion.c:123:17: error: unknown type name ‘cliente’
+ int altaCliente(cliente *aCliente, int cantidad)
+                 ^~~~~~~
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/pedidos_de_recoleccion.o'
+make: *** [src/pedidos_de_recoleccion.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:48:52 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/pedidos_de_recoleccion.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pedidos_de_recoleccion.d" -MT"src/pedidos_de_recoleccion.o" -o "src/pedidos_de_recoleccion.o" "../src/pedidos_de_recoleccion.c"
+../src/pedidos_de_recoleccion.c: In function ‘getDatosPedido’:
+../src/pedidos_de_recoleccion.c:80:28: error: subscripted value is neither array nor pointer nor vector
+   if(getInt(&bPedidoCliente[i].idCliente,"Ingrese id del cliente\n","Id incorrecto!\n",1,100,3)!=0)
+                            ^
+../src/pedidos_de_recoleccion.c:82:28: error: subscripted value is neither array nor pointer nor vector
+   if(getInt(&bPedidoCliente[i].kgTotalesArecolectar,"Ingrese la cantidada de kg totales a recolectar\n","Id incorrecto!\n",1,100,3)!=0)
+                            ^
+../src/pedidos_de_recoleccion.c: At top level:
+../src/pedidos_de_recoleccion.c:101:24: error: unknown type name ‘cliente’
+ int buscarclienteLibre(cliente *acliente,int cantidad)
+                        ^~~~~~~
+../src/pedidos_de_recoleccion.c:123:17: error: unknown type name ‘cliente’
+ int altaCliente(cliente *aCliente, int cantidad)
+                 ^~~~~~~
+make: *** [src/pedidos_de_recoleccion.o] Error 1
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/pedidos_de_recoleccion.o'
+"make all" terminated with exit code 2. Build might be incomplete.
+20:50:06 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/pedidos_de_recoleccion.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pedidos_de_recoleccion.d" -MT"src/pedidos_de_recoleccion.o" -o "src/pedidos_de_recoleccion.o" "../src/pedidos_de_recoleccion.c"
+../src/pedidos_de_recoleccion.c: In function ‘getDatosPedido’:
+../src/pedidos_de_recoleccion.c:80:25: error: subscripted value is neither array nor pointer nor vector
+   getInt(&bPedidoCliente[i].idCliente,"Ingrese id del cliente\n","Id incorrecto!\n",1,100,3)!=0)
+                         ^
+../src/pedidos_de_recoleccion.c:80:96: error: expected ‘;’ before ‘)’ token
+   getInt(&bPedidoCliente[i].idCliente,"Ingrese id del cliente\n","Id incorrecto!\n",1,100,3)!=0)
+                                                                                                ^
+../src/pedidos_de_recoleccion.c:80:96: error: expected statement before ‘)’ token
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/pedidos_de_recoleccion.o'
+../src/pedidos_de_recoleccion.c:81:25: error: subscripted value is neither array nor pointer nor vector
+   getInt(&bPedidoCliente[i].kgTotalesArecolectar,"Ingrese la cantidada de kg totales a recolectar\n","Id incorrecto!\n",1,100,3)!=0)
+                         ^
+../src/pedidos_de_recoleccion.c:81:132: error: expected ‘;’ before ‘)’ token
+   getInt(&bPedidoCliente[i].kgTotalesArecolectar,"Ingrese la cantidada de kg totales a recolectar\n","Id incorrecto!\n",1,100,3)!=0)
+                                                                                                                                    ^
+../src/pedidos_de_recoleccion.c:81:132: error: expected statement before ‘)’ token
+../src/pedidos_de_recoleccion.c: At top level:
+../src/pedidos_de_recoleccion.c:99:24: error: unknown type name ‘cliente’
+ int buscarclienteLibre(cliente *acliente,int cantidad)
+                        ^~~~~~~
+../src/pedidos_de_recoleccion.c:121:17: error: unknown type name ‘cliente’
+ int altaCliente(cliente *aCliente, int cantidad)
+                 ^~~~~~~
+make: *** [src/pedidos_de_recoleccion.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:50:07 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/pedidos_de_recoleccion.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pedidos_de_recoleccion.d" -MT"src/pedidos_de_recoleccion.o" -o "src/pedidos_de_recoleccion.o" "../src/pedidos_de_recoleccion.c"
+../src/pedidos_de_recoleccion.c: In function ‘getDatosPedido’:
+../src/pedidos_de_recoleccion.c:80:25: error: subscripted value is neither array nor pointer nor vector
+   getInt(&bPedidoCliente[i].idCliente,"Ingrese id del cliente\n","Id incorrecto!\n",1,100,3)!=0)
+                         ^
+../src/pedidos_de_recoleccion.c:80:96: error: expected ‘;’ before ‘)’ token
+   getInt(&bPedidoCliente[i].idCliente,"Ingrese id del cliente\n","Id incorrecto!\n",1,100,3)!=0)
+                                                                                                ^
+../src/pedidos_de_recoleccion.c:80:96: error: expected statement before ‘)’ token
+../src/pedidos_de_recoleccion.c:81:25: error: subscripted value is neither array nor pointer nor vector
+   getInt(&bPedidoCliente[i].kgTotalesArecolectar,"Ingrese la cantidada de kg totales a recolectar\n","Id incorrecto!\n",1,100,3)!=0)
+                         ^
+../src/pedidos_de_recoleccion.c:81:132: error: expected ‘;’ before ‘)’ token
+   getInt(&bPedidoCliente[i].kgTotalesArecolectar,"Ingrese la cantidada de kg totales a recolectar\n","Id incorrecto!\n",1,100,3)!=0)
+                                                                                                                                    ^
+../src/pedidos_de_recoleccion.c:81:132: error: expected statement before ‘)’ token
+../src/pedidos_de_recoleccion.c: At top level:
+../src/pedidos_de_recoleccion.c:99:24: error: unknown type name ‘cliente’
+ int buscarclienteLibre(cliente *acliente,int cantidad)
+                        ^~~~~~~
+../src/pedidos_de_recoleccion.c:121:17: error: unknown type name ‘cliente’
+ int altaCliente(cliente *aCliente, int cantidad)
+                 ^~~~~~~
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/pedidos_de_recoleccion.o'
+make: *** [src/pedidos_de_recoleccion.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:50:21 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/pedidos_de_recoleccion.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pedidos_de_recoleccion.d" -MT"src/pedidos_de_recoleccion.o" -o "src/pedidos_de_recoleccion.o" "../src/pedidos_de_recoleccion.c"
+../src/pedidos_de_recoleccion.c: In function ‘getDatosPedido’:
+../src/pedidos_de_recoleccion.c:80:25: error: subscripted value is neither array nor pointer nor vector
+   getInt(&bPedidoCliente[i].idCliente,"Ingrese id del cliente\n","Id incorrecto!\n",1,100,3);
+                         ^
+../src/pedidos_de_recoleccion.c:81:25: error: subscripted value is neither array nor pointer nor vector
+   getInt(&bPedidoCliente[i].kgTotalesArecolectar,"Ingrese la cantidada de kg totales a recolectar\n","Id incorrecto!\n",1,100,3);
+                         ^
+../src/pedidos_de_recoleccion.c: At top level:
+../src/pedidos_de_recoleccion.c:99:24: error: unknown type name ‘cliente’
+ int buscarclienteLibre(cliente *acliente,int cantidad)
+                        ^~~~~~~
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/pedidos_de_recoleccion.o'
+../src/pedidos_de_recoleccion.c:121:17: error: unknown type name ‘cliente’
+ int altaCliente(cliente *aCliente, int cantidad)
+                 ^~~~~~~
+make: *** [src/pedidos_de_recoleccion.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:51:34 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/pedidos_de_recoleccion.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pedidos_de_recoleccion.d" -MT"src/pedidos_de_recoleccion.o" -o "src/pedidos_de_recoleccion.o" "../src/pedidos_de_recoleccion.c"
+../src/pedidos_de_recoleccion.c: In function ‘getDatosPedido’:
+../src/pedidos_de_recoleccion.c:81:24: error: subscripted value is neither array nor pointer nor vector
+   getInt(bPedidoCliente[i].idCliente,"Ingrese id del cliente\n","Id incorrecto!\n",1,100,2);
+                        ^
+../src/pedidos_de_recoleccion.c:82:24: error: subscripted value is neither array nor pointer nor vector
+   getInt(bPedidoCliente[i].kgTotalesArecolectar,"Ingrese la cantidada de kg totales a recolectar\n","Id incorrecto!\n",1,100,3);
+                        ^
+../src/pedidos_de_recoleccion.c: At top level:
+../src/pedidos_de_recoleccion.c:100:24: error: unknown type name ‘cliente’
+ int buscarclienteLibre(cliente *acliente,int cantidad)
+                        ^~~~~~~
+../src/pedidos_de_recoleccion.c:122:17: error: unknown type name ‘cliente’
+ int altaCliente(cliente *aCliente, int cantidad)
+                 ^~~~~~~
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/pedidos_de_recoleccion.o'
+make: *** [src/pedidos_de_recoleccion.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:52:19 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/pedidos_de_recoleccion.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pedidos_de_recoleccion.d" -MT"src/pedidos_de_recoleccion.o" -o "src/pedidos_de_recoleccion.o" "../src/pedidos_de_recoleccion.c"
+../src/pedidos_de_recoleccion.c: In function ‘getDatosPedido’:
+../src/pedidos_de_recoleccion.c:81:10: warning: passing argument 1 of ‘getInt’ makes pointer from integer without a cast [-Wint-conversion]
+   getInt(bPedidoCliente.idCliente,"Ingrese id del cliente\n","Id incorrecto!\n",1,100,2);
+          ^~~~~~~~~~~~~~
+In file included from ../src/pedidos_de_recoleccion.c:13:0:
+../src/utn.h:11:5: note: expected ‘int *’ but argument is of type ‘int’
+ int getInt(   int *pNumero,
+     ^~~~~~
+../src/pedidos_de_recoleccion.c:82:10: warning: passing argument 1 of ‘getInt’ makes pointer from integer without a cast [-Wint-conversion]
+   getInt(bPedidoCliente.kgTotalesArecolectar,"Ingrese la cantidada de kg totales a recolectar\n","Id incorrecto!\n",1,100,3);
+          ^~~~~~~~~~~~~~
+In file included from ../src/pedidos_de_recoleccion.c:13:0:
+../src/utn.h:11:5: note: expected ‘int *’ but argument is of type ‘int’
+ int getInt(   int *pNumero,
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/pedidos_de_recoleccion.o'
+     ^~~~~~
+../src/pedidos_de_recoleccion.c: At top level:
+../src/pedidos_de_recoleccion.c:100:24: error: unknown type name ‘cliente’
+ int buscarclienteLibre(cliente *acliente,int cantidad)
+                        ^~~~~~~
+../src/pedidos_de_recoleccion.c:122:17: error: unknown type name ‘cliente’
+ int altaCliente(cliente *aCliente, int cantidad)
+                 ^~~~~~~
+make: *** [src/pedidos_de_recoleccion.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:52:28 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/pedidos_de_recoleccion.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pedidos_de_recoleccion.d" -MT"src/pedidos_de_recoleccion.o" -o "src/pedidos_de_recoleccion.o" "../src/pedidos_de_recoleccion.c"
+../src/pedidos_de_recoleccion.c:100:24: error: unknown type name ‘cliente’
+ int buscarclienteLibre(cliente *acliente,int cantidad)
+                        ^~~~~~~
+../src/pedidos_de_recoleccion.c:122:17: error: unknown type name ‘cliente’
+ int altaCliente(cliente *aCliente, int cantidad)
+                 ^~~~~~~
+make: *** [src/pedidos_de_recoleccion.o] Error 1
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/pedidos_de_recoleccion.o'
+"make all" terminated with exit code 2. Build might be incomplete.
+20:52:43 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/pedidos_de_recoleccion.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pedidos_de_recoleccion.d" -MT"src/pedidos_de_recoleccion.o" -o "src/pedidos_de_recoleccion.o" "../src/pedidos_de_recoleccion.c"
+../src/pedidos_de_recoleccion.c:101:24: error: unknown type name ‘cliente’
+ int buscarclienteLibre(cliente *acliente,int cantidad)
+                        ^~~~~~~
+../src/pedidos_de_recoleccion.c:123:17: error: unknown type name ‘cliente’
+ int altaCliente(cliente *aCliente, int cantidad)
+                 ^~~~~~~
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/pedidos_de_recoleccion.o'
+make: *** [src/pedidos_de_recoleccion.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:53:01 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/pedidos_de_recoleccion.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pedidos_de_recoleccion.d" -MT"src/pedidos_de_recoleccion.o" -o "src/pedidos_de_recoleccion.o" "../src/pedidos_de_recoleccion.c"
+../src/pedidos_de_recoleccion.c: In function ‘getDatosPedido’:
+../src/pedidos_de_recoleccion.c:84:5: error: expected ‘)’ before ‘break’
+     break;
+     ^~~~~
+../src/pedidos_de_recoleccion.c:92:2: error: expected expression before ‘}’ token
+  }
+  ^
+../src/pedidos_de_recoleccion.c: At top level:
+../src/pedidos_de_recoleccion.c:102:24: error: unknown type name ‘cliente’
+ int buscarclienteLibre(cliente *acliente,int cantidad)
+                        ^~~~~~~
+../src/pedidos_de_recoleccion.c:124:17: error: unknown type name ‘cliente’
+ int altaCliente(cliente *aCliente, int cantidad)
+                 ^~~~~~~
+../src/pedidos_de_recoleccion.c:60:12: warning: ‘generarIdpedido’ defined but not used [-Wunused-function]
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/pedidos_de_recoleccion.o'
+ static int generarIdpedido(void){
+            ^~~~~~~~~~~~~~~
+make: *** [src/pedidos_de_recoleccion.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:53:12 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/pedidos_de_recoleccion.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pedidos_de_recoleccion.d" -MT"src/pedidos_de_recoleccion.o" -o "src/pedidos_de_recoleccion.o" "../src/pedidos_de_recoleccion.c"
+../src/pedidos_de_recoleccion.c:102:24: error: unknown type name ‘cliente’
+ int buscarclienteLibre(cliente *acliente,int cantidad)
+                        ^~~~~~~
+../src/pedidos_de_recoleccion.c:124:17: error: unknown type name ‘cliente’
+ int altaCliente(cliente *aCliente, int cantidad)
+                 ^~~~~~~
+make: *** [src/pedidos_de_recoleccion.o] Error 1
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/pedidos_de_recoleccion.o'
+"make all" terminated with exit code 2. Build might be incomplete.
+20:54:35 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/pedidos_de_recoleccion.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pedidos_de_recoleccion.d" -MT"src/pedidos_de_recoleccion.o" -o "src/pedidos_de_recoleccion.o" "../src/pedidos_de_recoleccion.c"
+In file included from ../src/pedidos_de_recoleccion.c:14:0:
+../src/pedidos_de_recoleccion.h:26:23: error: unknown type name ‘cliente’
+ int buscarPedidoLibre(cliente *acliente,int cantidad);
+                       ^~~~~~~
+../src/pedidos_de_recoleccion.c:123:17: error: unknown type name ‘cliente’
+ int altaCliente(cliente *aCliente, int cantidad)
+                 ^~~~~~~
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/pedidos_de_recoleccion.o'
+make: *** [src/pedidos_de_recoleccion.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:55:59 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/pedidos_de_recoleccion.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pedidos_de_recoleccion.d" -MT"src/pedidos_de_recoleccion.o" -o "src/pedidos_de_recoleccion.o" "../src/pedidos_de_recoleccion.c"
+../src/pedidos_de_recoleccion.c: In function ‘buscarPedidoLibre’:
+../src/pedidos_de_recoleccion.c:27:60: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ int imprimirPedidosActivos(pedidoCliente *aPedido, int len){
+                                                            ^
+../src/pedidos_de_recoleccion.c:60:33: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ static int generarIdpedido(void){
+                                 ^
+../src/pedidos_de_recoleccion.c:72:56: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ int getDatosPedido(pedidoCliente *aPedido,int cantidad){
+                                                        ^
+../src/pedidos_de_recoleccion.c:102:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/pedidos_de_recoleccion.o'
+ {
+ ^
+../src/pedidos_de_recoleccion.c:124:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+In file included from ../src/pedidos_de_recoleccion.c:14:0:
+../src/pedidos_de_recoleccion.h:26:5: error: old-style parameter declarations in prototyped function definition
+ int buscarPedidoLibre(pedidoCliente *aPedido,int cantidad)
+     ^~~~~~~~~~~~~~~~~
+../src/pedidos_de_recoleccion.c:140:1: error: expected ‘{’ at end of input
+ }
+ ^
+../src/pedidos_de_recoleccion.c:140:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/pedidos_de_recoleccion.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:56:15 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/pedidos_de_recoleccion.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pedidos_de_recoleccion.d" -MT"src/pedidos_de_recoleccion.o" -o "src/pedidos_de_recoleccion.o" "../src/pedidos_de_recoleccion.c"
+../src/pedidos_de_recoleccion.c: In function ‘altaPedido’:
+../src/pedidos_de_recoleccion.c:129:5: error: ‘aCliente’ undeclared (first use in this function)
+  if(aCliente != NULL && cantidad>0)
+     ^~~~~~~~
+../src/pedidos_de_recoleccion.c:129:5: note: each undeclared identifier is reported only once for each function it appears in
+../src/pedidos_de_recoleccion.c:131:11: warning: implicit declaration of function ‘buscarclienteLibre’ [-Wimplicit-function-declaration]
+   index = buscarclienteLibre(aCliente,cantidad);
+           ^~~~~~~~~~~~~~~~~~
+../src/pedidos_de_recoleccion.c:135:7: warning: implicit declaration of function ‘getDatoscliente’ [-Wimplicit-function-declaration]
+    if(getDatoscliente(aCliente,cantidad)==0)
+       ^~~~~~~~~~~~~~~
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/pedidos_de_recoleccion.o'
+make: *** [src/pedidos_de_recoleccion.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:57:37 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/pedidos_de_recoleccion.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pedidos_de_recoleccion.d" -MT"src/pedidos_de_recoleccion.o" -o "src/pedidos_de_recoleccion.o" "../src/pedidos_de_recoleccion.c"
+Finished building: ../src/pedidos_de_recoleccion.c
+ 
+Building target: Primer_Parcial_1ºh
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_1ºh"  ./src/Primer_Parcial_1ºh.o ./src/clientes.o ./src/informes.o ./src/pedidos_de_recoleccion.o ./src/utn.o   
+Finished building target: Primer_Parcial_1ºh
+ 
+21:00:15 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/Primer_Parcial_1ºh.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Primer_Parcial_1ºh.d" -MT"src/Primer_Parcial_1ºh.o" -o "src/Primer_Parcial_1ºh.o" "../src/Primer_Parcial_1ºh.c"
+../src/Primer_Parcial_1ºh.c: In function ‘main’:
+../src/Primer_Parcial_1ºh.c:26:2: error: unknown type name ‘pedidoCliente’
+  pedidoCliente aPedido[MAX_PEDIDOS];
+  ^~~~~~~~~~~~~
+../src/Primer_Parcial_1ºh.c:79:7: warning: implicit declaration of function ‘altaPedido’ [-Wimplicit-function-declaration]
+    if(altaPedido(pedidoCliente aPedido,5)!=0)
+       ^~~~~~~~~~
+../src/Primer_Parcial_1ºh.c:79:18: error: ‘pedidoCliente’ undeclared (first use in this function)
+    if(altaPedido(pedidoCliente aPedido,5)!=0)
+                  ^~~~~~~~~~~~~
+../src/Primer_Parcial_1ºh.c:79:18: note: each undeclared identifier is reported only once for each function it appears in
+../src/Primer_Parcial_1ºh.c:79:32: error: expected ‘)’ before ‘aPedido’
+    if(altaPedido(pedidoCliente aPedido,5)!=0)
+                                ^~~~~~~
+../src/Primer_Parcial_1ºh.c:29:6: warning: unused variable ‘bkgTotales’ [-Wunused-variable]
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/Primer_Parcial_1ºh.o'
+  int bkgTotales;
+      ^~~~~~~~~~
+../src/Primer_Parcial_1ºh.c:26:16: warning: unused variable ‘aPedido’ [-Wunused-variable]
+  pedidoCliente aPedido[MAX_PEDIDOS];
+                ^~~~~~~
+make: *** [src/Primer_Parcial_1ºh.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+21:00:40 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/Primer_Parcial_1ºh.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Primer_Parcial_1ºh.d" -MT"src/Primer_Parcial_1ºh.o" -o "src/Primer_Parcial_1ºh.o" "../src/Primer_Parcial_1ºh.c"
+../src/Primer_Parcial_1ºh.c: In function ‘main’:
+../src/Primer_Parcial_1ºh.c:26:2: error: unknown type name ‘pedidoCliente’
+  pedidoCliente aPedido[MAX_PEDIDOS];
+  ^~~~~~~~~~~~~
+../src/Primer_Parcial_1ºh.c:79:7: warning: implicit declaration of function ‘altaPedido’ [-Wimplicit-function-declaration]
+    if(altaPedido(aPedido,5)!=0)
+       ^~~~~~~~~~
+../src/Primer_Parcial_1ºh.c:29:6: warning: unused variable ‘bkgTotales’ [-Wunused-variable]
+  int bkgTotales;
+      ^~~~~~~~~~
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/Primer_Parcial_1ºh.o'
+make: *** [src/Primer_Parcial_1ºh.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+21:01:08 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/Primer_Parcial_1ºh.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Primer_Parcial_1ºh.d" -MT"src/Primer_Parcial_1ºh.o" -o "src/Primer_Parcial_1ºh.o" "../src/Primer_Parcial_1ºh.c"
+../src/Primer_Parcial_1ºh.c: In function ‘main’:
+../src/Primer_Parcial_1ºh.c:30:6: warning: unused variable ‘bkgTotales’ [-Wunused-variable]
+  int bkgTotales;
+      ^~~~~~~~~~
+Finished building: ../src/Primer_Parcial_1ºh.c
+ 
+Building target: Primer_Parcial_1ºh
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_1ºh"  ./src/Primer_Parcial_1ºh.o ./src/clientes.o ./src/informes.o ./src/pedidos_de_recoleccion.o ./src/utn.o   
+Finished building target: Primer_Parcial_1ºh
+ 
+21:01:44 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/Primer_Parcial_1ºh.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Primer_Parcial_1ºh.d" -MT"src/Primer_Parcial_1ºh.o" -o "src/Primer_Parcial_1ºh.o" "../src/Primer_Parcial_1ºh.c"
+Finished building: ../src/Primer_Parcial_1ºh.c
+ 
+Building target: Primer_Parcial_1ºh
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_1ºh"  ./src/Primer_Parcial_1ºh.o ./src/clientes.o ./src/informes.o ./src/pedidos_de_recoleccion.o ./src/utn.o   
+Finished building target: Primer_Parcial_1ºh
+ 
+21:04:19 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/Primer_Parcial_1ºh.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Primer_Parcial_1ºh.d" -MT"src/Primer_Parcial_1ºh.o" -o "src/Primer_Parcial_1ºh.o" "../src/Primer_Parcial_1ºh.c"
+../src/Primer_Parcial_1ºh.c: In function ‘main’:
+../src/Primer_Parcial_1ºh.c:32:2: warning: implicit declaration of function ‘init’ [-Wimplicit-function-declaration]
+  init(aCliente,MAX_CLIENTES);
+  ^~~~
+Finished building: ../src/Primer_Parcial_1ºh.c
+ 
+Building file: ../src/pedidos_de_recoleccion.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pedidos_de_recoleccion.d" -MT"src/pedidos_de_recoleccion.o" -o "src/pedidos_de_recoleccion.o" "../src/pedidos_de_recoleccion.c"
+Finished building: ../src/pedidos_de_recoleccion.c
+ 
+Building target: Primer_Parcial_1ºh
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_1ºh"  ./src/Primer_Parcial_1ºh.o ./src/clientes.o ./src/informes.o ./src/pedidos_de_recoleccion.o ./src/utn.o   
+./src/Primer_Parcial_1ºh.o: En la función `main':
+/home/alumno/Parcial_2do_Cuatrimestre_2019_1ºH/Primer_Parcial_1ºh/Debug/../src/Primer_Parcial_1ºh.c:32: referencia a `init' sin definir
+collect2: error: ld returned 1 exit status
+make: *** [Primer_Parcial_1ºh] Error 1
+makefile:30: fallo en las instrucciones para el objetivo 'Primer_Parcial_1ºh'
+"make all" terminated with exit code 2. Build might be incomplete.
+21:04:36 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/Primer_Parcial_1ºh.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Primer_Parcial_1ºh.d" -MT"src/Primer_Parcial_1ºh.o" -o "src/Primer_Parcial_1ºh.o" "../src/Primer_Parcial_1ºh.c"
+../src/Primer_Parcial_1ºh.c: In function ‘main’:
+../src/Primer_Parcial_1ºh.c:32:13: warning: passing argument 1 of ‘initPedido’ from incompatible pointer type [-Wincompatible-pointer-types]
+  initPedido(aCliente,MAX_CLIENTES);
+             ^~~~~~~~
+In file included from ../src/Primer_Parcial_1ºh.c:19:0:
+../src/pedidos_de_recoleccion.h:28:5: note: expected ‘pedidoCliente * {aka struct <anonymous> *}’ but argument is of type ‘cliente * {aka struct <anonymous> *}’
+ int initPedido(pedidoCliente *aPedido, int cantidad);
+     ^~~~~~~~~~
+Finished building: ../src/Primer_Parcial_1ºh.c
+ 
+Building target: Primer_Parcial_1ºh
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_1ºh"  ./src/Primer_Parcial_1ºh.o ./src/clientes.o ./src/informes.o ./src/pedidos_de_recoleccion.o ./src/utn.o   
+Finished building target: Primer_Parcial_1ºh
+ 
+21:04:51 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/Primer_Parcial_1ºh.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Primer_Parcial_1ºh.d" -MT"src/Primer_Parcial_1ºh.o" -o "src/Primer_Parcial_1ºh.o" "../src/Primer_Parcial_1ºh.c"
+Finished building: ../src/Primer_Parcial_1ºh.c
+ 
+Building target: Primer_Parcial_1ºh
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_1ºh"  ./src/Primer_Parcial_1ºh.o ./src/clientes.o ./src/informes.o ./src/pedidos_de_recoleccion.o ./src/utn.o   
+Finished building target: Primer_Parcial_1ºh
+ 
+21:04:54 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+make: No se hace nada para 'all'.
+21:06:14 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/Primer_Parcial_1ºh.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Primer_Parcial_1ºh.d" -MT"src/Primer_Parcial_1ºh.o" -o "src/Primer_Parcial_1ºh.o" "../src/Primer_Parcial_1ºh.c"
+Finished building: ../src/Primer_Parcial_1ºh.c
+ 
+Building file: ../src/pedidos_de_recoleccion.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pedidos_de_recoleccion.d" -MT"src/pedidos_de_recoleccion.o" -o "src/pedidos_de_recoleccion.o" "../src/pedidos_de_recoleccion.c"
+Finished building: ../src/pedidos_de_recoleccion.c
+ 
+Building target: Primer_Parcial_1ºh
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_1ºh"  ./src/Primer_Parcial_1ºh.o ./src/clientes.o ./src/informes.o ./src/pedidos_de_recoleccion.o ./src/utn.o   
+Finished building target: Primer_Parcial_1ºh
+ 
+21:07:02 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/Primer_Parcial_1ºh.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Primer_Parcial_1ºh.d" -MT"src/Primer_Parcial_1ºh.o" -o "src/Primer_Parcial_1ºh.o" "../src/Primer_Parcial_1ºh.c"
+Finished building: ../src/Primer_Parcial_1ºh.c
+ 
+Building target: Primer_Parcial_1ºh
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_1ºh"  ./src/Primer_Parcial_1ºh.o ./src/clientes.o ./src/informes.o ./src/pedidos_de_recoleccion.o ./src/utn.o   
+Finished building target: Primer_Parcial_1ºh
+ 
+21:07:55 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/pedidos_de_recoleccion.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pedidos_de_recoleccion.d" -MT"src/pedidos_de_recoleccion.o" -o "src/pedidos_de_recoleccion.o" "../src/pedidos_de_recoleccion.c"
+Finished building: ../src/pedidos_de_recoleccion.c
+ 
+Building target: Primer_Parcial_1ºh
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_1ºh"  ./src/Primer_Parcial_1ºh.o ./src/clientes.o ./src/informes.o ./src/pedidos_de_recoleccion.o ./src/utn.o   
+Finished building target: Primer_Parcial_1ºh
+ 
+21:09:03 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/pedidos_de_recoleccion.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pedidos_de_recoleccion.d" -MT"src/pedidos_de_recoleccion.o" -o "src/pedidos_de_recoleccion.o" "../src/pedidos_de_recoleccion.c"
+Finished building: ../src/pedidos_de_recoleccion.c
+ 
+Building target: Primer_Parcial_1ºh
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_1ºh"  ./src/Primer_Parcial_1ºh.o ./src/clientes.o ./src/informes.o ./src/pedidos_de_recoleccion.o ./src/utn.o   
+Finished building target: Primer_Parcial_1ºh
+ 
+21:09:04 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+make: No se hace nada para 'all'.
+21:10:19 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/pedidos_de_recoleccion.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pedidos_de_recoleccion.d" -MT"src/pedidos_de_recoleccion.o" -o "src/pedidos_de_recoleccion.o" "../src/pedidos_de_recoleccion.c"
+Finished building: ../src/pedidos_de_recoleccion.c
+ 
+Building target: Primer_Parcial_1ºh
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_1ºh"  ./src/Primer_Parcial_1ºh.o ./src/clientes.o ./src/informes.o ./src/pedidos_de_recoleccion.o ./src/utn.o   
+Finished building target: Primer_Parcial_1ºh
+ 
+21:36:05 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/Primer_Parcial_1ºh.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Primer_Parcial_1ºh.d" -MT"src/Primer_Parcial_1ºh.o" -o "src/Primer_Parcial_1ºh.o" "../src/Primer_Parcial_1ºh.c"
+../src/Primer_Parcial_1ºh.c: In function ‘main’:
+../src/Primer_Parcial_1ºh.c:83:3: error: case label not within a switch statement
+   case 5:
+   ^~~~
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/Primer_Parcial_1ºh.o'
+make: *** [src/Primer_Parcial_1ºh.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+21:36:41 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/Primer_Parcial_1ºh.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Primer_Parcial_1ºh.d" -MT"src/Primer_Parcial_1ºh.o" -o "src/Primer_Parcial_1ºh.o" "../src/Primer_Parcial_1ºh.c"
+Finished building: ../src/Primer_Parcial_1ºh.c
+ 
+Building file: ../src/pedidos_de_recoleccion.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pedidos_de_recoleccion.d" -MT"src/pedidos_de_recoleccion.o" -o "src/pedidos_de_recoleccion.o" "../src/pedidos_de_recoleccion.c"
+../src/pedidos_de_recoleccion.c: In function ‘procesarResiduos’:
+../src/pedidos_de_recoleccion.c:209:5: error: break statement not within loop or switch
+     break;
+     ^~~~~
+../src/pedidos_de_recoleccion.c:226:16: warning: passing argument 1 of ‘getInt’ makes pointer from integer without a cast [-Wint-conversion]
+      if(getInt(bPedido.kgHDPE,"Ingresar kg  del residuo HDPE\n",
+                ^~~~~~~
+In file included from ../src/pedidos_de_recoleccion.c:13:0:
+../src/utn.h:11:5: note: expected ‘int *’ but argument is of type ‘int’
+ int getInt(   int *pNumero,
+     ^~~~~~
+../src/pedidos_de_recoleccion.c:235:16: warning: passing argument 1 of ‘getInt’ makes pointer from integer without a cast [-Wint-conversion]
+      if(getInt(bPedido.kgLDPE,"Ingresar kg  del residuo kgLDPE\n",
+                ^~~~~~~
+In file included from ../src/pedidos_de_recoleccion.c:13:0:
+../src/utn.h:11:5: note: expected ‘int *’ but argument is of type ‘int’
+ int getInt(   int *pNumero,
+     ^~~~~~
+../src/pedidos_de_recoleccion.c:245:16: warning: passing argument 1 of ‘getInt’ makes pointer from integer without a cast [-Wint-conversion]
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/pedidos_de_recoleccion.o'
+      if(getInt(bPedido.kgPP,"Ingresar kg  del residuo kgPP\n",
+                ^~~~~~~
+In file included from ../src/pedidos_de_recoleccion.c:13:0:
+../src/utn.h:11:5: note: expected ‘int *’ but argument is of type ‘int’
+ int getInt(   int *pNumero,
+     ^~~~~~
+make: *** [src/pedidos_de_recoleccion.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+21:37:10 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/Primer_Parcial_1ºh.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Primer_Parcial_1ºh.d" -MT"src/Primer_Parcial_1ºh.o" -o "src/Primer_Parcial_1ºh.o" "../src/Primer_Parcial_1ºh.c"
+Finished building: ../src/Primer_Parcial_1ºh.c
+ 
+Building file: ../src/pedidos_de_recoleccion.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pedidos_de_recoleccion.d" -MT"src/pedidos_de_recoleccion.o" -o "src/pedidos_de_recoleccion.o" "../src/pedidos_de_recoleccion.c"
+../src/pedidos_de_recoleccion.c: In function ‘procesarResiduos’:
+../src/pedidos_de_recoleccion.c:209:5: error: break statement not within loop or switch
+     break;
+     ^~~~~
+../src/pedidos_de_recoleccion.c:226:16: warning: passing argument 1 of ‘getInt’ makes pointer from integer without a cast [-Wint-conversion]
+      if(getInt(bPedido.kgHDPE,"Ingresar kg  del residuo HDPE\n",
+                ^~~~~~~
+In file included from ../src/pedidos_de_recoleccion.c:13:0:
+../src/utn.h:11:5: note: expected ‘int *’ but argument is of type ‘int’
+ int getInt(   int *pNumero,
+     ^~~~~~
+../src/pedidos_de_recoleccion.c:235:16: warning: passing argument 1 of ‘getInt’ makes pointer from integer without a cast [-Wint-conversion]
+      if(getInt(bPedido.kgLDPE,"Ingresar kg  del residuo kgLDPE\n",
+                ^~~~~~~
+In file included from ../src/pedidos_de_recoleccion.c:13:0:
+../src/utn.h:11:5: note: expected ‘int *’ but argument is of type ‘int’
+ int getInt(   int *pNumero,
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/pedidos_de_recoleccion.o'
+     ^~~~~~
+../src/pedidos_de_recoleccion.c:245:16: warning: passing argument 1 of ‘getInt’ makes pointer from integer without a cast [-Wint-conversion]
+      if(getInt(bPedido.kgPP,"Ingresar kg  del residuo kgPP\n",
+                ^~~~~~~
+In file included from ../src/pedidos_de_recoleccion.c:13:0:
+../src/utn.h:11:5: note: expected ‘int *’ but argument is of type ‘int’
+ int getInt(   int *pNumero,
+     ^~~~~~
+make: *** [src/pedidos_de_recoleccion.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+21:37:24 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/Primer_Parcial_1ºh.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Primer_Parcial_1ºh.d" -MT"src/Primer_Parcial_1ºh.o" -o "src/Primer_Parcial_1ºh.o" "../src/Primer_Parcial_1ºh.c"
+Finished building: ../src/Primer_Parcial_1ºh.c
+ 
+Building file: ../src/pedidos_de_recoleccion.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pedidos_de_recoleccion.d" -MT"src/pedidos_de_recoleccion.o" -o "src/pedidos_de_recoleccion.o" "../src/pedidos_de_recoleccion.c"
+../src/pedidos_de_recoleccion.c: In function ‘procesarResiduos’:
+../src/pedidos_de_recoleccion.c:209:5: error: break statement not within loop or switch
+     break;
+     ^~~~~
+../src/pedidos_de_recoleccion.c:226:16: warning: passing argument 1 of ‘getInt’ makes pointer from integer without a cast [-Wint-conversion]
+      if(getInt(bPedido.kgHDPE,"Ingresar kg  del residuo HDPE\n",
+                ^~~~~~~
+In file included from ../src/pedidos_de_recoleccion.c:13:0:
+../src/utn.h:11:5: note: expected ‘int *’ but argument is of type ‘int’
+ int getInt(   int *pNumero,
+     ^~~~~~
+../src/pedidos_de_recoleccion.c:235:16: warning: passing argument 1 of ‘getInt’ makes pointer from integer without a cast [-Wint-conversion]
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/pedidos_de_recoleccion.o'
+      if(getInt(bPedido.kgLDPE,"Ingresar kg  del residuo kgLDPE\n",
+                ^~~~~~~
+In file included from ../src/pedidos_de_recoleccion.c:13:0:
+../src/utn.h:11:5: note: expected ‘int *’ but argument is of type ‘int’
+ int getInt(   int *pNumero,
+     ^~~~~~
+../src/pedidos_de_recoleccion.c:245:16: warning: passing argument 1 of ‘getInt’ makes pointer from integer without a cast [-Wint-conversion]
+      if(getInt(bPedido.kgPP,"Ingresar kg  del residuo kgPP\n",
+                ^~~~~~~
+In file included from ../src/pedidos_de_recoleccion.c:13:0:
+../src/utn.h:11:5: note: expected ‘int *’ but argument is of type ‘int’
+ int getInt(   int *pNumero,
+     ^~~~~~
+make: *** [src/pedidos_de_recoleccion.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+21:39:17 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/pedidos_de_recoleccion.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pedidos_de_recoleccion.d" -MT"src/pedidos_de_recoleccion.o" -o "src/pedidos_de_recoleccion.o" "../src/pedidos_de_recoleccion.c"
+Finished building: ../src/pedidos_de_recoleccion.c
+ 
+Building target: Primer_Parcial_1ºh
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_1ºh"  ./src/Primer_Parcial_1ºh.o ./src/clientes.o ./src/informes.o ./src/pedidos_de_recoleccion.o ./src/utn.o   
+Finished building target: Primer_Parcial_1ºh
+ 
+21:40:43 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/Primer_Parcial_1ºh.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Primer_Parcial_1ºh.d" -MT"src/Primer_Parcial_1ºh.o" -o "src/Primer_Parcial_1ºh.o" "../src/Primer_Parcial_1ºh.c"
+Finished building: ../src/Primer_Parcial_1ºh.c
+ 
+Building file: ../src/pedidos_de_recoleccion.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pedidos_de_recoleccion.d" -MT"src/pedidos_de_recoleccion.o" -o "src/pedidos_de_recoleccion.o" "../src/pedidos_de_recoleccion.c"
+Finished building: ../src/pedidos_de_recoleccion.c
+ 
+Building target: Primer_Parcial_1ºh
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_1ºh"  ./src/Primer_Parcial_1ºh.o ./src/clientes.o ./src/informes.o ./src/pedidos_de_recoleccion.o ./src/utn.o   
+Finished building target: Primer_Parcial_1ºh
+ 
+21:40:47 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+make: No se hace nada para 'all'.
+21:41:01 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/Primer_Parcial_1ºh.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Primer_Parcial_1ºh.d" -MT"src/Primer_Parcial_1ºh.o" -o "src/Primer_Parcial_1ºh.o" "../src/Primer_Parcial_1ºh.c"
+Finished building: ../src/Primer_Parcial_1ºh.c
+ 
+Building target: Primer_Parcial_1ºh
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_1ºh"  ./src/Primer_Parcial_1ºh.o ./src/clientes.o ./src/informes.o ./src/pedidos_de_recoleccion.o ./src/utn.o   
+Finished building target: Primer_Parcial_1ºh
+ 
+21:41:07 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+make: No se hace nada para 'all'.
+21:41:16 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+make: No se hace nada para 'all'.
+21:42:09 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+make: No se hace nada para 'all'.
+21:43:00 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/Primer_Parcial_1ºh.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Primer_Parcial_1ºh.d" -MT"src/Primer_Parcial_1ºh.o" -o "src/Primer_Parcial_1ºh.o" "../src/Primer_Parcial_1ºh.c"
+Finished building: ../src/Primer_Parcial_1ºh.c
+ 
+Building target: Primer_Parcial_1ºh
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_1ºh"  ./src/Primer_Parcial_1ºh.o ./src/clientes.o ./src/informes.o ./src/pedidos_de_recoleccion.o ./src/utn.o   
+Finished building target: Primer_Parcial_1ºh
+ 
+21:43:05 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+make: No se hace nada para 'all'.
+21:44:54 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/Primer_Parcial_1ºh.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Primer_Parcial_1ºh.d" -MT"src/Primer_Parcial_1ºh.o" -o "src/Primer_Parcial_1ºh.o" "../src/Primer_Parcial_1ºh.c"
+Finished building: ../src/Primer_Parcial_1ºh.c
+ 
+Building file: ../src/pedidos_de_recoleccion.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pedidos_de_recoleccion.d" -MT"src/pedidos_de_recoleccion.o" -o "src/pedidos_de_recoleccion.o" "../src/pedidos_de_recoleccion.c"
+../src/pedidos_de_recoleccion.c: In function ‘procesarResiduos’:
+../src/pedidos_de_recoleccion.c:210:11: warning: implicit declaration of function ‘buscarPedidoPendientePorId’ [-Wimplicit-function-declaration]
+   index = buscarPedidoPendientePorId(aPedido,cantidad,auxIdCliente);
+           ^~~~~~~~~~~~~~~~~~~~~~~~~~
+Finished building: ../src/pedidos_de_recoleccion.c
+ 
+Building target: Primer_Parcial_1ºh
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_1ºh"  ./src/Primer_Parcial_1ºh.o ./src/clientes.o ./src/informes.o ./src/pedidos_de_recoleccion.o ./src/utn.o   
+./src/pedidos_de_recoleccion.o: En la función `procesarResiduos':
+/home/alumno/Parcial_2do_Cuatrimestre_2019_1ºH/Primer_Parcial_1ºh/Debug/../src/pedidos_de_recoleccion.c:210: referencia a `buscarPedidoPendientePorId' sin definir
+makefile:30: fallo en las instrucciones para el objetivo 'Primer_Parcial_1ºh'
+collect2: error: ld returned 1 exit status
+make: *** [Primer_Parcial_1ºh] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+21:45:12 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/pedidos_de_recoleccion.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pedidos_de_recoleccion.d" -MT"src/pedidos_de_recoleccion.o" -o "src/pedidos_de_recoleccion.o" "../src/pedidos_de_recoleccion.c"
+Finished building: ../src/pedidos_de_recoleccion.c
+ 
+Building target: Primer_Parcial_1ºh
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_1ºh"  ./src/Primer_Parcial_1ºh.o ./src/clientes.o ./src/informes.o ./src/pedidos_de_recoleccion.o ./src/utn.o   
+Finished building target: Primer_Parcial_1ºh
+ 
+21:45:14 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+make: No se hace nada para 'all'.
+21:46:51 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/pedidos_de_recoleccion.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pedidos_de_recoleccion.d" -MT"src/pedidos_de_recoleccion.o" -o "src/pedidos_de_recoleccion.o" "../src/pedidos_de_recoleccion.c"
+Finished building: ../src/pedidos_de_recoleccion.c
+ 
+Building target: Primer_Parcial_1ºh
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_1ºh"  ./src/Primer_Parcial_1ºh.o ./src/clientes.o ./src/informes.o ./src/pedidos_de_recoleccion.o ./src/utn.o   
+Finished building target: Primer_Parcial_1ºh
+ 
+21:46:53 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+make: No se hace nada para 'all'.

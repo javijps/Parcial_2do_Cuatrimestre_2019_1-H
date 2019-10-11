@@ -1,0 +1,49 @@
+/*
+ * pedidos_de_recoleccion.c
+ *
+ *  Created on: 10 oct. 2019
+ *      Author: alumno
+ */
+#include <stdio.h>
+#include <stdlib.h>
+#include <stdio.h>
+#include <stdio_ext.h>
+#include <stdlib.h>
+#include <string.h>
+#include "utn.h"
+#include "pedidos_de_recoleccion.h"
+
+/**
+* \brief Imprime la informacion correspondiente a pedidos
+* \param cliente *aCliente puntero a una array de estructuras cliente.
+* \param len Cantidad del array a imprimir
+* \return Si tuvo exito al imprimir devuelve [0] o si fallo [-1]
+*/
+int imprimirclientesActivos(cliente *aCliente, int len){
+
+	int i;
+	int retorno = -1;
+	if(aCliente != NULL && len>0)
+	{
+		retorno = 0;
+		for(i=0;i<len;i++)
+		{
+			if(aCliente[i].statusCliente==STATUS_EMPTY)
+				continue;
+			printf("Id Cliente: %d\n"
+					" - Status Cliente: %s\n"
+					" - Empresa: %s\n"
+					" - Cuit: %d\n"
+					" - Direccion: %s\n"
+					" - Localidad: %s\n",
+					aCliente[i].idCliente,
+					aCliente[i].statusCliente,
+					aCliente[i].empresa,
+					aCliente[i].cuit,
+					aCliente[i].direccion,
+					aCliente[i].localidad);
+		}
+	}
+	return retorno;
+}
+
