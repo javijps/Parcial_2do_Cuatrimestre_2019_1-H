@@ -1,9 +1,14 @@
-14:56:51 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+18:43:40 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
 make all 
-Building file: ../src/utn.c
+Building file: ../src/Primer_Parcial_1ºh.c
 Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/utn.d" -MT"src/utn.o" -o "src/utn.o" "../src/utn.c"
-Finished building: ../src/utn.c
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Primer_Parcial_1ºh.d" -MT"src/Primer_Parcial_1ºh.o" -o "src/Primer_Parcial_1ºh.o" "../src/Primer_Parcial_1ºh.c"
+Finished building: ../src/Primer_Parcial_1ºh.c
+ 
+Building file: ../src/pedidos_de_recoleccion.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pedidos_de_recoleccion.d" -MT"src/pedidos_de_recoleccion.o" -o "src/pedidos_de_recoleccion.o" "../src/pedidos_de_recoleccion.c"
+Finished building: ../src/pedidos_de_recoleccion.c
  
 Building target: Primer_Parcial_1ºh
 Invoking: GCC C Linker
@@ -11,5 +16,5 @@ gcc  -o "Primer_Parcial_1ºh"  ./src/Primer_Parcial_1ºh.o ./src/clientes.o ./sr
 Finished building target: Primer_Parcial_1ºh
  
 
-14:56:51 Build Finished. 0 errors, 0 warnings. (took 560ms)
+18:43:40 Build Finished. 0 errors, 0 warnings. (took 621ms)
 

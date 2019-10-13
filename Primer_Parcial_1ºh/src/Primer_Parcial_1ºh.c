@@ -23,12 +23,14 @@
 
 int main(void) {
 
-	cliente aCliente[MAX_CLIENTES];
-	pedidoCliente aPedido[MAX_PEDIDOS];
+	sCliente aCliente[MAX_CLIENTES];
+	sCliente fCliente[5];
+	clienteForzado(fCliente,5);
+	sPedidoCliente aPedido[MAX_PEDIDOS];
 	int option;
 	int bId;
 
-	initcliente(aCliente,MAX_CLIENTES);
+	//initcliente(aCliente,MAX_CLIENTES);
 	initPedido(aPedido,MAX_CLIENTES);
 	do
 	{
@@ -50,27 +52,23 @@ int main(void) {
 		case 1:
 			if(altaCliente(aCliente,1)!=0)
 				printf("Alta no realizada!\n");
-			imprimirClientesActivos(aCliente,5);
+			else
+				printf("Alta exitosa!\n");
 			break;
 		case 2:
-			if(getInt(&bId,"Ingrese ID de cliente","Error id",1,100,2)==0)
-			{
-				if(modificarClientePorId(aCliente,MAX_CLIENTES,bId)!=0)
-				{
-					printf("Modificacion no realizada!");
-				}
-			}
-			imprimirClientesActivos(aCliente,5);
+			imprimirClientesActivos(fCliente,5);
+			if((getInt(&bId,"Ingrese ID de cliente\n","Error, id incorreto\n",1,100,2)==0) &&
+					(modificarClientePorId(fCliente,5,bId)==0))//FORZADO!
+					printf("Modificacion exitosa!\n");
+			else
+				printf("Modificacion no realizada!\n");
 			break;
 		case 3:
-			if(getInt(&bId,"Ingrese ID de cliente","Error id",1,100,2)==0)
-			{
-				if(bajaClientePorId(aCliente,MAX_CLIENTES,bId)==0)
-				{
+			imprimirClientesActivos(fCliente,5);
+			if((getInt(&bId,"Ingrese ID de cliente","Error id",1,100,2)==0) && (bajaClientePorId(fCliente,5,bId)==0))
 					printf("Baja Exitosa!!\n");
-				}
-			}
-			imprimirClientesActivos(aCliente,5);
+			else
+				printf("Baja no realizada!!\n");
 			break;
 		case 4:
 			imprimirClientesActivos(aCliente,5);

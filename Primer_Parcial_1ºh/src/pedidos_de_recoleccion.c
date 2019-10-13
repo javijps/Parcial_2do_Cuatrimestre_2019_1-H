@@ -20,11 +20,11 @@
 
 /**
 * \brief Imprime la informacion correspondiente a pedidos
-* \param pedidos *aPedidos puntero a una array de estructuras pedidos.
+* \param sPedidoCliente *aPedidos puntero a una array de estructuras pedidos.
 * \param len Cantidad del array a imprimir
 * \return Si tuvo exito al imprimir devuelve [0] o si fallo [-1]
 */
-int imprimirPedidosActivos(pedidoCliente *aPedido, int len){
+int imprimirPedidosActivos(sPedidoCliente *aPedido, int len){
 
 	int i;
 	int retorno = -1;
@@ -67,11 +67,11 @@ static int generarIdpedido(void){
 
 /**
 * \brief Inicializa los pedidos con STATUS_EMPTY.
-* \param pedidos *apedidos puntero a una xxxxx de la estructura pedidos.
+* \param sPedidoCliente *apedidos puntero a una xxxxx de la estructura pedidos.
 * \param cantidad Cantidad de pedidos a inicializar
 * \return Si tuvo exito al inicializar devuelve [0] o si fallo [-1]
 */
-int initPedido(pedidoCliente *aPedido, int cantidad)
+int initPedido(sPedidoCliente *aPedido, int cantidad)
 {
 
 	int i;
@@ -90,14 +90,14 @@ int initPedido(pedidoCliente *aPedido, int cantidad)
 
 /**
 * \brief Solicita los datos correspondientes a una pedido.
-* \param pedido *apedido puntero a una xxxxx de la estructura pedido.
+* \param sPedidoCliente *apedido puntero a una xxxxx de la estructura pedido.
 * \param cantidad Cantidad de pedido.
 * \return Si tuvo exito al completar todos los campos devuelve [0] o si fallo [-1]
 */
-int getDatosPedido(pedidoCliente *aPedido,int cantidad){
+int getDatosPedido(sPedidoCliente *aPedido,int cantidad){
 
 	int retorno = -1;
-	pedidoCliente bPedidoCliente;
+	sPedidoCliente bPedidoCliente;
 	int i;
 
 	for(i=0;i<cantidad;i++)
@@ -119,11 +119,11 @@ int getDatosPedido(pedidoCliente *aPedido,int cantidad){
 
 /**
 * \brief Busca una pedido sin datos cargados.
-* \param pedidoCLiente *acliente puntero a una xxxxx de la estructura pedido.
+* \param sPedidoCliente *acliente puntero a una xxxxx de la estructura pedido.
 * \param cantidad Cantidad de pedido.
 * \return Si tuvo exito al encontrar un pedido vacio devuelve [0] o si fallo [-1]
 */
-int buscarPedidoLibre(pedidoCliente *aPedido,int cantidad)
+int buscarPedidoLibre(sPedidoCliente *aPedido,int cantidad)
 {
 	int retorno = -1;
 	int i;
@@ -141,11 +141,11 @@ int buscarPedidoLibre(pedidoCliente *aPedido,int cantidad)
 
 /**
 * \brief Realiza el alta de una nueva pedido.
-* \param pedidoCliente *aPedido puntero a un array de estructuras pedido.
+* \param sPedidoCliente *aPedido puntero a un array de estructuras pedido.
 * \param cantidad Cantidad de altas a realizar.
 * \return Si tuvo exito al realizar el alta devuelve [0] o si fallo [-1]
 */
-int altaPedido(pedidoCliente *aPedido, int cantidad)
+int altaPedido(sPedidoCliente *aPedido, int cantidad)
 {
 
 	int retorno = -1;
@@ -166,12 +166,12 @@ int altaPedido(pedidoCliente *aPedido, int cantidad)
 
 /**
 * \brief Busca una pedido en estado pendiente existente por medio de su ID.
-* \param pedidoCliente *aPedido puntero a un array de la estructura pedidoCliente.
+* \param sPedidoCliente *aPedido puntero a un array de la estructura pedidoCliente.
 * \param cantidad Cantidad de pedidos.
 * \param id ID de pedido a ser encontrado.
 * \return Si tuvo exito al encontrar el pedido indicada devuelve [0] o si fallo [-1]
 */
-int buscarPedidoPorId(pedidoCliente *aPedido,int cantidad, int id)
+int buscarPedidoPorId(sPedidoCliente *aPedido,int cantidad, int id)
 {
 	int retorno = -1;
 	int i;
@@ -192,15 +192,15 @@ int buscarPedidoPorId(pedidoCliente *aPedido,int cantidad, int id)
 
 /**
 * \brief procesa el pedido de recolleccion de residuos para pasar de pendiente a completado
-* \param pedidoCliente *aPedido puntero a un array de estructuras pedido.
+* \param sPedidoCliente *aPedido puntero a un array de estructuras pedido.
 * \param cantidad Cantidad de altas a realizar.
 * \return Si tuvo exito al realizar el alta devuelve [0] o si fallo [-1]
 */
-int procesarResiduos(pedidoCliente *aPedido, int cantidad)
+int procesarResiduos(sPedidoCliente *aPedido, int cantidad)
 {
 	int retorno = -1;
 	int auxIdCliente;
-	pedidoCliente bPedido;
+	sPedidoCliente bPedido;
 	int index;
 	int opcion;
 	int sumaKilaje;

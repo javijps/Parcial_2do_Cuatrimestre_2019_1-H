@@ -17,16 +17,17 @@ typedef struct{
 	char direccion[50];
 	char localidad[50];
 
-} cliente;
+} sCliente;
 
-int imprimirClientesActivos(cliente *acliente, int len);
-int initcliente(cliente *aCliente, int cantidad);
-int getDatoscliente(cliente *aCliente,int cantidad);
-int buscarclienteLibre(cliente *acliente,int cantidad);
-int altaCliente(cliente *aCliente, int cantidad);
-int buscarClientePorId(cliente *acliente,int cantidad, int id);
-int modificarClientePorId(cliente *acliente, int cantidad,int id);
-int bajaClientePorId(cliente *acliente,int cantidad,int id);
-
+int imprimirClientesActivos(sCliente *acliente, int len);
+void imprimirUnCliente(sCliente aCliente);
+int initcliente(sCliente *aCliente, int cantidad);
+int getDatoscliente(sCliente *aCliente,int cantidad);
+int buscarclienteLibre(sCliente *aCliente,int cantidad);
+int altaCliente(sCliente *aCliente, int cantidad);
+int buscarClientePorId(sCliente *aCliente,int len, int id);
+int modificarClientePorId(sCliente *aCliente,int len, int id);
+int bajaClientePorId(sCliente *aCliente,int cantidad,int id);
+void clienteForzado(sCliente *aCliente,int len);
 
 #endif /* CLIENTES_H_ */

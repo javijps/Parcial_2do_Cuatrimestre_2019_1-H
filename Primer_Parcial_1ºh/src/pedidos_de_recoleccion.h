@@ -19,14 +19,14 @@ typedef struct {
 	int kgPP;
 
 
-} pedidoCliente;
+} sPedidoCliente;
 
-int imprimirPedidosActivos(pedidoCliente *aPedido, int len);
-int getDatosPedido(pedidoCliente *aPedido,int cantidad);
-int buscarPedidoLibre(pedidoCliente *aPedido,int cantidad);
-int altaPedido(pedidoCliente *aPedido, int cantidad);
-int initPedido(pedidoCliente *aPedido, int cantidad);
-int buscarPedidoPorId(pedidoCliente *aPedido,int cantidad, int id);
-int procesarResiduos(pedidoCliente *aPedido, int cantidad);
+int imprimirPedidosActivos(sPedidoCliente *aPedido, int len);
+int getDatosPedido(sPedidoCliente *aPedido,int cantidad);
+int buscarPedidoLibre(sPedidoCliente *aPedido,int cantidad);
+int altaPedido(sPedidoCliente *aPedido, int cantidad);
+int initPedido(sPedidoCliente *aPedido, int cantidad);
+int buscarPedidoPorId(sPedidoCliente *aPedido,int cantidad, int id);
+int procesarResiduos(sPedidoCliente *aPedido, int cantidad);
 
 #endif /* PEDIDOS_DE_RECOLECCION_H_ */
