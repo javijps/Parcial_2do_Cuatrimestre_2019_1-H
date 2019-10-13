@@ -45,7 +45,6 @@ int main(void) {
 				"8-\n"
 				"9-EXIT\n",
 				"Error\n",1,12,2);
-
 		switch(option)
 		{
 		case 1:
