@@ -1,0 +1,17 @@
+/*
+ * informes.h
+ *
+ *  Created on: 10 oct. 2019
+ *      Author: alumno
+ */
+
+#ifndef INFORMES_H_
+#define INFORMES_H_
+
+
+int imprimirClienteConCantidadDePedidos(sCliente aCliente,int lenAcliente,sPedidoCliente aPedido,int lenApedido);
+
+
+#endif /* INFORMES_H_ */
+
+#include "pedidos_de_recoleccion.h"

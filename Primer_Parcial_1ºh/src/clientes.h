@@ -8,6 +8,10 @@
 #ifndef CLIENTES_H_
 #define CLIENTES_H_
 
+#include "utn.h"
+#include "pedidos_de_recoleccion.h"
+
+
 typedef struct{
 
 	int idCliente;
@@ -19,6 +23,14 @@ typedef struct{
 
 } sCliente;
 
+typedef struct{
+
+	int idCliente;
+	int status;
+	int contadorPedidos;
+
+} sAuxiliarCliente;
+
 int imprimirClientesActivos(sCliente *acliente, int len);
 void imprimirUnCliente(sCliente aCliente);
 int initcliente(sCliente *aCliente, int cantidad);
@@ -29,5 +41,20 @@ int buscarClientePorId(sCliente *aCliente,int len, int id);
 int modificarClientePorId(sCliente *aCliente,int len, int id);
 int bajaClientePorId(sCliente *aCliente,int cantidad,int id);
 void clienteForzado(sCliente *aCliente,int len);
+void imprimirContadorAuxCliente(sAuxiliarCliente aAuxCliente);
+int contarYmostrarCantidadPedidosPorCliente(sCliente *aCliente,
+		                                    int lenAcliente,
+											sPedidoCliente *aPedido,
+											int lenApedido,
+											sAuxiliarCliente *aAuxCLiente,
+											int lenAauxiliarCliente);
+void imprimirPedidosPendientesConInformacionDelCLiente(sCliente *aCliente,
+		                                              int lenAcliente,
+													  sPedidoCliente *aPedido,
+													  int lenApedido);
+void imprimirPedidosProcesadosConInformacionDelCLiente(sCliente *aCliente,
+		                                              int lenAcliente,
+													  sPedidoCliente *aPedido,
+													  int lenApedido);
 
 #endif /* CLIENTES_H_ */

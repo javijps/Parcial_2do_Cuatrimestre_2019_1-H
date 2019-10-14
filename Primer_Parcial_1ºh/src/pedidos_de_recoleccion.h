@@ -8,6 +8,9 @@
 #ifndef PEDIDOS_DE_RECOLECCION_H_
 #define PEDIDOS_DE_RECOLECCION_H_
 
+#include "utn.h"
+
+
 typedef struct {
 
 	int id_pedido;
@@ -18,15 +21,18 @@ typedef struct {
 	int kgLDPE;
 	int kgPP;
 
-
 } sPedidoCliente;
 
 int imprimirPedidosActivos(sPedidoCliente *aPedido, int len);
-int getDatosPedido(sPedidoCliente *aPedido,int cantidad);
+int imprimirPedidosPendientes(sPedidoCliente *aPedido, int len);
+void imprimirUnPedido(sPedidoCliente aPedido);
+int getDatosPedido(sPedidoCliente *aPedido,int cantidad,int idCliente);
 int buscarPedidoLibre(sPedidoCliente *aPedido,int cantidad);
-int altaPedido(sPedidoCliente *aPedido, int cantidad);
+int altaPedido(sPedidoCliente *aPedido, int cantidad,int idCliente);
 int initPedido(sPedidoCliente *aPedido, int cantidad);
 int buscarPedidoPorId(sPedidoCliente *aPedido,int cantidad, int id);
-int procesarResiduos(sPedidoCliente *aPedido, int cantidad);
+int procesarResiduos(sPedidoCliente *aPedido, int cantidad,int idPedido);
+void pedidoDeClienteForzado(sPedidoCliente *aPedidoCLiente,int len);
+int buscarPedidoPendientePorIdCliente(sPedidoCliente *aPedido,int cantidad, int idCliente);//corregir doc
 
 #endif /* PEDIDOS_DE_RECOLECCION_H_ */

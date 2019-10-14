@@ -4,16 +4,18 @@
  *  Created on: 10 oct. 2019
  *      Author: alumno
  */
-#include <stdio.h>
-#include <stdlib.h>
+#include "clientes.h"
+
 #include <stdio.h>
 #include <stdio_ext.h>
 #include <stdlib.h>
 #include <string.h>
-#include "utn.h"
-#include "clientes.h"
+
+
 #define STATUS_EMPTY  -1
 #define STATUS_NOT_EMPTY 0
+#define STATUS_PENDIENTE 0
+#define STATUS_COMPLETADO 1
 
 /**
 * \brief Imprime la informacion correspondiente a clientes activos..
@@ -318,7 +320,6 @@ int bajaClientePorId(sCliente *aCliente,int cantidad,int id)
 */
 void clienteForzado(sCliente *aCliente,int len)
 {
-
 	int aIdCliente[5] = {1,2,3,4,5};
 	int aStatusCliente[5] = {0,0,0,0,0};
 	char aEmpresa[][50] = {"Transaporte San Miguel SA","Green Eat SA","Nucha","Patagonia Brewery","Guten Bier"};
@@ -335,5 +336,129 @@ void clienteForzado(sCliente *aCliente,int len)
 		strncpy(aCliente[i].localidad,aLocalidad[i],50);
 		aCliente[i].idCliente = aIdCliente[i];
 		aCliente[i].statusCliente = aStatusCliente[i];
+	}
+}
+
+/**
+* \brief Imprime el campo contadorPedidos de la estructura sAuxiliarCLiente.
+* \param sAuxiliarCLiente cliente Auxiliar.
+*/
+void imprimirContadorAuxCliente(sAuxiliarCliente aAuxCliente)
+{
+	printf("- Cantidad de pedidos: %d\n",aAuxCliente.contadorPedidos);
+}
+
+/**
+* \brief Cuenta la cantidad de pedidos de cada cliente y muestra la informacion de cada cliente y dicho conteo.
+* \param sCliente *aCliente puntero a un array de la estructura cliente.
+* \param cantidad tamaño del array de clientes.
+* \param sPedidoCliente *aPedido puntero a un array de la estructura pedido cliente.
+* \param cantidad tamaño del array de pedidos.
+* \param sAuxiliarCliente *aAuxCLiente puntero a una array de la auxiliar cliente.
+* \param cantidad tamaño del array de auxiliar cliente.
+* \return Si tuvo exito al contar la cantidad de pedidos por cliente devuelve [0] o si fallo [-1]
+*/
+int contarYmostrarCantidadPedidosPorCliente(sCliente *aCliente,
+		                                 int lenAcliente,
+										 sPedidoCliente *aPedido,
+										 int lenApedido,
+										 sAuxiliarCliente *aAuxCLiente,
+										 int lenAauxiliarCliente)
+{
+	int retorno = -1;
+	int i;
+	int j;
+
+	if(aCliente!=NULL && aPedido!=NULL && aAuxCLiente!=NULL && lenAcliente>0 && lenApedido>0 && lenAauxiliarCliente>0)
+	{
+		for(i=0;i<lenAauxiliarCliente;i++)
+		{
+			aAuxCLiente[i].status = STATUS_EMPTY;
+			aAuxCLiente[i].contadorPedidos = 0;
+		}
+		for(i=0;i<lenAcliente;i++)
+		{
+			aAuxCLiente[i].idCliente = aCliente[i].idCliente;
+			for(j=0;j<lenApedido;j++)
+			{
+				if((aCliente[i].idCliente == aPedido[j].idCliente) && (aPedido[j].statusPedido = STATUS_PENDIENTE))
+				{
+					aAuxCLiente[i].contadorPedidos++;
+					retorno = 0;
+				}
+			}
+			imprimirUnCliente(aCliente[i]);
+			imprimirContadorAuxCliente(aAuxCLiente[i]);
+		}
+	}
+	return retorno;
+}
+
+/**
+* \brief Imprime informacion de los clientes correspondiente a pedidos con status pendiente.
+* \param sCliente *aCliente puntero a un array de la estructura cliente.
+* \param cantidad tamaño del array de clientes.
+* \param sPedidoCliente *aPedido puntero a un array de la estructura pedido cliente.
+* \param cantidad tamaño del array de pedidos.
+*/
+void imprimirPedidosPendientesConInformacionDelCLiente(sCliente *aCliente,int lenAcliente,sPedidoCliente *aPedido,int lenApedido)
+{
+	int i;
+	int j;
+
+	for(i=0;i<lenApedido;i++)
+	{
+		for(j=0;j<lenAcliente;j++)
+		{
+			if(aPedido[i].statusPedido == STATUS_PENDIENTE && aPedido[i].idCliente == aCliente[j].idCliente)
+			{
+				printf("\n-Id Pedido: %d\n"
+						"-Status del pedido: %d\n"
+						"-Cuit cliente %s\n"
+						"-Direccion cliente %s\n"
+						"-Cantidad de kg a recolectar: %d\n",
+						aPedido[i].id_pedido,
+						aPedido[i].statusPedido,
+						aCliente[j].cuit,
+						aCliente[j].direccion,
+						aPedido[i].kgTotalesArecolectar);
+			}
+		}
+	}
+}
+/**
+* \brief Imprime informacion de los clientes correspondiente a pedidos con status procesado.
+* \param sCliente *aCliente puntero a un array de la estructura cliente.
+* \param cantidad tamaño del array de clientes.
+* \param sPedidoCliente *aPedido puntero a un array de la estructura pedido cliente.
+* \param cantidad tamaño del array de pedidos.
+*/
+void imprimirPedidosProcesadosConInformacionDelCLiente(sCliente *aCliente,int lenAcliente,sPedidoCliente *aPedido,int lenApedido)
+{
+	int i;
+	int j;
+
+	for(i=0;i<lenApedido;i++)
+	{
+		for(j=0;j<lenAcliente;j++)
+		{
+			if(aPedido[i].statusPedido == STATUS_COMPLETADO && aPedido[i].idCliente == aCliente[j].idCliente)
+			{
+				printf("\n-Id Pedido: %d\n"
+						"-Status del pedido: %d\n"
+						"-Cuit cliente %s\n"
+						"-Direccion cliente %s\n"
+						"-Cantidad de kg HDPE procesados: %d\n"
+						"-Cantidad de kg LDPE procesados: %d\n"
+						"-Cantidad de kg PP procesados: %d\n",
+						aPedido[i].id_pedido,
+						aPedido[i].statusPedido,
+						aCliente[j].cuit,
+						aCliente[j].direccion,
+						aPedido[i].kgHDPE,
+						aPedido[i].kgLDPE,
+						aPedido[i].kgPP);
+			}
+		}
 	}
 }
