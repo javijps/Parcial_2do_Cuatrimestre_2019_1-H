@@ -76,7 +76,7 @@ void imprimirUnClienteAux(sAuxiliarCliente aAuxCliente)
 {
 	printf("\n - Id Cliente: %d\n"
 			" - Cantidad pedidos: %d\n"
-			" - Cantidad total de kg a recolectar: %d\n",
+			" - Cantidad total de kg a recolectar: %.2f\n",
 			aAuxCliente.idCliente,
 			aAuxCliente.contadorPedidos,
 			aAuxCliente.acumuladorPedidos);
@@ -474,7 +474,7 @@ void imprimirPedidosPendientesConInformacionDelCliente(sCliente *aCliente,int le
 						"-Status del pedido: %d\n"
 						"-Cuit cliente %s\n"
 						"-Direccion cliente %s\n"
-						"-Cantidad de kg a recolectar: %d\n",
+						"-Cantidad de kg a recolectar: %.2f\n",
 						aPedido[i].id_pedido,
 						aPedido[i].statusPedido,
 						aCliente[j].cuit,
@@ -506,9 +506,9 @@ void imprimirPedidosProcesadosConInformacionDelCliente(sCliente *aCliente,int le
 						"-Status del pedido: %d\n"
 						"-Cuit cliente %s\n"
 						"-Direccion cliente %s\n"
-						"-Cantidad de kg HDPE procesados: %d\n"
-						"-Cantidad de kg LDPE procesados: %d\n"
-						"-Cantidad de kg PP procesados: %d\n",
+						"-Cantidad de kg HDPE procesados: %.2f\n"
+						"-Cantidad de kg LDPE procesados: %.2f\n"
+						"-Cantidad de kg PP procesados: %.2f\n",
 						aPedido[i].id_pedido,
 						aPedido[i].statusPedido,
 						aCliente[j].cuit,

@@ -1421,3 +1421,614 @@ Invoking: GCC C Linker
 gcc  -o "Primer_Parcial_1ºh"  ./src/Primer_Parcial_1ºh.o ./src/clientes.o ./src/informes.o ./src/pedidos_de_recoleccion.o ./src/utn.o   
 Finished building target: Primer_Parcial_1ºh
  
+18:09:44 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/Primer_Parcial_1ºh.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Primer_Parcial_1ºh.d" -MT"src/Primer_Parcial_1ºh.o" -o "src/Primer_Parcial_1ºh.o" "../src/Primer_Parcial_1ºh.c"
+Finished building: ../src/Primer_Parcial_1ºh.c
+ 
+Building file: ../src/clientes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/clientes.d" -MT"src/clientes.o" -o "src/clientes.o" "../src/clientes.c"
+../src/clientes.c: In function ‘imprimirPedidosProcesadosConInformacionDelCliente’:
+../src/clientes.c:505:12: warning: format ‘%f’ expects argument of type ‘double’, but argument 8 has type ‘int’ [-Wformat=]
+     printf("\n-Id Pedido: %d\n"
+            ^~~~~~~~~~~~~~~~~~~~
+../src/clientes.c:518:7:
+       aPedido[i].kgPP);
+       ~~~~~~~~~~~~~~~
+../src/clientes.c:511:42: note: format string is defined here
+       "-Cantidad de kg PP procesados: %.2f\n",
+                                       ~~~^
+                                       %.2d
+Finished building: ../src/clientes.c
+ 
+Building file: ../src/informes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
+../src/informes.c: In function ‘listarInfoClientesConInfoAuxPorId’:
+../src/informes.c:191:11: warning: format ‘%d’ expects argument of type ‘int’, but argument 4 has type ‘double’ [-Wformat=]
+    printf("\n-Id Cliente: %d\n"
+           ^~~~~~~~~~~~~~~~~~~~~
+../src/informes.c:200:6:
+      aAuxCLiente[indexClienteAuxiliar].acumuladorPedidos);
+      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/informes.c:194:32: note: format string is defined here
+      "-Kg Totales en pedidos: %d\n"
+                               ~^
+                               %f
+Finished building: ../src/informes.c
+ 
+Building file: ../src/pedidos_de_recoleccion.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pedidos_de_recoleccion.d" -MT"src/pedidos_de_recoleccion.o" -o "src/pedidos_de_recoleccion.o" "../src/pedidos_de_recoleccion.c"
+../src/pedidos_de_recoleccion.c: In function ‘imprimirPedidosActivos’:
+../src/pedidos_de_recoleccion.c:35:11: warning: format ‘%f’ expects argument of type ‘double’, but argument 8 has type ‘int’ [-Wformat=]
+    printf("\nId Pedido: %d\n"
+           ^~~~~~~~~~~~~~~~~~~
+../src/pedidos_de_recoleccion.c:48:6:
+      aPedido[i].kgPP);
+      ~~~~~~~~~~~~~~~
+../src/pedidos_de_recoleccion.c:41:20: note: format string is defined here
+      " - kg PP: %.2f\n",
+                 ~~~^
+                 %.2d
+../src/pedidos_de_recoleccion.c: In function ‘imprimirPedidosPendientes’:
+../src/pedidos_de_recoleccion.c:72:11: warning: format ‘%f’ expects argument of type ‘double’, but argument 8 has type ‘int’ [-Wformat=]
+    printf("Id Pedido: %d\n"
+           ^~~~~~~~~~~~~~~~~
+../src/pedidos_de_recoleccion.c:85:6:
+      aPedido[i].kgPP);
+      ~~~~~~~~~~~~~~~
+../src/pedidos_de_recoleccion.c:78:20: note: format string is defined here
+      " - kg PP: %.2f\n",
+                 ~~~^
+                 %.2d
+../src/pedidos_de_recoleccion.c: In function ‘imprimirUnPedido’:
+../src/pedidos_de_recoleccion.c:97:9: warning: format ‘%d’ expects argument of type ‘int’, but argument 5 has type ‘double’ [-Wformat=]
+  printf("\nId Pedido: %d\n"
+         ^~~~~~~~~~~~~~~~~~~
+../src/pedidos_de_recoleccion.c:107:4:
+    aPedido.kgTotalesArecolectar,
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/pedidos_de_recoleccion.c:100:37: note: format string is defined here
+    " - Kilos totales a recolectar: %d\n"
+                                    ~^
+                                    %f
+../src/pedidos_de_recoleccion.c:97:9: warning: format ‘%f’ expects argument of type ‘double’, but argument 8 has type ‘int’ [-Wformat=]
+  printf("\nId Pedido: %d\n"
+         ^~~~~~~~~~~~~~~~~~~
+../src/pedidos_de_recoleccion.c:110:4:
+    aPedido.kgPP);
+    ~~~~~~~~~~~~
+../src/pedidos_de_recoleccion.c:103:18: note: format string is defined here
+    " - kg PP: %.2f\n",
+               ~~~^
+               %.2d
+../src/pedidos_de_recoleccion.c: In function ‘procesarResiduos’:
+../src/pedidos_de_recoleccion.c:347:19: warning: passing argument 1 of ‘getFloat’ from incompatible pointer type [-Wincompatible-pointer-types]
+       if(getFloat(&bPedido.kgPP,"Ingresar kg  del residuo kgPP\n",
+                   ^~~~~~~~~~~~~
+In file included from ../src/pedidos_de_recoleccion.h:11,
+                 from ../src/pedidos_de_recoleccion.c:7:
+../src/utn.h:19:24: note: expected ‘float *’ but argument is of type ‘int *’
+ int getFloat(   float *pNumero,
+                 ~~~~~~~^~~~~~~
+Finished building: ../src/pedidos_de_recoleccion.c
+ 
+Building target: Primer_Parcial_1ºh
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_1ºh"  ./src/Primer_Parcial_1ºh.o ./src/clientes.o ./src/informes.o ./src/pedidos_de_recoleccion.o ./src/utn.o   
+Finished building target: Primer_Parcial_1ºh
+ 
+18:10:41 **** Clean-only build of configuration Debug for project Primer_Parcial_1ºh ****
+make clean 
+rm -rf  ./src/Primer_Parcial_1ºh.o ./src/clientes.o ./src/informes.o ./src/pedidos_de_recoleccion.o ./src/utn.o  ./src/Primer_Parcial_1ºh.d ./src/clientes.d ./src/informes.d ./src/pedidos_de_recoleccion.d ./src/utn.d  Primer_Parcial_1ºh
+ 
+18:10:43 **** Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/Primer_Parcial_1ºh.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Primer_Parcial_1ºh.d" -MT"src/Primer_Parcial_1ºh.o" -o "src/Primer_Parcial_1ºh.o" "../src/Primer_Parcial_1ºh.c"
+Finished building: ../src/Primer_Parcial_1ºh.c
+ 
+Building file: ../src/clientes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/clientes.d" -MT"src/clientes.o" -o "src/clientes.o" "../src/clientes.c"
+../src/clientes.c: In function ‘imprimirPedidosProcesadosConInformacionDelCliente’:
+../src/clientes.c:505:12: warning: format ‘%f’ expects argument of type ‘double’, but argument 8 has type ‘int’ [-Wformat=]
+     printf("\n-Id Pedido: %d\n"
+            ^~~~~~~~~~~~~~~~~~~~
+../src/clientes.c:518:7:
+       aPedido[i].kgPP);
+       ~~~~~~~~~~~~~~~
+../src/clientes.c:511:42: note: format string is defined here
+       "-Cantidad de kg PP procesados: %.2f\n",
+                                       ~~~^
+                                       %.2d
+Finished building: ../src/clientes.c
+ 
+Building file: ../src/informes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
+../src/informes.c: In function ‘listarInfoClientesConInfoAuxPorId’:
+../src/informes.c:191:11: warning: format ‘%d’ expects argument of type ‘int’, but argument 4 has type ‘double’ [-Wformat=]
+    printf("\n-Id Cliente: %d\n"
+           ^~~~~~~~~~~~~~~~~~~~~
+../src/informes.c:200:6:
+      aAuxCLiente[indexClienteAuxiliar].acumuladorPedidos);
+      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/informes.c:194:32: note: format string is defined here
+      "-Kg Totales en pedidos: %d\n"
+                               ~^
+                               %f
+Finished building: ../src/informes.c
+ 
+Building file: ../src/pedidos_de_recoleccion.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pedidos_de_recoleccion.d" -MT"src/pedidos_de_recoleccion.o" -o "src/pedidos_de_recoleccion.o" "../src/pedidos_de_recoleccion.c"
+../src/pedidos_de_recoleccion.c: In function ‘imprimirPedidosActivos’:
+../src/pedidos_de_recoleccion.c:35:11: warning: format ‘%f’ expects argument of type ‘double’, but argument 8 has type ‘int’ [-Wformat=]
+    printf("\nId Pedido: %d\n"
+           ^~~~~~~~~~~~~~~~~~~
+../src/pedidos_de_recoleccion.c:48:6:
+      aPedido[i].kgPP);
+      ~~~~~~~~~~~~~~~
+../src/pedidos_de_recoleccion.c:41:20: note: format string is defined here
+      " - kg PP: %.2f\n",
+                 ~~~^
+                 %.2d
+../src/pedidos_de_recoleccion.c: In function ‘imprimirPedidosPendientes’:
+../src/pedidos_de_recoleccion.c:72:11: warning: format ‘%f’ expects argument of type ‘double’, but argument 8 has type ‘int’ [-Wformat=]
+    printf("Id Pedido: %d\n"
+           ^~~~~~~~~~~~~~~~~
+../src/pedidos_de_recoleccion.c:85:6:
+      aPedido[i].kgPP);
+      ~~~~~~~~~~~~~~~
+../src/pedidos_de_recoleccion.c:78:20: note: format string is defined here
+      " - kg PP: %.2f\n",
+                 ~~~^
+                 %.2d
+../src/pedidos_de_recoleccion.c: In function ‘imprimirUnPedido’:
+../src/pedidos_de_recoleccion.c:97:9: warning: format ‘%d’ expects argument of type ‘int’, but argument 5 has type ‘double’ [-Wformat=]
+  printf("\nId Pedido: %d\n"
+         ^~~~~~~~~~~~~~~~~~~
+../src/pedidos_de_recoleccion.c:107:4:
+    aPedido.kgTotalesArecolectar,
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/pedidos_de_recoleccion.c:100:37: note: format string is defined here
+    " - Kilos totales a recolectar: %d\n"
+                                    ~^
+                                    %f
+../src/pedidos_de_recoleccion.c:97:9: warning: format ‘%f’ expects argument of type ‘double’, but argument 8 has type ‘int’ [-Wformat=]
+  printf("\nId Pedido: %d\n"
+         ^~~~~~~~~~~~~~~~~~~
+../src/pedidos_de_recoleccion.c:110:4:
+    aPedido.kgPP);
+    ~~~~~~~~~~~~
+../src/pedidos_de_recoleccion.c:103:18: note: format string is defined here
+    " - kg PP: %.2f\n",
+               ~~~^
+               %.2d
+../src/pedidos_de_recoleccion.c: In function ‘procesarResiduos’:
+../src/pedidos_de_recoleccion.c:347:19: warning: passing argument 1 of ‘getFloat’ from incompatible pointer type [-Wincompatible-pointer-types]
+       if(getFloat(&bPedido.kgPP,"Ingresar kg  del residuo kgPP\n",
+                   ^~~~~~~~~~~~~
+In file included from ../src/pedidos_de_recoleccion.h:11,
+                 from ../src/pedidos_de_recoleccion.c:7:
+../src/utn.h:19:24: note: expected ‘float *’ but argument is of type ‘int *’
+ int getFloat(   float *pNumero,
+                 ~~~~~~~^~~~~~~
+Finished building: ../src/pedidos_de_recoleccion.c
+ 
+Building file: ../src/utn.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/utn.d" -MT"src/utn.o" -o "src/utn.o" "../src/utn.c"
+Finished building: ../src/utn.c
+ 
+Building target: Primer_Parcial_1ºh
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_1ºh"  ./src/Primer_Parcial_1ºh.o ./src/clientes.o ./src/informes.o ./src/pedidos_de_recoleccion.o ./src/utn.o   
+Finished building target: Primer_Parcial_1ºh
+ 
+18:11:30 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/Primer_Parcial_1ºh.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Primer_Parcial_1ºh.d" -MT"src/Primer_Parcial_1ºh.o" -o "src/Primer_Parcial_1ºh.o" "../src/Primer_Parcial_1ºh.c"
+Finished building: ../src/Primer_Parcial_1ºh.c
+ 
+Building file: ../src/clientes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/clientes.d" -MT"src/clientes.o" -o "src/clientes.o" "../src/clientes.c"
+Finished building: ../src/clientes.c
+ 
+Building file: ../src/informes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
+../src/informes.c: In function ‘listarInfoClientesConInfoAuxPorId’:
+../src/informes.c:191:11: warning: format ‘%d’ expects argument of type ‘int’, but argument 4 has type ‘double’ [-Wformat=]
+    printf("\n-Id Cliente: %d\n"
+           ^~~~~~~~~~~~~~~~~~~~~
+../src/informes.c:200:6:
+      aAuxCLiente[indexClienteAuxiliar].acumuladorPedidos);
+      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/informes.c:194:32: note: format string is defined here
+      "-Kg Totales en pedidos: %d\n"
+                               ~^
+                               %f
+Finished building: ../src/informes.c
+ 
+Building file: ../src/pedidos_de_recoleccion.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pedidos_de_recoleccion.d" -MT"src/pedidos_de_recoleccion.o" -o "src/pedidos_de_recoleccion.o" "../src/pedidos_de_recoleccion.c"
+../src/pedidos_de_recoleccion.c: In function ‘imprimirUnPedido’:
+../src/pedidos_de_recoleccion.c:97:9: warning: format ‘%d’ expects argument of type ‘int’, but argument 5 has type ‘double’ [-Wformat=]
+  printf("\nId Pedido: %d\n"
+         ^~~~~~~~~~~~~~~~~~~
+../src/pedidos_de_recoleccion.c:107:4:
+    aPedido.kgTotalesArecolectar,
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/pedidos_de_recoleccion.c:100:37: note: format string is defined here
+    " - Kilos totales a recolectar: %d\n"
+                                    ~^
+                                    %f
+Finished building: ../src/pedidos_de_recoleccion.c
+ 
+Building target: Primer_Parcial_1ºh
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_1ºh"  ./src/Primer_Parcial_1ºh.o ./src/clientes.o ./src/informes.o ./src/pedidos_de_recoleccion.o ./src/utn.o   
+Finished building target: Primer_Parcial_1ºh
+ 
+18:11:53 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/informes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
+Finished building: ../src/informes.c
+ 
+Building target: Primer_Parcial_1ºh
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_1ºh"  ./src/Primer_Parcial_1ºh.o ./src/clientes.o ./src/informes.o ./src/pedidos_de_recoleccion.o ./src/utn.o   
+Finished building target: Primer_Parcial_1ºh
+ 
+18:11:58 **** Clean-only build of configuration Debug for project Primer_Parcial_1ºh ****
+make clean 
+rm -rf  ./src/Primer_Parcial_1ºh.o ./src/clientes.o ./src/informes.o ./src/pedidos_de_recoleccion.o ./src/utn.o  ./src/Primer_Parcial_1ºh.d ./src/clientes.d ./src/informes.d ./src/pedidos_de_recoleccion.d ./src/utn.d  Primer_Parcial_1ºh
+ 
+18:12:01 **** Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/Primer_Parcial_1ºh.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Primer_Parcial_1ºh.d" -MT"src/Primer_Parcial_1ºh.o" -o "src/Primer_Parcial_1ºh.o" "../src/Primer_Parcial_1ºh.c"
+Finished building: ../src/Primer_Parcial_1ºh.c
+ 
+Building file: ../src/clientes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/clientes.d" -MT"src/clientes.o" -o "src/clientes.o" "../src/clientes.c"
+Finished building: ../src/clientes.c
+ 
+Building file: ../src/informes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
+Finished building: ../src/informes.c
+ 
+Building file: ../src/pedidos_de_recoleccion.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pedidos_de_recoleccion.d" -MT"src/pedidos_de_recoleccion.o" -o "src/pedidos_de_recoleccion.o" "../src/pedidos_de_recoleccion.c"
+../src/pedidos_de_recoleccion.c: In function ‘imprimirUnPedido’:
+../src/pedidos_de_recoleccion.c:97:9: warning: format ‘%d’ expects argument of type ‘int’, but argument 5 has type ‘double’ [-Wformat=]
+  printf("\nId Pedido: %d\n"
+         ^~~~~~~~~~~~~~~~~~~
+../src/pedidos_de_recoleccion.c:107:4:
+    aPedido.kgTotalesArecolectar,
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/pedidos_de_recoleccion.c:100:37: note: format string is defined here
+    " - Kilos totales a recolectar: %d\n"
+                                    ~^
+                                    %f
+Finished building: ../src/pedidos_de_recoleccion.c
+ 
+Building file: ../src/utn.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/utn.d" -MT"src/utn.o" -o "src/utn.o" "../src/utn.c"
+Finished building: ../src/utn.c
+ 
+Building target: Primer_Parcial_1ºh
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_1ºh"  ./src/Primer_Parcial_1ºh.o ./src/clientes.o ./src/informes.o ./src/pedidos_de_recoleccion.o ./src/utn.o   
+Finished building target: Primer_Parcial_1ºh
+ 
+18:12:30 **** Clean-only build of configuration Debug for project Primer_Parcial_1ºh ****
+make clean 
+rm -rf  ./src/Primer_Parcial_1ºh.o ./src/clientes.o ./src/informes.o ./src/pedidos_de_recoleccion.o ./src/utn.o  ./src/Primer_Parcial_1ºh.d ./src/clientes.d ./src/informes.d ./src/pedidos_de_recoleccion.d ./src/utn.d  Primer_Parcial_1ºh
+ 
+18:12:31 **** Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/Primer_Parcial_1ºh.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Primer_Parcial_1ºh.d" -MT"src/Primer_Parcial_1ºh.o" -o "src/Primer_Parcial_1ºh.o" "../src/Primer_Parcial_1ºh.c"
+Finished building: ../src/Primer_Parcial_1ºh.c
+ 
+Building file: ../src/clientes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/clientes.d" -MT"src/clientes.o" -o "src/clientes.o" "../src/clientes.c"
+Finished building: ../src/clientes.c
+ 
+Building file: ../src/informes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
+Finished building: ../src/informes.c
+ 
+Building file: ../src/pedidos_de_recoleccion.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pedidos_de_recoleccion.d" -MT"src/pedidos_de_recoleccion.o" -o "src/pedidos_de_recoleccion.o" "../src/pedidos_de_recoleccion.c"
+../src/pedidos_de_recoleccion.c: In function ‘imprimirUnPedido’:
+../src/pedidos_de_recoleccion.c:97:9: warning: format ‘%d’ expects argument of type ‘int’, but argument 5 has type ‘double’ [-Wformat=]
+  printf("\nId Pedido: %d\n"
+         ^~~~~~~~~~~~~~~~~~~
+../src/pedidos_de_recoleccion.c:107:4:
+    aPedido.kgTotalesArecolectar,
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/pedidos_de_recoleccion.c:100:37: note: format string is defined here
+    " - Kilos totales a recolectar: %d\n"
+                                    ~^
+                                    %f
+Finished building: ../src/pedidos_de_recoleccion.c
+ 
+Building file: ../src/utn.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/utn.d" -MT"src/utn.o" -o "src/utn.o" "../src/utn.c"
+Finished building: ../src/utn.c
+ 
+Building target: Primer_Parcial_1ºh
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_1ºh"  ./src/Primer_Parcial_1ºh.o ./src/clientes.o ./src/informes.o ./src/pedidos_de_recoleccion.o ./src/utn.o   
+Finished building target: Primer_Parcial_1ºh
+ 
+18:13:08 **** Clean-only build of configuration Debug for project Primer_Parcial_1ºh ****
+make clean 
+rm -rf  ./src/Primer_Parcial_1ºh.o ./src/clientes.o ./src/informes.o ./src/pedidos_de_recoleccion.o ./src/utn.o  ./src/Primer_Parcial_1ºh.d ./src/clientes.d ./src/informes.d ./src/pedidos_de_recoleccion.d ./src/utn.d  Primer_Parcial_1ºh
+ 
+18:13:11 **** Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/Primer_Parcial_1ºh.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Primer_Parcial_1ºh.d" -MT"src/Primer_Parcial_1ºh.o" -o "src/Primer_Parcial_1ºh.o" "../src/Primer_Parcial_1ºh.c"
+Finished building: ../src/Primer_Parcial_1ºh.c
+ 
+Building file: ../src/clientes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/clientes.d" -MT"src/clientes.o" -o "src/clientes.o" "../src/clientes.c"
+Finished building: ../src/clientes.c
+ 
+Building file: ../src/informes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
+Finished building: ../src/informes.c
+ 
+Building file: ../src/pedidos_de_recoleccion.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pedidos_de_recoleccion.d" -MT"src/pedidos_de_recoleccion.o" -o "src/pedidos_de_recoleccion.o" "../src/pedidos_de_recoleccion.c"
+../src/pedidos_de_recoleccion.c: In function ‘imprimirUnPedido’:
+../src/pedidos_de_recoleccion.c:97:9: warning: format ‘%d’ expects argument of type ‘int’, but argument 5 has type ‘double’ [-Wformat=]
+  printf("\nId Pedido: %d\n"
+         ^~~~~~~~~~~~~~~~~~~
+../src/pedidos_de_recoleccion.c:107:4:
+    aPedido.kgTotalesArecolectar,
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/pedidos_de_recoleccion.c:100:37: note: format string is defined here
+    " - Kilos totales a recolectar: %d\n"
+                                    ~^
+                                    %f
+Finished building: ../src/pedidos_de_recoleccion.c
+ 
+Building file: ../src/utn.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/utn.d" -MT"src/utn.o" -o "src/utn.o" "../src/utn.c"
+Finished building: ../src/utn.c
+ 
+Building target: Primer_Parcial_1ºh
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_1ºh"  ./src/Primer_Parcial_1ºh.o ./src/clientes.o ./src/informes.o ./src/pedidos_de_recoleccion.o ./src/utn.o   
+Finished building target: Primer_Parcial_1ºh
+ 
+18:13:24 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+make: No se hace nada para 'all'.
+18:13:29 **** Clean-only build of configuration Debug for project Primer_Parcial_1ºh ****
+make clean 
+rm -rf  ./src/Primer_Parcial_1ºh.o ./src/clientes.o ./src/informes.o ./src/pedidos_de_recoleccion.o ./src/utn.o  ./src/Primer_Parcial_1ºh.d ./src/clientes.d ./src/informes.d ./src/pedidos_de_recoleccion.d ./src/utn.d  Primer_Parcial_1ºh
+ 
+18:13:31 **** Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/Primer_Parcial_1ºh.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Primer_Parcial_1ºh.d" -MT"src/Primer_Parcial_1ºh.o" -o "src/Primer_Parcial_1ºh.o" "../src/Primer_Parcial_1ºh.c"
+Finished building: ../src/Primer_Parcial_1ºh.c
+ 
+Building file: ../src/clientes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/clientes.d" -MT"src/clientes.o" -o "src/clientes.o" "../src/clientes.c"
+Finished building: ../src/clientes.c
+ 
+Building file: ../src/informes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
+Finished building: ../src/informes.c
+ 
+Building file: ../src/pedidos_de_recoleccion.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pedidos_de_recoleccion.d" -MT"src/pedidos_de_recoleccion.o" -o "src/pedidos_de_recoleccion.o" "../src/pedidos_de_recoleccion.c"
+../src/pedidos_de_recoleccion.c: In function ‘imprimirUnPedido’:
+../src/pedidos_de_recoleccion.c:97:9: warning: format ‘%d’ expects argument of type ‘int’, but argument 5 has type ‘double’ [-Wformat=]
+  printf("\nId Pedido: %d\n"
+         ^~~~~~~~~~~~~~~~~~~
+../src/pedidos_de_recoleccion.c:107:4:
+    aPedido.kgTotalesArecolectar,
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/pedidos_de_recoleccion.c:100:37: note: format string is defined here
+    " - Kilos totales a recolectar: %d\n"
+                                    ~^
+                                    %f
+Finished building: ../src/pedidos_de_recoleccion.c
+ 
+Building file: ../src/utn.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/utn.d" -MT"src/utn.o" -o "src/utn.o" "../src/utn.c"
+Finished building: ../src/utn.c
+ 
+Building target: Primer_Parcial_1ºh
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_1ºh"  ./src/Primer_Parcial_1ºh.o ./src/clientes.o ./src/informes.o ./src/pedidos_de_recoleccion.o ./src/utn.o   
+Finished building target: Primer_Parcial_1ºh
+ 
+18:14:14 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+make: No se hace nada para 'all'.
+18:14:19 **** Clean-only build of configuration Debug for project Primer_Parcial_1ºh ****
+make clean 
+rm -rf  ./src/Primer_Parcial_1ºh.o ./src/clientes.o ./src/informes.o ./src/pedidos_de_recoleccion.o ./src/utn.o  ./src/Primer_Parcial_1ºh.d ./src/clientes.d ./src/informes.d ./src/pedidos_de_recoleccion.d ./src/utn.d  Primer_Parcial_1ºh
+ 
+18:14:22 **** Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/Primer_Parcial_1ºh.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Primer_Parcial_1ºh.d" -MT"src/Primer_Parcial_1ºh.o" -o "src/Primer_Parcial_1ºh.o" "../src/Primer_Parcial_1ºh.c"
+Finished building: ../src/Primer_Parcial_1ºh.c
+ 
+Building file: ../src/clientes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/clientes.d" -MT"src/clientes.o" -o "src/clientes.o" "../src/clientes.c"
+Finished building: ../src/clientes.c
+ 
+Building file: ../src/informes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
+Finished building: ../src/informes.c
+ 
+Building file: ../src/pedidos_de_recoleccion.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pedidos_de_recoleccion.d" -MT"src/pedidos_de_recoleccion.o" -o "src/pedidos_de_recoleccion.o" "../src/pedidos_de_recoleccion.c"
+../src/pedidos_de_recoleccion.c: In function ‘imprimirUnPedido’:
+../src/pedidos_de_recoleccion.c:97:9: warning: format ‘%d’ expects argument of type ‘int’, but argument 5 has type ‘double’ [-Wformat=]
+  printf("\nId Pedido: %d\n"
+         ^~~~~~~~~~~~~~~~~~~
+../src/pedidos_de_recoleccion.c:107:4:
+    aPedido.kgTotalesArecolectar,
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/pedidos_de_recoleccion.c:100:37: note: format string is defined here
+    " - Kilos totales a recolectar: %d\n"
+                                    ~^
+                                    %f
+Finished building: ../src/pedidos_de_recoleccion.c
+ 
+Building file: ../src/utn.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/utn.d" -MT"src/utn.o" -o "src/utn.o" "../src/utn.c"
+Finished building: ../src/utn.c
+ 
+Building target: Primer_Parcial_1ºh
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_1ºh"  ./src/Primer_Parcial_1ºh.o ./src/clientes.o ./src/informes.o ./src/pedidos_de_recoleccion.o ./src/utn.o   
+Finished building target: Primer_Parcial_1ºh
+ 
+18:14:49 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+make: No se hace nada para 'all'.
+18:14:55 **** Clean-only build of configuration Debug for project Primer_Parcial_1ºh ****
+make clean 
+rm -rf  ./src/Primer_Parcial_1ºh.o ./src/clientes.o ./src/informes.o ./src/pedidos_de_recoleccion.o ./src/utn.o  ./src/Primer_Parcial_1ºh.d ./src/clientes.d ./src/informes.d ./src/pedidos_de_recoleccion.d ./src/utn.d  Primer_Parcial_1ºh
+ 
+18:14:58 **** Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/Primer_Parcial_1ºh.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Primer_Parcial_1ºh.d" -MT"src/Primer_Parcial_1ºh.o" -o "src/Primer_Parcial_1ºh.o" "../src/Primer_Parcial_1ºh.c"
+Finished building: ../src/Primer_Parcial_1ºh.c
+ 
+Building file: ../src/clientes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/clientes.d" -MT"src/clientes.o" -o "src/clientes.o" "../src/clientes.c"
+Finished building: ../src/clientes.c
+ 
+Building file: ../src/informes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
+Finished building: ../src/informes.c
+ 
+Building file: ../src/pedidos_de_recoleccion.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pedidos_de_recoleccion.d" -MT"src/pedidos_de_recoleccion.o" -o "src/pedidos_de_recoleccion.o" "../src/pedidos_de_recoleccion.c"
+../src/pedidos_de_recoleccion.c: In function ‘imprimirUnPedido’:
+../src/pedidos_de_recoleccion.c:97:9: warning: format ‘%d’ expects argument of type ‘int’, but argument 5 has type ‘double’ [-Wformat=]
+  printf("\nId Pedido: %d\n"
+         ^~~~~~~~~~~~~~~~~~~
+../src/pedidos_de_recoleccion.c:107:4:
+    aPedido.kgTotalesArecolectar,
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/pedidos_de_recoleccion.c:100:37: note: format string is defined here
+    " - Kilos totales a recolectar: %d\n"
+                                    ~^
+                                    %f
+Finished building: ../src/pedidos_de_recoleccion.c
+ 
+Building file: ../src/utn.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/utn.d" -MT"src/utn.o" -o "src/utn.o" "../src/utn.c"
+Finished building: ../src/utn.c
+ 
+Building target: Primer_Parcial_1ºh
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_1ºh"  ./src/Primer_Parcial_1ºh.o ./src/clientes.o ./src/informes.o ./src/pedidos_de_recoleccion.o ./src/utn.o   
+Finished building target: Primer_Parcial_1ºh
+ 
+18:15:49 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/pedidos_de_recoleccion.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pedidos_de_recoleccion.d" -MT"src/pedidos_de_recoleccion.o" -o "src/pedidos_de_recoleccion.o" "../src/pedidos_de_recoleccion.c"
+Finished building: ../src/pedidos_de_recoleccion.c
+ 
+Building target: Primer_Parcial_1ºh
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_1ºh"  ./src/Primer_Parcial_1ºh.o ./src/clientes.o ./src/informes.o ./src/pedidos_de_recoleccion.o ./src/utn.o   
+Finished building target: Primer_Parcial_1ºh
+ 
+18:15:53 **** Clean-only build of configuration Debug for project Primer_Parcial_1ºh ****
+make clean 
+rm -rf  ./src/Primer_Parcial_1ºh.o ./src/clientes.o ./src/informes.o ./src/pedidos_de_recoleccion.o ./src/utn.o  ./src/Primer_Parcial_1ºh.d ./src/clientes.d ./src/informes.d ./src/pedidos_de_recoleccion.d ./src/utn.d  Primer_Parcial_1ºh
+ 
+18:15:55 **** Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/Primer_Parcial_1ºh.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Primer_Parcial_1ºh.d" -MT"src/Primer_Parcial_1ºh.o" -o "src/Primer_Parcial_1ºh.o" "../src/Primer_Parcial_1ºh.c"
+Finished building: ../src/Primer_Parcial_1ºh.c
+ 
+Building file: ../src/clientes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/clientes.d" -MT"src/clientes.o" -o "src/clientes.o" "../src/clientes.c"
+Finished building: ../src/clientes.c
+ 
+Building file: ../src/informes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
+Finished building: ../src/informes.c
+ 
+Building file: ../src/pedidos_de_recoleccion.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pedidos_de_recoleccion.d" -MT"src/pedidos_de_recoleccion.o" -o "src/pedidos_de_recoleccion.o" "../src/pedidos_de_recoleccion.c"
+Finished building: ../src/pedidos_de_recoleccion.c
+ 
+Building file: ../src/utn.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/utn.d" -MT"src/utn.o" -o "src/utn.o" "../src/utn.c"
+Finished building: ../src/utn.c
+ 
+Building target: Primer_Parcial_1ºh
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_1ºh"  ./src/Primer_Parcial_1ºh.o ./src/clientes.o ./src/informes.o ./src/pedidos_de_recoleccion.o ./src/utn.o   
+Finished building target: Primer_Parcial_1ºh
+ 

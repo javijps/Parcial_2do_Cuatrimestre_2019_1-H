@@ -16,10 +16,10 @@ typedef struct {
 	int id_pedido;
 	int statusPedido;
 	int idCliente;
-	float kgTotalesArecolectar;
-	float kgHDPE;
-	float kgLDPE;
-	float kgPP;
+	int kgTotalesArecolectar;
+	int kgHDPE;
+	int kgLDPE;
+	int kgPP;
 
 } sPedidoCliente;
 

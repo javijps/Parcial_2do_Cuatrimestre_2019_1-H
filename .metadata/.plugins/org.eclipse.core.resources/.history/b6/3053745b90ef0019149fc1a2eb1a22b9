@@ -19,7 +19,7 @@ typedef struct {
 	float kgTotalesArecolectar;
 	float kgHDPE;
 	float kgLDPE;
-	float kgPP;
+	int kgPP;
 
 } sPedidoCliente;
 

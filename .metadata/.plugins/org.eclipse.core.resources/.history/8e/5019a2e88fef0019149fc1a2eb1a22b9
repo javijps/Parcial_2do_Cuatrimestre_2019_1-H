@@ -28,7 +28,7 @@ typedef struct{
 	int idCliente;
 	int status;
 	int contadorPedidos;
-	float acumuladorPedidos;
+	int acumuladorPedidos;
 
 } sAuxiliarCliente;
 

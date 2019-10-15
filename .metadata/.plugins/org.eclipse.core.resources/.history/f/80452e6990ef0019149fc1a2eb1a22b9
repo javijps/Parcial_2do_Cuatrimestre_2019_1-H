@@ -191,7 +191,7 @@ int listarInfoClientesConInfoAuxPorId(sCliente *aCliente,
 			printf("\n-Id Cliente: %d\n"
 					"-Nombre de la empresa: %s\n"
 			//		"-Cantidad de pedidos: %d\n"
-					"-Kg Totales en pedidos: %.2f\n"
+					"-Kg Totales en pedidos: %d\n"
 					"\n"
 					"\n",
 					aCliente[indexCliente].idCliente,

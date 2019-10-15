@@ -35,10 +35,10 @@ int imprimirPedidosActivos(sPedidoCliente *aPedido, int len)
 			printf("\nId Pedido: %d\n"
 					"Id Cliente: %d\n"
 					" - Status Pedido: %d\n"
-					" - Kilos totales a recolectar: %d\n"
-					" - kg HDPE: %d\n"
-					" - kg LDPE: %d\n"
-					" - kg PP: %d\n",
+					" - Kilos totales a recolectar: %.2f\n"
+					" - kg HDPE: %.2f\n"
+					" - kg LDPE: %.2f\n"
+					" - kg PP: %.2f\n",
 					aPedido[i].id_pedido,
 					aPedido[i].idCliente,
 					aPedido[i].statusPedido,
@@ -72,10 +72,10 @@ int imprimirPedidosPendientes(sPedidoCliente *aPedido, int len)
 			printf("Id Pedido: %d\n"
 					"Id Cliente: %d\n"
 					" - Status Pedido: %d\n"
-					" - Kilos totales a recolectar: %d\n"
-					" - kg HDPE: %d\n"
-					" - kg LDPE: %d\n"
-					" - kg PP: %d\n",
+					" - Kilos totales a recolectar: %.2f\n"
+					" - kg HDPE: %.2f\n"
+					" - kg LDPE: %.2f\n"
+					" - kg PP: %.2f\n",
 					aPedido[i].id_pedido,
 					aPedido[i].idCliente,
 					aPedido[i].statusPedido,
@@ -97,10 +97,10 @@ void imprimirUnPedido(sPedidoCliente aPedido)
 	printf("\nId Pedido: %d\n"
 			"Id Cliente: %d\n"
 			" - Status Pedido: %d\n"
-			" - Kilos totales a recolectar: %d\n"
-			" - kg HDPE: %d\n"
-			" - kg LDPE: %d\n"
-			" - kg PP: %d\n",
+			" - Kilos totales a recolectar: %.2f\n"
+			" - kg HDPE: %.2f\n"
+			" - kg LDPE: %.2f\n"
+			" - kg PP: %.2f\n",
 			aPedido.id_pedido,
 			aPedido.idCliente,
 			aPedido.statusPedido,
@@ -159,7 +159,7 @@ int getDatosPedido(sPedidoCliente *aPedido,int cantidad,int idCliente)
 
 	for(i=0;i<cantidad;i++)
 	{
-		if(getInt(&bPedidoCliente.kgTotalesArecolectar,
+		if(getFloat(&bPedidoCliente.kgTotalesArecolectar,
 				"Ingrese la cantidada de kg totales a recolectar\n",
 				"Id incorrecto!\n",
 				1,
@@ -305,7 +305,7 @@ int procesarResiduos(sPedidoCliente *aPedido, int cantidad,int idPedido)
 					switch(opcion)
 					{
 					case 1:
-						if(getInt(&bPedido.kgHDPE,"Ingresar kg  del residuo HDPE\n",
+						if(getFloat(&bPedido.kgHDPE,"Ingresar kg  del residuo HDPE\n",
 								"kilaje incorrecto, maximo 1000kg\n",
 								1,1000,2)==0)
 						{
@@ -325,7 +325,7 @@ int procesarResiduos(sPedidoCliente *aPedido, int cantidad,int idPedido)
 						}
 						break;
 					case 2:
-						if(getInt(&bPedido.kgLDPE,"Ingresar kg  del residuo kgLDPE\n",
+						if(getFloat(&bPedido.kgLDPE,"Ingresar kg  del residuo kgLDPE\n",
 								"kilaje incorrecto, maximo 1000kg\n",
 								1,1000,2)==0)
 						{
@@ -344,7 +344,7 @@ int procesarResiduos(sPedidoCliente *aPedido, int cantidad,int idPedido)
 						}
 						break;
 					case 3:
-						if(getInt(&bPedido.kgPP,"Ingresar kg  del residuo kgPP\n",
+						if(getFloat(&bPedido.kgPP,"Ingresar kg  del residuo kgPP\n",
 								"kilaje incorrecto, maximo 1000kg\n",
 								1,1000,2)==0)
 						{
@@ -383,10 +383,10 @@ void pedidoDeClienteForzado(sPedidoCliente *aPedidoCLiente,int len)
 	int aId_pedido[5] = {1,2,3,4,5};
 	int aStatusPedido[5] = {0,0,1,1,1};
 	int aIdCliente[5] = {1,1,2,2,5};
-	int akgTotalesArecolectar[5] = {45,71,25,71,171};//todos tiene 10kg a recolectar demas q la suma de los 3 tipos de residuos
-	int akgHDPE[5] = {20,32,10,15,65};
-	int akgLDPE[5] = {10,22,2,5,55};
-	int akgPP[5] = {5,17,7,3,41};
+	float akgTotalesArecolectar[5] = {45,71,25,71,171};//todos tiene 10kg a recolectar demas q la suma de los 3 tipos de residuos
+	float akgHDPE[5] = {20,32,10,15,65};
+	float akgLDPE[5] = {10,22,2,5,55};
+	float akgPP[5] = {5,17,7,3,41};
 
 	int i;
 
