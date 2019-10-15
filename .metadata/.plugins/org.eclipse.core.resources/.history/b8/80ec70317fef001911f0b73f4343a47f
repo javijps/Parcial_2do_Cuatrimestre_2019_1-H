@@ -15,7 +15,7 @@
 #define STATUS_NOT_EMPTY 0
 
 //en la funcion que llama a todas, el array de auxiliar de cliente puede manejarse internamente para no llamarlo en la definicion de la funcion.
-//ORDENAR ARRAY LO TENGO EN CLASE CLASE MD CLASE 5
+
 //EL MAXIMO ES DE KILAJE TOTAL ENTRE TODOS LOS PEDIDOS. SI SE PIDE MAXIMO DE A 1 PEDIDO, NO USAR EL ACUMULADOR, HACER DIRECTAMENTE CON KG TOTALES
 //PROMEDIO DE KG POR PEDIDO.ESTA EL ACUMULADOR Y EL CONTADOR, HACER CUENTA
 //ESTA LA FUNCION PARA IMPRIMIR INFO DE CLIENTE + INFO DE CLIENTE AUXILIAR. SI SE SUMA DE PEDIDO, USAR BUSCARPEDIDOPORID E INDEXAR.
@@ -74,7 +74,7 @@ int contarPedidosPorCLiente(sCliente *aCliente,
 }
 
 /**
-* \brief LO MISMO QUE LA ANTERIOR, PERO EN LUGAR DE CONTAR, ACUMULA
+* \brief
 * \param sCliente *aCliente puntero a un array de la estructura cliente.
 * \param lenAcliente tamaño del array de clientes.
 * \param sPedidoCliente *aPedido puntero a un array de la estructura pedido cliente.
@@ -116,8 +116,7 @@ int acumularKgTotalesPorCliente(sCliente *aCliente,
 }
 
 /**
-* \brief CALCULA LA ACUMULACION LLAMANDO A LA FUNCION ANTERIOR Y DESPUES BUSCA EL MAXIMO, NO TIENE EN CASO DE Q SEAN 2, PERO PUEDE DEFINIRSE
-* UN ID CLIENTE MAXIMO 2/ MAXIMO 2.
+* \brief
 * \param sCliente *aCliente puntero a un array de la estructura cliente.
 * \param lenAcliente tamaño del array de clientes.
 * \param sPedidoCliente *aPedido puntero a un array de la estructura pedido cliente.
@@ -160,7 +159,7 @@ int maximoKgTotalesPorCliente(sCliente *aCliente,
 }
 
 /**
-* \brief LISTA INFO CRUZADA ENTRE 2 TIPOS DE ESTRUCTURA, SI PIDE 3ER ESTRCTURA, BUSCO POR ID Y AGREGO UN 3ER FOR, LUEGO PRINT
+* \brief
 * \param sCliente *aCliente puntero a un array de la estructura cliente.
 * \param lenAcliente tamaño del array de clientes.
 * \param sPedidoCliente *aPedido puntero a un array de la estructura pedido cliente.
