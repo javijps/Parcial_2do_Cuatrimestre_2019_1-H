@@ -1,0 +1,145 @@
+/*
+ * informes.c
+ *
+ *  Created on: 10 oct. 2019
+ *      Author: alumno
+ */
+#include "informes.h"
+#include <stdio.h>
+#include <stdio_ext.h>
+#include <stdlib.h>
+#include <string.h>
+#define STATUS_EMPTY -1
+#define STATUS_PENDIENTE 0
+#define STATUS_COMPLETADO 1
+#define STATUS_NOT_EMPTY 0
+
+
+
+//LISTAR EL CLIENTE CON EL PEDIDO DE MENOS KG TOTALES
+//PROMEDIO DE KG POR PEDIDO
+//IMPRIMIR EL CLIENTE CON MAS PEDIDOS
+//IMPRIMIR EL CLIENTE CON MAS KG ENTRE TODOS LOS PEDIDOS.
+//IMPRIMIR EL PROMEDIO DE RESIDUOS PP POR PEDIDO
+//LISTAR LOS CLIENTES CON MAS DE 50KG TOTALES X PEDIDO  DE RESIDUOS A RECOGER
+//LISTAR LOS CLIENTES POR LOCALIDAD
+//LISTAR LOS PEDIDOS CON MAS DE 10KG DEL 1ER RESIDUO, MAS DE 5KG DEL 2DO Y MAS DE 3KG DEL 3RO.
+//LISTAR EL CLIENTE CON EL PEDIDO DE MAS KG TOTALES.IMPRIMIR SU CUIT, NOMBRE DE LA EMPRESA Y DIRECCION.
+
+
+
+//LISTAR EL CLIENTE CON EL PEDIDO DE MAS KG TOTALES
+//AGREGO KG TOTALES A LA ESTRUCTURA AUXILIAR. ME VA A SERVIR PARA PROMEDIO. ES IGUAL Q EL ULTIMO IMPRIMIR
+
+//contador de pedidos ok
+//acumulador de kg totales en todos los pedidos por estructura auxiliar ok
+//MAXIMO
+
+int contarPedidosPorCLiente(sCliente *aCliente,int lenAcliente,sPedidoCliente *aPedido,int lenApedido,sAuxiliarCliente *aAuxCLiente,int lenaAuxCLiente)
+{
+	int retorno = -1;
+	int i;
+	int j;
+
+	if(aCliente!=NULL && aPedido!=NULL && aAuxCLiente!=NULL && lenAcliente>0 && lenApedido>0 && lenaAuxCLiente>0)
+	{
+		initClienteAuxiliar(aAuxCLiente,lenaAuxCLiente);
+		for(i=0;i<lenAcliente;i++)
+		{
+			aAuxCLiente[i].idCliente = aCliente[i].idCliente;
+			for(j=0;j<lenApedido;j++)
+			{
+				if(aCliente[i].idCliente == aPedido[j].idCliente)
+				{
+					aAuxCLiente[i].status = STATUS_NOT_EMPTY;
+					aAuxCLiente[i].contadorPedidos++;
+					aAuxCLiente[i].acumuladorPedidos+=aPedido[j].kgTotalesArecolectar;
+					retorno = 0;
+				}
+			}
+		}
+	}
+
+	return retorno;
+}
+
+int acumularKgTotalesPorCliente(sCliente *aCliente,int lenAcliente,sPedidoCliente *aPedido,int lenApedido,sAuxiliarCliente *aAuxCLiente,int lenaAuxCLiente)
+{
+	int retorno = -1;
+	int i;
+	int j;
+
+	if(aCliente!=NULL && aPedido!=NULL && aAuxCLiente!=NULL && lenAcliente>0 && lenApedido>0 && lenaAuxCLiente>0)
+	{
+		initClienteAuxiliar(aAuxCLiente,lenaAuxCLiente);
+		for(i=0;i<lenAcliente;i++)
+		{
+			aAuxCLiente[i].idCliente = aCliente[i].idCliente;
+			for(j=0;j<lenApedido;j++)
+			{
+				if(aCliente[i].idCliente == aPedido[j].idCliente)
+				{
+					aAuxCLiente[i].status = STATUS_NOT_EMPTY;
+					aAuxCLiente[i].acumuladorPedidos+=aPedido[j].kgTotalesArecolectar;
+					retorno = 0;
+				}
+			}
+		}
+	}
+
+	return retorno;
+}
+
+int maximoKgTotalesPorCliente(sCliente *aCliente,int lenAcliente,sPedidoCliente *aPedido,int lenApedido,sAuxiliarCliente *aAuxCLiente,int lenaAuxCLiente)
+{
+	int retorno = -1;
+	int i;
+	int flagMaximo;
+	int maximoKilosArecolectar;
+	int idMaximoKgArecolectar;
+
+	if(aCliente!=NULL && aPedido!=NULL && aAuxCLiente!=NULL && lenAcliente>0 && lenApedido>0 && lenaAuxCLiente>0)
+	{
+		initClienteAuxiliar(aAuxCLiente,lenaAuxCLiente);
+		acumularKgTotalesPorCliente(aCliente,lenAcliente,aPedido,lenApedido,aAuxCLiente,lenaAuxCLiente);
+		for(i=0;i<lenApedido;i++)
+		{
+			if(flagMaximo==0||aAuxCLiente[i].acumuladorPedidos>maximoKilosArecolectar)
+			{
+				retorno = 0;
+				maximoKilosArecolectar = aAuxCLiente[i].acumuladorPedidos;
+				idMaximoKgArecolectar = aAuxCLiente[i].idCliente;
+				flagMaximo=1;
+			}
+		}
+	}
+	return retorno;
+}
+
+int listarInfoClientesConInfoAuxPorId(sCliente *aCliente,int lenAcliente,sPedidoCliente *aPedido,int lenApedido,sAuxiliarCliente *aAuxCLiente,int lenaAuxCLiente,int idCliente)
+{
+	int retorno = -1;
+	int indexCliente;
+	int indexClienteAuxiliar;
+
+
+	if(aCliente!=NULL && aPedido!=NULL && aAuxCLiente!=NULL && lenAcliente>0 && lenApedido>0 && lenaAuxCLiente>0)
+	{
+		indexCliente = buscarClientePorId(aCliente,idCliente);
+		indexClienteAuxiliar = buscarClientePorId(aCliente,idCliente);
+		if(aCliente[indexCliente].idCliente == aAuxCLiente[indexClienteAuxiliar].idCliente)
+		{
+			printf("\n-Id Cliente: %d\n"
+					"-Nombre de la empresa: %s\n"
+					"-Cantidad de pedidos: %d\n"
+					"-Kg Totales en pedidos: %d\n"
+					"\n"
+					"\n",
+					aCliente[indexCliente].idCliente,
+					aCliente[indexCliente].empresa,
+					aAuxCLiente[indexClienteAuxiliar].contadorPedidos,
+					aAuxCLiente[indexClienteAuxiliar].acumuladorPedidos);
+		}
+	}
+	return retorno;
+}

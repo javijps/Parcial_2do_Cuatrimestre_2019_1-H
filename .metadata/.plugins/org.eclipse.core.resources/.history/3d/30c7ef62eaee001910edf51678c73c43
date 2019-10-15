@@ -1,0 +1,17 @@
+/*
+ * informes.h
+ *
+ *  Created on: 10 oct. 2019
+ *      Author: alumno
+ */
+
+#ifndef INFORMES_H_
+#define INFORMES_H_
+
+#include "utn.h"
+#include "pedidos_de_recoleccion.h"
+#include "clientes.h"
+
+
+#endif /* INFORMES_H_ */
+

@@ -12,10 +12,10 @@
 #include <stdio_ext.h>
 #include <stdlib.h>
 #include <string.h>
-
 #include "utn.h"
 #include "clientes.h"
 #include "pedidos_de_recoleccion.h"
+#include "informes.h"
 
 #define MAX_CLIENTES 100
 #define MAX_PEDIDOS 1000
@@ -48,7 +48,8 @@ int main(void) {
 				"6-Imprimir clientes\n"
 				"7-Imprimir pedidos pendientes\n"
 				"8-Imprimir pedidos procesados\n"
-				"9-EXIT\n",
+				"9-EXIT\n"
+				"10-PRUEBA INFORMES\n",
 				"Error\n",1,12,2);
 		switch(option)
 		{
@@ -97,10 +98,14 @@ int main(void) {
 				printf("No fue posible imprimir la informacion!\n");
 			break;
 		case 7:
-			imprimirPedidosPendientesConInformacionDelCLiente(fCliente,5,fPedido,5);
+			imprimirPedidosPendientesConInformacionDelCliente(fCliente,5,fPedido,5);
 			break;
 		case 8:
-			imprimirPedidosProcesadosConInformacionDelCLiente(fCliente,5,fPedido,5);
+			imprimirPedidosProcesadosConInformacionDelCliente(fCliente,5,fPedido,5);
+			break;
+		case 10:
+			if(maximoKgTotalesPorCliente(fCliente,5,fPedido,5,bAuxiliarCLiente,MAX_CLIENTES)!=0)
+				printf("No es posible mostrar el listado!\n");
 			break;
 		}
 	}while(option!=9);
