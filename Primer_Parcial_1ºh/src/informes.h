@@ -11,26 +11,27 @@
 #include "utn.h"
 #include "pedidos_de_recoleccion.h"
 #include "clientes.h"
+#include "auxiliarCliente.h"
 
-int contarPedidosPorCLiente(sCliente *aCliente,
+int informes_contarPedidosPorCLiente(sCliente *aCliente,
                             int lenAcliente,
 							sPedidoCliente *aPedido,
 							int lenApedido,
 							sAuxiliarCliente *aAuxCLiente,
 							int lenaAuxCLiente);
-int acumularKgTotalesPorCliente(sCliente *aCliente,
+int informes_acumularKgTotalesPorCliente(sCliente *aCliente,
                                 int lenAcliente,
 								sPedidoCliente *aPedido,
 								int lenApedido,
 								sAuxiliarCliente *aAuxCLiente,
 								int lenaAuxCLiente);
-int maximoKgTotalesPorCliente(sCliente *aCliente,
+int informes_maximoKgTotalesPorCliente(sCliente *aCliente,
                               int lenAcliente,
 							  sPedidoCliente *aPedido,
 							  int lenApedido,
 							  sAuxiliarCliente *aAuxCLiente,
 							  int lenaAuxCLiente);
-int listarInfoClientesConInfoAuxPorId(sCliente *aCliente,
+int informes_listarInfoClientesConInfoAuxPorId(sCliente *aCliente,
 		                         int lenAcliente,
 								 sPedidoCliente *aPedido,
 								 int lenApedido,

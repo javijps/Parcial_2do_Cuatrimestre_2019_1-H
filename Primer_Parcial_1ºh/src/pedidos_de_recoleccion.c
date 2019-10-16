@@ -21,7 +21,7 @@
 * \param len Cantidad del array a imprimir
 * \return Si tuvo exito al imprimir devuelve [0] o si fallo [-1]
 */
-int imprimirPedidosActivos(sPedidoCliente *aPedido, int len)
+int pedidoCliente_imprimirPedidosActivos(sPedidoCliente *aPedido, int len)
 {
 	int i;
 	int retorno = -1;
@@ -58,7 +58,7 @@ int imprimirPedidosActivos(sPedidoCliente *aPedido, int len)
 * \param len Cantidad del array a imprimir
 * \return Si tuvo exito al imprimir devuelve [0] o si fallo [-1]
 */
-int imprimirPedidosPendientes(sPedidoCliente *aPedido, int len)
+int pedidoCliente_imprimirPedidosPendientes(sPedidoCliente *aPedido, int len)
 {
 	int i;
 	int retorno = -1;
@@ -92,7 +92,7 @@ int imprimirPedidosPendientes(sPedidoCliente *aPedido, int len)
 * \brief Imprime la informacion correspondiente a un cliente.
 * \param sCliente aCliente ?? de estructuras cliente.
 */
-void imprimirUnPedido(sPedidoCliente aPedido)
+void pedidoCliente_imprimirUnPedido(sPedidoCliente aPedido)
 {
 	printf("\nId Pedido: %d\n"
 			"Id Cliente: %d\n"
@@ -115,7 +115,7 @@ void imprimirUnPedido(sPedidoCliente aPedido)
 * \brief Genera el ID correspondiente a una pedido.
 * \return Devuelve el ID correspondiente.
 */
-static int generarIdpedido(void){
+static int pedidoCliente_generarIdpedido(void){
 	static int id = 0;
 	id++;
 	return id;
@@ -127,7 +127,7 @@ static int generarIdpedido(void){
 * \param cantidad Cantidad de pedidos a inicializar
 * \return Si tuvo exito al inicializar devuelve [0] o si fallo [-1]
 */
-int initPedido(sPedidoCliente *aPedido, int cantidad)
+int pedidoCliente_initPedido(sPedidoCliente *aPedido, int cantidad)
 {
 
 	int i;
@@ -150,7 +150,7 @@ int initPedido(sPedidoCliente *aPedido, int cantidad)
 * \param cantidad Cantidad de pedido.
 * \return Si tuvo exito al completar todos los campos devuelve [0] o si fallo [-1]
 */
-int getDatosPedido(sPedidoCliente *aPedido,int cantidad,int idCliente)
+int pedidoCliente_getDatosPedido(sPedidoCliente *aPedido,int cantidad,int idCliente)
 {
 
 	int retorno = -1;
@@ -169,7 +169,7 @@ int getDatosPedido(sPedidoCliente *aPedido,int cantidad,int idCliente)
 		aPedido[i].idCliente = idCliente;
 		aPedido[i].kgTotalesArecolectar = bPedidoCliente.kgTotalesArecolectar;
 		aPedido[i].statusPedido = STATUS_PENDIENTE;
-		aPedido[i].id_pedido = generarIdpedido();
+		aPedido[i].id_pedido = pedidoCliente_generarIdpedido();
 		retorno = 0;
 	}
 	return retorno;
@@ -181,7 +181,7 @@ int getDatosPedido(sPedidoCliente *aPedido,int cantidad,int idCliente)
 * \param cantidad Cantidad de pedido.
 * \return Si tuvo exito al encontrar un pedido vacio devuelve [0] o si fallo [-1]
 */
-int buscarPedidoLibre(sPedidoCliente *aPedido,int cantidad)
+int pedidoCliente_buscarPedidoLibre(sPedidoCliente *aPedido,int cantidad)
 {
 	int retorno = -1;
 	int i;
@@ -203,7 +203,7 @@ int buscarPedidoLibre(sPedidoCliente *aPedido,int cantidad)
 * \param cantidad Cantidad de altas a realizar.
 * \return Si tuvo exito al realizar el alta devuelve [0] o si fallo [-1]
 */
-int altaPedido(sPedidoCliente *aPedido, int cantidad,int idCliente)
+int pedidoCliente_altaPedido(sPedidoCliente *aPedido, int cantidad,int idCliente)
 {
 
 	int retorno = -1;
@@ -211,10 +211,10 @@ int altaPedido(sPedidoCliente *aPedido, int cantidad,int idCliente)
 
 	if(aPedido != NULL && cantidad>0)
 	{
-		index = buscarPedidoLibre(aPedido,cantidad);
+		index = pedidoCliente_buscarPedidoLibre(aPedido,cantidad);
 		if(index!=-1)
 		{
-			if(getDatosPedido(aPedido,cantidad,idCliente)==0)
+			if(pedidoCliente_getDatosPedido(aPedido,cantidad,idCliente)==0)
 				retorno = 0;
 		}
 	}
@@ -228,7 +228,7 @@ int altaPedido(sPedidoCliente *aPedido, int cantidad,int idCliente)
 * \param id ID de pedido a ser encontrado.
 * \return Si tuvo exito al encontrar el pedido indicada devuelve [0] o si fallo [-1]
 */
-int buscarPedidoPorId(sPedidoCliente *aPedido,int cantidad, int id)
+int pedidoCliente_buscarPedidoPorId(sPedidoCliente *aPedido,int cantidad, int id)
 {
 	int retorno = -1;
 	int i;
@@ -254,7 +254,7 @@ int buscarPedidoPorId(sPedidoCliente *aPedido,int cantidad, int id)
 * \param id ID de pedido a ser encontrado.
 * \return Si tuvo exito al encontrar el pedido indicada devuelve [0] o si fallo [-1]
 */
-int buscarPedidoPendientePorIdCliente(sPedidoCliente *aPedido,int cantidad, int idCliente)//corregir doc
+int pedidoCliente_buscarPedidoPendientePorIdCliente(sPedidoCliente *aPedido,int cantidad, int idCliente)//corregir doc
 {
 	int retorno = -1;
 	int i;
@@ -279,7 +279,7 @@ int buscarPedidoPendientePorIdCliente(sPedidoCliente *aPedido,int cantidad, int 
 * \param cantidad Cantidad de altas a realizar.
 * \return Si tuvo exito al realizar el alta devuelve [0] o si fallo [-1]
 */
-int procesarResiduos(sPedidoCliente *aPedido, int cantidad,int idPedido)
+int pedidoCliente_procesarResiduos(sPedidoCliente *aPedido, int cantidad,int idPedido)
 {
 	int retorno = -1;
 	sPedidoCliente bPedido;
@@ -289,7 +289,7 @@ int procesarResiduos(sPedidoCliente *aPedido, int cantidad,int idPedido)
 
 	if(aPedido!=NULL && cantidad>0)
 	{
-		index = buscarPedidoPorId(aPedido,cantidad,idPedido);
+		index = pedidoCliente_buscarPedidoPorId(aPedido,cantidad,idPedido);
 
 		if(index!=-1)
 		{
@@ -366,7 +366,7 @@ int procesarResiduos(sPedidoCliente *aPedido, int cantidad,int idPedido)
 				}
 			}while(opcion!= 4);
 		}
-		imprimirUnPedido(aPedido[index]);
+		pedidoCliente_imprimirUnPedido(aPedido[index]);
 	}
 	return retorno;
 }
@@ -377,7 +377,7 @@ int procesarResiduos(sPedidoCliente *aPedido, int cantidad,int idPedido)
 * \param sCliente *aCliente puntero a un array de estructura cliente.
 * \param len Tamaño del array
 */
-void pedidoDeClienteForzado(sPedidoCliente *aPedidoCLiente,int len)
+void pedidoCliente_pedidoDeClienteForzado(sPedidoCliente *aPedidoCLiente,int len)
 {
 
 	int aId_pedido[5] = {1,2,3,4,5};
@@ -410,7 +410,7 @@ void pedidoDeClienteForzado(sPedidoCliente *aPedidoCLiente,int len)
 * \param id ID de pedido a ser encontrado.
 * \return Si tuvo exito al encontrar el pedido indicada devuelve [0] o si fallo [-1]
 */
-int buscarPedidoPorIdCLiente(sPedidoCliente *aPedido,int cantidad, int bIdCliente)//modificar doc
+int pedidoCliente_buscarPedidoPorIdCLiente(sPedidoCliente *aPedido,int cantidad, int bIdCliente)//modificar doc
 {
 	int retorno = -1;
 	int i;
@@ -427,4 +427,116 @@ int buscarPedidoPorIdCLiente(sPedidoCliente *aPedido,int cantidad, int bIdClient
 		}
 	}
 	return retorno;
+}
+
+
+/**
+* \brief Cuenta la cantidad de pedidos de cada cliente y muestra la informacion de cada cliente y dicho conteo.
+* \param sCliente *aCliente puntero a un array de la estructura cliente.
+* \param cantidad tamaño del array de clientes.
+* \param sPedidoCliente *aPedido puntero a un array de la estructura pedido cliente.
+* \param cantidad tamaño del array de pedidos.
+* \param sAuxiliarCliente *aAuxCLiente puntero a una array de la auxiliar cliente.
+* \param cantidad tamaño del array de auxiliar cliente.
+* \return Si tuvo exito al contar la cantidad de pedidos por cliente devuelve [0] o si fallo [-1]
+*/
+int contarYmostrarCantidadPedidosPorCliente(sCliente *aCliente,
+		                                 int lenAcliente,
+										 sPedidoCliente *aPedido,
+										 int lenApedido,
+										 sAuxiliarCliente *aAuxCLiente,
+										 int lenAauxiliarCliente)
+{
+	int retorno = -1;
+	int i;
+	int j;
+
+	if(aCliente!=NULL && aPedido!=NULL && aAuxCLiente!=NULL && lenAcliente>0 && lenApedido>0 && lenAauxiliarCliente>0)
+	{
+		auxiliarCliente_initClienteAuxiliar(aAuxCLiente,lenAauxiliarCliente);
+		for(i=0;i<lenAcliente;i++)
+		{
+			aAuxCLiente[i].idCliente = aCliente[i].idCliente;
+			for(j=0;j<lenApedido;j++)
+			{
+				if((aCliente[i].idCliente == aPedido[j].idCliente) && (aPedido[j].statusPedido = STATUS_PENDIENTE))
+				{
+					aAuxCLiente[i].contadorPedidos++;
+					retorno = 0;
+				}
+			}
+			cliente_imprimirUnCliente(aCliente[i]);
+			auxiliarCliente_imprimirContadorAuxCliente(aAuxCLiente[i]);
+		}
+	}
+	return retorno;
+}
+
+/**
+* \brief Imprime informacion de los clientes correspondiente a pedidos con status pendiente con informacion especifica de dicho cliente.
+* \param sCliente *aCliente puntero a un array de la estructura cliente.
+* \param cantidad tamaño del array de clientes.
+* \param sPedidoCliente *aPedido puntero a un array de la estructura pedido cliente.
+* \param cantidad tamaño del array de pedidos.
+*/
+void imprimirPedidosPendientesConInformacionDelCliente(sCliente *aCliente,int lenAcliente,sPedidoCliente *aPedido,int lenApedido)
+{
+	int i;
+	int j;
+
+	for(i=0;i<lenApedido;i++)
+	{
+		for(j=0;j<lenAcliente;j++)
+		{
+			if(aPedido[i].statusPedido == STATUS_PENDIENTE && aPedido[i].idCliente == aCliente[j].idCliente)
+			{
+				printf("\n-Id Pedido: %d\n"
+						"-Status del pedido: %d\n"
+						"-Cuit cliente %s\n"
+						"-Direccion cliente %s\n"
+						"-Cantidad de kg a recolectar: %.2f\n",
+						aPedido[i].id_pedido,
+						aPedido[i].statusPedido,
+						aCliente[j].cuit,
+						aCliente[j].direccion,
+						aPedido[i].kgTotalesArecolectar);
+			}
+		}
+	}
+}
+/**
+* \brief Imprime informacion de los clientes correspondiente a pedidos con status procesado con informacion especifica de dicho cliente.
+* \param sCliente *aCliente puntero a un array de la estructura cliente.
+* \param cantidad tamaño del array de clientes.
+* \param sPedidoCliente *aPedido puntero a un array de la estructura pedido cliente.
+* \param cantidad tamaño del array de pedidos.
+*/
+void imprimirPedidosProcesadosConInformacionDelCliente(sCliente *aCliente,int lenAcliente,sPedidoCliente *aPedido,int lenApedido)
+{
+	int i;
+	int j;
+
+	for(i=0;i<lenApedido;i++)
+	{
+		for(j=0;j<lenAcliente;j++)
+		{
+			if(aPedido[i].statusPedido == STATUS_COMPLETADO && aPedido[i].idCliente == aCliente[j].idCliente)
+			{
+				printf("\n-Id Pedido: %d\n"
+						"-Status del pedido: %d\n"
+						"-Cuit cliente %s\n"
+						"-Direccion cliente %s\n"
+						"-Cantidad de kg HDPE procesados: %.2f\n"
+						"-Cantidad de kg LDPE procesados: %.2f\n"
+						"-Cantidad de kg PP procesados: %.2f\n",
+						aPedido[i].id_pedido,
+						aPedido[i].statusPedido,
+						aCliente[j].cuit,
+						aCliente[j].direccion,
+						aPedido[i].kgHDPE,
+						aPedido[i].kgLDPE,
+						aPedido[i].kgPP);
+			}
+		}
+	}
 }

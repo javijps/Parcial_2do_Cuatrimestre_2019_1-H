@@ -11,8 +11,8 @@
 #define QTY_CARACTERES 50
 
 int getInt(   int *pNumero,
-		      char mensaje[],
-			  char mensajeError[],
+		      char *mensaje,
+			  char *mensajeError,
 			  int minimo,
 			  int maximo,
 			  int reintentos);
@@ -34,14 +34,14 @@ int getString(char *pResultado,
 			  int minimo,
 			  int maximo,
 			  int reintentos);
-int esNombre(char pNombre[50]);//
-int getNombreEmpresa(char pNombre[50],int limite,int reintentos);
+int esNombre(char pNombre[QTY_CARACTERES]);//
+int getNombreEmpresa(char pNombre[QTY_CARACTERES],int limite,int reintentos);
 int getStringNumeros(char *input,int reintentos);
-int esNumerica(char cadena[50]);
-int esCuit(char cadena[50]);
-int getCuit(char cuit[49],int limite,int reintentos);
-int esAlfanumerico(char aAlfanumerica[50]);
-int getAlfanumerico(char alfanumerica[49],char *mensaje,char *mensajeError,int limite,int reintentos);
+int esNumerica(char cadena[QTY_CARACTERES]);
+int esCuit(char cadena[QTY_CARACTERES]);
+int getCuit(char cuit[QTY_CARACTERES],int limite,int reintentos);
+int esAlfanumerico(char aAlfanumerica[QTY_CARACTERES]);
+int getAlfanumerico(char alfanumerica[QTY_CARACTERES],char *mensaje,char *mensajeError,int limite,int reintentos);
 
 
 

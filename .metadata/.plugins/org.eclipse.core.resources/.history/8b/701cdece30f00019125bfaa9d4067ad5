@@ -1,0 +1,29 @@
+/*
+ * auxiliarCliente.h
+ *
+ *  Created on: 16 oct. 2019
+ *      Author: javijps
+ */
+
+#ifndef AUXILIARCLIENTE_H_
+#define AUXILIARCLIENTE_H_
+
+
+typedef struct{
+
+	int idCliente;
+	int status;
+	int contadorPedidos;
+	float acumuladorPedidos;
+
+} sAuxiliarCliente;
+
+
+void imprimirUnClienteAux(sAuxiliarCliente aAuxiliarCliente);
+int initClienteAuxiliar(sAuxiliarCliente *aAuxiliarCliente,int len);
+int buscarClienteAuxiliarPorId(sAuxiliarCliente *aAuxiliarCliente,int len, int idCliente);
+void imprimirContadorAuxCliente(sAuxiliarCliente aAuxiliarCliente);
+
+
+
+#endif /* AUXILIARCLIENTE_H_ */

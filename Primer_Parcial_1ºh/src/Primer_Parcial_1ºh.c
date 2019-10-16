@@ -15,26 +15,28 @@
 #include "utn.h"
 #include "clientes.h"
 #include "pedidos_de_recoleccion.h"
+#include "auxiliarCliente.h"
 #include "informes.h"
 
 #define MAX_CLIENTES 100
 #define MAX_PEDIDOS 1000
 
+
 int main(void) {
 
 	sCliente aCliente[MAX_CLIENTES];
 	sCliente fCliente[5];
-	clienteForzado(fCliente,5);
+	cliente_clienteForzado(fCliente,5);
 	sPedidoCliente aPedido[MAX_PEDIDOS];
 	sPedidoCliente fPedido[5];
-	pedidoDeClienteForzado(fPedido,5);
+	pedidoCliente_pedidoDeClienteForzado(fPedido,5);
 	sAuxiliarCliente bAuxiliarCLiente[MAX_CLIENTES];
 	int option;
 	int bIdCliente;
 	int bIdPedido;
 
-	initcliente(aCliente,MAX_CLIENTES);
-	initPedido(aPedido,MAX_CLIENTES);
+	cliente_initcliente(aCliente,MAX_CLIENTES);
+	pedidoCliente_initPedido(aPedido,MAX_CLIENTES);
 	do
 	{
 
@@ -54,41 +56,41 @@ int main(void) {
 		switch(option)
 		{
 		case 1:
-			if(altaCliente(aCliente,1)!=0)
+			if(cliente_altaCliente(aCliente,1)!=0)
 				printf("Alta no realizada!\n");
 			else
 				printf("Alta exitosa!\n");
 			break;
 		case 2:
-			imprimirClientesActivos(fCliente,5);
-			if((getInt(&bIdCliente,"Ingrese ID de cliente\n","Error, id incorreto\n",1,100,2)==0) &&
-					(modificarClientePorId(fCliente,5,bIdCliente)==0))//FORZADO!
+			cliente_imprimirClientesActivos(fCliente,5);
+			if((getInt(&bIdCliente,"Ingrese ID de cliente\n","Error, id incorreto\n",1,MAX_CLIENTES,2)==0) &&
+					(cliente_modificarClientePorId(fCliente,5,bIdCliente)==0))//FORZADO!
 					printf("Modificacion exitosa!\n");
 			else
 				printf("Modificacion no realizada!\n");
 			break;
 		case 3:
-			imprimirClientesActivos(fCliente,5);
-			if((getInt(&bIdCliente,"Ingrese ID de cliente","Error id",1,100,2)==0) &&
-					(bajaClientePorId(fCliente,5,bIdCliente)==0))
+			cliente_imprimirClientesActivos(fCliente,5);
+			if((getInt(&bIdCliente,"Ingrese ID de cliente","Error id",1,MAX_CLIENTES,2)==0) &&
+					(cliente_bajaClientePorId(fCliente,5,bIdCliente)==0))
 					printf("Baja Exitosa!!\n");
 			else
 				printf("Baja no realizada!!\n");
 			break;
 		case 4://ver si se puede modificar para q muestre mensaje de id es inexistente
-			imprimirClientesActivos(fCliente,5);
-			if((getInt(&bIdCliente,"\nIngrese ID de cliente\n","Error id\n",1,100,2)==0) &&
-					(buscarClientePorId(fCliente,5,bIdCliente)!=-1) &&
-					(altaPedido(aPedido,1,bIdCliente)==0))
+			cliente_imprimirClientesActivos(fCliente,5);
+			if((getInt(&bIdCliente,"\nIngrese ID de cliente\n","Error id\n",1,MAX_CLIENTES,2)==0) &&
+					(cliente_buscarClientePorId(fCliente,5,bIdCliente)!=-1) &&
+					(pedidoCliente_altaPedido(aPedido,1,bIdCliente)==0))
 				printf("Alta exitosa!!\n");
 			else
 				printf("No fue posible realizar el alta!!\n");
-			imprimirPedidosPendientes(fPedido,5);
+			pedidoCliente_imprimirPedidosPendientes(fPedido,5);
 			break;
 		case 5://
-			imprimirPedidosActivos(fPedido,5);
-			if(getInt(&bIdPedido,"Ingrese id del pedido\n","Id incorrecto!\n",1,100,2)==0 &&
-					procesarResiduos(fPedido,5,bIdPedido)==0)
+			pedidoCliente_imprimirPedidosActivos(fPedido,5);
+			if(getInt(&bIdPedido,"Ingrese id del pedido\n","Id incorrecto!\n",1,MAX_PEDIDOS,2)==0 &&
+					pedidoCliente_procesarResiduos(fPedido,5,bIdPedido)==0)
 				printf("Pedido procesado!!\n!");
 			else
 				printf("No fue posible procesar el pedido!!\n");
@@ -104,7 +106,7 @@ int main(void) {
 			imprimirPedidosProcesadosConInformacionDelCliente(fCliente,5,fPedido,5);
 			break;
 		case 10:
-			if(maximoKgTotalesPorCliente(fCliente,5,fPedido,5,bAuxiliarCLiente,MAX_CLIENTES)!=0)
+			if(informes_maximoKgTotalesPorCliente(fCliente,5,fPedido,5,bAuxiliarCLiente,MAX_CLIENTES)!=0)
 				printf("No es posible mostrar el listado!\n");
 			break;
 		}

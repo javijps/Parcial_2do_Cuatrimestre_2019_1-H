@@ -9,7 +9,8 @@
 #define PEDIDOS_DE_RECOLECCION_H_
 
 #include "utn.h"
-
+#include "clientes.h"
+#include "auxiliarCliente.h"
 
 typedef struct {
 
@@ -23,16 +24,31 @@ typedef struct {
 
 } sPedidoCliente;
 
-int imprimirPedidosActivos(sPedidoCliente *aPedido, int len);
-int imprimirPedidosPendientes(sPedidoCliente *aPedido, int len);
-void imprimirUnPedido(sPedidoCliente aPedido);
-int getDatosPedido(sPedidoCliente *aPedido,int cantidad,int idCliente);
-int buscarPedidoLibre(sPedidoCliente *aPedido,int cantidad);
-int altaPedido(sPedidoCliente *aPedido, int cantidad,int idCliente);
-int initPedido(sPedidoCliente *aPedido, int cantidad);
-int buscarPedidoPorId(sPedidoCliente *aPedido,int cantidad, int id);
-int procesarResiduos(sPedidoCliente *aPedido, int cantidad,int idPedido);
-void pedidoDeClienteForzado(sPedidoCliente *aPedidoCLiente,int len);
-int buscarPedidoPendientePorIdCliente(sPedidoCliente *aPedido,int cantidad, int idCliente);//corregir doc
+int pedidoCliente_imprimirPedidosActivos(sPedidoCliente *aPedido, int len);
+int pedidoCliente_imprimirPedidosPendientes(sPedidoCliente *aPedido, int len);
+void pedidoCliente_imprimirUnPedido(sPedidoCliente aPedido);
+int pedidoCliente_getDatosPedido(sPedidoCliente *aPedido,int cantidad,int idCliente);
+int pedidoCliente_buscarPedidoLibre(sPedidoCliente *aPedido,int cantidad);
+int pedidoCliente_altaPedido(sPedidoCliente *aPedido, int cantidad,int idCliente);
+int pedidoCliente_initPedido(sPedidoCliente *aPedido, int cantidad);
+int pedidoCliente_buscarPedidoPorId(sPedidoCliente *aPedido,int cantidad, int id);
+int pedidoCliente_procesarResiduos(sPedidoCliente *aPedido, int cantidad,int idPedido);
+void pedidoCliente_pedidoDeClienteForzado(sPedidoCliente *aPedidoCLiente,int len);
+int pedidoCliente_buscarPedidoPendientePorIdCliente(sPedidoCliente *aPedido,int cantidad, int idCliente);//corregir doc
+int contarYmostrarCantidadPedidosPorCliente(sCliente *aCliente,
+		                                    int lenAcliente,
+											sPedidoCliente *aPedido,
+											int lenApedido,
+											sAuxiliarCliente *aAuxCLiente,
+											int lenAauxiliarCliente);
+void imprimirPedidosPendientesConInformacionDelCliente(sCliente *aCliente,
+		                                              int lenAcliente,
+													  sPedidoCliente *aPedido,
+													  int lenApedido);
+void imprimirPedidosProcesadosConInformacionDelCliente(sCliente *aCliente,
+		                                              int lenAcliente,
+													  sPedidoCliente *aPedido,
+													  int lenApedido);
+
 
 #endif /* PEDIDOS_DE_RECOLECCION_H_ */

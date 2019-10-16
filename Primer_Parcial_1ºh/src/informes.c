@@ -42,7 +42,7 @@
 * \param lenaAuxCLiente tamaño del array de auxiliar cliente.
 * \return Si tuvo exito al  xxxxxxxxxxxxxxxxx devuelve [0] o si fallo [-1]
 */
-int contarPedidosPorCLiente(sCliente *aCliente,
+int informes_contarPedidosPorCLiente(sCliente *aCliente,
                             int lenAcliente,
 							sPedidoCliente *aPedido,
 							int lenApedido,
@@ -55,7 +55,7 @@ int contarPedidosPorCLiente(sCliente *aCliente,
 
 	if(aCliente!=NULL && aPedido!=NULL && aAuxCLiente!=NULL && lenAcliente>0 && lenApedido>0 && lenaAuxCLiente>0)
 	{
-		initClienteAuxiliar(aAuxCLiente,lenaAuxCLiente);
+		auxiliarCliente_initClienteAuxiliar(aAuxCLiente,lenaAuxCLiente);
 		for(i=0;i<lenAcliente;i++)
 		{
 			aAuxCLiente[i].idCliente = aCliente[i].idCliente;
@@ -83,7 +83,7 @@ int contarPedidosPorCLiente(sCliente *aCliente,
 * \param lenaAuxCLiente tamaño del array de auxiliar cliente.
 * \return Si tuvo exito al  xxxxxxxxxxxxxxxxx devuelve [0] o si fallo [-1]
 */
-int acumularKgTotalesPorCliente(sCliente *aCliente,
+int informes_acumularKgTotalesPorCliente(sCliente *aCliente,
                                 int lenAcliente,
 								sPedidoCliente *aPedido,
 								int lenApedido,
@@ -96,7 +96,7 @@ int acumularKgTotalesPorCliente(sCliente *aCliente,
 
 	if(aCliente!=NULL && aPedido!=NULL && aAuxCLiente!=NULL && lenAcliente>0 && lenApedido>0 && lenaAuxCLiente>0)
 	{
-		initClienteAuxiliar(aAuxCLiente,lenaAuxCLiente);
+		auxiliarCliente_initClienteAuxiliar(aAuxCLiente,lenaAuxCLiente);
 		for(i=0;i<lenAcliente;i++)
 		{
 			aAuxCLiente[i].idCliente = aCliente[i].idCliente;
@@ -116,50 +116,6 @@ int acumularKgTotalesPorCliente(sCliente *aCliente,
 }
 
 /**
-* \brief CALCULA LA ACUMULACION LLAMANDO A LA FUNCION ANTERIOR Y DESPUES BUSCA EL MAXIMO, NO TIENE EN CASO DE Q SEAN 2, PERO PUEDE DEFINIRSE
-* UN ID CLIENTE MAXIMO 2/ MAXIMO 2.
-* \param sCliente *aCliente puntero a un array de la estructura cliente.
-* \param lenAcliente tamaño del array de clientes.
-* \param sPedidoCliente *aPedido puntero a un array de la estructura pedido cliente.
-* \param lenApedido tamaño del array de pedidos.
-* \param sAuxiliarCliente *aAuxCLiente puntero a una array de la auxiliar cliente.
-* \param lenaAuxCLiente tamaño del array de auxiliar cliente.
-* \return Si tuvo exito al  xxxxxxxxxxxxxxxxx devuelve [0] o si fallo [-1]
-*/
-int maximoKgTotalesPorCliente(sCliente *aCliente,
-                              int lenAcliente,
-							  sPedidoCliente *aPedido,
-							  int lenApedido,
-							  sAuxiliarCliente *aAuxCLiente,
-							  int lenaAuxCLiente)
-{
-	int retorno = -1;
-	int i;
-	int flagMaximo;
-	int maximoKilosArecolectar;
-	int idMaximoKgArecolectar;
-
-	if(aCliente!=NULL && aPedido!=NULL && aAuxCLiente!=NULL && lenAcliente>0 && lenApedido>0 && lenaAuxCLiente>0)
-	{
-		initClienteAuxiliar(aAuxCLiente,lenaAuxCLiente);
-		acumularKgTotalesPorCliente(aCliente,lenAcliente,aPedido,lenApedido,aAuxCLiente,lenaAuxCLiente);
-		for(i=0;i<lenApedido;i++)
-		{
-			if(flagMaximo==0||aAuxCLiente[i].acumuladorPedidos>maximoKilosArecolectar)
-			{
-				retorno = 0;
-				maximoKilosArecolectar = aAuxCLiente[i].acumuladorPedidos;
-				idMaximoKgArecolectar = aAuxCLiente[i].idCliente;
-				flagMaximo=1;
-			}
-		}
-		printf("ID de cliente con maxima cantidad de kg totales entre todos sus pedidos: %d\n",idMaximoKgArecolectar);
-		listarInfoClientesConInfoAuxPorId(aCliente,lenAcliente,aPedido,lenApedido,aAuxCLiente,lenaAuxCLiente,idMaximoKgArecolectar);
-	}
-	return retorno;
-}
-
-/**
 * \brief LISTA INFO CRUZADA ENTRE 2 TIPOS DE ESTRUCTURA, SI PIDE 3ER ESTRCTURA, BUSCO POR ID Y AGREGO UN 3ER FOR, LUEGO PRINT
 * \param sCliente *aCliente puntero a un array de la estructura cliente.
 * \param lenAcliente tamaño del array de clientes.
@@ -169,7 +125,7 @@ int maximoKgTotalesPorCliente(sCliente *aCliente,
 * \param lenaAuxCLiente tamaño del array de auxiliar cliente.
 * \return Si tuvo exito al  xxxxxxxxxxxxxxxxx devuelve [0] o si fallo [-1]
 */
-int listarInfoClientesConInfoAuxPorId(sCliente *aCliente,
+int informes_listarInfoClientesConInfoAuxPorId(sCliente *aCliente,
 		                         int lenAcliente,
 								 sPedidoCliente *aPedido,
 								 int lenApedido,
@@ -184,8 +140,8 @@ int listarInfoClientesConInfoAuxPorId(sCliente *aCliente,
 
 	if(aCliente!=NULL && aPedido!=NULL && aAuxCLiente!=NULL && lenAcliente>0 && lenApedido>0 && lenaAuxCLiente>0)
 	{
-		indexCliente = buscarClientePorId(aCliente,lenAcliente,idCliente);
-		indexClienteAuxiliar = buscarClienteAuxiliarPorId(aAuxCLiente,lenaAuxCLiente,idCliente);
+		indexCliente = cliente_buscarClientePorId(aCliente,lenAcliente,idCliente);
+		indexClienteAuxiliar = auxiliarCliente_buscarClienteAuxiliarPorId(aAuxCLiente,lenaAuxCLiente,idCliente);
 		if(aCliente[indexCliente].idCliente == aAuxCLiente[indexClienteAuxiliar].idCliente)
 		{
 			printf("\n-Id Cliente: %d\n"
@@ -202,3 +158,48 @@ int listarInfoClientesConInfoAuxPorId(sCliente *aCliente,
 	}
 	return retorno;
 }
+
+/**
+* \brief CALCULA LA ACUMULACION LLAMANDO A LA FUNCION ANTERIOR Y DESPUES BUSCA EL MAXIMO, NO TIENE EN CASO DE Q SEAN 2, PERO PUEDE DEFINIRSE
+* UN ID CLIENTE MAXIMO 2/ MAXIMO 2.
+* \param sCliente *aCliente puntero a un array de la estructura cliente.
+* \param lenAcliente tamaño del array de clientes.
+* \param sPedidoCliente *aPedido puntero a un array de la estructura pedido cliente.
+* \param lenApedido tamaño del array de pedidos.
+* \param sAuxiliarCliente *aAuxCLiente puntero a una array de la auxiliar cliente.
+* \param lenaAuxCLiente tamaño del array de auxiliar cliente.
+* \return Si tuvo exito al  xxxxxxxxxxxxxxxxx devuelve [0] o si fallo [-1]
+*/
+int informes_maximoKgTotalesPorCliente(sCliente *aCliente,
+                              int lenAcliente,
+							  sPedidoCliente *aPedido,
+							  int lenApedido,
+							  sAuxiliarCliente *aAuxCLiente,
+							  int lenaAuxCLiente)
+{
+	int retorno = -1;
+	int i;
+	int flagMaximo;
+	int maximoKilosArecolectar;
+	int idMaximoKgArecolectar;
+
+	if(aCliente!=NULL && aPedido!=NULL && aAuxCLiente!=NULL && lenAcliente>0 && lenApedido>0 && lenaAuxCLiente>0)
+	{
+		auxiliarCliente_initClienteAuxiliar(aAuxCLiente,lenaAuxCLiente);
+		informes_acumularKgTotalesPorCliente(aCliente,lenAcliente,aPedido,lenApedido,aAuxCLiente,lenaAuxCLiente);
+		for(i=0;i<lenApedido;i++)
+		{
+			if(flagMaximo==0||aAuxCLiente[i].acumuladorPedidos>maximoKilosArecolectar)
+			{
+				retorno = 0;
+				maximoKilosArecolectar = aAuxCLiente[i].acumuladorPedidos;
+				idMaximoKgArecolectar = aAuxCLiente[i].idCliente;
+				flagMaximo=1;
+			}
+		}
+		printf("ID de cliente con maxima cantidad de kg totales entre todos sus pedidos: %d\n",idMaximoKgArecolectar);
+		informes_listarInfoClientesConInfoAuxPorId(aCliente,lenAcliente,aPedido,lenApedido,aAuxCLiente,lenaAuxCLiente,idMaximoKgArecolectar);
+	}
+	return retorno;
+}
+

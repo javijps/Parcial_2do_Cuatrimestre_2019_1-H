@@ -209,7 +209,7 @@ int getString(char *pResultado,
 * \param pNombre Nombre recibido
 * \return Si valida el nombre [0] o si es invalido [-1]
 */
-int esNombre(char pNombre[50])
+int esNombre(char pNombre[QTY_CARACTERES])
 {
 	int retorno = -1;
 	int i;
@@ -241,7 +241,7 @@ int esNombre(char pNombre[50])
 * \param reintentos cantidad de errores permitidos
 * \return Si tuvo exito al obtener el nombre [0] o si fallo [-1]
 */
-int getNombreEmpresa(char pNombre[49],int limite,int reintentos)
+int getNombreEmpresa(char pNombre[QTY_CARACTERES],int limite,int reintentos)
 {
 	int retorno=-1;
 
@@ -281,7 +281,7 @@ int getNombreEmpresa(char pNombre[49],int limite,int reintentos)
 * \return Si la cadena de caracteres recibida es numerica [0] o si no lo es[-1]
 */
 
-int esNumerica(char cadena[50])
+int esNumerica(char cadena[QTY_CARACTERES])
 {
 	int retorno=-1;
 	int i;
@@ -340,7 +340,7 @@ int getStringNumeros(char *input,int reintentos)
 * \param pAlfanumerica Cadena recibida
 * \return Si la cadena es valida [0] o si es invalido [-1]
 */
-int esAlfanumerico(char aAlfanumerica[50])
+int esAlfanumerico(char aAlfanumerica[QTY_CARACTERES])
 {
 	int retorno = -1;
 	int i;
@@ -372,7 +372,7 @@ int esAlfanumerico(char aAlfanumerica[50])
 * \param reintentos cantidad de errores permitidos
 * \return Si tuvo exito al obtener el alfanumerico [0] o si fallo [-1]
 */
-int getAlfanumerico(char alfanumerica[49],char *mensaje,char *mensajeError,int limite,int reintentos)
+int getAlfanumerico(char alfanumerica[QTY_CARACTERES],char *mensaje,char *mensajeError,int limite,int reintentos)
 {
 	int retorno=-1;
 
@@ -400,7 +400,7 @@ int getAlfanumerico(char alfanumerica[49],char *mensaje,char *mensajeError,int l
 * \return Si la cadena de caracteres recibida es un cuit [0] o si no lo es[-1]
 */
 
-int esCuit(char cuit[50])
+int esCuit(char cuit[QTY_CARACTERES])
 {
 	int retorno=-1;
 	int i=0;
@@ -440,7 +440,7 @@ int esCuit(char cuit[50])
  * \return 0 si el cuit es correcto -1 si no lo es
  */
 
-int getCuit(char cuit[49],int limite,int reintentos)
+int getCuit(char cuit[QTY_CARACTERES],int limite,int reintentos)
 {
 	int retorno=-1;
 

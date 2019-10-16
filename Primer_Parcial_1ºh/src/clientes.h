@@ -9,8 +9,6 @@
 #define CLIENTES_H_
 
 #include "utn.h"
-#include "pedidos_de_recoleccion.h"
-
 
 typedef struct{
 
@@ -23,42 +21,17 @@ typedef struct{
 
 } sCliente;
 
-typedef struct{
+int cliente_imprimirClientesActivos(sCliente *acliente, int len);
+void cliente_imprimirUnCliente(sCliente aCliente);
+int cliente_initcliente(sCliente *aCliente, int cantidad);
+int cliente_getDatoscliente(sCliente *aCliente,int cantidad);
+int cliente_buscarclienteLibre(sCliente *aCliente,int cantidad);
+int cliente_altaCliente(sCliente *aCliente, int cantidad);
+int cliente_buscarClientePorId(sCliente *aCliente,int len, int id);
+int cliente_modificarClientePorId(sCliente *aCliente,int len, int id);
+int cliente_bajaClientePorId(sCliente *aCliente,int cantidad,int id);
+void cliente_clienteForzado(sCliente *aCliente,int len);
 
-	int idCliente;
-	int status;
-	int contadorPedidos;
-	float acumuladorPedidos;
 
-} sAuxiliarCliente;
-
-int imprimirClientesActivos(sCliente *acliente, int len);
-void imprimirUnCliente(sCliente aCliente);
-void imprimirUnClienteAux(sAuxiliarCliente aAuxCliente);
-int initcliente(sCliente *aCliente, int cantidad);
-int initClienteAuxiliar(sAuxiliarCliente *aAuxCLiente,int len);
-int getDatoscliente(sCliente *aCliente,int cantidad);
-int buscarclienteLibre(sCliente *aCliente,int cantidad);
-int altaCliente(sCliente *aCliente, int cantidad);
-int buscarClientePorId(sCliente *aCliente,int len, int id);
-int modificarClientePorId(sCliente *aCliente,int len, int id);
-int buscarClienteAuxiliarPorId(sAuxiliarCliente *aAuxCliente,int len, int idCliente);
-int bajaClientePorId(sCliente *aCliente,int cantidad,int id);
-void clienteForzado(sCliente *aCliente,int len);
-void imprimirContadorAuxCliente(sAuxiliarCliente aAuxCliente);
-int contarYmostrarCantidadPedidosPorCliente(sCliente *aCliente,
-		                                    int lenAcliente,
-											sPedidoCliente *aPedido,
-											int lenApedido,
-											sAuxiliarCliente *aAuxCLiente,
-											int lenAauxiliarCliente);
-void imprimirPedidosPendientesConInformacionDelCliente(sCliente *aCliente,
-		                                              int lenAcliente,
-													  sPedidoCliente *aPedido,
-													  int lenApedido);
-void imprimirPedidosProcesadosConInformacionDelCliente(sCliente *aCliente,
-		                                              int lenAcliente,
-													  sPedidoCliente *aPedido,
-													  int lenApedido);
-
+//INFORMES
 #endif /* CLIENTES_H_ */
