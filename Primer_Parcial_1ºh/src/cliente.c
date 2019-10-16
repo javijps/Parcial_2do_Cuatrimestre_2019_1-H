@@ -4,16 +4,16 @@
  *  Created on: 10 oct. 2019
  *      Author: alumno
  */
-#include "clientes.h"
+#include "cliente.h"
 
 #include <stdio.h>
 #include <stdio_ext.h>
 #include <stdlib.h>
 #include <string.h>
-
-
 #define STATUS_EMPTY  -1
 #define STATUS_NOT_EMPTY 0
+#define STATUS_PENDIENTE 0
+#define STATUS_COMPLETADO 1
 
 /**
 * \brief Imprime la informacion correspondiente a clientes activos..
@@ -21,7 +21,7 @@
 * \param len Cantidad del array a imprimir
 * \return Si tuvo exito al imprimir devuelve [0] o si fallo [-1]
 */
-int imprimirClientesActivos(sCliente *aCliente, int len){
+int cliente_imprimirClientesActivos(sCliente *aCliente, int len){
 
 	int i;
 	int retorno = -1;
@@ -51,9 +51,9 @@ int imprimirClientesActivos(sCliente *aCliente, int len){
 
 /**
 * \brief Imprime la informacion correspondiente a un cliente.
-* \param sCliente aCliente ?? de estructuras cliente.
+* \param sCliente aCliente cliente.
 */
-void imprimirUnCliente(sCliente aCliente)
+void cliente_imprimirUnCliente(sCliente aCliente)
 {
 	printf("\n - Id Cliente: %d\n"
 			" - Status Cliente: %d\n"
@@ -70,11 +70,20 @@ void imprimirUnCliente(sCliente aCliente)
 }
 
 
+
+
+
+
+
+
+
+
+
 /**
 * \brief Genera el ID correspondiente a una cliente.
 * \return Devuelve el ID correspondiente.
 */
-static int generarIdcliente(void){
+static int cliente_generarIdcliente(void){
 	static int id = 0;
 	id++;
 	return id;
@@ -86,7 +95,7 @@ static int generarIdcliente(void){
 * \param cantidad Cantidad de clientes a inicializar
 * \return Si tuvo exito al inicializar devuelve [0] o si fallo [-1]
 */
-int initcliente(sCliente *aCliente, int cantidad)
+int cliente_initcliente(sCliente *aCliente, int cantidad)
 {
 
 	int i;
@@ -102,13 +111,21 @@ int initcliente(sCliente *aCliente, int cantidad)
 	}
 	return retorno;
 }
+
+
+
+
+
+
+
+
 /**
 * \brief Solicita los datos correspondientes a una cliente.
 * \param sCliente *acliente puntero a una xxxxx de la estructura cliente.
 * \param cantidad Cantidad de clientes.
 * \return Si tuvo exito al completar todos los campos devuelve [0] o si fallo [-1]
 */
-int getDatoscliente(sCliente *aCliente,int cantidad){
+int cliente_getDatoscliente(sCliente *aCliente,int cantidad){
 
 	int retorno = -1;
 	sCliente bcliente;
@@ -140,10 +157,10 @@ int getDatoscliente(sCliente *aCliente,int cantidad){
 		strncpy(aCliente[i].cuit,bcliente.cuit,50);
 		strncpy(aCliente[i].direccion,bcliente.direccion,50);
 		strncpy(aCliente[i].localidad,bcliente.localidad,50);
-		aCliente[i].idCliente = generarIdcliente();
+		aCliente[i].idCliente = cliente_generarIdcliente();
 		aCliente[i].statusCliente = STATUS_NOT_EMPTY;
 		retorno = 0;
-		imprimirUnCliente(aCliente[i]);
+		cliente_imprimirUnCliente(aCliente[i]);
 	}
 	return retorno;
 }
@@ -154,7 +171,7 @@ int getDatoscliente(sCliente *aCliente,int cantidad){
 * \param cantidad Cantidad de clientes.
 * \return Si tuvo exito al encontrar una cliente vacia devuelve [0] o si fallo [-1]
 */
-int buscarclienteLibre(sCliente *aCliente,int cantidad)
+int cliente_buscarclienteLibre(sCliente *aCliente,int cantidad)
 {
 	int retorno = -1;
 	int i;
@@ -176,7 +193,7 @@ int buscarclienteLibre(sCliente *aCliente,int cantidad)
 * \param cantidad Cantidad de clientes.
 * \return Si tuvo exito al realizar el alta devuelve [0] o si fallo [-1]
 */
-int altaCliente(sCliente *aCliente, int cantidad)
+int cliente_altaCliente(sCliente *aCliente, int cantidad)
 {
 
 	int retorno = -1;
@@ -184,11 +201,11 @@ int altaCliente(sCliente *aCliente, int cantidad)
 
 	if(aCliente != NULL && cantidad>0)
 	{
-		index = buscarclienteLibre(aCliente,cantidad);
+		index = cliente_buscarclienteLibre(aCliente,cantidad);
 
 		if(index!=-1)
 		{
-			if(getDatoscliente(aCliente,cantidad)==0)
+			if(cliente_getDatoscliente(aCliente,cantidad)==0)
 				retorno = 0;
 		}
 	}
@@ -203,7 +220,7 @@ int altaCliente(sCliente *aCliente, int cantidad)
 * \param id ID de cliente a ser encontrado.
 * \return Si tuvo exito al encontrar el cliente indicado devuelve [0] o si fallo [-1]
 */
-int buscarClientePorId(sCliente *aCliente,int len, int id)
+int cliente_buscarClientePorId(sCliente *aCliente,int len, int id)
 {
 	int retorno = -1;
 	int i;
@@ -223,6 +240,14 @@ int buscarClientePorId(sCliente *aCliente,int len, int id)
 }
 
 
+
+
+
+
+
+
+
+
 /**
 * \brief Modifica direccion y locaclidad del cliente indicado por id.
 * \param sCliente *aCliente puntero a un array de estructura cliente.
@@ -230,14 +255,14 @@ int buscarClientePorId(sCliente *aCliente,int len, int id)
 * \param id ID de cliente a ser encontrada.
 * \return Si tuvo exito al modificar cliente indicado devuelve [0] o si fallo [-1]
 */
-int modificarClientePorId(sCliente *aCliente,int len, int id)
+int cliente_modificarClientePorId(sCliente *aCliente,int len, int id)
 {
 	int retorno = -1;
 	sCliente bcliente;
 	int index;
 	int opcion;
 
-	index = buscarClientePorId(aCliente,len,id);
+	index = cliente_buscarClientePorId(aCliente,len,id);
 	if(aCliente!=NULL && len>0 && index!=-1)
 	{
 		do
@@ -271,7 +296,7 @@ int modificarClientePorId(sCliente *aCliente,int len, int id)
 				}
 			}
 		}while(opcion!= 3);
-		imprimirUnCliente(aCliente[index]);
+		cliente_imprimirUnCliente(aCliente[index]);
 	}
 	else
 		printf("cliente no encontrado!!\n");
@@ -285,7 +310,7 @@ int modificarClientePorId(sCliente *aCliente,int len, int id)
 * \param id ID de cliente a ser dada de baja.
 * \return Si tuvo exito al realizar la baja de la cliente indicada devuelve [0] o si fallo [-1]
 */
-int bajaClientePorId(sCliente *aCliente,int cantidad,int id)
+int cliente_bajaClientePorId(sCliente *aCliente,int cantidad,int id)
 {
 
 	int retorno = -1;
@@ -294,7 +319,7 @@ int bajaClientePorId(sCliente *aCliente,int cantidad,int id)
 
 	if(aCliente != NULL && cantidad>0)
 	{
-		index = buscarClientePorId(aCliente,cantidad,id);
+		index = cliente_buscarClientePorId(aCliente,cantidad,id);
 		if((index!=-1) &&
 				(getChar(&option,
 						"Desea confirmar la baja?\nIngrese 's' para confirmar\n","Opcion incorrecta\n",
@@ -305,7 +330,7 @@ int bajaClientePorId(sCliente *aCliente,int cantidad,int id)
 		{
 			aCliente[index].statusCliente = STATUS_EMPTY;
 			retorno = 0;
-			imprimirUnCliente(aCliente[index]);
+			cliente_imprimirUnCliente(aCliente[index]);
 		}
 		}
 	return retorno;
@@ -316,7 +341,7 @@ int bajaClientePorId(sCliente *aCliente,int cantidad,int id)
 * \param sCliente *aCliente puntero a un array de estructura cliente.
 * \param len Tamaño del array
 */
-void clienteForzado(sCliente *aCliente,int len)
+void cliente_clienteForzado(sCliente *aCliente,int len)
 {
 	int aIdCliente[5] = {1,2,3,4,5};
 	int aStatusCliente[5] = {0,0,0,0,0};
@@ -337,58 +362,16 @@ void clienteForzado(sCliente *aCliente,int len)
 	}
 }
 
-/**
-* \brief Imprime el campo contadorPedidos de la estructura sAuxiliarCLiente.
-* \param sAuxiliarCLiente cliente Auxiliar.
-*/
-void imprimirContadorAuxCliente(sAuxiliarCliente aAuxCliente)
-{
-	printf("- Cantidad de pedidos: %d\n",aAuxCliente.contadorPedidos);
-}
 
-/**
-* \brief Cuenta la cantidad de pedidos de cada cliente y muestra la informacion de cada cliente y dicho conteo.
-* \param sCliente *aCliente puntero a una array de la estructura cliente.
-* \param cantidad tamaño del array de clientes.
-* \param sCliente *aCliente puntero a una array de la estructura cliente.
-* \param cantidad tamaño del array de clientes.
-* \param sCliente *aCliente puntero a una array de la estructura cliente.
-* \param cantidad tamaño del array de clientes.
-* \return Si tuvo exito al realizar la baja de la cliente indicada devuelve [0] o si fallo [-1]
-*/
-int contarYmostrarCantidadPedidosPorCliente(sCliente *aCliente,
-		                                 int lenAcliente,
-										 sPedidoCliente *aPedido,
-										 int lenApedido,
-										 sAuxiliarCliente *aAuxCLiente,
-										 int lenAauxiliarCliente)
-{
-	int retorno = -1;
-	int i;
-	int j;
 
-	if(aCliente!=NULL && aPedido!=NULL && aAuxCLiente!=NULL && lenAcliente>0 && lenApedido>0 && lenAauxiliarCliente>0)
-	{
-		for(i=0;i<lenAauxiliarCliente;i++)
-		{
-			aAuxCLiente[i].status = STATUS_EMPTY;
-			aAuxCLiente[i].contadorPedidos = 0;
-		}
-		for(i=0;i<lenAcliente;i++)
-		{
-			aAuxCLiente[i].idCliente = aCliente[i].idCliente;
-			for(j=0;j<lenApedido;j++)
-			{
-				if(aCliente[i].idCliente == aPedido[j].idCliente)
-				{
-					aAuxCLiente[i].contadorPedidos++;
-					retorno = 0;
-				}
-			}
-			imprimirUnCliente(aCliente[i]);
-			imprimirContadorAuxCliente(aAuxCLiente[i]);
-		}
-	}
-	return retorno;
-}
+
+
+
+
+
+
+
+
+
+
 

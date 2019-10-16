@@ -9,9 +9,9 @@
 #define INFORMES_H_
 
 #include "utn.h"
+#include "clientes.h"
 #include "auxiliarCliente.h"
-#include "cliente.h"
-#include "pedidoCliente.h"
+#include "pedidosRecoleccion.h"
 
 int informes_contarPedidosPorCLiente(sCliente *aCliente,
                             int lenAcliente,

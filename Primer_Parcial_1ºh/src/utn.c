@@ -52,7 +52,6 @@ int getInt(   int *pNumero,
 
 			}
 			printf("%s",mensajeError);
-			//__fpurge(stdin)
 			reintentos--;
 		}while(reintentos >= 0);
 
