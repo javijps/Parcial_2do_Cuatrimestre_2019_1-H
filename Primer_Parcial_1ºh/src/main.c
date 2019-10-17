@@ -102,10 +102,11 @@ int main(void) {
 				printf("No fue posible imprimir la informacion!\n");
 			break;
 		case 7:
-			imprimirPedidosPendientesConInformacionDelCliente(fCliente,5,fPedido,5);
+			pedidoCliente_BuscarImprimirPedidosPendientesConInformacionDelCliente(fCliente,5,fPedido,5);
 			break;
 		case 8:
-			imprimirPedidosProcesadosConInformacionDelCliente(fCliente,5,fPedido,5);
+			if(pedidoCliente_BuscarImprimirPedidosProcesadosConInformacionDelCliente(fCliente,5,fPedido,5)!=0)
+				printf("No se encontraron pedidos en estado procesado!!\n");
 			break;
 		case 9:
 			informes_subMenu();

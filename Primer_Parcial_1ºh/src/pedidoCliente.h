@@ -41,11 +41,11 @@ int contarYmostrarCantidadPedidosPorCliente(sCliente *aCliente,
 											int lenApedido,
 											sAuxiliarCliente *aAuxCLiente,
 											int lenAauxiliarCliente);
-void imprimirPedidosPendientesConInformacionDelCliente(sCliente *aCliente,
+int pedidoCliente_BuscarImprimirPedidosPendientesConInformacionDelCliente(sCliente *aCliente,
 		                                              int lenAcliente,
 													  sPedidoCliente *aPedido,
 													  int lenApedido);
-void imprimirPedidosProcesadosConInformacionDelCliente(sCliente *aCliente,
+int pedidoCliente_BuscarImprimirPedidosProcesadosConInformacionDelCliente(sCliente *aCliente,
 		                                              int lenAcliente,
 													  sPedidoCliente *aPedido,
 													  int lenApedido);

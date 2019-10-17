@@ -12,6 +12,7 @@
 #include <string.h>
 
 #define STATUS_EMPTY -1
+#define STATUS_NOT_EMPTY 0
 #define STATUS_PENDIENTE 0
 #define STATUS_COMPLETADO 1
 
@@ -387,7 +388,7 @@ void pedidoCliente_pedidoDeClienteForzado(sPedidoCliente *aPedidoCLiente,int len
 {
 
 	int aId_pedido[5] = {1,2,3,4,5};
-	int aStatusPedido[5] = {0,0,1,1,1};
+	int aStatusPedido[5] = {STATUS_PENDIENTE,STATUS_PENDIENTE,STATUS_PENDIENTE,STATUS_PENDIENTE,STATUS_PENDIENTE};
 	int aIdCliente[5] = {1,1,2,2,5};
 	float akgTotalesArecolectar[5] = {45.4,71.2,25,71,40};//todos tiene 10kg a recolectar demas q la suma de los 3 tipos de residuos
 	float akgHDPE[5] = {20,32,10,15,12};
@@ -457,22 +458,27 @@ int contarYmostrarCantidadPedidosPorCliente(sCliente *aCliente,
 	int i;
 	int j;
 
+	auxiliarCliente_initClienteAuxiliar(aAuxCLiente,lenAauxiliarCliente);
 	if(aCliente!=NULL && aPedido!=NULL && aAuxCLiente!=NULL && lenAcliente>0 && lenApedido>0 && lenAauxiliarCliente>0)
 	{
-		auxiliarCliente_initClienteAuxiliar(aAuxCLiente,lenAauxiliarCliente);
 		for(i=0;i<lenAcliente;i++)
 		{
 			aAuxCLiente[i].idCliente = aCliente[i].idCliente;
 			for(j=0;j<lenApedido;j++)
 			{
-				if((aCliente[i].idCliente == aPedido[j].idCliente) && (aPedido[j].statusPedido = STATUS_PENDIENTE))
+				if((aCliente[i].idCliente == aPedido[j].idCliente) &&
+						(aCliente[i].statusCliente ==STATUS_NOT_EMPTY) &&
+								(aPedido[j].statusPedido == STATUS_PENDIENTE))
 				{
 					aAuxCLiente[i].contadorPedidos++;
 					retorno = 0;
 				}
 			}
+			if(retorno==0)
+			{
 			cliente_imprimirUnCliente(aCliente[i]);
 			auxiliarCliente_imprimirContadorAuxCliente(aAuxCLiente[i]);
+			}
 		}
 	}
 	return retorno;
@@ -485,8 +491,12 @@ int contarYmostrarCantidadPedidosPorCliente(sCliente *aCliente,
 * \param sPedidoCliente *aPedido puntero a un array de la estructura pedido cliente.
 * \param cantidad tamaño del array de pedidos.
 */
-void imprimirPedidosPendientesConInformacionDelCliente(sCliente *aCliente,int lenAcliente,sPedidoCliente *aPedido,int lenApedido)
+int pedidoCliente_BuscarImprimirPedidosPendientesConInformacionDelCliente(sCliente *aCliente,
+                                                                          int lenAcliente,
+																		  sPedidoCliente *aPedido,
+																		  int lenApedido)
 {
+	int retorno =-1;
 	int i;
 	int j;
 
@@ -498,6 +508,7 @@ void imprimirPedidosPendientesConInformacionDelCliente(sCliente *aCliente,int le
 			{
 				if(aPedido[i].statusPedido == STATUS_PENDIENTE && aPedido[i].idCliente == aCliente[j].idCliente)
 				{
+					retorno = 0;
 					printf("\n-Id Pedido: %d\n"
 							"-Status del pedido: %d\n"
 							"-Cuit cliente %s\n"
@@ -512,6 +523,7 @@ void imprimirPedidosPendientesConInformacionDelCliente(sCliente *aCliente,int le
 			}
 		}
 	}
+	return retorno;
 }
 /**
 * \brief Imprime informacion de los clientes correspondiente a pedidos con status procesado con informacion especifica de dicho cliente.
@@ -520,8 +532,12 @@ void imprimirPedidosPendientesConInformacionDelCliente(sCliente *aCliente,int le
 * \param sPedidoCliente *aPedido puntero a un array de la estructura pedido cliente.
 * \param cantidad tamaño del array de pedidos.
 */
-void imprimirPedidosProcesadosConInformacionDelCliente(sCliente *aCliente,int lenAcliente,sPedidoCliente *aPedido,int lenApedido)
+int pedidoCliente_BuscarImprimirPedidosProcesadosConInformacionDelCliente(sCliente *aCliente,
+		                                                                  int lenAcliente,
+																		  sPedidoCliente *aPedido,
+																		  int lenApedido)
 {
+	int retorno=-1;
 	int i;
 	int j;
 
@@ -533,6 +549,7 @@ void imprimirPedidosProcesadosConInformacionDelCliente(sCliente *aCliente,int le
 			{
 				if(aPedido[i].statusPedido == STATUS_COMPLETADO && aPedido[i].idCliente == aCliente[j].idCliente)
 				{
+					retorno =0;
 					printf("\n-Id Pedido: %d\n"
 							"-Status del pedido: %d\n"
 							"-Cuit cliente %s\n"
@@ -551,4 +568,5 @@ void imprimirPedidosProcesadosConInformacionDelCliente(sCliente *aCliente,int le
 			}
 		}
 	}
+	return retorno;
 }
