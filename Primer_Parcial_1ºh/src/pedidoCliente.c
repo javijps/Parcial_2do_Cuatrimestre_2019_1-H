@@ -390,10 +390,10 @@ void pedidoCliente_pedidoDeClienteForzado(sPedidoCliente *aPedidoCLiente,int len
 	int aId_pedido[5] = {1,2,3,4,5};
 	int aStatusPedido[5] = {STATUS_PENDIENTE,STATUS_PENDIENTE,STATUS_PENDIENTE,STATUS_PENDIENTE,STATUS_PENDIENTE};
 	int aIdCliente[5] = {1,1,2,2,5};
-	float akgTotalesArecolectar[5] = {45.4,71.2,25,71,40};//todos tiene 10kg a recolectar demas q la suma de los 3 tipos de residuos
-	float akgHDPE[5] = {20,32,10,15,12};
-	float akgLDPE[5] = {10,22,2,5,15};
-	float akgPP[5] = {5,17,7,3,8};
+	float akgTotalesArecolectar[5] = {105.4,71.2,25,71,40};//todos tiene 10kg a recolectar demas q la suma de los 3 tipos de residuos
+	float akgHDPE[5] = {60,32,10,15,12};
+	float akgLDPE[5] = {20,22,2,5,15};
+	float akgPP[5] = {15,17,7,3,8};
 
 	int i;
 

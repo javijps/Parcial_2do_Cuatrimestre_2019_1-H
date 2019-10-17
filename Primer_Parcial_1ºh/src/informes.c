@@ -24,7 +24,6 @@
 //   **RECORRO LOS PEDIDOS,SI UN PEDIDO SUPERA LOS 50KG,IMPRIMO ESE CLIENTE O LA INFO QUE SE PIDE
 //LISTAR LOS CLIENTES POR LOCALIDAD.
 //   **
-//LISTAR LOS PEDIDOS CON MAS DE 10KG DEL 1ER RESIDUO, MAS DE 5KG DEL 2DO Y MAS DE 3KG DEL 3RO.
 //   IDEM LISTAR CLIENTES CON MAS DE 50KG... PERO SUMO HAGO 3 IF, UNO X CADA CONDICION POR TIPO Y PESO Q PONE
 //LISTAR EL CLIENTE CON EL PEDIDO DE MAS KG TOTALES.IMPRIMIR SU CUIT, NOMBRE DE LA EMPRESA Y DIRECCION.
 //     ** ES UN MAXIMO Y LISTAR MIXTO DE ESTRUCTURAS.
@@ -242,3 +241,81 @@ void informes_subMenu(void)
 		}
 	}while(option!='i');
 }
+
+//LISTAR cuantos PEDIDOS tienen MAS DE 10KG DEL 1ER RESIDUO, MAS DE 5KG DEL 2DO Y MAS DE 3KG DEL 3RO.INformar cuit y nombre de la empresa.
+
+
+
+/**
+* \brief LO MISMO QUE LA ANTERIOR, PERO EN LUGAR DE CONTAR, ACUMULA
+* \param sCliente *aCliente puntero a un array de la estructura cliente.
+* \param lenAcliente tamaño del array de clientes.
+* \param sPedidoCliente *aPedido puntero a un array de la estructura pedido cliente.
+* \param lenApedido tamaño del array de pedidos.
+* \param sAuxiliarCliente *aAuxCLiente puntero a una array de la auxiliar cliente.
+* \param lenaAuxCLiente tamaño del array de auxiliar cliente.
+* \return Si tuvo exito al  xxxxxxxxxxxxxxxxx devuelve [0] o si fallo [-1]
+*/
+int informes_3residuosConLimite(sCliente *aCliente,
+                                int lenAcliente,
+								sPedidoCliente *aPedido,
+								int lenApedido,
+								sAuxiliarCliente *aAuxCLiente,
+								int lenaAuxCLiente)
+{
+	int retorno = -1;
+	int i;
+	int contadorPedidos=0;
+
+	auxiliarCliente_initClienteAuxiliar(aAuxCLiente,lenaAuxCLiente);
+	if(aCliente!=NULL && aPedido!=NULL && aAuxCLiente!=NULL && lenAcliente>0 && lenApedido>0 && lenaAuxCLiente>0)
+	{
+		for(i=0;i<lenApedido;i++)
+		{
+			if(aPedido[i].kgHDPE >40 && aPedido[i].kgLDPE >15 && aPedido[i].kgLDPE > 10)
+			{
+				retorno = 0;
+				contadorPedidos++;
+				aAuxCLiente[i].status = STATUS_NOT_EMPTY;
+				aAuxCLiente[i].idCliente = aPedido[i].idCliente;
+			}
+		}printf("Cantidad de pedidos con las condiciones requeridas: %d",contadorPedidos);
+		imprimirClientesPorArrayAuxiliares(aCliente,lenAcliente,aAuxCLiente,lenaAuxCLiente);
+	}
+	return retorno;
+}
+
+
+int imprimirClientesPorArrayAuxiliares(sCliente *aCliente,int lenAcliente,sAuxiliarCliente *aAuxCLiente,int lenaAuxCLiente)
+{
+	int retorno = -1;
+	int i;
+	int j;
+
+	if(aCliente!=NULL && aAuxCLiente!=NULL && lenAcliente>0 &&  lenaAuxCLiente>0)
+	{
+		for(i=0;i<lenaAuxCLiente;i++)
+		{
+			for(j=0;j<lenAcliente;j++)
+			{
+				if(aAuxCLiente[i].status==STATUS_NOT_EMPTY && aAuxCLiente[i].idCliente == aCliente[j].idCliente)
+				{
+					retorno = 0;
+					printf("\n-Id Cliente: %d\n"
+							"-Nombre de la empresa: %s\n"
+							"Cuit %s\n",
+							aCliente[j].idCliente,
+							aCliente[j].empresa,
+							aCliente[j].cuit);
+				}
+			}
+		}
+	}
+	return retorno;
+}
+
+
+
+
+
+

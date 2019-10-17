@@ -38,7 +38,19 @@ int informes_listarInfoClientesConInfoAuxPorId(sCliente *aCliente,
 									           sAuxiliarCliente *aAuxCLiente,
 									           int lenaAuxCLiente,
 									           int idCliente);
+int informes_3residuosConLimite(sCliente *aCliente,
+                                int lenAcliente,
+								sPedidoCliente *aPedido,
+								int lenApedido,
+								sAuxiliarCliente *aAuxCLiente,
+								int lenaAuxCLiente);
+int imprimirClientesPorArrayAuxiliares(sCliente *aCliente,int lenAcliente,sAuxiliarCliente *aAuxCLiente,int lenaAuxCLiente);
+
+
 void informes_subMenu(void);
+
+
+
 
 #endif /* INFORMES_H_ */
 

@@ -109,7 +109,12 @@ int main(void) {
 				printf("No se encontraron pedidos en estado procesado!!\n");
 			break;
 		case 9:
-			informes_subMenu();
+			if(informes_3residuosConLimite(fCliente,5,fPedido,5,bAuxiliarCLiente,MAX_CLIENTES)==0)
+				printf("devuelve 0\n");
+			else
+				printf("no funciona\n");
+
+//			informes_subMenu();
 			break;
 		}
 	}while(option!=10);
