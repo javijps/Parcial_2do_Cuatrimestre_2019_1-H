@@ -14,6 +14,7 @@
 #define STATUS_NOT_EMPTY 0
 #define STATUS_PENDIENTE 0
 #define STATUS_COMPLETADO 1
+#define MAX_CUIT 15
 
 /**
 * \brief Imprime la informacion correspondiente a clientes activos..
@@ -69,16 +70,6 @@ void cliente_imprimirUnCliente(sCliente aCliente)
 			aCliente.localidad);
 }
 
-
-
-
-
-
-
-
-
-
-
 /**
 * \brief Genera el ID correspondiente a una cliente.
 * \return Devuelve el ID correspondiente.
@@ -112,13 +103,6 @@ int cliente_initcliente(sCliente *aCliente, int cantidad)
 	return retorno;
 }
 
-
-
-
-
-
-
-
 /**
 * \brief Solicita los datos correspondientes a una cliente.
 * \param sCliente *acliente puntero a una xxxxx de la estructura cliente.
@@ -130,37 +114,64 @@ int cliente_getDatoscliente(sCliente *aCliente,int cantidad){
 	int retorno = -1;
 	sCliente bcliente;
 	int i;
+	char option='s';
 
-	for(i=0;i<cantidad;i++)
+	if(aCliente!=NULL && cantidad>0)
 	{
-		if(getAlfanumerico(bcliente.empresa,"Ingrese nombre de la  Empresa\n","Nombre Incorrecto\n",50,3)!=0)
+		for(i=0;i<cantidad;i++)
 		{
-			printf("Nombre Incorrecto\n");
-			break;
+			while(option=='s')
+			{
+				if(getAlfanumerico(bcliente.empresa,"Ingrese nombre de la  Empresa\n","Nombre Incorrecto\n",50,3)!=0)
+				{
+					printf("Nombre Incorrecto\n");
+					break;
+				}
+				else
+					if(cliente_buscarClientePorEmpresa(aCliente,cantidad,bcliente.empresa)!=-1)
+					{
+						printf("Empresa existente!\n");
+						retorno=-1;
+						break;
+					}
+				if(getCuit(bcliente.cuit,50,3)!=0)
+				{
+					printf("Cuit Incorrecto\n");
+					break;
+				}
+				else
+					if(cliente_buscarClientePorCuit(aCliente,cantidad,bcliente.cuit)!=-1)
+					{
+						printf("Cuit existente!\n");
+						retorno=-1;
+						break;
+					}
+				if(getAlfanumerico(bcliente.direccion,"Ingrese direccion\n","Direccion Incorrecta\n",50,3)!=0)
+				{
+					printf("Direccion Incorrecta\n");
+					break;
+				}
+				if(getAlfanumerico(bcliente.localidad,"Ingrese Localidad\n","Localidad Incorrecta\n",50,3)!=0)
+				{
+					printf("Localidad Incorrecta\n");
+					break;
+				}
+				strncpy(aCliente[i].empresa,bcliente.empresa,50);
+				strncpy(aCliente[i].cuit,bcliente.cuit,50);
+				strncpy(aCliente[i].direccion,bcliente.direccion,50);
+				strncpy(aCliente[i].localidad,bcliente.localidad,50);
+				aCliente[i].idCliente = cliente_generarIdcliente();
+				aCliente[i].statusCliente = STATUS_NOT_EMPTY;
+				retorno = 0;
+				cliente_imprimirUnCliente(aCliente[i]);
+				getChar(&option,
+						"Desea dar de alta otro cliente?\nIngrese 's'\nDe lo contrario presione 'n'\n",
+						"Opcion incorrecta!\n",
+						'a',
+						's'
+						,2);
+			}
 		}
-		if(getCuit(bcliente.cuit,50,3)!=0)
-		{
-			printf("Cuit Incorrecto\n");
-			break;
-		}
-		if(getAlfanumerico(bcliente.direccion,"Ingrese direccion\n","Direccion Incorrecta\n",50,3)!=0)
-		{
-			printf("Direccion Incorrecta\n");
-			break;
-		}
-		if(getAlfanumerico(bcliente.localidad,"Ingrese Localidad\n","Localidad Incorrecta\n",50,3)!=0)
-		{
-			printf("Localidad Incorrecta\n");
-			break;
-		}
-		strncpy(aCliente[i].empresa,bcliente.empresa,50);
-		strncpy(aCliente[i].cuit,bcliente.cuit,50);
-		strncpy(aCliente[i].direccion,bcliente.direccion,50);
-		strncpy(aCliente[i].localidad,bcliente.localidad,50);
-		aCliente[i].idCliente = cliente_generarIdcliente();
-		aCliente[i].statusCliente = STATUS_NOT_EMPTY;
-		retorno = 0;
-		cliente_imprimirUnCliente(aCliente[i]);
 	}
 	return retorno;
 }
@@ -235,17 +246,65 @@ int cliente_buscarClientePorId(sCliente *aCliente,int len, int id)
 				break;
 			}
 		}
+		if(retorno==-1)
+		{
+			printf("Id no encontrado!\n");
+		}
 	}
 	return retorno;
 }
 
+/**
+* \brief Busca una cliente existente por medio de su nombre de empresa.
+* \param sCliente *aCliente puntero a un array de estructura cliente.
+* \param len Tamaño del array.
+* \param id ID de cliente a ser encontrado.
+* \return Si tuvo exito al encontrar el cliente indicado devuelve [0] o si fallo [-1]
+*/
+int cliente_buscarClientePorEmpresa(sCliente *aCliente,int len, char empresa[50])
+{
+	int retorno = -1;
+	int i;
 
+	if(aCliente!=NULL && len>0)
+	{
+		for(i=0;i<len;i++)
+		{
+			if((aCliente[i].statusCliente == STATUS_NOT_EMPTY) && (strncmp(aCliente[i].empresa,empresa,50)==0))
+			{
+				retorno = i;
+				break;
+			}
+		}
+	}
+	return retorno;
+}
 
+/**
+* \brief Busca una cliente existente por medio de su cuit.
+* \param sCliente *aCliente puntero a un array de estructura cliente.
+* \param len Tamaño del array.
+* \param cuit cuit de cliente a ser encontrado.
+* \return Si tuvo exito al encontrar el cliente indicado devuelve [0] o si fallo [-1]
+*/
+int cliente_buscarClientePorCuit(sCliente *aCliente,int len, char cuit[MAX_CUIT])
+{
+	int retorno = -1;
+	int i;
 
-
-
-
-
+	if(aCliente!=NULL && len>0)
+	{
+		for(i=0;i<len;i++)
+		{
+			if((aCliente[i].statusCliente == STATUS_NOT_EMPTY) && (strncmp(aCliente[i].cuit,cuit,MAX_CUIT)==0))
+			{
+				retorno = i;
+				break;
+			}
+		}
+	}
+	return retorno;
+}
 
 
 /**

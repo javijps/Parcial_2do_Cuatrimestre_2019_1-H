@@ -9,6 +9,7 @@
 #include <stdio_ext.h>
 #include <stdlib.h>
 #include <string.h>
+
 #define STATUS_EMPTY -1
 #define STATUS_PENDIENTE 0
 #define STATUS_COMPLETADO 1
@@ -27,8 +28,6 @@
 //   IDEM LISTAR CLIENTES CON MAS DE 50KG... PERO SUMO HAGO 3 IF, UNO X CADA CONDICION POR TIPO Y PESO Q PONE
 //LISTAR EL CLIENTE CON EL PEDIDO DE MAS KG TOTALES.IMPRIMIR SU CUIT, NOMBRE DE LA EMPRESA Y DIRECCION.
 //     ** ES UN MAXIMO Y LISTAR MIXTO DE ESTRUCTURAS.
-
-
 
 /**
 * \brief ITERA ENTRE ARRAY DE CLIENTES Y ARRAY DE PEDIDOS, MACHEA AMBOS POR EL ID,
@@ -203,3 +202,43 @@ int informes_maximoKgTotalesPorCliente(sCliente *aCliente,
 	return retorno;
 }
 
+/**
+* \brief Accede al Sub-Menu informes mediante el ingreso de opciones de menu.
+* \return Si tuvo exito al acceder devuelve [0] o si fallo [-1]
+*/
+void informes_subMenu(void)
+{
+	char option;
+
+	do
+	{
+		if(getChar(&option,"\n---SubMenu Informes---\n"
+				"Ingrese:\n"
+				"a-\n"
+				"b-\n"
+				"c-\n"
+				"d-\n"
+				"e-\n"
+				"f-\n"
+				"g-\n"
+				"h-\n"
+				"i-EXIT\n",
+				"Error, opcion incorrecta!\n",'a','i',2)!=0)
+			{
+			printf("No fue posible acceder al Sub-Menu de opciones");
+			break;
+			}
+		else
+		{
+			switch(option)
+			{
+			case 'a':
+				printf("ok\n");
+				break;
+			case 'b':
+				printf("ok b\n");
+				break;
+			}
+		}
+	}while(option!='i');
+}

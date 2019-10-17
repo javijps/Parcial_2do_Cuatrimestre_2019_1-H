@@ -1,4 +1,178 @@
-17:09:10 **** Build of configuration Debug for project Primer_Parcial_1ºh ****
+23:11:48 **** Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/auxiliarCliente.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/auxiliarCliente.d" -MT"src/auxiliarCliente.o" -o "src/auxiliarCliente.o" "../src/auxiliarCliente.c"
+Finished building: ../src/auxiliarCliente.c
+ 
+Building file: ../src/cliente.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/cliente.d" -MT"src/cliente.o" -o "src/cliente.o" "../src/cliente.c"
+Finished building: ../src/cliente.c
+ 
+Building file: ../src/informes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
+Finished building: ../src/informes.c
+ 
+Building file: ../src/main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function ‘main’:
+../src/main.c:109:7: warning: implicit declaration of function ‘subMenu’ [-Wimplicit-function-declaration]
+    if(subMenu()!=0
+       ^~~~~~~
+../src/main.c:109:19: error: expected ‘)’ before ‘printf’
+    if(subMenu()!=0
+      ~            ^
+                   )
+      printf("No fue posible acceder al Sub-Menu de opciones");
+      ~~~~~~        
+../src/main.c:112:3: error: expected expression before ‘}’ token
+   }
+   ^
+make: *** [src/subdir.mk:35: src/main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+23:12:44 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function ‘main’:
+../src/main.c:109:28: error: expected ‘)’ before ‘;’ token
+    if(informes_subMenu()!=0;
+      ~                     ^
+                            )
+../src/main.c:112:3: error: expected expression before ‘}’ token
+   }
+   ^
+make: *** [src/subdir.mk:35: src/main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+23:12:48 **** Clean-only build of configuration Debug for project Primer_Parcial_1ºh ****
+make clean 
+rm -rf  ./src/auxiliarCliente.o ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o  ./src/auxiliarCliente.d ./src/cliente.d ./src/informes.d ./src/main.d ./src/pedidoCliente.d ./src/utn.d  Primer_Parcial_1ºh
+ 
+23:12:51 **** Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/auxiliarCliente.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/auxiliarCliente.d" -MT"src/auxiliarCliente.o" -o "src/auxiliarCliente.o" "../src/auxiliarCliente.c"
+Finished building: ../src/auxiliarCliente.c
+ 
+Building file: ../src/cliente.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/cliente.d" -MT"src/cliente.o" -o "src/cliente.o" "../src/cliente.c"
+Finished building: ../src/cliente.c
+ 
+Building file: ../src/informes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
+Finished building: ../src/informes.c
+ 
+Building file: ../src/main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function ‘main’:
+../src/main.c:109:28: error: expected ‘)’ before ‘;’ token
+    if(informes_subMenu()!=0;
+      ~                     ^
+                            )
+../src/main.c:112:3: error: expected expression before ‘}’ token
+   }
+   ^
+make: *** [src/subdir.mk:35: src/main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+23:13:12 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function ‘main’:
+../src/main.c:109:28: error: expected ‘)’ before ‘;’ token
+    if(informes_subMenu()!=0;
+      ~                     ^
+                            )
+../src/main.c:112:3: error: expected expression before ‘}’ token
+   }
+   ^
+make: *** [src/subdir.mk:35: src/main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+23:13:37 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function ‘main’:
+../src/main.c:109:28: error: expected ‘)’ before ‘;’ token
+    if(informes_subMenu()!=0;
+      ~                     ^
+                            )
+../src/main.c:112:3: error: expected expression before ‘}’ token
+   }
+   ^
+make: *** [src/subdir.mk:35: src/main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+23:13:42 **** Clean-only build of configuration Debug for project Primer_Parcial_1ºh ****
+make clean 
+rm -rf  ./src/auxiliarCliente.o ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o  ./src/auxiliarCliente.d ./src/cliente.d ./src/informes.d ./src/main.d ./src/pedidoCliente.d ./src/utn.d  Primer_Parcial_1ºh
+ 
+23:13:46 **** Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/auxiliarCliente.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/auxiliarCliente.d" -MT"src/auxiliarCliente.o" -o "src/auxiliarCliente.o" "../src/auxiliarCliente.c"
+Finished building: ../src/auxiliarCliente.c
+ 
+Building file: ../src/cliente.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/cliente.d" -MT"src/cliente.o" -o "src/cliente.o" "../src/cliente.c"
+Finished building: ../src/cliente.c
+ 
+Building file: ../src/informes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
+Finished building: ../src/informes.c
+ 
+Building file: ../src/main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function ‘main’:
+../src/main.c:109:28: error: expected ‘)’ before ‘;’ token
+    if(informes_subMenu()!=0;
+      ~                     ^
+                            )
+../src/main.c:112:3: error: expected expression before ‘}’ token
+   }
+   ^
+make: *** [src/subdir.mk:35: src/main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+23:14:08 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building file: ../src/pedidoCliente.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pedidoCliente.d" -MT"src/pedidoCliente.o" -o "src/pedidoCliente.o" "../src/pedidoCliente.c"
+Finished building: ../src/pedidoCliente.c
+ 
+Building file: ../src/utn.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/utn.d" -MT"src/utn.o" -o "src/utn.o" "../src/utn.c"
+Finished building: ../src/utn.c
+ 
+Building target: Primer_Parcial_1ºh
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_1ºh"  ./src/auxiliarCliente.o ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
+Finished building target: Primer_Parcial_1ºh
+ 
+23:14:13 **** Clean-only build of configuration Debug for project Primer_Parcial_1ºh ****
+make clean 
+rm -rf  ./src/auxiliarCliente.o ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o  ./src/auxiliarCliente.d ./src/cliente.d ./src/informes.d ./src/main.d ./src/pedidoCliente.d ./src/utn.d  Primer_Parcial_1ºh
+ 
+23:14:15 **** Build of configuration Debug for project Primer_Parcial_1ºh ****
 make all 
 Building file: ../src/auxiliarCliente.c
 Invoking: GCC C Compiler
@@ -35,6 +209,282 @@ Invoking: GCC C Linker
 gcc  -o "Primer_Parcial_1ºh"  ./src/auxiliarCliente.o ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
 Finished building target: Primer_Parcial_1ºh
  
-17:09:15 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+23:14:20 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
 make all 
 make: No se hace nada para 'all'.
+23:15:10 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/informes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
+../src/informes.c: In function ‘informes_subMenu’:
+../src/informes.c:239:18: error: expected ‘;’ before ‘break’
+    printf("ok\n")
+                  ^
+                  ;
+    break;
+    ~~~~~          
+../src/informes.c:242:20: error: expected ‘;’ before ‘break’
+    printf("ok b\n")
+                    ^
+                    ;
+    break;
+    ~~~~~            
+make: *** [src/subdir.mk:35: src/informes.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+23:15:18 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/informes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
+Finished building: ../src/informes.c
+ 
+Building target: Primer_Parcial_1ºh
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_1ºh"  ./src/auxiliarCliente.o ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
+Finished building target: Primer_Parcial_1ºh
+ 
+23:15:28 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+make: No se hace nada para 'all'.
+23:15:31 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+make: No se hace nada para 'all'.
+23:16:57 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+make: No se hace nada para 'all'.
+23:18:49 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/informes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
+Finished building: ../src/informes.c
+ 
+Building target: Primer_Parcial_1ºh
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_1ºh"  ./src/auxiliarCliente.o ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
+Finished building target: Primer_Parcial_1ºh
+ 
+23:18:54 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+make: No se hace nada para 'all'.
+23:20:15 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/informes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
+Finished building: ../src/informes.c
+ 
+Building target: Primer_Parcial_1ºh
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_1ºh"  ./src/auxiliarCliente.o ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
+Finished building target: Primer_Parcial_1ºh
+ 
+23:21:18 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/informes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
+Finished building: ../src/informes.c
+ 
+Building target: Primer_Parcial_1ºh
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_1ºh"  ./src/auxiliarCliente.o ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
+Finished building target: Primer_Parcial_1ºh
+ 
+23:21:24 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+make: No se hace nada para 'all'.
+23:21:56 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/informes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
+Finished building: ../src/informes.c
+ 
+Building target: Primer_Parcial_1ºh
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_1ºh"  ./src/auxiliarCliente.o ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
+Finished building target: Primer_Parcial_1ºh
+ 
+23:29:05 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/cliente.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/cliente.d" -MT"src/cliente.o" -o "src/cliente.o" "../src/cliente.c"
+../src/cliente.c: In function ‘cliente_buscarClientePorId’:
+../src/cliente.c:249:34: error: expected ‘;’ before ‘}’ token
+     printf("Id no encontrado!\n")
+                                  ^
+                                  ;
+   }
+   ~                               
+make: *** [src/subdir.mk:35: src/cliente.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+23:29:27 **** Clean-only build of configuration Debug for project Primer_Parcial_1ºh ****
+make clean 
+rm -rf  ./src/auxiliarCliente.o ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o  ./src/auxiliarCliente.d ./src/cliente.d ./src/informes.d ./src/main.d ./src/pedidoCliente.d ./src/utn.d  Primer_Parcial_1ºh
+ 
+23:29:36 **** Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/auxiliarCliente.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/auxiliarCliente.d" -MT"src/auxiliarCliente.o" -o "src/auxiliarCliente.o" "../src/auxiliarCliente.c"
+Finished building: ../src/auxiliarCliente.c
+ 
+Building file: ../src/cliente.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/cliente.d" -MT"src/cliente.o" -o "src/cliente.o" "../src/cliente.c"
+../src/cliente.c: In function ‘cliente_buscarClientePorId’:
+../src/cliente.c:249:34: error: expected ‘;’ before ‘}’ token
+     printf("Id no encontrado!\n")
+                                  ^
+                                  ;
+   }
+   ~                               
+make: *** [src/subdir.mk:35: src/cliente.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+23:29:52 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/cliente.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/cliente.d" -MT"src/cliente.o" -o "src/cliente.o" "../src/cliente.c"
+Finished building: ../src/cliente.c
+ 
+Building file: ../src/informes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
+Finished building: ../src/informes.c
+ 
+Building file: ../src/main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building file: ../src/pedidoCliente.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pedidoCliente.d" -MT"src/pedidoCliente.o" -o "src/pedidoCliente.o" "../src/pedidoCliente.c"
+Finished building: ../src/pedidoCliente.c
+ 
+Building file: ../src/utn.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/utn.d" -MT"src/utn.o" -o "src/utn.o" "../src/utn.c"
+Finished building: ../src/utn.c
+ 
+Building target: Primer_Parcial_1ºh
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_1ºh"  ./src/auxiliarCliente.o ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
+Finished building target: Primer_Parcial_1ºh
+ 
+23:29:54 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+make: No se hace nada para 'all'.
+23:30:06 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+make: No se hace nada para 'all'.
+23:31:56 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/pedidoCliente.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pedidoCliente.d" -MT"src/pedidoCliente.o" -o "src/pedidoCliente.o" "../src/pedidoCliente.c"
+Finished building: ../src/pedidoCliente.c
+ 
+Building target: Primer_Parcial_1ºh
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_1ºh"  ./src/auxiliarCliente.o ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
+Finished building target: Primer_Parcial_1ºh
+ 
+23:32:00 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+make: No se hace nada para 'all'.
+23:33:18 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/cliente.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/cliente.d" -MT"src/cliente.o" -o "src/cliente.o" "../src/cliente.c"
+Finished building: ../src/cliente.c
+ 
+Building target: Primer_Parcial_1ºh
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_1ºh"  ./src/auxiliarCliente.o ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
+Finished building target: Primer_Parcial_1ºh
+ 
+23:33:22 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+make: No se hace nada para 'all'.
+23:34:21 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: Primer_Parcial_1ºh
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_1ºh"  ./src/auxiliarCliente.o ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
+Finished building target: Primer_Parcial_1ºh
+ 
+23:34:29 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+make: No se hace nada para 'all'.
+23:34:40 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+make: No se hace nada para 'all'.
+23:36:08 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/cliente.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/cliente.d" -MT"src/cliente.o" -o "src/cliente.o" "../src/cliente.c"
+../src/cliente.c: In function ‘cliente_buscarClientePorId’:
+../src/cliente.c:252:4: error: break statement not within loop or switch
+    break;
+    ^~~~~
+make: *** [src/subdir.mk:35: src/cliente.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+23:36:16 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/cliente.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/cliente.d" -MT"src/cliente.o" -o "src/cliente.o" "../src/cliente.c"
+Finished building: ../src/cliente.c
+ 
+Building target: Primer_Parcial_1ºh
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_1ºh"  ./src/auxiliarCliente.o ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
+Finished building target: Primer_Parcial_1ºh
+ 
+23:36:21 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+make: No se hace nada para 'all'.
+23:37:42 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: Primer_Parcial_1ºh
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_1ºh"  ./src/auxiliarCliente.o ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
+Finished building target: Primer_Parcial_1ºh
+ 
+23:37:48 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+make: No se hace nada para 'all'.
+23:40:40 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/informes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
+Finished building: ../src/informes.c
+ 
+Building file: ../src/main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: Primer_Parcial_1ºh
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_1ºh"  ./src/auxiliarCliente.o ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
+Finished building target: Primer_Parcial_1ºh
+ 

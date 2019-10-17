@@ -7,7 +7,7 @@
 
 #ifndef CLIENTE_H_
 #define CLIENTE_H_
-
+#define MAX_CUIT 15
 #include "utn.h"
 
 typedef struct{
@@ -15,7 +15,7 @@ typedef struct{
 	int idCliente;
 	int statusCliente;
 	char empresa[50];
-	char cuit[50];
+	char cuit[MAX_CUIT];
 	char direccion[50];
 	char localidad[50];
 
@@ -28,6 +28,8 @@ int cliente_getDatoscliente(sCliente *aCliente,int cantidad);
 int cliente_buscarclienteLibre(sCliente *aCliente,int cantidad);
 int cliente_altaCliente(sCliente *aCliente, int cantidad);
 int cliente_buscarClientePorId(sCliente *aCliente,int len, int id);
+int cliente_buscarClientePorCuit(sCliente *aCliente,int len, char cuit[MAX_CUIT]);
+int cliente_buscarClientePorEmpresa(sCliente *aCliente,int len, char empresa[50]);
 int cliente_modificarClientePorId(sCliente *aCliente,int len, int id);
 int cliente_bajaClientePorId(sCliente *aCliente,int cantidad,int id);
 void cliente_clienteForzado(sCliente *aCliente,int len);

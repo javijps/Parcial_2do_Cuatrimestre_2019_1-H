@@ -14,29 +14,31 @@
 #include "pedidoCliente.h"
 
 int informes_contarPedidosPorCLiente(sCliente *aCliente,
-                            int lenAcliente,
-							sPedidoCliente *aPedido,
-							int lenApedido,
-							sAuxiliarCliente *aAuxCLiente,
-							int lenaAuxCLiente);
+                                     int lenAcliente,
+									 sPedidoCliente *aPedido,
+									 int lenApedido,
+									 sAuxiliarCliente *aAuxCLiente,
+									 int lenaAuxCLiente);
 int informes_acumularKgTotalesPorCliente(sCliente *aCliente,
-                                int lenAcliente,
-								sPedidoCliente *aPedido,
-								int lenApedido,
-								sAuxiliarCliente *aAuxCLiente,
-								int lenaAuxCLiente);
+                                     int lenAcliente,
+									 sPedidoCliente *aPedido,
+									 int lenApedido,
+									 sAuxiliarCliente *aAuxCLiente,
+									 int lenaAuxCLiente);
 int informes_maximoKgTotalesPorCliente(sCliente *aCliente,
-                              int lenAcliente,
-							  sPedidoCliente *aPedido,
-							  int lenApedido,
-							  sAuxiliarCliente *aAuxCLiente,
-							  int lenaAuxCLiente);
+                                       int lenAcliente,
+									   sPedidoCliente *aPedido,
+									   int lenApedido,
+									   sAuxiliarCliente *aAuxCLiente,
+									   int lenaAuxCLiente);
 int informes_listarInfoClientesConInfoAuxPorId(sCliente *aCliente,
-		                         int lenAcliente,
-								 sPedidoCliente *aPedido,
-								 int lenApedido,
-								 sAuxiliarCliente *aAuxCLiente,
-								 int lenaAuxCLiente,
-								 int idCliente);
+		                                       int lenAcliente,
+									           sPedidoCliente *aPedido,
+									           int lenApedido,
+									           sAuxiliarCliente *aAuxCLiente,
+									           int lenaAuxCLiente,
+									           int idCliente);
+void informes_subMenu(void);
+
 #endif /* INFORMES_H_ */
 

@@ -50,13 +50,13 @@ int main(void) {
 				"6-Imprimir clientes\n"
 				"7-Imprimir pedidos pendientes\n"
 				"8-Imprimir pedidos procesados\n"
-				"9-EXIT\n"
-				"10-PRUEBA INFORMES\n",
+				"9-SUBMENU INFORMES\n"
+				"10-EXIT\n",
 				"Error\n",1,12,2);
 		switch(option)
 		{
 		case 1:
-			if(cliente_altaCliente(aCliente,1)!=0)
+			if(cliente_altaCliente(aCliente,5)!=0)
 				printf("Alta no realizada!\n");
 			else
 				printf("Alta exitosa!\n");
@@ -77,17 +77,19 @@ int main(void) {
 			else
 				printf("Baja no realizada!!\n");
 			break;
-		case 4://ver si se puede modificar para q muestre mensaje de id es inexistente
+		case 4:
 			cliente_imprimirClientesActivos(fCliente,5);
 			if((getInt(&bIdCliente,"\nIngrese ID de cliente\n","Error id\n",1,MAX_CLIENTES,2)==0) &&
 					(cliente_buscarClientePorId(fCliente,5,bIdCliente)!=-1) &&
 					(pedidoCliente_altaPedido(aPedido,1,bIdCliente)==0))
+			{
 				printf("Alta exitosa!!\n");
+				pedidoCliente_imprimirPedidosPendientes(aPedido,5);
+			}
 			else
 				printf("No fue posible realizar el alta!!\n");
-			pedidoCliente_imprimirPedidosPendientes(fPedido,5);
 			break;
-		case 5://
+		case 5:
 			pedidoCliente_imprimirPedidosActivos(fPedido,5);
 			if(getInt(&bIdPedido,"Ingrese id del pedido\n","Id incorrecto!\n",1,MAX_PEDIDOS,2)==0 &&
 					pedidoCliente_procesarResiduos(fPedido,5,bIdPedido)==0)
@@ -105,12 +107,17 @@ int main(void) {
 		case 8:
 			imprimirPedidosProcesadosConInformacionDelCliente(fCliente,5,fPedido,5);
 			break;
-		case 10:
-			if(informes_maximoKgTotalesPorCliente(fCliente,5,fPedido,5,bAuxiliarCLiente,MAX_CLIENTES)!=0)
-				printf("No es posible mostrar el listado!\n");
+		case 9:
+			informes_subMenu();
 			break;
 		}
-	}while(option!=9);
+	}while(option!=10);
 	return EXIT_SUCCESS;
 }
 
+
+
+
+
+/*if(informes_maximoKgTotalesPorCliente(fCliente,5,fPedido,5,bAuxiliarCLiente,MAX_CLIENTES)!=0)
+	printf("No es posible mostrar el listado!\n");*/
