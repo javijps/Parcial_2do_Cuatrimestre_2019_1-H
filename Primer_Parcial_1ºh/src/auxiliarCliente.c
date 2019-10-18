@@ -22,7 +22,7 @@
 */
 void auxiliarCliente_imprimirContadorAuxCliente(sAuxiliarCliente aAuxCliente)
 {
-	printf("- Cantidad de pedidos: %d\n",aAuxCliente.contadorPedidos);
+	printf("- Cantidad de pedidos pendientes: %d\n",aAuxCliente.contadorPedidos);
 }
 
 /**

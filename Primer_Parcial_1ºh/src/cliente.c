@@ -402,12 +402,12 @@ int cliente_bajaClientePorId(sCliente *aCliente,int cantidad,int id)
 */
 void cliente_clienteForzado(sCliente *aCliente,int len)
 {
-	int aIdCliente[5] = {1,2,3,4,5};
-	int aStatusCliente[5] = {0,0,0,0,0};
-	char aEmpresa[][50] = {"Transaporte San Miguel SA","Green Eat SA","Nucha","Patagonia Brewery","Guten Bier"};
-	char aCuit[][50] = {"20322670355","20350876589","30382549014","20289549514","30231943712"};
-	char aDireccion[][50] = {"Cabildo 5000","Santa Fe 4600","Callao 750","Suipacha 324", "Calle 435"};
-	char aLocalidad[][50] = {"Belgrano","Palermo","Recoleta","Microcentro","Barrio Parque"};
+	int aIdCliente[6] = {1,2,3,4,5,6};
+	int aStatusCliente[6] = {0,0,0,0,0,0};
+	char aEmpresa[6][50] = {"Telefonica","Datasoft","Nestle","Terrabusi","Dia","Quilmes"};
+	char aCuit[6][50] = {"30-11223344-5","30-44556677-6","30-88995521-9","30-56781423-5","31-54581253-3","30-51485759-6"};
+	char aDireccion[6][50] = {"Lima 1234","Corrientes 2547","cucha cucha 555","rocha 784", "Mitre 750","rocha 741"};
+	char aLocalidad[6][50] = {"CABA","CABA","LANUS","QUILMES","AVELLANEDA","QUILMES"};
 	int i;
 
 	for(i=0;i<len;i++)

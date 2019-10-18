@@ -409,7 +409,7 @@ int esCuit(char cuit[QTY_CARACTERES])
 	{
 		while(cuit[i]!='\0')
 		{
-			if(cuit[i] >= '0' && cuit[i] <= '9')
+			if((cuit[i] >= '0' && cuit[i] <= '9')||cuit[i] == '-' )
 			{
 				retorno = 0;
 				contadorCaracteres++;
@@ -422,7 +422,7 @@ int esCuit(char cuit[QTY_CARACTERES])
 				break;
 			}
 		}
-		if(contadorCaracteres!=11)
+		if(contadorCaracteres!=13)
 		{
 			retorno = -1;
 			printf("Cantidad de caracteres ingresados (%d) incorrecto!\nEl cuit debe contener 11 caracteres\n",contadorCaracteres);
@@ -447,7 +447,7 @@ int getCuit(char cuit[QTY_CARACTERES],int limite,int reintentos)
 	{
 		do
 		{
-			getString(cuit,"Ingrese Cuit, solo numeros\n","Cuit Incorrecto!\n",1,49,3);
+			getString(cuit,"Ingrese Cuit, formato xx-xxxxxxxx-x\n","Cuit Incorrecto!\n",1,49,3);
 			if(esCuit(cuit)==0)
 			{
 				retorno = 0;

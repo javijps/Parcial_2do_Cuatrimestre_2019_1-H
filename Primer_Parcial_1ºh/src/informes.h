@@ -12,42 +12,52 @@
 #include "auxiliarCliente.h"
 #include "cliente.h"
 #include "pedidoCliente.h"
+#include "informes.h"
 
-int informes_contarPedidosPorCLiente(sCliente *aCliente,
-                                     int lenAcliente,
-									 sPedidoCliente *aPedido,
-									 int lenApedido,
-									 sAuxiliarCliente *aAuxCLiente,
-									 int lenaAuxCLiente);
-int informes_acumularKgTotalesPorCliente(sCliente *aCliente,
-                                     int lenAcliente,
-									 sPedidoCliente *aPedido,
-									 int lenApedido,
-									 sAuxiliarCliente *aAuxCLiente,
-									 int lenaAuxCLiente);
-int informes_maximoKgTotalesPorCliente(sCliente *aCliente,
-                                       int lenAcliente,
-									   sPedidoCliente *aPedido,
-									   int lenApedido,
-									   sAuxiliarCliente *aAuxCLiente,
-									   int lenaAuxCLiente);
-int informes_listarInfoClientesConInfoAuxPorId(sCliente *aCliente,
-		                                       int lenAcliente,
-									           sPedidoCliente *aPedido,
-									           int lenApedido,
-									           sAuxiliarCliente *aAuxCLiente,
-									           int lenaAuxCLiente,
-									           int idCliente);
-int informes_3residuosConLimite(sCliente *aCliente,
-                                int lenAcliente,
-								sPedidoCliente *aPedido,
-								int lenApedido,
-								sAuxiliarCliente *aAuxCLiente,
-								int lenaAuxCLiente);
-int imprimirClientesPorArrayAuxiliares(sCliente *aCliente,int lenAcliente,sAuxiliarCliente *aAuxCLiente,int lenaAuxCLiente);
+int informes_contarPedidosPendientePorIDcliente(sPedidoCliente *aPedido,int len, int id);
+int informes_clienteConMasCantidadDePedidosPendientes(sCliente *acliente,int lenCLientes,sPedidoCliente *aPedidos,int lenPedidos);
+
+int informes_contarPedidosCompletosPorIDcliente(sPedidoCliente *aPedido,int len, int id);
+int informes_clienteConMasCantidadDePedidosCompletos(sCliente *acliente,int lenCLientes,sPedidoCliente *aPedidos,int lenPedidos);
+
+int informes_contarPedidosTotalesPorIDcliente(sPedidoCliente *aPedido,int len, int id);
+int informes_clienteConMasCantidadDePedidosTotales(sCliente *acliente,int lenCLientes,sPedidoCliente *aPedidos,int lenPedidos);
+
+float informes_contarKgRecicladosPorIDcliente(sPedidoCliente *aPedido,int len, int id);
+int informes_clienteConMasCantidadKgReciclados(sCliente *acliente,int lenCLientes,sPedidoCliente *aPedidos,int lenPedidos);
+
+int informes_clienteConMenosCantidadKgReciclados(sCliente *acliente,int lenCLientes,sPedidoCliente *aPedidos,int lenPedidos);
 
 
-void informes_subMenu(void);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

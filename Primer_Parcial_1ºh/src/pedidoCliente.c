@@ -387,14 +387,14 @@ int pedidoCliente_procesarResiduos(sPedidoCliente *aPedido, int cantidad,int idP
 void pedidoCliente_pedidoDeClienteForzado(sPedidoCliente *aPedidoCLiente,int len)
 {
 
-	int aId_pedido[5] = {1,2,3,4,5};
-	int aStatusPedido[5] = {STATUS_PENDIENTE,STATUS_PENDIENTE,STATUS_PENDIENTE,STATUS_PENDIENTE,STATUS_PENDIENTE};
-	int aIdCliente[5] = {1,1,2,2,5};
-	float akgTotalesArecolectar[5] = {105.4,71.2,25,71,40};//todos tiene 10kg a recolectar demas q la suma de los 3 tipos de residuos
-	float akgHDPE[5] = {60,32,10,15,12};
-	float akgLDPE[5] = {20,22,2,5,15};
-	float akgPP[5] = {15,17,7,3,8};
-
+	int aId_pedido[9] = {1,2,3,4,5,6,7,8,9};
+	int aIdCliente[9] = {1,1,2,2,3,4,1,5,6};
+	float akgTotalesArecolectar[9] = {1000.800,100,300,1500,750,200,30,456};
+	float akgHDPE[9] = {200,210,0,0,500,100,0,10,0};
+	float akgLDPE[9] = {145,45,0,0,150,50,0,5,0};
+	float akgPP[9] = {230,30,0,0,270,70,0,3,0};
+	int aStatusPedido[9] = {STATUS_COMPLETADO,STATUS_COMPLETADO,STATUS_PENDIENTE,STATUS_PENDIENTE,STATUS_COMPLETADO,STATUS_COMPLETADO
+			               ,STATUS_PENDIENTE,STATUS_COMPLETADO,STATUS_PENDIENTE};
 	int i;
 
 	for(i=0;i<len;i++)
@@ -474,10 +474,10 @@ int contarYmostrarCantidadPedidosPorCliente(sCliente *aCliente,
 					retorno = 0;
 				}
 			}
-			if(retorno==0)
+			if(retorno==0 && aAuxCLiente[i].contadorPedidos!=0)
 			{
-			cliente_imprimirUnCliente(aCliente[i]);
-			auxiliarCliente_imprimirContadorAuxCliente(aAuxCLiente[i]);
+				cliente_imprimirUnCliente(aCliente[i]);
+				auxiliarCliente_imprimirContadorAuxCliente(aAuxCLiente[i]);
 			}
 		}
 	}
