@@ -28,13 +28,17 @@ int main(void) {
 	sCliente fCliente[6];
 	cliente_clienteForzado(fCliente,6);
 	sPedidoCliente aPedido[MAX_PEDIDOS];
-	sPedidoCliente fPedido[6];
+	sPedidoCliente fPedido[9];
 	pedidoCliente_pedidoDeClienteForzado(fPedido,9);
 	sAuxiliarCliente bAuxiliarCLiente[MAX_CLIENTES];
 	int option;
 	int bIdCliente;
 	int bIdPedido;
 	char optionChar;
+	char bcuit[15];
+
+	char bLocalidad[50];
+
 
 	cliente_initcliente(aCliente,MAX_CLIENTES);
 	pedidoCliente_initPedido(aPedido,MAX_CLIENTES);
@@ -66,7 +70,7 @@ int main(void) {
 			cliente_imprimirClientesActivos(fCliente,6);
 			if((getInt(&bIdCliente,"Ingrese ID de cliente\n","Error, id incorreto\n",1,MAX_CLIENTES,2)==0) &&
 					(cliente_modificarClientePorId(fCliente,6,bIdCliente)==0))//FORZADO!
-					printf("Modificacion exitosa!\n");
+				printf("Modificacion exitosa!\n");
 			else
 				printf("Modificacion no realizada!\n");
 			break;
@@ -74,7 +78,7 @@ int main(void) {
 			cliente_imprimirClientesActivos(fCliente,6);
 			if((getInt(&bIdCliente,"Ingrese ID de cliente","Error id",1,MAX_CLIENTES,2)==0) &&
 					(cliente_bajaClientePorId(fCliente,6,bIdCliente)==0))
-					printf("Baja Exitosa!!\n");
+				printf("Baja Exitosa!!\n");
 			else
 				printf("Baja no realizada!!\n");
 			break;
@@ -126,11 +130,11 @@ int main(void) {
 						"j-Promedio de polipropileno reciclado por cliente\n"
 						"k-Informar cantidad de kilos totales reciclada por tipo de residuo(por cuit)\n"
 						"-EXIT\n",
-						"Error, opcion incorrecta!\n",'a','i',2)!=0)
-					{
+						"Error, opcion incorrecta!\n",'a','l',2)!=0)
+				{
 					printf("No fue posible acceder al Sub-Menu de opciones");
 					break;
-					}
+				}
 				else
 				{
 					switch(optionChar)
@@ -156,21 +160,42 @@ int main(void) {
 							printf("ok");
 						break;
 					case 'f':
+						if(informes_clienteConMasDe1000KgReciclados(fCliente,6,fPedido,9)==0)
+							printf("ok");
 						break;
 					case 'g':
+						if(informes_clienteConMenosDe100KgReciclados(fCliente,6,fPedido,9)==0)
+							printf("ok");
 						break;
 					case 'h':
+						if(informes_imprimirPedidoCompletadoConInfoDeCliente(fCliente,6,fPedido,9)==0)
+							printf("ok");
 						break;
 					case 'i':
+						//printfMostrarLocalidades.
+						if(getAlfanumerico(bLocalidad,"Ingrese Localidad:\n","Localidad Incorrecta\n",50,3)==0)
+							informes_contarPedidosPendientesPorLocalidad(fCliente,6,fPedido,9,bLocalidad);
 						break;
 					case 'j':
+						informes_promedioKgPPrecicladoPorCliente(fCliente,6,fPedido,9);
 						break;
 					case 'k':
+						cliente_imprimirClientesActivos(fCliente,6);
+						if((getCuit(bcuit,50,3)==0) &&
+								getInt(&option,"\nIngrese: \n1-Informar kg totales de HDPE del cliente.\n"
+										"2-Informar kg totales de LDPE del cliente.\n"
+										"3-Informar kg totales de PP del cliente.\n \n"
+										"4-EXIT\n",
+										"Error, opcion incorrecta\n",
+										1,4,2)==0)
+						{
+							informes_kgTotalesRecicladosPorCuitClienteYtipoResiduo(fCliente,6,fPedido,9,bcuit,option);
+						}
 						break;
 					}
 				}
 			}while(optionChar!='l');
-break;
+			break;
 		}
 	}while(option!=10);
 	return EXIT_SUCCESS;

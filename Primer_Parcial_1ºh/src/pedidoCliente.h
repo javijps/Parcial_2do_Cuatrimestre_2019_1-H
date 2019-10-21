@@ -34,7 +34,7 @@ int pedidoCliente_initPedido(sPedidoCliente *aPedido, int cantidad);
 int pedidoCliente_buscarPedidoPorId(sPedidoCliente *aPedido,int cantidad, int id);
 int pedidoCliente_procesarResiduos(sPedidoCliente *aPedido, int cantidad,int idPedido);
 void pedidoCliente_pedidoDeClienteForzado(sPedidoCliente *aPedidoCLiente,int len);
-int pedidoCliente_buscarPedidoPendientePorIdCliente(sPedidoCliente *aPedido,int cantidad, int idCliente);//corregir doc
+int pedidoCliente_buscarPedidoPorIdCliente(sPedidoCliente *aPedido,int cantidad, int bIdCliente);//modificar doc
 int contarYmostrarCantidadPedidosPorCliente(sCliente *aCliente,
 		                                    int lenAcliente,
 											sPedidoCliente *aPedido,
