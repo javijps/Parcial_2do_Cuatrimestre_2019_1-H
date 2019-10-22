@@ -33,7 +33,7 @@ int cliente_buscarClientePorEmpresa(sCliente *aCliente,int len, char empresa[50]
 int cliente_modificarClientePorId(sCliente *aCliente,int len, int id);
 int cliente_bajaClientePorId(sCliente *aCliente,int cantidad,int id);
 void cliente_clienteForzado(sCliente *aCliente,int len);
-
+int cliente_imprimirCuitClientesActivos(sCliente *aCliente, int len);
 
 //INFORMES
 #endif /* CLIENTE_H_ */

@@ -56,6 +56,5 @@ int informes_kgTotalesRecicladosPorCuitClienteYtipoResiduo(sCliente *aCliente,
 														   int lenApedido,
 														   char *cuit,
 														   int residuo);
-
 #endif /* INFORMES_H_ */
 

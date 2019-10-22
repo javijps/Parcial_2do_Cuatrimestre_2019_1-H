@@ -171,7 +171,7 @@ int main(void) {
 					case 'i':
 						cliente_imprimirClientesActivos(fCliente,6);
 						if((getAlfanumerico(bLocalidad,"Ingrese Localidad:\n","Localidad Incorrecta\n",50,3)!=0) ||
-							(informes_contarPedidosPendientesPorLocalidad(fCliente,6,fPedido,9,bLocalidad)!=0))
+								(informes_contarPedidosPendientesPorLocalidad(fCliente,6,fPedido,9,bLocalidad)!=0))
 							printf("\nNo fue posible imprimir el informe!\n");
 						break;
 					case 'j':
@@ -179,21 +179,27 @@ int main(void) {
 							printf("\nNo fue posible imprimir el informe!\n");
 						break;
 					case 'k':
-						cliente_imprimirClientesActivos(fCliente,6);
-						if((getCuit(bcuit,50,3)!=0) ||
-								getInt(&subOption,"\nIngrese: \n1-Informar kg totales de HDPE del cliente.\n"
-										"2-Informar kg totales de LDPE del cliente.\n"
-										"3-Informar kg totales de PP del cliente.\n"
-										"4-EXIT\n",
-										"Error, opcion incorrecta\n",
-										1,4,2)!=0 ||
-										informes_kgTotalesRecicladosPorCuitClienteYtipoResiduo(fCliente,6,fPedido,9,bcuit,subOption)!=0)
-							printf("\nNo fue posible imprimir el informe!\n");
+						cliente_imprimirCuitClientesActivos(fCliente,6);
+						if(getCuit(bcuit,50,3)==0)
+						{
+							do{
+								{
+									if(getInt(&subOption,"\nIngrese: \n1-Informar kg totales de HDPE del cliente.\n"
+											"2-Informar kg totales de LDPE del cliente.\n"
+											"3-Informar kg totales de PP del cliente.\n"
+											"4-EXIT\n",
+											"Error, opcion incorrecta\n",
+											1,4,2)==0)
+										informes_kgTotalesRecicladosPorCuitClienteYtipoResiduo(fCliente,6,fPedido,9,bcuit,subOption);
+									else
+										printf("\nNo fue posible imprimir el informe!\n");
+								}
+							}while(subOption!=4);
+						}
 						break;
 					}
 				}
 			}while(optionChar!='l');
-			break;
 		}
 	}while(option!=10);
 	return EXIT_SUCCESS;

@@ -755,26 +755,27 @@ int informes_kgTotalesRecicladosPorCuitClienteYtipoResiduo(sCliente *aCliente,
 	float kgPP;
 
 	indexCliente = cliente_buscarClientePorCuit(aCliente,lenAcliente,cuit);
+
 	switch(residuo)
 	{
 	case 1:
 	{
 		kgHDPE = informes_contarKgHDPErecicladosPorCliente(aPedido,lenApedido,aCliente[indexCliente].idCliente);
-		printf("Total de Kg de HDPE recilados por el cliente: %.2f",kgHDPE);
+		printf("Total de Kg de HDPE recilados por el cliente: %.2f\n",kgHDPE);
 		retorno = 0;
 		break;
 	}
 	case 2:
 	{
 		kgLDPE = informes_contarKgLDPErecicladosPorCliente(aPedido,lenApedido,aCliente[indexCliente].idCliente);
-		printf("Total de Kg de LDPE recilados por el cliente: %.2f",kgLDPE);
+		printf("Total de Kg de LDPE recilados por el cliente: %.2f\n",kgLDPE);
 		retorno = 0;
 		break;
 	}
 	case 3:
 	{
 		kgPP = informes_contarKgPPrecicladosPorCliente(aPedido,lenApedido,aCliente[indexCliente].idCliente);
-		printf("Total de Kg de PP recilados por el cliente: %.2f",kgPP);
+		printf("Total de Kg de PP recilados por el cliente: %.2f\n",kgPP);
 		retorno = 0;
 		break;
 	}

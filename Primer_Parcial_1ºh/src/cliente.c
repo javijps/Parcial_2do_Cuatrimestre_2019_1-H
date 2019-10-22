@@ -422,7 +422,32 @@ void cliente_clienteForzado(sCliente *aCliente,int len)
 	}
 }
 
-
+/**
+* \brief Imprime el cuit correspondiente a cada cliente activo..
+* \param sCliente *aCliente puntero a una array de estructuras cliente.
+* \param len Cantidad del array a imprimir
+* \return Si tuvo exito al imprimir devuelve [0] o si fallo [-1]
+*/
+int cliente_imprimirCuitClientesActivos(sCliente *aCliente, int len)
+{
+	int i;
+	int retorno = -1;
+	if(aCliente != NULL && len>0)
+	{
+		retorno = 0;
+		printf("Cuit de clientes activos:\n");
+		for(i=0;i<len;i++)
+		{
+			if(aCliente[i].statusCliente==STATUS_EMPTY)
+				continue;
+			printf("\nID cliente:%d\n"
+					"\n - Cuit: %s\n",
+					aCliente[i].idCliente,
+					aCliente[i].cuit);
+		}
+	}
+	return retorno;
+}
 
 
 
