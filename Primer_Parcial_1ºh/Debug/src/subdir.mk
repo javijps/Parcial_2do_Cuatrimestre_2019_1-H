@@ -4,7 +4,6 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
-../src/auxiliarCliente.c \
 ../src/cliente.c \
 ../src/informes.c \
 ../src/main.c \
@@ -12,7 +11,6 @@ C_SRCS += \
 ../src/utn.c 
 
 OBJS += \
-./src/auxiliarCliente.o \
 ./src/cliente.o \
 ./src/informes.o \
 ./src/main.o \
@@ -20,7 +18,6 @@ OBJS += \
 ./src/utn.o 
 
 C_DEPS += \
-./src/auxiliarCliente.d \
 ./src/cliente.d \
 ./src/informes.d \
 ./src/main.d \

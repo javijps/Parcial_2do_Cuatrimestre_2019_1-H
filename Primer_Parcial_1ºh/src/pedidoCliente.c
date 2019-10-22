@@ -406,49 +406,32 @@ int pedidoCliente_buscarPedidoPorIdCliente(sPedidoCliente *aPedido,int cantidad,
 	}
 	return retorno;
 }
-
-
 /**
-* \brief Cuenta la cantidad de pedidos de cada cliente y muestra la informacion de cada cliente y dicho conteo.
-* \param sCliente *aCliente puntero a un array de la estructura cliente.
-* \param cantidad tamaño del array de clientes.
-* \param sPedidoCliente *aPedido puntero a un array de la estructura pedido cliente.
-* \param cantidad tamaño del array de pedidos.
-* \param sAuxiliarCliente *aAuxCLiente puntero a una array de la auxiliar cliente.
-* \param cantidad tamaño del array de auxiliar cliente.
-* \return Si tuvo exito al contar la cantidad de pedidos por cliente devuelve [0] o si fallo [-1]
+* \brief Imprime la informacion de los clientes que tienen pedidos pendientes y la cantidad de los mismos
+* \param sPedidoCliente *aPedido puntero a un array de la estructura pedidoCliente.
+* \param lenAcliente Longitud del array de pedidos.
+* \param sCliente *aCliente puntero a una array de estructuras cliente.
+* \param lenApedido Cantidad del array a imprimir
+*
+* \return Si tuvo exito al contar devuelve la cantidad de pedidos del cliente indicado o si fallo [-1]
 */
-int contarYmostrarCantidadPedidosPorCliente(sCliente *aCliente,
-		                                 int lenAcliente,
-										 sPedidoCliente *aPedido,
-										 int lenApedido,
-										 sAuxiliarCliente *aAuxCLiente,
-										 int lenAauxiliarCliente)
+int imprimirClientesConCantidadDePedidosPendientes(sCliente *aCliente,int lenAcliente,sPedidoCliente *aPedido,int lenApedido)
 {
 	int retorno = -1;
+	int cantidadPedidos;
 	int i;
-	int j;
 
-	auxiliarCliente_initClienteAuxiliar(aAuxCLiente,lenAauxiliarCliente);
-	if(aCliente!=NULL && aPedido!=NULL && aAuxCLiente!=NULL && lenAcliente>0 && lenApedido>0 && lenAauxiliarCliente>0)
+
+	if(aPedido!=NULL && lenApedido>0 && aCliente!=NULL && lenAcliente>0)
 	{
 		for(i=0;i<lenAcliente;i++)
 		{
-			aAuxCLiente[i].idCliente = aCliente[i].idCliente;
-			for(j=0;j<lenApedido;j++)
-			{
-				if((aCliente[i].idCliente == aPedido[j].idCliente) &&
-						(aCliente[i].statusCliente ==STATUS_NOT_EMPTY) &&
-								(aPedido[j].statusPedido == STATUS_PENDIENTE))
-				{
-					aAuxCLiente[i].contadorPedidos++;
-					retorno = 0;
-				}
-			}
-			if(retorno==0 && aAuxCLiente[i].contadorPedidos!=0)
+			cantidadPedidos = pedidoCliente_contarPedidosPendientePorIDcliente(aPedido,lenApedido,aCliente[i].idCliente);
+			if(cantidadPedidos>0)
 			{
 				cliente_imprimirUnCliente(aCliente[i]);
-				auxiliarCliente_imprimirContadorAuxCliente(aAuxCLiente[i]);
+				printf("Cantidad de pedidos Pendientes: %d\n",cantidadPedidos);
+				retorno = 0;
 			}
 		}
 	}
@@ -542,6 +525,32 @@ int pedidoCliente_BuscarImprimirPedidosProcesadosConInformacionDelCliente(sClien
 	return retorno;
 }
 
+/**
+* \brief Cuenta la cantidad de pedidos pendientes que tiene el cliente correspondiente al ID ingresado.
+* \param sPedidoCliente *aPedido puntero a un array de la estructura pedidoCliente.
+* \param len Longitud del array de pedidos.
+* \param id ID del cliente a ser encontrado.
+* \return Si tuvo exito al contar devuelve la cantidad de pedidos del cliente indicado o si fallo [-1]
+*/
+int pedidoCliente_contarPedidosPendientePorIDcliente(sPedidoCliente *aPedido,int len, int id)
+{
+	int retorno = -1;
+	int i;
+	int contadorPedidosCompletos=0;
+
+	if(aPedido!=NULL && len>0)
+	{
+		for(i=0;i<len;i++)
+		{
+			if(aPedido[i].idCliente == id && aPedido[i].statusPedido == STATUS_PENDIENTE)
+			{
+				contadorPedidosCompletos++;
+			}
+		}
+		retorno = contadorPedidosCompletos;
+	}
+	return retorno;
+}
 
 /**
 * \brief Carga los datos definidos en un array de Estructura del tipo cliente.

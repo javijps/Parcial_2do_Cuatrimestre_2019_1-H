@@ -1,15 +1,35 @@
-18:43:00 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+22:47:35 **** Build of configuration Debug for project Primer_Parcial_1ºh ****
 make all 
+Building file: ../src/cliente.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/cliente.d" -MT"src/cliente.o" -o "src/cliente.o" "../src/cliente.c"
+Finished building: ../src/cliente.c
+ 
+Building file: ../src/informes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
+Finished building: ../src/informes.c
+ 
 Building file: ../src/main.c
 Invoking: GCC C Compiler
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
 Finished building: ../src/main.c
  
+Building file: ../src/pedidoCliente.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pedidoCliente.d" -MT"src/pedidoCliente.o" -o "src/pedidoCliente.o" "../src/pedidoCliente.c"
+Finished building: ../src/pedidoCliente.c
+ 
+Building file: ../src/utn.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/utn.d" -MT"src/utn.o" -o "src/utn.o" "../src/utn.c"
+Finished building: ../src/utn.c
+ 
 Building target: Primer_Parcial_1ºh
 Invoking: GCC C Linker
-gcc  -o "Primer_Parcial_1ºh"  ./src/auxiliarCliente.o ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
+gcc  -o "Primer_Parcial_1ºh"  ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
 Finished building target: Primer_Parcial_1ºh
  
 
-18:43:00 Build Finished. 0 errors, 0 warnings. (took 581ms)
+22:47:36 Build Finished. 0 errors, 0 warnings. (took 909ms)
 

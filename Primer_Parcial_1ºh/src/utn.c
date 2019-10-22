@@ -425,7 +425,7 @@ int esCuit(char cuit[QTY_CARACTERES])
 		if(contadorCaracteres!=13)
 		{
 			retorno = -1;
-			printf("Cantidad de caracteres ingresados (%d) incorrecto!\nEl cuit debe contener 11 caracteres\n",contadorCaracteres);
+			printf("Cantidad de caracteres ingresados (%d) incorrecto!\nEl cuit debe contener 13 caracteres\n",contadorCaracteres);
 		}
 	}
 	return retorno;
