@@ -302,7 +302,7 @@ int pedidoCliente_procesarResiduos(sPedidoCliente *aPedido, int cantidad,int idP
 		{
 			do
 			{
-				if(getInt(&opcion,"\nIngrese: \n1-Cargar kg  del residuo HDPE.\n"
+				if(getStringToInt(&opcion,"\nIngrese: \n1-Cargar kg  del residuo HDPE.\n"
 						"2-Cargar kg  del residuo LDPE.\n"
 						"3-Cargar kg  del residuo kgPP.\n \n"
 						"4-EXIT\n",
@@ -360,7 +360,6 @@ int pedidoCliente_procesarResiduos(sPedidoCliente *aPedido, int cantidad,int idP
 							{
 								printf("El total de los kg a procesar supera el total de kg del pedido!\n");
 								retorno = -1;
-								//opcion=4;
 							}
 							else
 							{

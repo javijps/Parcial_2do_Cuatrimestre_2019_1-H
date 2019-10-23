@@ -8,9 +8,47 @@
 #include <stdio_ext.h>
 #include <stdlib.h>
 #include <string.h>
+#include <ctype.h>
 
 #define MAX_FLOAT 1000
 #define QTY_CARACTERES 50
+
+
+//EMPROLIJAR UTN
+//HACER esFloat
+//CAMBIAR TODOS LOS GET FLOAT POR LA FUNCION DE GETSTRINGTOFLOAT.
+//CAMBIAR isNUmber de juli por esNumerica mia.
+
+//PROBAR MUCHAS VECES TODO EL PARCIAL PARA CHEQUEAR QUE ANDE BIEN CON LAS NUEVAS FUNCIONES.
+
+
+
+void stringAmayuscula(char *input,int len)
+{
+	int i;
+
+	for(i=0;i<len;i++)
+	{
+		input[i] = toupper(input[i]);
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /**
 * \brief Solicita numero entero al usuario y lo valida.
@@ -261,47 +299,88 @@ int getNombreEmpresa(char pNombre[QTY_CARACTERES],int limite,int reintentos)
 	return retorno;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 /**
-* \brief Evalua si la cadena de caracteres es numerica.
-* \param cadena Array de caracteres a ser validado
-* \return Si la cadena de caracteres recibida es numerica [0] o si no lo es[-1]
+* \Valida si el nombre esta compuesto por letras
+* \param pNombre Nombre recibido
+* \return Si valida el nombre [0] o si es invalido [-1]
 */
-
-int esNumerica(char cadena[QTY_CARACTERES])
+int esLetraMinuscula(char *pLetra,char *mensajeError)
 {
-	int retorno=-1;
+	int retorno = -1;
 	int i;
-	if(cadena!=NULL)
-	{
-		while(cadena[i]!='\0')
+
+	if(pLetra!=NULL)
+
+		for(i=0;pLetra[i]!='\0';i++)
 		{
-			if((cadena[i] >= '0' && cadena[i] <= '9'))
+			if((pLetra[i] >= 'a' && pLetra[i] <= 'z'))
 			{
 				retorno = 0;
 				i++;
 			}
 			else
 			{
-				printf("Error, los datos ingresados no corresponden a un numero!!\n");
+				printf(mensajeError);
 				break;
 			}
 		}
+	return retorno;
+}
+
+/**
+* \brief Solicita nombre al usuario.
+* \param pNombre Se carga el nombre ingresado.
+* \param reintentos cantidad de errores permitidos
+* \return Si tuvo exito al obtener el nombre [0] o si fallo [-1]
+*/
+int getLetraMinuscula(char *pLetra,char *mensaje,char *mensajeError,int minimo,int maximo,int reintentos)
+{
+	int retorno=-1;
+
+	if(pLetra!=NULL && maximo>minimo)
+	{
+		do
+		{
+			getString(pLetra,mensaje,mensajeError,1,50,3);
+			if(esLetraMinuscula(pLetra,mensajeError)==0)
+			{
+				retorno = 0;
+				break;
+			}
+			else
+				reintentos--;
+		}while(reintentos>0);
 	}
 	return retorno;
 }
+
+int esEntero(char *resultado,char *mensaje,char *mensajeError,int minimo,int maximo,int reintentos)
+{
+	int retorno =-1;
+	int i=0;
+	char buffer[4096];
+	int cantidad;
+	int contador=0;
+
+	strncpy(buffer,resultado,maximo+1);
+	cantidad=strlen(buffer);
+
+	while(buffer[0]!='\0' && (buffer[i] >= '0' && buffer[i] <= '9'))
+	{
+		contador++;
+		i++;
+	}
+	if(cantidad==contador)
+	{
+		strncpy(resultado,buffer,maximo+1);
+		retorno = 0;
+	}
+	else
+		printf("%s",mensajeError);
+
+	return retorno;
+}
+
 
 /**
  * \brief Solicita una cadena alfanumérico al usuario y lo devuelve
@@ -309,30 +388,30 @@ int esNumerica(char cadena[QTY_CARACTERES])
  * \param reintentos reintentos permitidos ante el error al usuario
  * \return 0 si el texto contiene solo números
  */
-int getStringNumeros(char *input,int reintentos)
+int getStringToInt(int *pNumero,char *mensaje,char *mensajeError,int minimo,int maximo,int reintentos)
 {
 	int retorno = -1;
+	char buffer[100];
 
 	do
 	{
-		if(getString(input,"\nIngrese numeros \n","Numeros incorrectos\n",0,100,reintentos)==0)
+		if(getString(buffer,mensaje,mensajeError,1,100,reintentos)==0)
 		{
-			if(esNumerica(input)==0)
+			if(esEntero(buffer,mensaje,mensajeError,minimo,maximo,reintentos)==0)
 			{
+				*pNumero = atoi(buffer);
 				retorno = 0;
 				break;
 			}
 			else
 			{
-				printf("Los datos ingresados no corresponden a numeros!\n");
+				printf(mensajeError);
 				reintentos--;
 			}
 		}
 	}while(reintentos>0);
 	return retorno;
 }
-
-
 
 /**
 * \Valida si la cadena es alfanumerica, permitiendo espacios.
@@ -380,6 +459,7 @@ int getAlfanumerico(char alfanumerica[QTY_CARACTERES],char *mensaje,char *mensaj
 		do
 		{
 			getString(alfanumerica,mensaje,mensajeError,1,49,3);
+			stringAmayuscula(alfanumerica,QTY_CARACTERES);
 			if(esAlfanumerico(alfanumerica)==0)
 			{
 				retorno = 0;
@@ -459,3 +539,5 @@ int getCuit(char cuit[QTY_CARACTERES],int limite,int reintentos)
 	}
 	return retorno;
 }
+
+

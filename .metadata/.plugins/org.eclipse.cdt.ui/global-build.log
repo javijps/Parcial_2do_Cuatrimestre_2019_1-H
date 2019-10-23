@@ -1,629 +1,95 @@
-20:21:34 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+17:33:24 **** Build of configuration Debug for project Primer_Parcial_1ºh ****
 make all 
 Building file: ../src/cliente.c
 Invoking: GCC C Compiler
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/cliente.d" -MT"src/cliente.o" -o "src/cliente.o" "../src/cliente.c"
-Finished building: ../src/cliente.c
- 
-Building file: ../src/informes.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
-Finished building: ../src/informes.c
- 
-Building file: ../src/main.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-Finished building: ../src/main.c
- 
-Building file: ../src/pedidoCliente.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pedidoCliente.d" -MT"src/pedidoCliente.o" -o "src/pedidoCliente.o" "../src/pedidoCliente.c"
-Finished building: ../src/pedidoCliente.c
- 
-Building target: Primer_Parcial_1ºh
-Invoking: GCC C Linker
-gcc  -o "Primer_Parcial_1ºh"  ./src/auxiliarCliente.o ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
-Finished building target: Primer_Parcial_1ºh
- 
-20:21:46 **** Clean-only build of configuration Debug for project Primer_Parcial_1ºh ****
-make clean 
-rm -rf  ./src/auxiliarCliente.o ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o  ./src/auxiliarCliente.d ./src/cliente.d ./src/informes.d ./src/main.d ./src/pedidoCliente.d ./src/utn.d  Primer_Parcial_1ºh
- 
-20:21:48 **** Build of configuration Debug for project Primer_Parcial_1ºh ****
-make all 
-Building file: ../src/auxiliarCliente.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/auxiliarCliente.d" -MT"src/auxiliarCliente.o" -o "src/auxiliarCliente.o" "../src/auxiliarCliente.c"
-Finished building: ../src/auxiliarCliente.c
- 
-Building file: ../src/cliente.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/cliente.d" -MT"src/cliente.o" -o "src/cliente.o" "../src/cliente.c"
-Finished building: ../src/cliente.c
- 
-Building file: ../src/informes.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
-Finished building: ../src/informes.c
- 
-Building file: ../src/main.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-Finished building: ../src/main.c
- 
-Building file: ../src/pedidoCliente.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pedidoCliente.d" -MT"src/pedidoCliente.o" -o "src/pedidoCliente.o" "../src/pedidoCliente.c"
-Finished building: ../src/pedidoCliente.c
- 
-Building file: ../src/utn.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/utn.d" -MT"src/utn.o" -o "src/utn.o" "../src/utn.c"
-Finished building: ../src/utn.c
- 
-Building target: Primer_Parcial_1ºh
-Invoking: GCC C Linker
-gcc  -o "Primer_Parcial_1ºh"  ./src/auxiliarCliente.o ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
-Finished building target: Primer_Parcial_1ºh
- 
-20:21:53 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
-make all 
-make: No se hace nada para 'all'.
-20:24:01 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
-make all 
-make: No se hace nada para 'all'.
-20:24:06 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
-make all 
-make: No se hace nada para 'all'.
-20:24:20 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
-make all 
-make: No se hace nada para 'all'.
-20:24:32 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
-make all 
-make: No se hace nada para 'all'.
-20:24:47 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
-make all 
-make: No se hace nada para 'all'.
-20:25:23 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
-make all 
-Building file: ../src/main.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-Finished building: ../src/main.c
- 
-Building target: Primer_Parcial_1ºh
-Invoking: GCC C Linker
-gcc  -o "Primer_Parcial_1ºh"  ./src/auxiliarCliente.o ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
-Finished building target: Primer_Parcial_1ºh
- 
-20:25:27 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
-make all 
-make: No se hace nada para 'all'.
-20:25:55 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
-make all 
-make: No se hace nada para 'all'.
-20:26:39 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
-make all 
-make: No se hace nada para 'all'.
-20:27:55 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
-make all 
-Building file: ../src/main.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-Finished building: ../src/main.c
- 
-Building target: Primer_Parcial_1ºh
-Invoking: GCC C Linker
-gcc  -o "Primer_Parcial_1ºh"  ./src/auxiliarCliente.o ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
-Finished building target: Primer_Parcial_1ºh
- 
-20:28:03 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
-make all 
-make: No se hace nada para 'all'.
-20:30:39 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
-make all 
-Building file: ../src/main.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-Finished building: ../src/main.c
- 
-Building target: Primer_Parcial_1ºh
-Invoking: GCC C Linker
-gcc  -o "Primer_Parcial_1ºh"  ./src/auxiliarCliente.o ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
-Finished building target: Primer_Parcial_1ºh
- 
-20:30:47 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
-make all 
-make: No se hace nada para 'all'.
-20:31:46 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
-make all 
-Building file: ../src/main.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-Finished building: ../src/main.c
- 
-Building target: Primer_Parcial_1ºh
-Invoking: GCC C Linker
-gcc  -o "Primer_Parcial_1ºh"  ./src/auxiliarCliente.o ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
-Finished building target: Primer_Parcial_1ºh
- 
-20:33:06 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
-make all 
-Building file: ../src/informes.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
-Finished building: ../src/informes.c
- 
-Building target: Primer_Parcial_1ºh
-Invoking: GCC C Linker
-gcc  -o "Primer_Parcial_1ºh"  ./src/auxiliarCliente.o ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
-Finished building target: Primer_Parcial_1ºh
- 
-20:33:09 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
-make all 
-make: No se hace nada para 'all'.
-20:34:32 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
-make all 
-Building file: ../src/informes.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
-Finished building: ../src/informes.c
- 
-Building target: Primer_Parcial_1ºh
-Invoking: GCC C Linker
-gcc  -o "Primer_Parcial_1ºh"  ./src/auxiliarCliente.o ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
-Finished building target: Primer_Parcial_1ºh
- 
-20:35:14 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
-make all 
-Building file: ../src/informes.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
-Finished building: ../src/informes.c
- 
-Building target: Primer_Parcial_1ºh
-Invoking: GCC C Linker
-gcc  -o "Primer_Parcial_1ºh"  ./src/auxiliarCliente.o ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
-Finished building target: Primer_Parcial_1ºh
- 
-20:40:56 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
-make all 
-Building file: ../src/informes.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
-Finished building: ../src/informes.c
- 
-Building file: ../src/main.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-Finished building: ../src/main.c
- 
-Building target: Primer_Parcial_1ºh
-Invoking: GCC C Linker
-gcc  -o "Primer_Parcial_1ºh"  ./src/auxiliarCliente.o ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
-Finished building target: Primer_Parcial_1ºh
- 
-20:44:51 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
-make all 
-Building file: ../src/informes.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
-Finished building: ../src/informes.c
- 
-Building file: ../src/main.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-Finished building: ../src/main.c
- 
-Building target: Primer_Parcial_1ºh
-Invoking: GCC C Linker
-gcc  -o "Primer_Parcial_1ºh"  ./src/auxiliarCliente.o ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
-Finished building target: Primer_Parcial_1ºh
- 
-20:45:56 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
-make all 
-Building file: ../src/informes.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
-Finished building: ../src/informes.c
- 
-Building target: Primer_Parcial_1ºh
-Invoking: GCC C Linker
-gcc  -o "Primer_Parcial_1ºh"  ./src/auxiliarCliente.o ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
-Finished building target: Primer_Parcial_1ºh
- 
-21:01:38 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
-make all 
-Building file: ../src/cliente.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/cliente.d" -MT"src/cliente.o" -o "src/cliente.o" "../src/cliente.c"
-../src/cliente.c: In function ‘cliente_imprimirLocalidades’:
-../src/cliente.c:63:7: warning: unused variable ‘bLocalidades’ [-Wunused-variable]
-  char bLocalidades[50][100];
-       ^~~~~~~~~~~~
-Finished building: ../src/cliente.c
- 
-Building file: ../src/informes.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
-Finished building: ../src/informes.c
- 
-Building target: Primer_Parcial_1ºh
-Invoking: GCC C Linker
-gcc  -o "Primer_Parcial_1ºh"  ./src/auxiliarCliente.o ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
-Finished building target: Primer_Parcial_1ºh
- 
-21:25:18 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
-make all 
-Building file: ../src/main.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-Finished building: ../src/main.c
- 
-Building file: ../src/pedidoCliente.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pedidoCliente.d" -MT"src/pedidoCliente.o" -o "src/pedidoCliente.o" "../src/pedidoCliente.c"
-Finished building: ../src/pedidoCliente.c
- 
-Building target: Primer_Parcial_1ºh
-Invoking: GCC C Linker
-gcc  -o "Primer_Parcial_1ºh"  ./src/auxiliarCliente.o ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
-Finished building target: Primer_Parcial_1ºh
- 
-21:26:34 **** Clean-only build of configuration Debug for project Primer_Parcial_1ºh ****
-make clean 
-rm -rf  ./src/auxiliarCliente.o ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o  ./src/auxiliarCliente.d ./src/cliente.d ./src/informes.d ./src/main.d ./src/pedidoCliente.d ./src/utn.d  Primer_Parcial_1ºh
- 
-21:26:37 **** Build of configuration Debug for project Primer_Parcial_1ºh ****
-make all 
-Building file: ../src/cliente.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/cliente.d" -MT"src/cliente.o" -o "src/cliente.o" "../src/cliente.c"
-../src/cliente.c: In function ‘cliente_imprimirLocalidades’:
-../src/cliente.c:63:7: warning: unused variable ‘bLocalidades’ [-Wunused-variable]
-  char bLocalidades[50][100];
-       ^~~~~~~~~~~~
-Finished building: ../src/cliente.c
- 
-Building file: ../src/informes.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
-In file included from ../src/informes.c:7:
-../src/informes.h:12:10: fatal error: auxiliarCliente.h: No existe el fichero o el directorio
- #include "auxiliarCliente.h"
-          ^~~~~~~~~~~~~~~~~~~
-compilation terminated.
-make: *** [src/subdir.mk:32: src/informes.o] Error 1
+../src/cliente.c:451:1: error: expected identifier or ‘(’ before ‘{’ token
+ {
+ ^
+make: *** [src/subdir.mk:32: src/cliente.o] Error 1
 "make all" terminated with exit code 2. Build might be incomplete.
-21:27:23 **** Clean-only build of configuration Debug for project Primer_Parcial_1ºh ****
-make clean 
-rm -rf  ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o  ./src/cliente.d ./src/informes.d ./src/main.d ./src/pedidoCliente.d ./src/utn.d  Primer_Parcial_1ºh
- 
-21:27:25 **** Build of configuration Debug for project Primer_Parcial_1ºh ****
+17:35:41 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
 make all 
 Building file: ../src/cliente.c
 Invoking: GCC C Compiler
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/cliente.d" -MT"src/cliente.o" -o "src/cliente.o" "../src/cliente.c"
-../src/cliente.c: In function ‘cliente_imprimirLocalidades’:
-../src/cliente.c:63:7: warning: unused variable ‘bLocalidades’ [-Wunused-variable]
-  char bLocalidades[50][100];
-       ^~~~~~~~~~~~
-Finished building: ../src/cliente.c
- 
-Building file: ../src/informes.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
-In file included from ../src/informes.h:13,
-                 from ../src/informes.c:7:
-../src/pedidoCliente.h:41:12: error: unknown type name ‘sAuxiliarCliente’; did you mean ‘sPedidoCliente’?
-            sAuxiliarCliente *aAuxCLiente,
-            ^~~~~~~~~~~~~~~~
-            sPedidoCliente
-make: *** [src/subdir.mk:32: src/informes.o] Error 1
+../src/cliente.c:450:6: error: conflicting types for ‘cliente_buscarLocalidad’
+ char cliente_buscarLocalidad(sCliente *aCliente,int len, char *localidad)
+      ^~~~~~~~~~~~~~~~~~~~~~~
+In file included from ../src/cliente.c:7:
+../src/cliente.h:39:5: note: previous declaration of ‘cliente_buscarLocalidad’ was here
+ int cliente_buscarLocalidad(sCliente *aCliente,int len, int id);
+     ^~~~~~~~~~~~~~~~~~~~~~~
+../src/cliente.c: In function ‘cliente_buscarLocalidad’:
+../src/cliente.c:452:21: error: invalid initializer
+  char retorno[15] = -1;
+                     ^
+../src/cliente.c:459:7: error: too few arguments to function ‘strncmp’
+    if(strncmp(aCliente[i].localidad,localidad)==0)
+       ^~~~~~~
+In file included from ../src/cliente.c:12:
+/usr/include/string.h:139:12: note: declared here
+ extern int strncmp (const char *__s1, const char *__s2, size_t __n)
+            ^~~~~~~
+../src/cliente.c:460:13: error: assignment to expression with array type
+     retorno = localidad;
+             ^
+../src/cliente.c:463:9: warning: returning ‘char *’ from a function with return type ‘char’ makes integer from pointer without a cast [-Wint-conversion]
+  return retorno;
+         ^~~~~~~
+../src/cliente.c:463:9: warning: function returns address of local variable [-Wreturn-local-addr]
+make: *** [src/subdir.mk:32: src/cliente.o] Error 1
 "make all" terminated with exit code 2. Build might be incomplete.
-21:40:32 **** Clean-only build of configuration Debug for project Primer_Parcial_1ºh ****
-make clean 
-rm -rf  ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o  ./src/cliente.d ./src/informes.d ./src/main.d ./src/pedidoCliente.d ./src/utn.d  Primer_Parcial_1ºh
- 
-21:40:34 **** Build of configuration Debug for project Primer_Parcial_1ºh ****
+17:35:52 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
 make all 
 Building file: ../src/cliente.c
 Invoking: GCC C Compiler
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/cliente.d" -MT"src/cliente.o" -o "src/cliente.o" "../src/cliente.c"
-../src/cliente.c: In function ‘cliente_imprimirLocalidades’:
-../src/cliente.c:63:7: warning: unused variable ‘bLocalidades’ [-Wunused-variable]
-  char bLocalidades[50][100];
-       ^~~~~~~~~~~~
-Finished building: ../src/cliente.c
- 
-Building file: ../src/informes.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
-Finished building: ../src/informes.c
- 
-Building file: ../src/main.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-Finished building: ../src/main.c
- 
-Building file: ../src/pedidoCliente.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pedidoCliente.d" -MT"src/pedidoCliente.o" -o "src/pedidoCliente.o" "../src/pedidoCliente.c"
-../src/pedidoCliente.c: In function ‘imprimirClientesConCantidadDePedidosPendientes’:
-../src/pedidoCliente.c:420:24: warning: implicit declaration of function ‘informes_contarPedidosPendientePorIDcliente’; did you mean ‘pedidoCliente_buscarPedidoPendientePorIdCliente’? [-Wimplicit-function-declaration]
-    cantidadDePedidos = informes_contarPedidosPendientePorIDcliente(aCliente,lenAcliente,aCliente[i].idCliente);
-                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-                        pedidoCliente_buscarPedidoPendientePorIdCliente
-Finished building: ../src/pedidoCliente.c
- 
-Building file: ../src/utn.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/utn.d" -MT"src/utn.o" -o "src/utn.o" "../src/utn.c"
-Finished building: ../src/utn.c
- 
-Building target: Primer_Parcial_1ºh
-Invoking: GCC C Linker
-gcc  -o "Primer_Parcial_1ºh"  ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
-Finished building target: Primer_Parcial_1ºh
- 
-21:41:03 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
-make all 
-Building file: ../src/informes.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
-Finished building: ../src/informes.c
- 
-Building file: ../src/main.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-Finished building: ../src/main.c
- 
-Building file: ../src/pedidoCliente.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pedidoCliente.d" -MT"src/pedidoCliente.o" -o "src/pedidoCliente.o" "../src/pedidoCliente.c"
-In file included from ../src/pedidoCliente.h:13,
-                 from ../src/pedidoCliente.c:7:
-../src/informes.h:16:49: error: unknown type name ‘sPedidoCliente’; did you mean ‘sCliente’?
- int informes_contarPedidosPendientePorIDcliente(sPedidoCliente *aPedido,int len, int id);
-                                                 ^~~~~~~~~~~~~~
-                                                 sCliente
-../src/informes.h:17:80: error: unknown type name ‘sPedidoCliente’; did you mean ‘sCliente’?
- int informes_clienteConMasPedidosPendientes(sCliente *acliente,int lenCLientes,sPedidoCliente *aPedidos,int lenPedidos);
-                                                                                ^~~~~~~~~~~~~~
-                                                                                sCliente
-../src/informes.h:19:49: error: unknown type name ‘sPedidoCliente’; did you mean ‘sCliente’?
- int informes_contarPedidosCompletosPorIDcliente(sPedidoCliente *aPedido,int len, int id);
-                                                 ^~~~~~~~~~~~~~
-                                                 sCliente
-../src/informes.h:20:79: error: unknown type name ‘sPedidoCliente’; did you mean ‘sCliente’?
- int informes_clienteConMasPedidosCompletos(sCliente *acliente,int lenCLientes,sPedidoCliente *aPedidos,int lenPedidos);
-                                                                               ^~~~~~~~~~~~~~
-                                                                               sCliente
-../src/informes.h:22:47: error: unknown type name ‘sPedidoCliente’; did you mean ‘sCliente’?
- int informes_contarPedidosTotalesPorIDcliente(sPedidoCliente *aPedido,int len, int id);
-                                               ^~~~~~~~~~~~~~
-                                               sCliente
-../src/informes.h:23:87: error: unknown type name ‘sPedidoCliente’; did you mean ‘sCliente’?
- int informes_clienteConMasCantidadDePedidosTotales(sCliente *acliente,int lenCLientes,sPedidoCliente *aPedidos,int lenPedidos);
-                                                                                       ^~~~~~~~~~~~~~
-                                                                                       sCliente
-In file included from ../src/pedidoCliente.h:13,
-                 from ../src/pedidoCliente.c:7:
-../src/informes.h:25:47: error: unknown type name ‘sPedidoCliente’; did you mean ‘sCliente’?
- float informes_contarKgRecicladosPorIDcliente(sPedidoCliente *aPedido,int len, int id);
-                                               ^~~~~~~~~~~~~~
-                                               sCliente
-../src/informes.h:26:83: error: unknown type name ‘sPedidoCliente’; did you mean ‘sCliente’?
- int informes_clienteConMasCantidadKgReciclados(sCliente *acliente,int lenCLientes,sPedidoCliente *aPedidos,int lenPedidos);
-                                                                                   ^~~~~~~~~~~~~~
-                                                                                   sCliente
-../src/informes.h:28:85: error: unknown type name ‘sPedidoCliente’; did you mean ‘sCliente’?
- int informes_clienteConMenosCantidadKgReciclados(sCliente *acliente,int lenCLientes,sPedidoCliente *aPedidos,int lenPedidos);
-                                                                                     ^~~~~~~~~~~~~~
-                                                                                     sCliente
-../src/informes.h:30:81: error: unknown type name ‘sPedidoCliente’; did you mean ‘sCliente’?
- int informes_clienteConMasDe1000KgReciclados(sCliente *acliente,int lenCLientes,sPedidoCliente *aPedidos,int lenPedidos);
-                                                                                 ^~~~~~~~~~~~~~
-                                                                                 sCliente
-../src/informes.h:32:82: error: unknown type name ‘sPedidoCliente’; did you mean ‘sCliente’?
- int informes_clienteConMenosDe100KgReciclados(sCliente *acliente,int lenCLientes,sPedidoCliente *aPedidos,int lenPedidos);
-                                                                                  ^~~~~~~~~~~~~~
-                                                                                  sCliente
-../src/informes.h:34:54: error: unknown type name ‘sPedidoCliente’; did you mean ‘sCliente’?
- float informes_calcularPorcentajeDePlasticoReciclado(sPedidoCliente *aPedido,int lenApedido,int idPedido);
-                                                      ^~~~~~~~~~~~~~
-                                                      sCliente
-../src/informes.h:37:18: error: unknown type name ‘sPedidoCliente’; did you mean ‘sCliente’?
-                  sPedidoCliente *aPedido,
-                  ^~~~~~~~~~~~~~
-                  sCliente
-../src/informes.h:43:14: error: unknown type name ‘sPedidoCliente’; did you mean ‘sCliente’?
-              sPedidoCliente *aPedido,
-              ^~~~~~~~~~~~~~
-              sCliente
-../src/informes.h:47:37: error: unknown type name ‘sPedidoCliente’; did you mean ‘sCliente’?
- float informes_contarKgPpReciclados(sPedidoCliente *aPedido,int len);
-                                     ^~~~~~~~~~~~~~
-                                     sCliente
-../src/informes.h:49:82: error: unknown type name ‘sPedidoCliente’; did you mean ‘sCliente’?
- int informes_promedioKgPPrecicladoPorCliente(sCliente *aCliente,int lenAcliente, sPedidoCliente *aPedido,int lenApedido);
-                                                                                  ^~~~~~~~~~~~~~
-                                                                                  sCliente
-../src/informes.h:51:47: error: unknown type name ‘sPedidoCliente’; did you mean ‘sCliente’?
- float informes_contarKgPPrecicladosPorCliente(sPedidoCliente *aPedido,int len,int idCliente);
-                                               ^~~~~~~~~~~~~~
-                                               sCliente
-../src/informes.h:52:49: error: unknown type name ‘sPedidoCliente’; did you mean ‘sCliente’?
- float informes_contarKgHDPErecicladosPorCliente(sPedidoCliente *aPedido,int len,int idCliente);
-                                                 ^~~~~~~~~~~~~~
-                                                 sCliente
-../src/informes.h:53:49: error: unknown type name ‘sPedidoCliente’; did you mean ‘sCliente’?
- float informes_contarKgLDPErecicladosPorCliente(sPedidoCliente *aPedido,int len,int idCliente);
-                                                 ^~~~~~~~~~~~~~
-                                                 sCliente
-../src/informes.h:56:18: error: unknown type name ‘sPedidoCliente’; did you mean ‘sCliente’?
-                  sPedidoCliente *aPedido,
-                  ^~~~~~~~~~~~~~
-                  sCliente
-../src/pedidoCliente.c: In function ‘imprimirClientesConCantidadDePedidosPendientes’:
-../src/pedidoCliente.c:420:24: warning: implicit declaration of function ‘informes_contarPedidosPendientePorIDcliente’; did you mean ‘pedidoCliente_buscarPedidoPendientePorIdCliente’? [-Wimplicit-function-declaration]
-    cantidadDePedidos = informes_contarPedidosPendientePorIDcliente(aCliente,lenAcliente,aCliente[i].idCliente);
-                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-                        pedidoCliente_buscarPedidoPendientePorIdCliente
-make: *** [src/subdir.mk:32: src/pedidoCliente.o] Error 1
+../src/cliente.c: In function ‘cliente_buscarLocalidad’:
+../src/cliente.c:452:21: error: invalid initializer
+  char retorno[15] = -1;
+                     ^
+../src/cliente.c:459:7: error: too few arguments to function ‘strncmp’
+    if(strncmp(aCliente[i].localidad,localidad)==0)
+       ^~~~~~~
+In file included from ../src/cliente.c:12:
+/usr/include/string.h:139:12: note: declared here
+ extern int strncmp (const char *__s1, const char *__s2, size_t __n)
+            ^~~~~~~
+../src/cliente.c:460:13: error: assignment to expression with array type
+     retorno = localidad;
+             ^
+../src/cliente.c:463:9: warning: returning ‘char *’ from a function with return type ‘char’ makes integer from pointer without a cast [-Wint-conversion]
+  return retorno;
+         ^~~~~~~
+../src/cliente.c:463:9: warning: function returns address of local variable [-Wreturn-local-addr]
+make: *** [src/subdir.mk:32: src/cliente.o] Error 1
 "make all" terminated with exit code 2. Build might be incomplete.
-21:41:15 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
-make all 
-Building file: ../src/informes.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
-Finished building: ../src/informes.c
- 
-Building file: ../src/main.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-Finished building: ../src/main.c
- 
-Building file: ../src/pedidoCliente.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pedidoCliente.d" -MT"src/pedidoCliente.o" -o "src/pedidoCliente.o" "../src/pedidoCliente.c"
-../src/pedidoCliente.c: In function ‘imprimirClientesConCantidadDePedidosPendientes’:
-../src/pedidoCliente.c:420:24: warning: implicit declaration of function ‘informes_contarPedidosPendientePorIDcliente’; did you mean ‘pedidoCliente_buscarPedidoPendientePorIdCliente’? [-Wimplicit-function-declaration]
-    cantidadDePedidos = informes_contarPedidosPendientePorIDcliente(aCliente,lenAcliente,aCliente[i].idCliente);
-                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-                        pedidoCliente_buscarPedidoPendientePorIdCliente
-Finished building: ../src/pedidoCliente.c
- 
-Building target: Primer_Parcial_1ºh
-Invoking: GCC C Linker
-gcc  -o "Primer_Parcial_1ºh"  ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
-Finished building target: Primer_Parcial_1ºh
- 
-21:43:14 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
-make all 
-Building file: ../src/informes.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
-Finished building: ../src/informes.c
- 
-Building file: ../src/main.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-Finished building: ../src/main.c
- 
-Building file: ../src/pedidoCliente.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pedidoCliente.d" -MT"src/pedidoCliente.o" -o "src/pedidoCliente.o" "../src/pedidoCliente.c"
-../src/pedidoCliente.c: In function ‘imprimirClientesConCantidadDePedidosPendientes’:
-../src/pedidoCliente.c:420:24: warning: implicit declaration of function ‘informes_contarPedidosPendientePorIDcliente’; did you mean ‘pedidoCiente_contarPedidosPendientePorIDcliente’? [-Wimplicit-function-declaration]
-    cantidadDePedidos = informes_contarPedidosPendientePorIDcliente(aCliente,lenAcliente,aCliente[i].idCliente);
-                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-                        pedidoCiente_contarPedidosPendientePorIDcliente
-Finished building: ../src/pedidoCliente.c
- 
-Building target: Primer_Parcial_1ºh
-Invoking: GCC C Linker
-gcc  -o "Primer_Parcial_1ºh"  ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
-/usr/bin/ld: ./src/pedidoCliente.o: en la función `imprimirClientesConCantidadDePedidosPendientes':
-/home/javijps/Parcial_2do_Cuatrimestre_2019_1-H/Primer_Parcial_1ºh/Debug/../src/pedidoCliente.c:420: referencia a `informes_contarPedidosPendientePorIDcliente' sin definir
-collect2: error: ld returned 1 exit status
-make: *** [makefile:32: Primer_Parcial_1ºh] Error 1
-"make all" terminated with exit code 2. Build might be incomplete.
-21:43:41 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
-make all 
-Building file: ../src/pedidoCliente.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pedidoCliente.d" -MT"src/pedidoCliente.o" -o "src/pedidoCliente.o" "../src/pedidoCliente.c"
-../src/pedidoCliente.c: In function ‘imprimirClientesConCantidadDePedidosPendientes’:
-../src/pedidoCliente.c:420:24: warning: implicit declaration of function ‘pedidoCliente_contarPedidosPendientePorIDcliente’; did you mean ‘pedidoCiente_contarPedidosPendientePorIDcliente’? [-Wimplicit-function-declaration]
-    cantidadDePedidos = pedidoCliente_contarPedidosPendientePorIDcliente(aCliente,lenAcliente,aCliente[i].idCliente);
-                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-                        pedidoCiente_contarPedidosPendientePorIDcliente
-Finished building: ../src/pedidoCliente.c
- 
-Building target: Primer_Parcial_1ºh
-Invoking: GCC C Linker
-gcc  -o "Primer_Parcial_1ºh"  ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
-/usr/bin/ld: ./src/pedidoCliente.o: en la función `imprimirClientesConCantidadDePedidosPendientes':
-/home/javijps/Parcial_2do_Cuatrimestre_2019_1-H/Primer_Parcial_1ºh/Debug/../src/pedidoCliente.c:420: referencia a `pedidoCliente_contarPedidosPendientePorIDcliente' sin definir
-collect2: error: ld returned 1 exit status
-make: *** [makefile:32: Primer_Parcial_1ºh] Error 1
-"make all" terminated with exit code 2. Build might be incomplete.
-21:44:40 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
-make all 
-Building file: ../src/informes.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
-Finished building: ../src/informes.c
- 
-Building file: ../src/main.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-Finished building: ../src/main.c
- 
-Building file: ../src/pedidoCliente.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pedidoCliente.d" -MT"src/pedidoCliente.o" -o "src/pedidoCliente.o" "../src/pedidoCliente.c"
-../src/pedidoCliente.c: In function ‘imprimirClientesConCantidadDePedidosPendientes’:
-../src/pedidoCliente.c:420:73: warning: passing argument 1 of ‘pedidoCliente_contarPedidosPendientePorIDcliente’ from incompatible pointer type [-Wincompatible-pointer-types]
-    cantidadDePedidos = pedidoCliente_contarPedidosPendientePorIDcliente(aCliente,lenAcliente,aCliente[i].idCliente);
-                                                                         ^~~~~~~~
-In file included from ../src/pedidoCliente.c:7:
-../src/pedidoCliente.h:46:70: note: expected ‘sPedidoCliente *’ {aka ‘struct <anonymous> *’} but argument is of type ‘sCliente *’ {aka ‘struct <anonymous> *’}
- int pedidoCliente_contarPedidosPendientePorIDcliente(sPedidoCliente *aPedido,int len, int id);
-                                                      ~~~~~~~~~~~~~~~~^~~~~~~
-Finished building: ../src/pedidoCliente.c
- 
-Building target: Primer_Parcial_1ºh
-Invoking: GCC C Linker
-gcc  -o "Primer_Parcial_1ºh"  ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
-Finished building target: Primer_Parcial_1ºh
- 
-21:45:35 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
-make all 
-Building file: ../src/pedidoCliente.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pedidoCliente.d" -MT"src/pedidoCliente.o" -o "src/pedidoCliente.o" "../src/pedidoCliente.c"
-../src/pedidoCliente.c: In function ‘imprimirClientesConCantidadDePedidosPendientes’:
-../src/pedidoCliente.c:420:73: warning: passing argument 1 of ‘pedidoCliente_contarPedidosPendientePorIDcliente’ from incompatible pointer type [-Wincompatible-pointer-types]
-    cantidadDePedidos = pedidoCliente_contarPedidosPendientePorIDcliente(aCliente,lenAcliente,aCliente[i].idCliente);
-                                                                         ^~~~~~~~
-In file included from ../src/pedidoCliente.c:7:
-../src/pedidoCliente.h:46:70: note: expected ‘sPedidoCliente *’ {aka ‘struct <anonymous> *’} but argument is of type ‘sCliente *’ {aka ‘struct <anonymous> *’}
- int pedidoCliente_contarPedidosPendientePorIDcliente(sPedidoCliente *aPedido,int len, int id);
-                                                      ~~~~~~~~~~~~~~~~^~~~~~~
-Finished building: ../src/pedidoCliente.c
- 
-Building target: Primer_Parcial_1ºh
-Invoking: GCC C Linker
-gcc  -o "Primer_Parcial_1ºh"  ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
-Finished building target: Primer_Parcial_1ºh
- 
-21:46:20 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
-make all 
-Building file: ../src/pedidoCliente.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pedidoCliente.d" -MT"src/pedidoCliente.o" -o "src/pedidoCliente.o" "../src/pedidoCliente.c"
-Finished building: ../src/pedidoCliente.c
- 
-Building target: Primer_Parcial_1ºh
-Invoking: GCC C Linker
-gcc  -o "Primer_Parcial_1ºh"  ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
-Finished building target: Primer_Parcial_1ºh
- 
-21:46:25 **** Clean-only build of configuration Debug for project Primer_Parcial_1ºh ****
-make clean 
-rm -rf  ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o  ./src/cliente.d ./src/informes.d ./src/main.d ./src/pedidoCliente.d ./src/utn.d  Primer_Parcial_1ºh
- 
-21:46:28 **** Build of configuration Debug for project Primer_Parcial_1ºh ****
+17:36:20 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
 make all 
 Building file: ../src/cliente.c
 Invoking: GCC C Compiler
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/cliente.d" -MT"src/cliente.o" -o "src/cliente.o" "../src/cliente.c"
-../src/cliente.c: In function ‘cliente_imprimirLocalidades’:
-../src/cliente.c:63:7: warning: unused variable ‘bLocalidades’ [-Wunused-variable]
-  char bLocalidades[50][100];
-       ^~~~~~~~~~~~
+../src/cliente.c: In function ‘cliente_buscarLocalidad’:
+../src/cliente.c:460:13: error: assignment to expression with array type
+     retorno = localidad;
+             ^
+../src/cliente.c:463:9: warning: returning ‘char *’ from a function with return type ‘char’ makes integer from pointer without a cast [-Wint-conversion]
+  return retorno;
+         ^~~~~~~
+../src/cliente.c:463:9: warning: function returns address of local variable [-Wreturn-local-addr]
+make: *** [src/subdir.mk:32: src/cliente.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+17:36:54 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/cliente.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/cliente.d" -MT"src/cliente.o" -o "src/cliente.o" "../src/cliente.c"
+../src/cliente.c: In function ‘cliente_buscarLocalidad’:
+../src/cliente.c:463:9: warning: returning ‘char *’ from a function with return type ‘char’ makes integer from pointer without a cast [-Wint-conversion]
+  return retorno;
+         ^~~~~~~
+../src/cliente.c:463:9: warning: function returns address of local variable [-Wreturn-local-addr]
 Finished building: ../src/cliente.c
  
 Building file: ../src/informes.c
@@ -651,7 +117,197 @@ Invoking: GCC C Linker
 gcc  -o "Primer_Parcial_1ºh"  ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
 Finished building target: Primer_Parcial_1ºh
  
-21:47:00 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+17:37:14 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/cliente.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/cliente.d" -MT"src/cliente.o" -o "src/cliente.o" "../src/cliente.c"
+../src/cliente.c:450:6: error: conflicting types for ‘cliente_buscarLocalidad’
+ char cliente_buscarLocalidad(sCliente *aCliente,int len, char localidad)
+      ^~~~~~~~~~~~~~~~~~~~~~~
+In file included from ../src/cliente.c:7:
+../src/cliente.h:39:6: note: previous declaration of ‘cliente_buscarLocalidad’ was here
+ char cliente_buscarLocalidad(sCliente *aCliente,int len, char *localidad);
+      ^~~~~~~~~~~~~~~~~~~~~~~
+../src/cliente.c: In function ‘cliente_buscarLocalidad’:
+../src/cliente.c:459:37: warning: passing argument 2 of ‘strncmp’ makes pointer from integer without a cast [-Wint-conversion]
+    if(strncmp(aCliente[i].localidad,localidad,51)==0)
+                                     ^~~~~~~~~
+In file included from ../src/cliente.c:12:
+/usr/include/string.h:139:51: note: expected ‘const char *’ but argument is of type ‘char’
+ extern int strncmp (const char *__s1, const char *__s2, size_t __n)
+                                       ~~~~~~~~~~~~^~~~
+../src/cliente.c:460:21: warning: passing argument 2 of ‘strncpy’ makes pointer from integer without a cast [-Wint-conversion]
+     strncpy(retorno,localidad,50);
+                     ^~~~~~~~~
+In file included from ../src/cliente.c:12:
+/usr/include/string.h:124:14: note: expected ‘const char * restrict’ but argument is of type ‘char’
+ extern char *strncpy (char *__restrict __dest,
+              ^~~~~~~
+../src/cliente.c:463:9: warning: returning ‘char *’ from a function with return type ‘char’ makes integer from pointer without a cast [-Wint-conversion]
+  return retorno;
+         ^~~~~~~
+../src/cliente.c:463:9: warning: function returns address of local variable [-Wreturn-local-addr]
+make: *** [src/subdir.mk:32: src/cliente.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+17:38:06 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/cliente.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/cliente.d" -MT"src/cliente.o" -o "src/cliente.o" "../src/cliente.c"
+../src/cliente.c:450:5: error: conflicting types for ‘cliente_buscarLocalidad’
+ int cliente_buscarLocalidad(sCliente *aCliente,int len, char *localidad)
+     ^~~~~~~~~~~~~~~~~~~~~~~
+In file included from ../src/cliente.c:7:
+../src/cliente.h:39:6: note: previous declaration of ‘cliente_buscarLocalidad’ was here
+ char cliente_buscarLocalidad(sCliente *aCliente,int len, char *localidad);
+      ^~~~~~~~~~~~~~~~~~~~~~~
+../src/cliente.c: In function ‘cliente_buscarLocalidad’:
+../src/cliente.c:459:7: error: too few arguments to function ‘strncmp’
+    if(strncmp(aCliente[i].localidad,localidad)==0)
+       ^~~~~~~
+In file included from ../src/cliente.c:12:
+/usr/include/string.h:139:12: note: declared here
+ extern int strncmp (const char *__s1, const char *__s2, size_t __n)
+            ^~~~~~~
+make: *** [src/subdir.mk:32: src/cliente.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+17:38:19 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/cliente.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/cliente.d" -MT"src/cliente.o" -o "src/cliente.o" "../src/cliente.c"
+../src/cliente.c: In function ‘cliente_buscarLocalidad’:
+../src/cliente.c:459:7: error: too few arguments to function ‘strncmp’
+    if(strncmp(aCliente[i].localidad,localidad)==0)
+       ^~~~~~~
+In file included from ../src/cliente.c:12:
+/usr/include/string.h:139:12: note: declared here
+ extern int strncmp (const char *__s1, const char *__s2, size_t __n)
+            ^~~~~~~
+make: *** [src/subdir.mk:32: src/cliente.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+17:38:28 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/cliente.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/cliente.d" -MT"src/cliente.o" -o "src/cliente.o" "../src/cliente.c"
+Finished building: ../src/cliente.c
+ 
+Building file: ../src/informes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
+Finished building: ../src/informes.c
+ 
+Building file: ../src/main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building file: ../src/pedidoCliente.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pedidoCliente.d" -MT"src/pedidoCliente.o" -o "src/pedidoCliente.o" "../src/pedidoCliente.c"
+Finished building: ../src/pedidoCliente.c
+ 
+Building target: Primer_Parcial_1ºh
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_1ºh"  ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
+Finished building target: Primer_Parcial_1ºh
+ 
+17:58:05 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/cliente.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/cliente.d" -MT"src/cliente.o" -o "src/cliente.o" "../src/cliente.c"
+Finished building: ../src/cliente.c
+ 
+Building file: ../src/informes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
+Finished building: ../src/informes.c
+ 
+Building file: ../src/main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building file: ../src/pedidoCliente.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pedidoCliente.d" -MT"src/pedidoCliente.o" -o "src/pedidoCliente.o" "../src/pedidoCliente.c"
+Finished building: ../src/pedidoCliente.c
+ 
+Building target: Primer_Parcial_1ºh
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_1ºh"  ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
+Finished building target: Primer_Parcial_1ºh
+ 
+18:03:43 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/cliente.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/cliente.d" -MT"src/cliente.o" -o "src/cliente.o" "../src/cliente.c"
+Finished building: ../src/cliente.c
+ 
+Building file: ../src/informes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
+Finished building: ../src/informes.c
+ 
+Building file: ../src/main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function ‘main’:
+../src/main.c:48:7: warning: unused variable ‘bLocalidad’ [-Wunused-variable]
+  char bLocalidad[50];
+       ^~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building file: ../src/pedidoCliente.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pedidoCliente.d" -MT"src/pedidoCliente.o" -o "src/pedidoCliente.o" "../src/pedidoCliente.c"
+Finished building: ../src/pedidoCliente.c
+ 
+Building target: Primer_Parcial_1ºh
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_1ºh"  ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
+Finished building target: Primer_Parcial_1ºh
+ 
+18:04:26 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+make: No se hace nada para 'all'.
+18:04:59 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function ‘main’:
+../src/main.c:48:7: warning: unused variable ‘bLocalidad’ [-Wunused-variable]
+  char bLocalidad[50];
+       ^~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: Primer_Parcial_1ºh
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_1ºh"  ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
+Finished building target: Primer_Parcial_1ºh
+ 
+18:05:19 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function ‘main’:
+../src/main.c:48:7: warning: unused variable ‘bLocalidad’ [-Wunused-variable]
+  char bLocalidad[50];
+       ^~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: Primer_Parcial_1ºh
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_1ºh"  ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
+Finished building target: Primer_Parcial_1ºh
+ 
+18:06:56 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
 make all 
 Building file: ../src/cliente.c
 Invoking: GCC C Compiler
@@ -663,7 +319,7 @@ Invoking: GCC C Linker
 gcc  -o "Primer_Parcial_1ºh"  ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
 Finished building target: Primer_Parcial_1ºh
  
-21:47:27 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+18:07:26 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
 make all 
 Building file: ../src/cliente.c
 Invoking: GCC C Compiler
@@ -675,11 +331,351 @@ Invoking: GCC C Linker
 gcc  -o "Primer_Parcial_1ºh"  ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
 Finished building target: Primer_Parcial_1ºh
  
-21:47:31 **** Clean-only build of configuration Debug for project Primer_Parcial_1ºh ****
-make clean 
-rm -rf  ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o  ./src/cliente.d ./src/informes.d ./src/main.d ./src/pedidoCliente.d ./src/utn.d  Primer_Parcial_1ºh
+18:12:33 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/cliente.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/cliente.d" -MT"src/cliente.o" -o "src/cliente.o" "../src/cliente.c"
+../src/cliente.c: In function ‘cliente_guardarYmostarLocalidades’:
+../src/cliente.c:515:75: error: expected ‘;’ before ‘printf’
+     strncpy(aAuxCliente[indexAuxiliar].localidad,aCliente[i].localidad,50)
+                                                                           ^
+                                                                           ;
+     printf("copio ok %s\n",aAuxCliente[indexAuxiliar].localidad);
+     ~~~~~~                                                                 
+make: *** [src/subdir.mk:32: src/cliente.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+18:12:40 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/cliente.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/cliente.d" -MT"src/cliente.o" -o "src/cliente.o" "../src/cliente.c"
+Finished building: ../src/cliente.c
  
-21:47:34 **** Build of configuration Debug for project Primer_Parcial_1ºh ****
+Building target: Primer_Parcial_1ºh
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_1ºh"  ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
+Finished building target: Primer_Parcial_1ºh
+ 
+18:12:44 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+make: No se hace nada para 'all'.
+18:13:42 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/cliente.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/cliente.d" -MT"src/cliente.o" -o "src/cliente.o" "../src/cliente.c"
+../src/cliente.c: In function ‘cliente_guardarYmostarLocalidades’:
+../src/cliente.c:506:80: error: expected expression before ‘=’ token
+    if(cliente_buscarLocalidadExistente(aAuxCliente,len,aCliente[i].localidad)!==0)
+                                                                                ^
+make: *** [src/subdir.mk:32: src/cliente.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+18:13:48 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/cliente.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/cliente.d" -MT"src/cliente.o" -o "src/cliente.o" "../src/cliente.c"
+Finished building: ../src/cliente.c
+ 
+Building target: Primer_Parcial_1ºh
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_1ºh"  ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
+Finished building target: Primer_Parcial_1ºh
+ 
+18:14:29 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/cliente.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/cliente.d" -MT"src/cliente.o" -o "src/cliente.o" "../src/cliente.c"
+Finished building: ../src/cliente.c
+ 
+Building target: Primer_Parcial_1ºh
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_1ºh"  ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
+Finished building target: Primer_Parcial_1ºh
+ 
+18:15:03 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/cliente.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/cliente.d" -MT"src/cliente.o" -o "src/cliente.o" "../src/cliente.c"
+Finished building: ../src/cliente.c
+ 
+Building file: ../src/main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function ‘main’:
+../src/main.c:48:7: warning: unused variable ‘bLocalidad’ [-Wunused-variable]
+  char bLocalidad[50];
+       ^~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: Primer_Parcial_1ºh
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_1ºh"  ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
+Finished building target: Primer_Parcial_1ºh
+ 
+18:15:04 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+make: No se hace nada para 'all'.
+18:16:08 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/cliente.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/cliente.d" -MT"src/cliente.o" -o "src/cliente.o" "../src/cliente.c"
+../src/cliente.c: In function ‘cliente_guardarYmostarLocalidades’:
+../src/cliente.c:509:41: warning: format ‘%s’ expects a matching ‘char *’ argument [-Wformat=]
+     printf("entro a buscar localidad\n %s\n");
+                                        ~^
+Finished building: ../src/cliente.c
+ 
+Building target: Primer_Parcial_1ºh
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_1ºh"  ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
+Finished building target: Primer_Parcial_1ºh
+ 
+18:16:21 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/cliente.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/cliente.d" -MT"src/cliente.o" -o "src/cliente.o" "../src/cliente.c"
+Finished building: ../src/cliente.c
+ 
+Building target: Primer_Parcial_1ºh
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_1ºh"  ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
+Finished building target: Primer_Parcial_1ºh
+ 
+18:18:49 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/cliente.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/cliente.d" -MT"src/cliente.o" -o "src/cliente.o" "../src/cliente.c"
+Finished building: ../src/cliente.c
+ 
+Building target: Primer_Parcial_1ºh
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_1ºh"  ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
+Finished building target: Primer_Parcial_1ºh
+ 
+18:18:54 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+make: No se hace nada para 'all'.
+18:19:32 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/cliente.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/cliente.d" -MT"src/cliente.o" -o "src/cliente.o" "../src/cliente.c"
+Finished building: ../src/cliente.c
+ 
+Building target: Primer_Parcial_1ºh
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_1ºh"  ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
+Finished building target: Primer_Parcial_1ºh
+ 
+18:20:40 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/cliente.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/cliente.d" -MT"src/cliente.o" -o "src/cliente.o" "../src/cliente.c"
+Finished building: ../src/cliente.c
+ 
+Building target: Primer_Parcial_1ºh
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_1ºh"  ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
+Finished building target: Primer_Parcial_1ºh
+ 
+18:20:47 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+make: No se hace nada para 'all'.
+18:22:49 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/cliente.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/cliente.d" -MT"src/cliente.o" -o "src/cliente.o" "../src/cliente.c"
+Finished building: ../src/cliente.c
+ 
+Building target: Primer_Parcial_1ºh
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_1ºh"  ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
+Finished building target: Primer_Parcial_1ºh
+ 
+18:22:53 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+make: No se hace nada para 'all'.
+18:40:44 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/cliente.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/cliente.d" -MT"src/cliente.o" -o "src/cliente.o" "../src/cliente.c"
+../src/cliente.c:483:5: error: conflicting types for ‘cliente_imprimirLocalidades’
+ int cliente_imprimirLocalidades(sCliente *aCliente, int len)
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ../src/cliente.c:7:
+../src/cliente.h:40:6: note: previous declaration of ‘cliente_imprimirLocalidades’ was here
+ void cliente_imprimirLocalidades(sCliente *aCliente, int len);
+      ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:32: src/cliente.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+18:41:16 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/cliente.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/cliente.d" -MT"src/cliente.o" -o "src/cliente.o" "../src/cliente.c"
+../src/cliente.c:483:5: error: conflicting types for ‘cliente_imprimirLocalidades’
+ int cliente_imprimirLocalidades(sCliente *aCliente, int len)
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ../src/cliente.c:7:
+../src/cliente.h:40:6: note: previous declaration of ‘cliente_imprimirLocalidades’ was here
+ void cliente_imprimirLocalidades(sCliente *aCliente, int len);
+      ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:32: src/cliente.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+18:41:45 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/cliente.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/cliente.d" -MT"src/cliente.o" -o "src/cliente.o" "../src/cliente.c"
+Finished building: ../src/cliente.c
+ 
+Building file: ../src/informes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
+Finished building: ../src/informes.c
+ 
+Building file: ../src/main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function ‘main’:
+../src/main.c:48:7: warning: unused variable ‘bLocalidad’ [-Wunused-variable]
+  char bLocalidad[50];
+       ^~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building file: ../src/pedidoCliente.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pedidoCliente.d" -MT"src/pedidoCliente.o" -o "src/pedidoCliente.o" "../src/pedidoCliente.c"
+Finished building: ../src/pedidoCliente.c
+ 
+Building target: Primer_Parcial_1ºh
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_1ºh"  ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
+Finished building target: Primer_Parcial_1ºh
+ 
+18:42:03 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: Primer_Parcial_1ºh
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_1ºh"  ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
+Finished building target: Primer_Parcial_1ºh
+ 
+18:42:10 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+make: No se hace nada para 'all'.
+18:43:43 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/cliente.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/cliente.d" -MT"src/cliente.o" -o "src/cliente.o" "../src/cliente.c"
+../src/cliente.c: In function ‘cliente_imprimirLocalidades’:
+../src/cliente.c:490:38: warning: ‘i’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+   printf("Localidades: %s\n",aCliente[i].localidad);
+                                      ^
+Finished building: ../src/cliente.c
+ 
+Building target: Primer_Parcial_1ºh
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_1ºh"  ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
+Finished building target: Primer_Parcial_1ºh
+ 
+18:44:07 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/cliente.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/cliente.d" -MT"src/cliente.o" -o "src/cliente.o" "../src/cliente.c"
+Finished building: ../src/cliente.c
+ 
+Building target: Primer_Parcial_1ºh
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_1ºh"  ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
+Finished building target: Primer_Parcial_1ºh
+ 
+18:44:10 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+make: No se hace nada para 'all'.
+18:45:03 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/informes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
+Finished building: ../src/informes.c
+ 
+Building target: Primer_Parcial_1ºh
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_1ºh"  ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
+Finished building target: Primer_Parcial_1ºh
+ 
+18:45:06 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+make: No se hace nada para 'all'.
+18:47:11 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/informes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
+../src/informes.c: In function ‘informes_contarPedidosPendientesPorLocalidad’:
+../src/informes.c:576:10: warning: unknown escape sequence: '\N'
+   printf("FALLA EL GET\N");
+          ^~~~~~~~~~~~~~~~
+Finished building: ../src/informes.c
+ 
+Building target: Primer_Parcial_1ºh
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_1ºh"  ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
+Finished building target: Primer_Parcial_1ºh
+ 
+18:47:28 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/informes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
+Finished building: ../src/informes.c
+ 
+Building target: Primer_Parcial_1ºh
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_1ºh"  ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
+Finished building target: Primer_Parcial_1ºh
+ 
+18:47:44 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+make: No se hace nada para 'all'.
+18:48:21 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+make: No se hace nada para 'all'.
+18:49:52 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/informes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
+Finished building: ../src/informes.c
+ 
+Building file: ../src/main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: Primer_Parcial_1ºh
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_1ºh"  ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
+Finished building target: Primer_Parcial_1ºh
+ 
+19:05:07 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
 make all 
 Building file: ../src/cliente.c
 Invoking: GCC C Compiler
@@ -704,6 +700,22 @@ Finished building: ../src/pedidoCliente.c
 Building file: ../src/utn.c
 Invoking: GCC C Compiler
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/utn.d" -MT"src/utn.o" -o "src/utn.o" "../src/utn.c"
+../src/utn.c: In function ‘getLetra’:
+../src/utn.c:331:11: warning: comparison between pointer and integer
+  if(pLetra!=NULL && maximo>minimo)
+           ^~
+../src/utn.c:335:14: warning: passing argument 1 of ‘getString’ makes pointer from integer without a cast [-Wint-conversion]
+    getString(pLetra,mensaje,mensajeError,1,49,3);
+              ^~~~~~
+../src/utn.c:198:21: note: expected ‘char *’ but argument is of type ‘char’
+ int getString(char *pResultado,
+               ~~~~~~^~~~~~~~~~
+../src/utn.c:336:15: warning: passing argument 1 of ‘esLetra’ makes pointer from integer without a cast [-Wint-conversion]
+    if(esLetra(pLetra)==0)
+               ^~~~~~
+../src/utn.c:297:19: note: expected ‘char *’ but argument is of type ‘char’
+ int esLetra(char *pLetra)
+             ~~~~~~^~~~~~
 Finished building: ../src/utn.c
  
 Building target: Primer_Parcial_1ºh
@@ -711,277 +723,7 @@ Invoking: GCC C Linker
 gcc  -o "Primer_Parcial_1ºh"  ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
 Finished building target: Primer_Parcial_1ºh
  
-21:47:41 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
-make all 
-make: No se hace nada para 'all'.
-21:48:55 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
-make all 
-Building file: ../src/pedidoCliente.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pedidoCliente.d" -MT"src/pedidoCliente.o" -o "src/pedidoCliente.o" "../src/pedidoCliente.c"
-Finished building: ../src/pedidoCliente.c
- 
-Building target: Primer_Parcial_1ºh
-Invoking: GCC C Linker
-gcc  -o "Primer_Parcial_1ºh"  ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
-Finished building target: Primer_Parcial_1ºh
- 
-21:48:59 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
-make all 
-make: No se hace nada para 'all'.
-21:50:18 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
-make all 
-Building file: ../src/pedidoCliente.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pedidoCliente.d" -MT"src/pedidoCliente.o" -o "src/pedidoCliente.o" "../src/pedidoCliente.c"
-Finished building: ../src/pedidoCliente.c
- 
-Building target: Primer_Parcial_1ºh
-Invoking: GCC C Linker
-gcc  -o "Primer_Parcial_1ºh"  ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
-Finished building target: Primer_Parcial_1ºh
- 
-21:50:22 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
-make all 
-make: No se hace nada para 'all'.
-21:52:46 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
-make all 
-Building file: ../src/informes.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
-Finished building: ../src/informes.c
- 
-Building file: ../src/main.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-Finished building: ../src/main.c
- 
-Building file: ../src/pedidoCliente.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pedidoCliente.d" -MT"src/pedidoCliente.o" -o "src/pedidoCliente.o" "../src/pedidoCliente.c"
-Finished building: ../src/pedidoCliente.c
- 
-Building target: Primer_Parcial_1ºh
-Invoking: GCC C Linker
-gcc  -o "Primer_Parcial_1ºh"  ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
-Finished building target: Primer_Parcial_1ºh
- 
-21:54:14 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
-make all 
-Building file: ../src/pedidoCliente.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pedidoCliente.d" -MT"src/pedidoCliente.o" -o "src/pedidoCliente.o" "../src/pedidoCliente.c"
-Finished building: ../src/pedidoCliente.c
- 
-Building target: Primer_Parcial_1ºh
-Invoking: GCC C Linker
-gcc  -o "Primer_Parcial_1ºh"  ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
-Finished building target: Primer_Parcial_1ºh
- 
-21:54:20 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
-make all 
-make: No se hace nada para 'all'.
-21:57:49 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
-make all 
-Building file: ../src/pedidoCliente.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pedidoCliente.d" -MT"src/pedidoCliente.o" -o "src/pedidoCliente.o" "../src/pedidoCliente.c"
-Finished building: ../src/pedidoCliente.c
- 
-Building target: Primer_Parcial_1ºh
-Invoking: GCC C Linker
-gcc  -o "Primer_Parcial_1ºh"  ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
-Finished building target: Primer_Parcial_1ºh
- 
-21:57:52 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
-make all 
-make: No se hace nada para 'all'.
-21:57:54 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
-make all 
-make: No se hace nada para 'all'.
-21:59:31 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
-make all 
-Building file: ../src/pedidoCliente.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pedidoCliente.d" -MT"src/pedidoCliente.o" -o "src/pedidoCliente.o" "../src/pedidoCliente.c"
-Finished building: ../src/pedidoCliente.c
- 
-Building target: Primer_Parcial_1ºh
-Invoking: GCC C Linker
-gcc  -o "Primer_Parcial_1ºh"  ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
-Finished building target: Primer_Parcial_1ºh
- 
-21:59:37 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
-make all 
-make: No se hace nada para 'all'.
-22:03:26 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
-make all 
-Building file: ../src/pedidoCliente.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pedidoCliente.d" -MT"src/pedidoCliente.o" -o "src/pedidoCliente.o" "../src/pedidoCliente.c"
-Finished building: ../src/pedidoCliente.c
- 
-Building target: Primer_Parcial_1ºh
-Invoking: GCC C Linker
-gcc  -o "Primer_Parcial_1ºh"  ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
-Finished building target: Primer_Parcial_1ºh
- 
-22:03:30 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
-make all 
-make: No se hace nada para 'all'.
-22:04:14 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
-make all 
-Building file: ../src/pedidoCliente.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pedidoCliente.d" -MT"src/pedidoCliente.o" -o "src/pedidoCliente.o" "../src/pedidoCliente.c"
-Finished building: ../src/pedidoCliente.c
- 
-Building target: Primer_Parcial_1ºh
-Invoking: GCC C Linker
-gcc  -o "Primer_Parcial_1ºh"  ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
-Finished building target: Primer_Parcial_1ºh
- 
-22:06:12 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
-make all 
-Building file: ../src/pedidoCliente.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pedidoCliente.d" -MT"src/pedidoCliente.o" -o "src/pedidoCliente.o" "../src/pedidoCliente.c"
-../src/pedidoCliente.c: In function ‘pedidoCliente_contarPedidosPendientePorIDcliente’:
-../src/pedidoCliente.c:540:17: warning: format ‘%d’ expects a matching ‘int’ argument [-Wformat=]
-     printf("id %d contador de pedidos %d\n");
-                ~^
-../src/pedidoCliente.c:540:40: warning: format ‘%d’ expects a matching ‘int’ argument [-Wformat=]
-     printf("id %d contador de pedidos %d\n");
-                                       ~^
-Finished building: ../src/pedidoCliente.c
- 
-Building target: Primer_Parcial_1ºh
-Invoking: GCC C Linker
-gcc  -o "Primer_Parcial_1ºh"  ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
-Finished building target: Primer_Parcial_1ºh
- 
-22:06:36 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
-make all 
-Building file: ../src/pedidoCliente.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pedidoCliente.d" -MT"src/pedidoCliente.o" -o "src/pedidoCliente.o" "../src/pedidoCliente.c"
-Finished building: ../src/pedidoCliente.c
- 
-Building target: Primer_Parcial_1ºh
-Invoking: GCC C Linker
-gcc  -o "Primer_Parcial_1ºh"  ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
-Finished building target: Primer_Parcial_1ºh
- 
-22:07:57 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
-make all 
-Building file: ../src/pedidoCliente.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pedidoCliente.d" -MT"src/pedidoCliente.o" -o "src/pedidoCliente.o" "../src/pedidoCliente.c"
-Finished building: ../src/pedidoCliente.c
- 
-Building target: Primer_Parcial_1ºh
-Invoking: GCC C Linker
-gcc  -o "Primer_Parcial_1ºh"  ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
-Finished building target: Primer_Parcial_1ºh
- 
-22:08:02 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
-make all 
-make: No se hace nada para 'all'.
-22:08:41 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
-make all 
-Building file: ../src/pedidoCliente.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pedidoCliente.d" -MT"src/pedidoCliente.o" -o "src/pedidoCliente.o" "../src/pedidoCliente.c"
-Finished building: ../src/pedidoCliente.c
- 
-Building target: Primer_Parcial_1ºh
-Invoking: GCC C Linker
-gcc  -o "Primer_Parcial_1ºh"  ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
-Finished building target: Primer_Parcial_1ºh
- 
-22:12:33 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
-make all 
-Building file: ../src/pedidoCliente.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pedidoCliente.d" -MT"src/pedidoCliente.o" -o "src/pedidoCliente.o" "../src/pedidoCliente.c"
-Finished building: ../src/pedidoCliente.c
- 
-Building target: Primer_Parcial_1ºh
-Invoking: GCC C Linker
-gcc  -o "Primer_Parcial_1ºh"  ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
-Finished building target: Primer_Parcial_1ºh
- 
-22:14:34 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
-make all 
-Building file: ../src/pedidoCliente.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pedidoCliente.d" -MT"src/pedidoCliente.o" -o "src/pedidoCliente.o" "../src/pedidoCliente.c"
-Finished building: ../src/pedidoCliente.c
- 
-Building target: Primer_Parcial_1ºh
-Invoking: GCC C Linker
-gcc  -o "Primer_Parcial_1ºh"  ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
-Finished building target: Primer_Parcial_1ºh
- 
-22:14:38 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
-make all 
-make: No se hace nada para 'all'.
-22:15:03 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
-make all 
-Building file: ../src/pedidoCliente.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pedidoCliente.d" -MT"src/pedidoCliente.o" -o "src/pedidoCliente.o" "../src/pedidoCliente.c"
-Finished building: ../src/pedidoCliente.c
- 
-Building target: Primer_Parcial_1ºh
-Invoking: GCC C Linker
-gcc  -o "Primer_Parcial_1ºh"  ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
-Finished building target: Primer_Parcial_1ºh
- 
-22:15:11 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
-make all 
-Building file: ../src/pedidoCliente.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pedidoCliente.d" -MT"src/pedidoCliente.o" -o "src/pedidoCliente.o" "../src/pedidoCliente.c"
-Finished building: ../src/pedidoCliente.c
- 
-Building target: Primer_Parcial_1ºh
-Invoking: GCC C Linker
-gcc  -o "Primer_Parcial_1ºh"  ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
-Finished building target: Primer_Parcial_1ºh
- 
-22:15:46 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
-make all 
-Building file: ../src/pedidoCliente.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pedidoCliente.d" -MT"src/pedidoCliente.o" -o "src/pedidoCliente.o" "../src/pedidoCliente.c"
-Finished building: ../src/pedidoCliente.c
- 
-Building target: Primer_Parcial_1ºh
-Invoking: GCC C Linker
-gcc  -o "Primer_Parcial_1ºh"  ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
-Finished building target: Primer_Parcial_1ºh
- 
-22:16:26 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
-make all 
-Building file: ../src/pedidoCliente.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pedidoCliente.d" -MT"src/pedidoCliente.o" -o "src/pedidoCliente.o" "../src/pedidoCliente.c"
-Finished building: ../src/pedidoCliente.c
- 
-Building target: Primer_Parcial_1ºh
-Invoking: GCC C Linker
-gcc  -o "Primer_Parcial_1ºh"  ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
-Finished building target: Primer_Parcial_1ºh
- 
-22:16:27 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
-make all 
-make: No se hace nada para 'all'.
-22:16:46 **** Clean-only build of configuration Debug for project Primer_Parcial_1ºh ****
-make clean 
-rm -rf  ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o  ./src/cliente.d ./src/informes.d ./src/main.d ./src/pedidoCliente.d ./src/utn.d  Primer_Parcial_1ºh
- 
-22:16:48 **** Build of configuration Debug for project Primer_Parcial_1ºh ****
+19:05:56 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
 make all 
 Building file: ../src/cliente.c
 Invoking: GCC C Compiler
@@ -1013,137 +755,385 @@ Invoking: GCC C Linker
 gcc  -o "Primer_Parcial_1ºh"  ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
 Finished building target: Primer_Parcial_1ºh
  
-22:17:13 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+19:06:10 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
 make all 
-Building file: ../src/pedidoCliente.c
+Building file: ../src/main.c
 Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pedidoCliente.d" -MT"src/pedidoCliente.o" -o "src/pedidoCliente.o" "../src/pedidoCliente.c"
-Finished building: ../src/pedidoCliente.c
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
  
 Building target: Primer_Parcial_1ºh
 Invoking: GCC C Linker
 gcc  -o "Primer_Parcial_1ºh"  ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
 Finished building target: Primer_Parcial_1ºh
  
-22:18:55 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
-make all 
-Building file: ../src/pedidoCliente.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pedidoCliente.d" -MT"src/pedidoCliente.o" -o "src/pedidoCliente.o" "../src/pedidoCliente.c"
-Finished building: ../src/pedidoCliente.c
- 
-Building target: Primer_Parcial_1ºh
-Invoking: GCC C Linker
-gcc  -o "Primer_Parcial_1ºh"  ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
-Finished building target: Primer_Parcial_1ºh
- 
-22:19:00 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+19:06:14 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
 make all 
 make: No se hace nada para 'all'.
-22:24:12 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+19:06:46 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
 make all 
-Building file: ../src/pedidoCliente.c
+Building file: ../src/main.c
 Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pedidoCliente.d" -MT"src/pedidoCliente.o" -o "src/pedidoCliente.o" "../src/pedidoCliente.c"
-../src/pedidoCliente.c: In function ‘imprimirClientesConCantidadDePedidosPendientes’:
-../src/pedidoCliente.c:425:45: warning: spurious trailing ‘%’ in format [-Wformat=]
-     printf("Cantidad de pedidos Pendientes: %",cantidadPedidos);
-                                             ^
-../src/pedidoCliente.c:425:12: warning: too many arguments for format [-Wformat-extra-args]
-     printf("Cantidad de pedidos Pendientes: %",cantidadPedidos);
-            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Finished building: ../src/pedidoCliente.c
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
  
 Building target: Primer_Parcial_1ºh
 Invoking: GCC C Linker
 gcc  -o "Primer_Parcial_1ºh"  ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
 Finished building target: Primer_Parcial_1ºh
  
-22:24:36 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
-make all 
-Building file: ../src/pedidoCliente.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pedidoCliente.d" -MT"src/pedidoCliente.o" -o "src/pedidoCliente.o" "../src/pedidoCliente.c"
-Finished building: ../src/pedidoCliente.c
- 
-Building target: Primer_Parcial_1ºh
-Invoking: GCC C Linker
-gcc  -o "Primer_Parcial_1ºh"  ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
-Finished building target: Primer_Parcial_1ºh
- 
-22:24:38 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+19:06:49 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
 make all 
 make: No se hace nada para 'all'.
-22:25:20 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+19:07:38 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
 make all 
-Building file: ../src/pedidoCliente.c
+Building file: ../src/main.c
 Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pedidoCliente.d" -MT"src/pedidoCliente.o" -o "src/pedidoCliente.o" "../src/pedidoCliente.c"
-Finished building: ../src/pedidoCliente.c
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
  
 Building target: Primer_Parcial_1ºh
 Invoking: GCC C Linker
 gcc  -o "Primer_Parcial_1ºh"  ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
 Finished building target: Primer_Parcial_1ºh
  
-22:30:03 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+19:07:42 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+make: No se hace nada para 'all'.
+19:08:32 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: Primer_Parcial_1ºh
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_1ºh"  ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
+Finished building target: Primer_Parcial_1ºh
+ 
+19:14:38 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
 make all 
 Building file: ../src/informes.c
 Invoking: GCC C Compiler
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
 Finished building: ../src/informes.c
  
-Building file: ../src/pedidoCliente.c
+Building file: ../src/utn.c
 Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pedidoCliente.d" -MT"src/pedidoCliente.o" -o "src/pedidoCliente.o" "../src/pedidoCliente.c"
-Finished building: ../src/pedidoCliente.c
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/utn.d" -MT"src/utn.o" -o "src/utn.o" "../src/utn.c"
+../src/utn.c: In function ‘stringAmayuscula’:
+../src/utn.c:541:13: warning: implicit declaration of function ‘toupper’ [-Wimplicit-function-declaration]
+   retorno = toupper(input);
+             ^~~~~~~
+Finished building: ../src/utn.c
  
 Building target: Primer_Parcial_1ºh
 Invoking: GCC C Linker
 gcc  -o "Primer_Parcial_1ºh"  ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
 Finished building target: Primer_Parcial_1ºh
  
-22:31:19 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+19:15:13 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
 make all 
-make: No se hace nada para 'all'.
-22:45:49 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
-make all 
-Building file: ../src/informes.c
+Building file: ../src/utn.c
 Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
-../src/informes.c: In function ‘imprimirLocalidades’:
-../src/informes.c:801:12: warning: comparison between pointer and integer
-   for(j=0;j<bLocalidad;j++)
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/utn.d" -MT"src/utn.o" -o "src/utn.o" "../src/utn.c"
+../src/utn.c: In function ‘stringAmayuscula’:
+../src/utn.c:542:21: warning: passing argument 1 of ‘toupper’ makes integer from pointer without a cast [-Wint-conversion]
+   retorno = toupper(input);
+                     ^~~~~
+In file included from ../src/utn.c:11:
+/usr/include/ctype.h:125:25: note: expected ‘int’ but argument is of type ‘char *’
+ extern int toupper (int __c) __THROW;
+                     ~~~~^~~
+../src/utn.c:543:3: error: too few arguments to function ‘toupper’
+  }toupper()
+   ^~~~~~~
+In file included from ../src/utn.c:11:
+/usr/include/ctype.h:125:12: note: declared here
+ extern int toupper (int __c) __THROW;
+            ^~~~~~~
+../src/utn.c:543:12: error: expected ‘;’ before ‘return’
+  }toupper()
             ^
-../src/informes.c:805:19: error: assignment to expression with array type
-     bLocalidad[j] = aCliente[i].localidad;
-                   ^
-../src/informes.c:810:12: warning: comparison between pointer and integer
-   for(i=0;i<bLocalidad;i++)
-            ^
-make: *** [src/subdir.mk:32: src/informes.o] Error 1
+            ;
+../src/utn.c:545:2:
+  return retorno;
+  ~~~~~~     
+../src/utn.c:537:6: warning: variable ‘retorno’ set but not used [-Wunused-but-set-variable]
+  int retorno;
+      ^~~~~~~
+../src/utn.c:546:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/subdir.mk:32: src/utn.o] Error 1
 "make all" terminated with exit code 2. Build might be incomplete.
-22:46:29 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+19:15:34 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
 make all 
+Building file: ../src/utn.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/utn.d" -MT"src/utn.o" -o "src/utn.o" "../src/utn.c"
+../src/utn.c: In function ‘stringAmayuscula’:
+../src/utn.c:542:21: warning: passing argument 1 of ‘toupper’ makes integer from pointer without a cast [-Wint-conversion]
+   retorno = toupper(input);
+                     ^~~~~
+In file included from ../src/utn.c:11:
+/usr/include/ctype.h:125:25: note: expected ‘int’ but argument is of type ‘char *’
+ extern int toupper (int __c) __THROW;
+                     ~~~~^~~
+Finished building: ../src/utn.c
+ 
+Building target: Primer_Parcial_1ºh
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_1ºh"  ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
+Finished building target: Primer_Parcial_1ºh
+ 
+19:15:47 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/utn.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/utn.d" -MT"src/utn.o" -o "src/utn.o" "../src/utn.c"
+Finished building: ../src/utn.c
+ 
+Building target: Primer_Parcial_1ºh
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_1ºh"  ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
+Finished building target: Primer_Parcial_1ºh
+ 
+19:16:47 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/utn.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/utn.d" -MT"src/utn.o" -o "src/utn.o" "../src/utn.c"
+../src/utn.c: In function ‘getAlfanumerico’:
+../src/utn.c:454:4: warning: implicit declaration of function ‘stringAmayuscula’ [-Wimplicit-function-declaration]
+    stringAmayuscula(alfanumerica);
+    ^~~~~~~~~~~~~~~~
+Finished building: ../src/utn.c
+ 
+Building target: Primer_Parcial_1ºh
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_1ºh"  ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
+Finished building target: Primer_Parcial_1ºh
+ 
+19:16:55 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/utn.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/utn.d" -MT"src/utn.o" -o "src/utn.o" "../src/utn.c"
+../src/utn.c: In function ‘getAlfanumerico’:
+../src/utn.c:454:4: warning: implicit declaration of function ‘stringAmayuscula’ [-Wimplicit-function-declaration]
+    stringAmayuscula(alfanumerica,QTY_CARACTERES);
+    ^~~~~~~~~~~~~~~~
+Finished building: ../src/utn.c
+ 
+Building target: Primer_Parcial_1ºh
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_1ºh"  ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
+Finished building target: Primer_Parcial_1ºh
+ 
+19:17:15 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/cliente.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/cliente.d" -MT"src/cliente.o" -o "src/cliente.o" "../src/cliente.c"
+Finished building: ../src/cliente.c
+ 
 Building file: ../src/informes.c
 Invoking: GCC C Compiler
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
-../src/informes.c: In function ‘imprimirLocalidades’:
-../src/informes.c:805:19: error: assignment to expression with array type
-     bLocalidad[j] = aCliente[i].localidad;
-                   ^
-../src/informes.c:810:12: warning: comparison between pointer and integer
-   for(i=0;i<bLocalidad;i++)
-            ^
-make: *** [src/subdir.mk:32: src/informes.o] Error 1
+Finished building: ../src/informes.c
+ 
+Building file: ../src/main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building file: ../src/pedidoCliente.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pedidoCliente.d" -MT"src/pedidoCliente.o" -o "src/pedidoCliente.o" "../src/pedidoCliente.c"
+Finished building: ../src/pedidoCliente.c
+ 
+Building target: Primer_Parcial_1ºh
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_1ºh"  ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
+Finished building target: Primer_Parcial_1ºh
+ 
+19:17:23 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+make: No se hace nada para 'all'.
+19:17:53 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+make: No se hace nada para 'all'.
+19:17:55 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+make: No se hace nada para 'all'.
+19:18:51 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/utn.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/utn.d" -MT"src/utn.o" -o "src/utn.o" "../src/utn.c"
+../src/utn.c: In function ‘getAlfanumerico’:
+../src/utn.c:454:4: warning: implicit declaration of function ‘stringAmayuscula’ [-Wimplicit-function-declaration]
+    stringAmayuscula(alfanumerica,QTY_CARACTERES);
+    ^~~~~~~~~~~~~~~~
+../src/utn.c: In function ‘stringAmayuscula’:
+../src/utn.c:543:3: warning: statement with no effect [-Wunused-value]
+   toupper(input[i]);
+   ^~~~~~~~~~~~~~~~~
+../src/utn.c:546:9: warning: ‘retorno’ is used uninitialized in this function [-Wuninitialized]
+  return retorno;
+         ^~~~~~~
+Finished building: ../src/utn.c
+ 
+Building target: Primer_Parcial_1ºh
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_1ºh"  ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
+Finished building target: Primer_Parcial_1ºh
+ 
+19:19:49 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/utn.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/utn.d" -MT"src/utn.o" -o "src/utn.o" "../src/utn.c"
+../src/utn.c: In function ‘getAlfanumerico’:
+../src/utn.c:454:4: warning: implicit declaration of function ‘stringAmayuscula’ [-Wimplicit-function-declaration]
+    stringAmayuscula(alfanumerica,QTY_CARACTERES);
+    ^~~~~~~~~~~~~~~~
+../src/utn.c: In function ‘stringAmayuscula’:
+../src/utn.c:543:21: error: invalid type argument of unary ‘*’ (have ‘int’)
+  input[i] = toupper(*input[i]);
+                     ^~~~~~~~~
+make: *** [src/subdir.mk:32: src/utn.o] Error 1
 "make all" terminated with exit code 2. Build might be incomplete.
-22:47:27 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+19:19:53 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/utn.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/utn.d" -MT"src/utn.o" -o "src/utn.o" "../src/utn.c"
+../src/utn.c: In function ‘getAlfanumerico’:
+../src/utn.c:454:4: warning: implicit declaration of function ‘stringAmayuscula’ [-Wimplicit-function-declaration]
+    stringAmayuscula(alfanumerica,QTY_CARACTERES);
+    ^~~~~~~~~~~~~~~~
+../src/utn.c: In function ‘stringAmayuscula’:
+../src/utn.c:546:9: warning: ‘retorno’ is used uninitialized in this function [-Wuninitialized]
+  return retorno;
+         ^~~~~~~
+Finished building: ../src/utn.c
+ 
+Building target: Primer_Parcial_1ºh
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_1ºh"  ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
+Finished building target: Primer_Parcial_1ºh
+ 
+19:20:26 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/cliente.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/cliente.d" -MT"src/cliente.o" -o "src/cliente.o" "../src/cliente.c"
+Finished building: ../src/cliente.c
+ 
+Building file: ../src/informes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
+Finished building: ../src/informes.c
+ 
+Building file: ../src/main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building file: ../src/pedidoCliente.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pedidoCliente.d" -MT"src/pedidoCliente.o" -o "src/pedidoCliente.o" "../src/pedidoCliente.c"
+Finished building: ../src/pedidoCliente.c
+ 
+Building file: ../src/utn.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/utn.d" -MT"src/utn.o" -o "src/utn.o" "../src/utn.c"
+../src/utn.c: In function ‘getAlfanumerico’:
+../src/utn.c:454:4: warning: implicit declaration of function ‘stringAmayuscula’ [-Wimplicit-function-declaration]
+    stringAmayuscula(alfanumerica,QTY_CARACTERES);
+    ^~~~~~~~~~~~~~~~
+../src/utn.c: At top level:
+../src/utn.c:536:6: warning: conflicting types for ‘stringAmayuscula’
+ void stringAmayuscula(char *input,int len)
+      ^~~~~~~~~~~~~~~~
+../src/utn.c:454:4: note: previous implicit declaration of ‘stringAmayuscula’ was here
+    stringAmayuscula(alfanumerica,QTY_CARACTERES);
+    ^~~~~~~~~~~~~~~~
+Finished building: ../src/utn.c
+ 
+Building target: Primer_Parcial_1ºh
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_1ºh"  ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
+Finished building target: Primer_Parcial_1ºh
+ 
+19:20:44 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/cliente.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/cliente.d" -MT"src/cliente.o" -o "src/cliente.o" "../src/cliente.c"
+Finished building: ../src/cliente.c
+ 
+Building file: ../src/informes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
+Finished building: ../src/informes.c
+ 
+Building file: ../src/main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building file: ../src/pedidoCliente.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pedidoCliente.d" -MT"src/pedidoCliente.o" -o "src/pedidoCliente.o" "../src/pedidoCliente.c"
+Finished building: ../src/pedidoCliente.c
+ 
+Building target: Primer_Parcial_1ºh
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_1ºh"  ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
+Finished building target: Primer_Parcial_1ºh
+ 
+19:20:51 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+make: No se hace nada para 'all'.
+19:21:17 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+make: No se hace nada para 'all'.
+19:22:46 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
 make all 
 Building file: ../src/informes.c
 Invoking: GCC C Compiler
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
 Finished building: ../src/informes.c
  
+Building target: Primer_Parcial_1ºh
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_1ºh"  ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
+Finished building target: Primer_Parcial_1ºh
+ 
+19:22:52 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+make: No se hace nada para 'all'.
+19:25:46 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/cliente.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/cliente.d" -MT"src/cliente.o" -o "src/cliente.o" "../src/cliente.c"
+Finished building: ../src/cliente.c
+ 
+Building target: Primer_Parcial_1ºh
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_1ºh"  ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
+Finished building target: Primer_Parcial_1ºh
+ 
+19:27:37 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+make: No se hace nada para 'all'.
+19:28:12 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
 Building file: ../src/main.c
 Invoking: GCC C Compiler
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
@@ -1159,15 +1149,99 @@ Invoking: GCC C Linker
 gcc  -o "Primer_Parcial_1ºh"  ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
 Finished building target: Primer_Parcial_1ºh
  
-22:47:33 **** Clean-only build of configuration Debug for project Primer_Parcial_1ºh ****
+19:28:18 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+make: No se hace nada para 'all'.
+19:31:32 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/cliente.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/cliente.d" -MT"src/cliente.o" -o "src/cliente.o" "../src/cliente.c"
+../src/cliente.c:508:5: error: redefinition of ‘cliente_initcliente’
+ int cliente_initcliente(sCliente *aCliente, int cantidad)
+     ^~~~~~~~~~~~~~~~~~~
+../src/cliente.c:90:5: note: previous definition of ‘cliente_initcliente’ was here
+ int cliente_initcliente(sCliente *aCliente, int cantidad)
+     ^~~~~~~~~~~~~~~~~~~
+../src/cliente.c: In function ‘cliente_initcliente’:
+../src/cliente.c:519:26: error: assignment to expression with array type
+    aCliente[i].localidad = " ";
+                          ^
+make: *** [src/subdir.mk:32: src/cliente.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:31:42 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/cliente.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/cliente.d" -MT"src/cliente.o" -o "src/cliente.o" "../src/cliente.c"
+../src/cliente.c:508:5: error: redefinition of ‘cliente_initcliente’
+ int cliente_initcliente(sCliente *aCliente, int cantidad)
+     ^~~~~~~~~~~~~~~~~~~
+../src/cliente.c:90:5: note: previous definition of ‘cliente_initcliente’ was here
+ int cliente_initcliente(sCliente *aCliente, int cantidad)
+     ^~~~~~~~~~~~~~~~~~~
+../src/cliente.c: In function ‘cliente_initcliente’:
+../src/cliente.c:519:26: error: assignment to expression with array type
+    aCliente[i].localidad = ' ';
+                          ^
+make: *** [src/subdir.mk:32: src/cliente.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:31:51 **** Clean-only build of configuration Debug for project Primer_Parcial_1ºh ****
 make clean 
 rm -rf  ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o  ./src/cliente.d ./src/informes.d ./src/main.d ./src/pedidoCliente.d ./src/utn.d  Primer_Parcial_1ºh
  
-22:47:35 **** Build of configuration Debug for project Primer_Parcial_1ºh ****
+19:31:55 **** Build of configuration Debug for project Primer_Parcial_1ºh ****
 make all 
 Building file: ../src/cliente.c
 Invoking: GCC C Compiler
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/cliente.d" -MT"src/cliente.o" -o "src/cliente.o" "../src/cliente.c"
+../src/cliente.c:508:5: error: redefinition of ‘cliente_initcliente’
+ int cliente_initcliente(sCliente *aCliente, int cantidad)
+     ^~~~~~~~~~~~~~~~~~~
+../src/cliente.c:90:5: note: previous definition of ‘cliente_initcliente’ was here
+ int cliente_initcliente(sCliente *aCliente, int cantidad)
+     ^~~~~~~~~~~~~~~~~~~
+../src/cliente.c: In function ‘cliente_initcliente’:
+../src/cliente.c:519:26: error: assignment to expression with array type
+    aCliente[i].localidad = ' ';
+                          ^
+make: *** [src/subdir.mk:32: src/cliente.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:32:18 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/cliente.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/cliente.d" -MT"src/cliente.o" -o "src/cliente.o" "../src/cliente.c"
+../src/cliente.c: In function ‘cliente_initclienteAux’:
+../src/cliente.c:519:26: error: assignment to expression with array type
+    aCliente[i].localidad = ' ';
+                          ^
+make: *** [src/subdir.mk:32: src/cliente.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:32:37 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/cliente.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/cliente.d" -MT"src/cliente.o" -o "src/cliente.o" "../src/cliente.c"
+../src/cliente.c: In function ‘cliente_initclienteAux’:
+../src/cliente.c:519:26: error: assignment to expression with array type
+    aCliente[i].localidad = 'a';
+                          ^
+make: *** [src/subdir.mk:32: src/cliente.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:33:27 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/cliente.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/cliente.d" -MT"src/cliente.o" -o "src/cliente.o" "../src/cliente.c"
+../src/cliente.c: In function ‘cliente_initclienteAux’:
+../src/cliente.c:519:34: warning: passing argument 2 of ‘strncpy’ makes pointer from integer without a cast [-Wint-conversion]
+    strncpy(aCliente[i].localidad,' ',50);
+                                  ^~~
+In file included from ../src/cliente.c:12:
+/usr/include/string.h:124:14: note: expected ‘const char * restrict’ but argument is of type ‘int’
+ extern char *strncpy (char *__restrict __dest,
+              ^~~~~~~
 Finished building: ../src/cliente.c
  
 Building file: ../src/informes.c
@@ -1188,6 +1262,17 @@ Finished building: ../src/pedidoCliente.c
 Building file: ../src/utn.c
 Invoking: GCC C Compiler
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/utn.d" -MT"src/utn.o" -o "src/utn.o" "../src/utn.c"
+../src/utn.c: In function ‘getAlfanumerico’:
+../src/utn.c:454:4: warning: implicit declaration of function ‘stringAmayuscula’ [-Wimplicit-function-declaration]
+    stringAmayuscula(alfanumerica,QTY_CARACTERES);
+    ^~~~~~~~~~~~~~~~
+../src/utn.c: At top level:
+../src/utn.c:536:6: warning: conflicting types for ‘stringAmayuscula’
+ void stringAmayuscula(char *input,int len)
+      ^~~~~~~~~~~~~~~~
+../src/utn.c:454:4: note: previous implicit declaration of ‘stringAmayuscula’ was here
+    stringAmayuscula(alfanumerica,QTY_CARACTERES);
+    ^~~~~~~~~~~~~~~~
 Finished building: ../src/utn.c
  
 Building target: Primer_Parcial_1ºh
@@ -1195,53 +1280,83 @@ Invoking: GCC C Linker
 gcc  -o "Primer_Parcial_1ºh"  ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
 Finished building target: Primer_Parcial_1ºh
  
-12:18:03 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+19:34:01 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
 make all 
-Building file: ../src/main.c
+Building file: ../src/cliente.c
 Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-Finished building: ../src/main.c
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/cliente.d" -MT"src/cliente.o" -o "src/cliente.o" "../src/cliente.c"
+../src/cliente.c: In function ‘cliente_initclienteAux’:
+../src/cliente.c:513:17: error: invalid initializer
+  char init[5] = ' ';
+                 ^~~
+make: *** [src/subdir.mk:32: src/cliente.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:34:09 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/cliente.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/cliente.d" -MT"src/cliente.o" -o "src/cliente.o" "../src/cliente.c"
+../src/cliente.c: In function ‘cliente_initclienteAux’:
+../src/cliente.c:513:17: error: invalid initializer
+  char init[5] = 'a';
+                 ^~~
+make: *** [src/subdir.mk:32: src/cliente.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:34:21 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/cliente.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/cliente.d" -MT"src/cliente.o" -o "src/cliente.o" "../src/cliente.c"
+Finished building: ../src/cliente.c
  
 Building target: Primer_Parcial_1ºh
 Invoking: GCC C Linker
 gcc  -o "Primer_Parcial_1ºh"  ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
 Finished building target: Primer_Parcial_1ºh
  
-12:18:08 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+19:34:44 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/cliente.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/cliente.d" -MT"src/cliente.o" -o "src/cliente.o" "../src/cliente.c"
+Finished building: ../src/cliente.c
+ 
+Building target: Primer_Parcial_1ºh
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_1ºh"  ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
+Finished building target: Primer_Parcial_1ºh
+ 
+19:34:51 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
 make all 
 make: No se hace nada para 'all'.
-12:25:42 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+19:35:47 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
 make all 
-Building file: ../src/main.c
+Building file: ../src/utn.c
 Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-Finished building: ../src/main.c
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/utn.d" -MT"src/utn.o" -o "src/utn.o" "../src/utn.c"
+../src/utn.c: In function ‘getLetra’:
+../src/utn.c:337:4: warning: implicit declaration of function ‘stringAmayuscula’ [-Wimplicit-function-declaration]
+    stringAmayuscula(pLetra,QTY_CARACTERES);
+    ^~~~~~~~~~~~~~~~
+../src/utn.c: At top level:
+../src/utn.c:537:6: warning: conflicting types for ‘stringAmayuscula’
+ void stringAmayuscula(char *input,int len)
+      ^~~~~~~~~~~~~~~~
+../src/utn.c:337:4: note: previous implicit declaration of ‘stringAmayuscula’ was here
+    stringAmayuscula(pLetra,QTY_CARACTERES);
+    ^~~~~~~~~~~~~~~~
+Finished building: ../src/utn.c
  
 Building target: Primer_Parcial_1ºh
 Invoking: GCC C Linker
 gcc  -o "Primer_Parcial_1ºh"  ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
 Finished building target: Primer_Parcial_1ºh
  
-12:25:45 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
-make all 
-make: No se hace nada para 'all'.
-12:26:21 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
-make all 
-Building file: ../src/informes.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
-Finished building: ../src/informes.c
- 
-Building target: Primer_Parcial_1ºh
-Invoking: GCC C Linker
-gcc  -o "Primer_Parcial_1ºh"  ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
-Finished building target: Primer_Parcial_1ºh
- 
-12:30:17 **** Clean-only build of configuration Debug for project Primer_Parcial_1ºh ****
+19:36:06 **** Clean-only build of configuration Debug for project Primer_Parcial_1ºh ****
 make clean 
 rm -rf  ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o  ./src/cliente.d ./src/informes.d ./src/main.d ./src/pedidoCliente.d ./src/utn.d  Primer_Parcial_1ºh
  
-12:35:30 **** Build of configuration Debug for project Primer_Parcial_1ºh ****
+19:36:10 **** Build of configuration Debug for project Primer_Parcial_1ºh ****
 make all 
 Building file: ../src/cliente.c
 Invoking: GCC C Compiler
@@ -1256,16 +1371,94 @@ Finished building: ../src/informes.c
 Building file: ../src/main.c
 Invoking: GCC C Compiler
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-../src/main.c: In function ‘main’:
-../src/main.c:183:7: warning: implicit declaration of function ‘subMenuK’ [-Wimplicit-function-declaration]
-       subMenuK(fCliente,6,fPedido,9);
-       ^~~~~~~~
-../src/main.c:38:6: warning: unused variable ‘subOption’ [-Wunused-variable]
-  int subOption;
-      ^~~~~~~~~
-../src/main.c:36:7: warning: unused variable ‘bcuit’ [-Wunused-variable]
-  char bcuit[15];
-       ^~~~~
+Finished building: ../src/main.c
+ 
+Building file: ../src/pedidoCliente.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pedidoCliente.d" -MT"src/pedidoCliente.o" -o "src/pedidoCliente.o" "../src/pedidoCliente.c"
+Finished building: ../src/pedidoCliente.c
+ 
+Building file: ../src/utn.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/utn.d" -MT"src/utn.o" -o "src/utn.o" "../src/utn.c"
+../src/utn.c: In function ‘getLetra’:
+../src/utn.c:337:4: warning: implicit declaration of function ‘stringAmayuscula’ [-Wimplicit-function-declaration]
+    stringAmayuscula(pLetra,QTY_CARACTERES);
+    ^~~~~~~~~~~~~~~~
+../src/utn.c: At top level:
+../src/utn.c:537:6: warning: conflicting types for ‘stringAmayuscula’
+ void stringAmayuscula(char *input,int len)
+      ^~~~~~~~~~~~~~~~
+../src/utn.c:337:4: note: previous implicit declaration of ‘stringAmayuscula’ was here
+    stringAmayuscula(pLetra,QTY_CARACTERES);
+    ^~~~~~~~~~~~~~~~
+Finished building: ../src/utn.c
+ 
+Building target: Primer_Parcial_1ºh
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_1ºh"  ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
+Finished building target: Primer_Parcial_1ºh
+ 
+19:36:42 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/utn.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/utn.d" -MT"src/utn.o" -o "src/utn.o" "../src/utn.c"
+Finished building: ../src/utn.c
+ 
+Building target: Primer_Parcial_1ºh
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_1ºh"  ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
+Finished building target: Primer_Parcial_1ºh
+ 
+19:36:47 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+make: No se hace nada para 'all'.
+19:36:56 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+make: No se hace nada para 'all'.
+19:37:59 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/utn.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/utn.d" -MT"src/utn.o" -o "src/utn.o" "../src/utn.c"
+Finished building: ../src/utn.c
+ 
+Building target: Primer_Parcial_1ºh
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_1ºh"  ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
+Finished building target: Primer_Parcial_1ºh
+ 
+19:38:50 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/utn.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/utn.d" -MT"src/utn.o" -o "src/utn.o" "../src/utn.c"
+Finished building: ../src/utn.c
+ 
+Building target: Primer_Parcial_1ºh
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_1ºh"  ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
+Finished building target: Primer_Parcial_1ºh
+ 
+19:38:52 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+make: No se hace nada para 'all'.
+19:40:14 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+Building file: ../src/cliente.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/cliente.d" -MT"src/cliente.o" -o "src/cliente.o" "../src/cliente.c"
+Finished building: ../src/cliente.c
+ 
+Building file: ../src/informes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
+Finished building: ../src/informes.c
+ 
+Building file: ../src/main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
 Finished building: ../src/main.c
  
 Building file: ../src/pedidoCliente.c
@@ -1283,454 +1476,10 @@ Invoking: GCC C Linker
 gcc  -o "Primer_Parcial_1ºh"  ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
 Finished building target: Primer_Parcial_1ºh
  
-12:35:48 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
-make all 
-Building file: ../src/informes.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
-Finished building: ../src/informes.c
- 
-Building file: ../src/main.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-../src/main.c: In function ‘main’:
-../src/main.c:38:6: warning: unused variable ‘subOption’ [-Wunused-variable]
-  int subOption;
-      ^~~~~~~~~
-../src/main.c:36:7: warning: unused variable ‘bcuit’ [-Wunused-variable]
-  char bcuit[15];
-       ^~~~~
-Finished building: ../src/main.c
- 
-Building target: Primer_Parcial_1ºh
-Invoking: GCC C Linker
-gcc  -o "Primer_Parcial_1ºh"  ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
-Finished building target: Primer_Parcial_1ºh
- 
-12:35:57 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+19:40:16 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
 make all 
 make: No se hace nada para 'all'.
-12:37:02 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
-make all 
-Building file: ../src/informes.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
-Finished building: ../src/informes.c
- 
-Building target: Primer_Parcial_1ºh
-Invoking: GCC C Linker
-gcc  -o "Primer_Parcial_1ºh"  ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
-Finished building target: Primer_Parcial_1ºh
- 
-12:37:04 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
-make all 
-make: No se hace nada para 'all'.
-12:38:28 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
-make all 
-Building file: ../src/informes.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
-../src/informes.c:785:5: error: conflicting types for ‘subMenuK’
- int subMenuK(sCliente *aCliente,int lenAcliente,sPedidoCliente *aPedido,int lenApedido)
-     ^~~~~~~~
-In file included from ../src/informes.c:7:
-../src/informes.h:59:6: note: previous declaration of ‘subMenuK’ was here
- void subMenuK(sCliente *aCliente,int lenAcliente,sPedidoCliente *aPedido,int lenApedido);
-      ^~~~~~~~
-make: *** [src/subdir.mk:32: src/informes.o] Error 1
-"make all" terminated with exit code 2. Build might be incomplete.
-12:38:50 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
-make all 
-Building file: ../src/informes.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
-Finished building: ../src/informes.c
- 
-Building file: ../src/main.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-../src/main.c: In function ‘main’:
-../src/main.c:38:6: warning: unused variable ‘subOption’ [-Wunused-variable]
-  int subOption;
-      ^~~~~~~~~
-../src/main.c:36:7: warning: unused variable ‘bcuit’ [-Wunused-variable]
-  char bcuit[15];
-       ^~~~~
-Finished building: ../src/main.c
- 
-Building target: Primer_Parcial_1ºh
-Invoking: GCC C Linker
-gcc  -o "Primer_Parcial_1ºh"  ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
-Finished building target: Primer_Parcial_1ºh
- 
-12:38:53 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
-make all 
-make: No se hace nada para 'all'.
-12:40:55 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
-make all 
-Building file: ../src/informes.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
-Finished building: ../src/informes.c
- 
-Building target: Primer_Parcial_1ºh
-Invoking: GCC C Linker
-gcc  -o "Primer_Parcial_1ºh"  ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
-Finished building target: Primer_Parcial_1ºh
- 
-12:41:02 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
-make all 
-make: No se hace nada para 'all'.
-12:42:03 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
-make all 
-Building file: ../src/informes.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
-Finished building: ../src/informes.c
- 
-Building file: ../src/main.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-../src/main.c: In function ‘main’:
-../src/main.c:38:6: warning: unused variable ‘subOption’ [-Wunused-variable]
-  int subOption;
-      ^~~~~~~~~
-../src/main.c:36:7: warning: unused variable ‘bcuit’ [-Wunused-variable]
-  char bcuit[15];
-       ^~~~~
-Finished building: ../src/main.c
- 
-Building target: Primer_Parcial_1ºh
-Invoking: GCC C Linker
-gcc  -o "Primer_Parcial_1ºh"  ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
-Finished building target: Primer_Parcial_1ºh
- 
-12:42:08 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
-make all 
-make: No se hace nada para 'all'.
-12:44:02 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
-make all 
-Building file: ../src/main.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-../src/main.c: In function ‘main’:
-../src/main.c:38:6: warning: unused variable ‘subOption’ [-Wunused-variable]
-  int subOption;
-      ^~~~~~~~~
-../src/main.c:36:7: warning: unused variable ‘bcuit’ [-Wunused-variable]
-  char bcuit[15];
-       ^~~~~
-Finished building: ../src/main.c
- 
-Building target: Primer_Parcial_1ºh
-Invoking: GCC C Linker
-gcc  -o "Primer_Parcial_1ºh"  ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
-Finished building target: Primer_Parcial_1ºh
- 
-12:44:18 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
-make all 
-make: No se hace nada para 'all'.
-12:44:55 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
-make all 
-Building file: ../src/main.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-../src/main.c: In function ‘main’:
-../src/main.c:38:6: warning: unused variable ‘subOption’ [-Wunused-variable]
-  int subOption;
-      ^~~~~~~~~
-../src/main.c:36:7: warning: unused variable ‘bcuit’ [-Wunused-variable]
-  char bcuit[15];
-       ^~~~~
-Finished building: ../src/main.c
- 
-Building target: Primer_Parcial_1ºh
-Invoking: GCC C Linker
-gcc  -o "Primer_Parcial_1ºh"  ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
-Finished building target: Primer_Parcial_1ºh
- 
-12:47:44 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
-make all 
-Building file: ../src/informes.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
-../src/informes.c: In function ‘subMenuK’:
-../src/informes.c:802:3: error: expected expression before ‘}’ token
-   }while(subOption!=4);
-   ^
-make: *** [src/subdir.mk:32: src/informes.o] Error 1
-"make all" terminated with exit code 2. Build might be incomplete.
-12:48:17 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
-make all 
-Building file: ../src/informes.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
-Finished building: ../src/informes.c
- 
-Building file: ../src/main.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-../src/main.c: In function ‘main’:
-../src/main.c:38:6: warning: unused variable ‘subOption’ [-Wunused-variable]
-  int subOption;
-      ^~~~~~~~~
-../src/main.c:36:7: warning: unused variable ‘bcuit’ [-Wunused-variable]
-  char bcuit[15];
-       ^~~~~
-Finished building: ../src/main.c
- 
-Building target: Primer_Parcial_1ºh
-Invoking: GCC C Linker
-gcc  -o "Primer_Parcial_1ºh"  ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
-Finished building target: Primer_Parcial_1ºh
- 
-12:48:19 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
-make all 
-make: No se hace nada para 'all'.
-12:48:50 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
-make all 
-Building file: ../src/informes.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
-Finished building: ../src/informes.c
- 
-Building target: Primer_Parcial_1ºh
-Invoking: GCC C Linker
-gcc  -o "Primer_Parcial_1ºh"  ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
-Finished building target: Primer_Parcial_1ºh
- 
-12:50:24 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
-make all 
-Building file: ../src/informes.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
-Finished building: ../src/informes.c
- 
-Building file: ../src/main.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-../src/main.c: In function ‘main’:
-../src/main.c:38:6: warning: unused variable ‘subOption’ [-Wunused-variable]
-  int subOption;
-      ^~~~~~~~~
-../src/main.c:36:7: warning: unused variable ‘bcuit’ [-Wunused-variable]
-  char bcuit[15];
-       ^~~~~
-Finished building: ../src/main.c
- 
-Building target: Primer_Parcial_1ºh
-Invoking: GCC C Linker
-gcc  -o "Primer_Parcial_1ºh"  ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
-Finished building target: Primer_Parcial_1ºh
- 
-12:50:27 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
-make all 
-make: No se hace nada para 'all'.
-12:51:21 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
-make all 
-Building file: ../src/main.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-../src/main.c: In function ‘main’:
-../src/main.c:38:6: warning: unused variable ‘subOption’ [-Wunused-variable]
-  int subOption;
-      ^~~~~~~~~
-../src/main.c:36:7: warning: unused variable ‘bcuit’ [-Wunused-variable]
-  char bcuit[15];
-       ^~~~~
-Finished building: ../src/main.c
- 
-Building target: Primer_Parcial_1ºh
-Invoking: GCC C Linker
-gcc  -o "Primer_Parcial_1ºh"  ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
-Finished building target: Primer_Parcial_1ºh
- 
-12:56:25 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
-make all 
-Building file: ../src/informes.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
-Finished building: ../src/informes.c
- 
-Building target: Primer_Parcial_1ºh
-Invoking: GCC C Linker
-gcc  -o "Primer_Parcial_1ºh"  ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
-Finished building target: Primer_Parcial_1ºh
- 
-12:56:30 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
-make all 
-make: No se hace nada para 'all'.
-12:56:55 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
-make all 
-Building file: ../src/informes.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
-Finished building: ../src/informes.c
- 
-Building target: Primer_Parcial_1ºh
-Invoking: GCC C Linker
-gcc  -o "Primer_Parcial_1ºh"  ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
-Finished building target: Primer_Parcial_1ºh
- 
-12:56:59 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
-make all 
-make: No se hace nada para 'all'.
-12:58:15 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
-make all 
-Building file: ../src/informes.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
-Finished building: ../src/informes.c
- 
-Building target: Primer_Parcial_1ºh
-Invoking: GCC C Linker
-gcc  -o "Primer_Parcial_1ºh"  ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
-Finished building target: Primer_Parcial_1ºh
- 
-12:58:17 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
-make all 
-make: No se hace nada para 'all'.
-12:58:56 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
-make all 
-Building file: ../src/informes.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
-Finished building: ../src/informes.c
- 
-Building target: Primer_Parcial_1ºh
-Invoking: GCC C Linker
-gcc  -o "Primer_Parcial_1ºh"  ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
-Finished building target: Primer_Parcial_1ºh
- 
-12:59:52 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
-make all 
-make: No se hace nada para 'all'.
-13:00:28 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
-make all 
-Building file: ../src/informes.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
-Finished building: ../src/informes.c
- 
-Building target: Primer_Parcial_1ºh
-Invoking: GCC C Linker
-gcc  -o "Primer_Parcial_1ºh"  ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
-Finished building target: Primer_Parcial_1ºh
- 
-13:01:01 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
-make all 
-Building file: ../src/informes.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
-Finished building: ../src/informes.c
- 
-Building target: Primer_Parcial_1ºh
-Invoking: GCC C Linker
-gcc  -o "Primer_Parcial_1ºh"  ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
-Finished building target: Primer_Parcial_1ºh
- 
-13:01:04 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
-make all 
-make: No se hace nada para 'all'.
-13:04:21 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
-make all 
-Building file: ../src/informes.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
-Finished building: ../src/informes.c
- 
-Building target: Primer_Parcial_1ºh
-Invoking: GCC C Linker
-gcc  -o "Primer_Parcial_1ºh"  ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
-Finished building target: Primer_Parcial_1ºh
- 
-13:04:26 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
-make all 
-make: No se hace nada para 'all'.
-13:05:06 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
-make all 
-Building file: ../src/informes.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
-Finished building: ../src/informes.c
- 
-Building target: Primer_Parcial_1ºh
-Invoking: GCC C Linker
-gcc  -o "Primer_Parcial_1ºh"  ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
-Finished building target: Primer_Parcial_1ºh
- 
-13:06:17 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
-make all 
-Building file: ../src/informes.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
-Finished building: ../src/informes.c
- 
-Building file: ../src/main.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-Finished building: ../src/main.c
- 
-Building target: Primer_Parcial_1ºh
-Invoking: GCC C Linker
-gcc  -o "Primer_Parcial_1ºh"  ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
-Finished building target: Primer_Parcial_1ºh
- 
-13:06:59 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
-make all 
-Building file: ../src/main.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-Finished building: ../src/main.c
- 
-Building target: Primer_Parcial_1ºh
-Invoking: GCC C Linker
-gcc  -o "Primer_Parcial_1ºh"  ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
-Finished building target: Primer_Parcial_1ºh
- 
-13:07:27 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
-make all 
-Building file: ../src/main.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-Finished building: ../src/main.c
- 
-Building target: Primer_Parcial_1ºh
-Invoking: GCC C Linker
-gcc  -o "Primer_Parcial_1ºh"  ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
-Finished building target: Primer_Parcial_1ºh
- 
-13:08:41 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
-make all 
-Building file: ../src/main.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-Finished building: ../src/main.c
- 
-Building target: Primer_Parcial_1ºh
-Invoking: GCC C Linker
-gcc  -o "Primer_Parcial_1ºh"  ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
-Finished building target: Primer_Parcial_1ºh
- 
-13:09:03 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
-make all 
-make: No se hace nada para 'all'.
-13:10:10 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
-make all 
-Building file: ../src/main.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-Finished building: ../src/main.c
- 
-Building target: Primer_Parcial_1ºh
-Invoking: GCC C Linker
-gcc  -o "Primer_Parcial_1ºh"  ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
-Finished building target: Primer_Parcial_1ºh
- 
-13:10:39 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
-make all 
-make: No se hace nada para 'all'.
-13:13:19 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+19:41:32 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
 make all 
 Building file: ../src/cliente.c
 Invoking: GCC C Compiler
@@ -1752,32 +1501,50 @@ Invoking: GCC C Compiler
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pedidoCliente.d" -MT"src/pedidoCliente.o" -o "src/pedidoCliente.o" "../src/pedidoCliente.c"
 Finished building: ../src/pedidoCliente.c
  
-Building target: Primer_Parcial_1ºh
-Invoking: GCC C Linker
-gcc  -o "Primer_Parcial_1ºh"  ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
-Finished building target: Primer_Parcial_1ºh
- 
-13:13:59 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+Building file: ../src/utn.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/utn.d" -MT"src/utn.o" -o "src/utn.o" "../src/utn.c"
+../src/utn.c: In function ‘getLetraMinuscula’:
+../src/utn.c:345:7: error: too few arguments to function ‘esLetraMinuscula’
+    if(esLetraMinuscula(pLetra)==0)
+       ^~~~~~~~~~~~~~~~
+../src/utn.c:307:5: note: declared here
+ int esLetraMinuscula(char *pLetra,char *mensajeError)
+     ^~~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:32: src/utn.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:42:00 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
 make all 
 Building file: ../src/cliente.c
 Invoking: GCC C Compiler
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/cliente.d" -MT"src/cliente.o" -o "src/cliente.o" "../src/cliente.c"
 Finished building: ../src/cliente.c
  
-Building target: Primer_Parcial_1ºh
-Invoking: GCC C Linker
-gcc  -o "Primer_Parcial_1ºh"  ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
-Finished building target: Primer_Parcial_1ºh
- 
-13:15:19 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
-make all 
-Building file: ../src/cliente.c
+Building file: ../src/informes.c
 Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/cliente.d" -MT"src/cliente.o" -o "src/cliente.o" "../src/cliente.c"
-Finished building: ../src/cliente.c
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
+Finished building: ../src/informes.c
+ 
+Building file: ../src/main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building file: ../src/pedidoCliente.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pedidoCliente.d" -MT"src/pedidoCliente.o" -o "src/pedidoCliente.o" "../src/pedidoCliente.c"
+Finished building: ../src/pedidoCliente.c
+ 
+Building file: ../src/utn.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/utn.d" -MT"src/utn.o" -o "src/utn.o" "../src/utn.c"
+Finished building: ../src/utn.c
  
 Building target: Primer_Parcial_1ºh
 Invoking: GCC C Linker
 gcc  -o "Primer_Parcial_1ºh"  ./src/cliente.o ./src/informes.o ./src/main.o ./src/pedidoCliente.o ./src/utn.o   
 Finished building target: Primer_Parcial_1ºh
  
+19:42:04 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+make: No se hace nada para 'all'.
