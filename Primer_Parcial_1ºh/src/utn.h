@@ -36,15 +36,24 @@ int getString(char *pResultado,
 			  int reintentos);
 int esNombre(char pNombre[QTY_CARACTERES]);//
 int getNombreEmpresa(char pNombre[QTY_CARACTERES],int limite,int reintentos);
-int getStringNumeros(char *input,int reintentos);
-int esNumerica(char cadena[QTY_CARACTERES]);
+int getStringToInt(int *pNumero,char *mensaje,char *mensajeError,int minimo,int maximo,int reintentos);
+int esEntero(char cadena[QTY_CARACTERES]);
 int esCuit(char cadena[QTY_CARACTERES]);
 int getCuit(char cuit[QTY_CARACTERES],int limite,int reintentos);
 int esAlfanumerico(char aAlfanumerica[QTY_CARACTERES]);
 int getAlfanumerico(char alfanumerica[QTY_CARACTERES],char *mensaje,char *mensajeError,int limite,int reintentos);
 
+<<<<<<< HEAD
 void stringAmayuscula(char *input,int len);
+=======
+int getStringToFloat(float *pNumero,char *mensaje,char *mensajeError,int minimo,int maximo,int reintentos);
+int esFloat(char cadena[QTY_CARACTERES]);
+>>>>>>> refs/remotes/origin/master
 
+int getLetraMinuscula(char *pLetra,char *mensaje,char *mensajeError,int minimo,int maximo,int reintentos);
+int esLetraMinuscula(char *pLetra,char *mensajeError);
+
+void stringAmayuscula(char *input,int len);
 
 
 #endif /* UTN_H_ */

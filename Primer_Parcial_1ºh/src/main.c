@@ -21,27 +21,45 @@
 #define MAX_PEDIDOS 1000
 
 
+//ver todos los define del trabajo para q no haya numeros sueltos.
+
+//get char a get option para admitir mayuscula
+
+//ver si puedo llamar los submenu con funciones asi queda mas limpio el main.
+//ver si puedo incluir los mensajes de errores en las funciones para sacarlos del main.
+//ver si puedo revisar donde haya 2 if y reemplazar
+//ver si puedo rreglar la funcion q tiene los 2 for punto i, localidades
+
+//PENDIENTES UTN
+// ver si no tengo que corregir el f, no muestra clientes con mas de 1000 kg procesados. deberia?
+
 int main(void) {
 
 	sCliente aCliente[MAX_CLIENTES];
 	sCliente fCliente[6];
-	cliente_clienteForzado(fCliente,6);
 	sPedidoCliente aPedido[MAX_PEDIDOS];
 	sPedidoCliente fPedido[9];
-	pedidoCliente_pedidoDeClienteForzado(fPedido,9);
 	int option;
 	int bIdCliente;
 	int bIdPedido;
+	int subOption;
 	char optionChar;
 	char bcuit[15];
+<<<<<<< HEAD
 	int subOption;
+=======
+>>>>>>> refs/remotes/origin/master
 
+	//IRIA AL C DE MENU
 	cliente_initcliente(aCliente,MAX_CLIENTES);
 	pedidoCliente_initPedido(aPedido,MAX_CLIENTES);
+	cliente_clienteForzado(fCliente,6);
+	pedidoCliente_pedidoDeClienteForzado(fPedido,9);
+
+	//FUNCION MENU PRINCIPAL
 	do
 	{
-
-		getInt(&option,"\n---------------------\n"
+		getStringToInt(&option,"\n---------------------\n"
 				"Ingrese:\n"
 				"1-Alta de cliente\n"
 				"2-Modificar datos cliente\n"
@@ -53,7 +71,7 @@ int main(void) {
 				"8-Imprimir pedidos procesados\n"
 				"9-SUBMENU INFORMES\n"
 				"10-EXIT\n",
-				"Error\n",1,12,2);
+				"Opcion incorrecta\n",1,12,2);
 		switch(option)
 		{
 		case 1:
@@ -64,7 +82,7 @@ int main(void) {
 			break;
 		case 2:
 			cliente_imprimirClientesActivos(fCliente,6);
-			if((getInt(&bIdCliente,"Ingrese ID de cliente\n","Error, id incorreto\n",1,MAX_CLIENTES,2)==0) &&
+			if((getStringToInt(&bIdCliente,"Ingrese ID de cliente\n","Error, id incorreto\n",1,MAX_CLIENTES,2)==0) &&
 					(cliente_modificarClientePorId(fCliente,6,bIdCliente)==0))
 				printf("Modificacion exitosa!\n");
 			else
@@ -72,7 +90,7 @@ int main(void) {
 			break;
 		case 3:
 			cliente_imprimirClientesActivos(fCliente,6);
-			if((getInt(&bIdCliente,"Ingrese ID de cliente","Error id",1,MAX_CLIENTES,2)==0) &&
+			if((getStringToInt(&bIdCliente,"Ingrese ID de cliente","Error id",1,MAX_CLIENTES,2)==0) &&
 					(cliente_bajaClientePorId(fCliente,6,bIdCliente)==0))
 				printf("Baja Exitosa!!\n");
 			else
@@ -80,7 +98,7 @@ int main(void) {
 			break;
 		case 4:
 			cliente_imprimirClientesActivos(fCliente,6);
-			if((getInt(&bIdCliente,"\nIngrese ID de cliente\n","Error id\n",1,MAX_CLIENTES,2)==0) &&
+			if((getStringToInt(&bIdCliente,"\nIngrese ID de cliente\n","Error id\n",1,MAX_CLIENTES,2)==0) &&
 					(cliente_buscarClientePorId(fCliente,6,bIdCliente)!=-1) &&
 					(pedidoCliente_altaPedido(fPedido,9,bIdCliente)==0))
 			{
@@ -92,7 +110,7 @@ int main(void) {
 			break;
 		case 5:
 			pedidoCliente_imprimirPedidosActivos(fPedido,9);
-			if(getInt(&bIdPedido,"Ingrese id del pedido\n","Id incorrecto!\n",1,MAX_PEDIDOS,2)==0 &&
+			if(getStringToInt(&bIdPedido,"Ingrese id del pedido\n","Id incorrecto!\n",1,MAX_PEDIDOS,2)==0 &&
 					pedidoCliente_procesarResiduos(fPedido,9,bIdPedido)==0)
 				printf("Pedido procesado!!\n!");
 			break;
@@ -108,9 +126,10 @@ int main(void) {
 				printf("No se encontraron pedidos en estado procesado!!\n");
 			break;
 		case 9:
+			//FUNCION SUBMENU INFORMES
 			do
 			{
-				if(getChar(&optionChar,"\n---SubMenu Informes---\n"
+				if(getLetraMinuscula(&optionChar,"\n---SubMenu Informes---\n"
 						"Ingrese:\n"
 						"a-Cliente con mas pedidos pendientes\n"
 						"b-Cliente con mas pedidos completados\n"
@@ -175,11 +194,12 @@ int main(void) {
 						break;
 					case 'k':
 						cliente_imprimirCuitClientesActivos(fCliente,6);
+		                //FUNCION MENU KG
 						if(getCuit(bcuit,50,3)==0)
 						{
 							do{
 								{
-									if(getInt(&subOption,"\nIngrese: \n1-Informar kg totales de HDPE del cliente.\n"
+									if(getStringToInt(&subOption,"\nIngrese: \n1-Informar kg totales de HDPE del cliente.\n"
 											"2-Informar kg totales de LDPE del cliente.\n"
 											"3-Informar kg totales de PP del cliente.\n"
 											"4-EXIT\n",
@@ -191,11 +211,14 @@ int main(void) {
 								}
 							}while(subOption!=4);
 						}
+						//FUNCION MENU KG
 						break;
 					}
 				}
 			}while(optionChar!='l');
+			//FUNCION SUBMENU INFORMES
 		}
 	}while(option!=10);
+	//FUNCION MENU PRINCIPAL
 	return EXIT_SUCCESS;
 }

@@ -165,7 +165,9 @@ int informes_contarPedidosTotalesPorIDcliente(sPedidoCliente *aPedido,int len, i
 	{
 		for(i=0;i<len;i++)
 		{
-			if(aPedido[i].idCliente == id && (aPedido[i].statusPedido == STATUS_COMPLETADO ||aPedido[i].statusPedido == STATUS_PENDIENTE))
+			if(aPedido[i].idCliente == id &&
+					(aPedido[i].statusPedido == STATUS_COMPLETADO
+							||aPedido[i].statusPedido == STATUS_PENDIENTE))
 			{
 				contadorPedidosCompletos++;
 				retorno = contadorPedidosCompletos;
@@ -575,7 +577,6 @@ int informes_contarPedidosPendientesPorLocalidad(sCliente *aCliente,
 		printf("No fue posible imprimir el informe!\n");
 	return retorno;
 }
-
 
 /**
 * \brief Cuenta la cantidad de kg de PP reciclados en todos los pedidos

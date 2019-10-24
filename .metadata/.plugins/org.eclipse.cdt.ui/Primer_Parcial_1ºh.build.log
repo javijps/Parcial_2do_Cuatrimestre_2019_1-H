@@ -1,6 +1,14 @@
+<<<<<<< HEAD
 00:03:57 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
 make all 
 make: No se hace nada para 'all'.
 
 00:03:57 Build Finished. 0 errors, 0 warnings. (took 453ms)
+=======
+19:42:04 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+make all 
+make: No se hace nada para 'all'.
+
+19:42:04 Build Finished. 0 errors, 0 warnings. (took 466ms)
+>>>>>>> refs/remotes/origin/master
 
