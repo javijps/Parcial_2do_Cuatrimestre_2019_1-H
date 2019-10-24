@@ -95,8 +95,6 @@ int main(void) {
 			if(getInt(&bIdPedido,"Ingrese id del pedido\n","Id incorrecto!\n",1,MAX_PEDIDOS,2)==0 &&
 					pedidoCliente_procesarResiduos(fPedido,9,bIdPedido)==0)
 				printf("Pedido procesado!!\n!");
-			else
-				printf("No fue posible procesar el pedido!!\n");
 			break;
 		case 6:
 			if(imprimirClientesConCantidadDePedidosPendientes(fCliente,6,fPedido,9)!=0)
