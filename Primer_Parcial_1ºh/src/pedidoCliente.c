@@ -491,51 +491,6 @@ int pedidoCliente_BuscarImprimirPedidosPendientesConInformacionDelCliente(sClien
 	}
 	return retorno;
 }
-/**
-* \brief Imprime informacion de los clientes correspondiente a pedidos con status procesado con informacion especifica de dicho cliente.
-* \param sCliente *aCliente puntero a un array de la estructura cliente.
-* \param cantidad tamaño del array de clientes.
-* \param sPedidoCliente *aPedido puntero a un array de la estructura pedido cliente.
-* \param cantidad tamaño del array de pedidos.
-*/
-int pedidoCliente_BuscarImprimirPedidosProcesadosConInformacionDelCliente(sCliente *aCliente,
-		                                                                  int lenAcliente,
-																		  sPedidoCliente *aPedido,
-																		  int lenApedido)
-{
-	int retorno=-1;
-	int i;
-	int j;
-
-	if(aCliente!=NULL && aPedido!=NULL && lenAcliente>0 && lenApedido>0)
-	{
-		for(i=0;i<lenApedido;i++)
-		{
-			for(j=0;j<lenAcliente;j++)
-			{
-				if(aPedido[i].statusPedido == STATUS_COMPLETADO && aPedido[i].idCliente == aCliente[j].idCliente)
-				{
-					retorno =0;
-					printf("\n-Id Pedido: %d\n"
-							"-Status del pedido: %d\n"
-							"-Cuit cliente %s\n"
-							"-Direccion cliente %s\n"
-							"-Cantidad de kg HDPE procesados: %.2f\n"
-							"-Cantidad de kg LDPE procesados: %.2f\n"
-							"-Cantidad de kg PP procesados: %.2f\n",
-							aPedido[i].id_pedido,
-							aPedido[i].statusPedido,
-							aCliente[j].cuit,
-							aCliente[j].direccion,
-							aPedido[i].kgHDPE,
-							aPedido[i].kgLDPE,
-							aPedido[i].kgPP);
-				}
-			}
-		}
-	}
-	return retorno;
-}
 
 /**
 * \brief Cuenta la cantidad de pedidos pendientes que tiene el cliente correspondiente al ID ingresado.
@@ -592,4 +547,52 @@ void pedidoCliente_pedidoDeClienteForzado(sPedidoCliente *aPedidoCLiente,int len
 		aPedidoCLiente[i].kgLDPE = akgLDPE[i];
 		aPedidoCLiente[i].kgPP = akgPP[i];
 	}
+}
+
+
+
+
+
+/**
+* \brief Imprime informacion de los clientes correspondiente a pedidos con status procesado con informacion especifica de dicho cliente.
+* \param sCliente *aCliente puntero a un array de la estructura cliente.
+* \param cantidad tamaño del array de clientes.
+* \param sPedidoCliente *aPedido puntero a un array de la estructura pedido cliente.
+* \param cantidad tamaño del array de pedidos.
+*/
+int pedidoCliente_BuscarImprimirPedidosProcesadosConInformacionDelCliente(sCliente *aCliente,
+		                                                                  int lenAcliente,
+																		  sPedidoCliente *aPedido,
+																		  int lenApedido)
+{
+	int retorno=-1;
+	int i;
+	int indexCliente;
+
+	if(aCliente!=NULL && aPedido!=NULL && lenAcliente>0 && lenApedido>0)
+	{
+		for(i=0;i<lenApedido;i++)
+		{
+			indexCliente = cliente_buscarClientePorId(aCliente,lenAcliente,aPedido[i].idCliente);
+			if(aPedido[i].statusPedido == STATUS_COMPLETADO && aPedido[i].idCliente == aCliente[indexCliente].idCliente)
+			{
+				retorno =0;
+				printf("\n-Id Pedido: %d\n"
+						"-Status del pedido: %d\n"
+						"-Cuit cliente %s\n"
+						"-Direccion cliente %s\n"
+						"-Cantidad de kg HDPE procesados: %.2f\n"
+						"-Cantidad de kg LDPE procesados: %.2f\n"
+						"-Cantidad de kg PP procesados: %.2f\n",
+						aPedido[i].id_pedido,
+						aPedido[i].statusPedido,
+						aCliente[indexCliente].cuit,
+						aCliente[indexCliente].direccion,
+						aPedido[i].kgHDPE,
+						aPedido[i].kgLDPE,
+						aPedido[i].kgPP);
+			}
+		}
+	}
+	return retorno;
 }

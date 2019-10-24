@@ -38,12 +38,15 @@ int pedidoCliente_BuscarImprimirPedidosPendientesConInformacionDelCliente(sClien
 		                                              int lenAcliente,
 													  sPedidoCliente *aPedido,
 													  int lenApedido);
-int pedidoCliente_BuscarImprimirPedidosProcesadosConInformacionDelCliente(sCliente *aCliente,
-		                                              int lenAcliente,
-													  sPedidoCliente *aPedido,
-													  int lenApedido);
 int imprimirClientesConCantidadDePedidosPendientes(sCliente *aCliente,int lenAcliente,sPedidoCliente *aPedido,int lenApedido);
 int pedidoCliente_contarPedidosPendientePorIDcliente(sPedidoCliente *aPedido,int len, int id);
+
+
+
+int pedidoCliente_BuscarImprimirPedidosProcesadosConInformacionDelCliente(sCliente *aCliente,
+		                                                                  int lenAcliente,
+																		  sPedidoCliente *aPedido,
+																		  int lenApedido);
 
 
 #endif /* PEDIDOCLIENTE_H_ */
