@@ -371,20 +371,8 @@ int pedidoCliente_procesarResiduos(sPedidoCliente *aPedido, int cantidad,int idP
 					}
 				}
 			}while(opcion!= 4);
-			if(retorno !=0)
-			{
-				aPedido[index].statusPedido = STATUS_PENDIENTE;
-				aPedido[index].kgHDPE = 0;
-				aPedido[index].kgLDPE = 0;
-				aPedido[index].kgPP = 0;
-					printf("No fue posible procesar el pedido!!\n");
-			}
-			else
-			{
-				pedidoCliente_imprimirUnPedido(aPedido[index]);
-				printf("Pedido procesaod!!\n");
-			}
 		}
+		pedidoCliente_imprimirUnPedido(aPedido[index]);
 	}
 	return retorno;
 }

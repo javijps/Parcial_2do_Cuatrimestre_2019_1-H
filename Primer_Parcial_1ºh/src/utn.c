@@ -9,17 +9,11 @@
 #include <stdlib.h>
 #include <string.h>
 #include <ctype.h>
-<<<<<<< HEAD
-
-=======
->>>>>>> refs/remotes/origin/master
 
 #define MAX_FLOAT 1000
 #define QTY_CARACTERES 50
 
 
-<<<<<<< HEAD
-=======
 //EMPROLIJAR UTN
 //HACER esFloat
 //CAMBIAR TODOS LOS GET FLOAT POR LA FUNCION DE GETSTRINGTOFLOAT.
@@ -56,7 +50,6 @@ void stringAmayuscula(char *input,int len)
 
 
 
->>>>>>> refs/remotes/origin/master
 /**
 * \brief Solicita numero entero al usuario y lo valida.
 * \param pNumero Se carga el numero ingresado.
@@ -67,8 +60,6 @@ void stringAmayuscula(char *input,int len)
 * \param reintentos Reintentos permitidos en caso de error.
 * \return Si tuvo exito al obtener el numero [0] o si fallo [-1]
 */
-
-
 
 int getInt(   int *pNumero,
 		      char *mensaje,
@@ -422,20 +413,6 @@ int getStringToInt(int *pNumero,char *mensaje,char *mensajeError,int minimo,int 
 	return retorno;
 }
 
-<<<<<<< HEAD
-
-void stringAmayuscula(char *input,int len)
-{
-	int i;
-
-	for(i=0;i<len;i++)
-	{
-		input[i] = toupper(input[i]);
-	}
-}
-
-=======
->>>>>>> refs/remotes/origin/master
 /**
 * \Valida si la cadena es alfanumerica, permitiendo espacios.
 * \param pAlfanumerica Cadena recibida
@@ -476,7 +453,6 @@ int esAlfanumerico(char aAlfanumerica[QTY_CARACTERES])
 int getAlfanumerico(char alfanumerica[QTY_CARACTERES],char *mensaje,char *mensajeError,int limite,int reintentos)
 {
 	int retorno=-1;
-
 
 	if(alfanumerica!=NULL && limite >0)
 	{
