@@ -13,6 +13,7 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="/home/javijps/Parcial_2do_Cuatrimestre_2019_1-H/Primer_Parcial_1ºh"/>
 			<item value="/home/javijps/Parcial_2do_Cuatrimestre_2019_1-H"/>
 		</list>
 	</section>

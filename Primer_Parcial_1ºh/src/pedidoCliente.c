@@ -586,7 +586,7 @@ void pedidoCliente_pedidoDeClienteForzado(sPedidoCliente *aPedidoCLiente,int len
 			,STATUS_PENDIENTE,STATUS_COMPLETADO,STATUS_PENDIENTE};
 	int i;
 
-	for(i=0;i<len;i++)
+	for(i=0;i<9;i++)
 	{
 		aPedidoCLiente[i].id_pedido = aId_pedido[i];
 		aPedidoCLiente[i].statusPedido = aStatusPedido[i];
@@ -596,5 +596,6 @@ void pedidoCliente_pedidoDeClienteForzado(sPedidoCliente *aPedidoCLiente,int len
 		aPedidoCLiente[i].kgLDPE = akgLDPE[i];
 		aPedidoCLiente[i].kgPP = akgPP[i];
 	}
+	pedidoCliente_imprimirPedidosActivos(aPedidoCLiente,len);
 }
 

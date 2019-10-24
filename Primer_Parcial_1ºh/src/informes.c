@@ -672,7 +672,7 @@ float informes_contarKgPPrecicladosPorCliente(sPedidoCliente *aPedido,int len,in
 	{
 		for(i=0;i<len;i++)
 		{
-			if(aPedido[i].statusPedido == STATUS_COMPLETADO && aPedido[i].idCliente == idCliente)
+			if(aPedido[i].idCliente == idCliente && aPedido[i].statusPedido == STATUS_COMPLETADO)
 			{
 				acumuladorKgPP += aPedido[i].kgPP;
 			}
@@ -760,7 +760,6 @@ int informes_kgTotalesRecicladosPorCuitClienteYtipoResiduo(sCliente *aCliente,
 	float kgPP;
 
 	indexCliente = cliente_buscarClientePorCuit(aCliente,lenAcliente,cuit);
-
 	switch(residuo)
 	{
 	case 1:

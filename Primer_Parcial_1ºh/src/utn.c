@@ -455,7 +455,7 @@ int esCuit(char cuit[QTY_CARACTERES])
  * \return 0 si el cuit es correcto -1 si no lo es
  */
 
-int getCuit(char cuit[QTY_CARACTERES],int limite,int reintentos)
+int getCuit(char *cuit,int limite,int reintentos)
 {
 	int retorno=-1;
 

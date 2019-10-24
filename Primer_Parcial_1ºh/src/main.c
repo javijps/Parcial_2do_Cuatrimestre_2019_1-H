@@ -33,7 +33,7 @@ int main(void) {
 	int bIdCliente;
 	int bIdPedido;
 	char optionChar;
-	char bcuit[15];
+	char bcuit[50];
 	int subOption;
 
 	cliente_initcliente(aCliente,MAX_CLIENTES);
@@ -165,11 +165,11 @@ int main(void) {
 					case 'j':
 						if(informes_promedioKgPPrecicladoPorCliente(fCliente,6,fPedido,9)!=0)
 							printf("\nNo fue posible imprimir el informe!\n");
+						pedidoCliente_imprimirPedidosActivos(fPedido,9);
 						break;
 					case 'k':
 						cliente_imprimirCuitClientesActivos(fCliente,6);
-						if(getCuit(bcuit,50,3)==0)
-						{
+						getCuit(bcuit,50,3);
 							do{
 								{
 									if(getInt(&subOption,"\nIngrese: \n1-Informar kg totales de HDPE del cliente.\n"
@@ -178,12 +178,12 @@ int main(void) {
 											"4-EXIT\n",
 											"Error, opcion incorrecta\n",
 											1,4,2)==0)
-										informes_kgTotalesRecicladosPorCuitClienteYtipoResiduo(fCliente,6,fPedido,9,bcuit,subOption);
+										{
+										informes_kgTotalesRecicladosPorCuitClienteYtipoResiduo(fCliente,6,fPedido,9,bcuit,subOption);}
 									else
 										printf("\nNo fue posible imprimir el informe!\n");
 								}
 							}while(subOption!=4);
-						}
 						break;
 					}
 				}

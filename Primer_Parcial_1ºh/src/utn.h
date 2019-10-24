@@ -39,7 +39,7 @@ int getNombreEmpresa(char pNombre[QTY_CARACTERES],int limite,int reintentos);
 int getStringNumeros(char *input,int reintentos);
 int esNumerica(char cadena[QTY_CARACTERES]);
 int esCuit(char cadena[QTY_CARACTERES]);
-int getCuit(char cuit[QTY_CARACTERES],int limite,int reintentos);
+int getCuit(char *cuit,int limite,int reintentos);
 int esAlfanumerico(char aAlfanumerica[QTY_CARACTERES]);
 int getAlfanumerico(char alfanumerica[QTY_CARACTERES],char *mensaje,char *mensajeError,int limite,int reintentos);
 
