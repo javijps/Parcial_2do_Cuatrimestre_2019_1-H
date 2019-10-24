@@ -596,6 +596,5 @@ void pedidoCliente_pedidoDeClienteForzado(sPedidoCliente *aPedidoCLiente,int len
 		aPedidoCLiente[i].kgLDPE = akgLDPE[i];
 		aPedidoCLiente[i].kgPP = akgPP[i];
 	}
-	pedidoCliente_imprimirPedidosActivos(aPedidoCLiente,len);
 }
 

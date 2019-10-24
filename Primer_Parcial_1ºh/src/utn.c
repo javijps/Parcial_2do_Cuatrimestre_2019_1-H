@@ -213,7 +213,7 @@ int getString(char *pResultado,
 * \param pNombre Nombre recibido
 * \return Si valida el nombre [0] o si es invalido [-1]
 */
-int esNombre(char pNombre[QTY_CARACTERES])
+int esNombre(char *pNombre)
 {
 	int retorno = -1;
 	int i;
@@ -245,7 +245,7 @@ int esNombre(char pNombre[QTY_CARACTERES])
 * \param reintentos cantidad de errores permitidos
 * \return Si tuvo exito al obtener el nombre [0] o si fallo [-1]
 */
-int getNombreEmpresa(char pNombre[QTY_CARACTERES],int limite,int reintentos)
+int getNombreEmpresa(char *pNombre,int limite,int reintentos)
 {
 	int retorno=-1;
 
@@ -285,7 +285,7 @@ int getNombreEmpresa(char pNombre[QTY_CARACTERES],int limite,int reintentos)
 * \return Si la cadena de caracteres recibida es numerica [0] o si no lo es[-1]
 */
 
-int esNumerica(char cadena[QTY_CARACTERES])
+int esNumerica(char *cadena)
 {
 	int retorno=-1;
 	int i;
@@ -353,7 +353,7 @@ void stringAmayuscula(char *input,int len)
 * \param pAlfanumerica Cadena recibida
 * \return Si la cadena es valida [0] o si es invalido [-1]
 */
-int esAlfanumerico(char aAlfanumerica[QTY_CARACTERES])
+int esAlfanumerico(char *aAlfanumerica)
 {
 	int retorno = -1;
 	int i;
@@ -385,7 +385,7 @@ int esAlfanumerico(char aAlfanumerica[QTY_CARACTERES])
 * \param reintentos cantidad de errores permitidos
 * \return Si tuvo exito al obtener el alfanumerico [0] o si fallo [-1]
 */
-int getAlfanumerico(char alfanumerica[QTY_CARACTERES],char *mensaje,char *mensajeError,int limite,int reintentos)
+int getAlfanumerico(char *alfanumerica,char *mensaje,char *mensajeError,int limite,int reintentos)
 {
 	int retorno=-1;
 
@@ -415,7 +415,7 @@ int getAlfanumerico(char alfanumerica[QTY_CARACTERES],char *mensaje,char *mensaj
 * \return Si la cadena de caracteres recibida es un cuit [0] o si no lo es[-1]
 */
 
-int esCuit(char cuit[QTY_CARACTERES])
+int esCuit(char *cuit)
 {
 	int retorno=-1;
 	int i=0;
