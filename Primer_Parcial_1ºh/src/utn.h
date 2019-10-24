@@ -43,6 +43,7 @@ int getCuit(char cuit[QTY_CARACTERES],int limite,int reintentos);
 int esAlfanumerico(char aAlfanumerica[QTY_CARACTERES]);
 int getAlfanumerico(char alfanumerica[QTY_CARACTERES],char *mensaje,char *mensajeError,int limite,int reintentos);
 
+void stringAmayuscula(char *input,int len);
 
 
 

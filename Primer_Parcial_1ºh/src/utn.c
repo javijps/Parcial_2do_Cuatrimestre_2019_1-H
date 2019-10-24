@@ -8,9 +8,12 @@
 #include <stdio_ext.h>
 #include <stdlib.h>
 #include <string.h>
+#include <ctype.h>
+
 
 #define MAX_FLOAT 1000
 #define QTY_CARACTERES 50
+
 
 /**
 * \brief Solicita numero entero al usuario y lo valida.
@@ -22,6 +25,8 @@
 * \param reintentos Reintentos permitidos en caso de error.
 * \return Si tuvo exito al obtener el numero [0] o si fallo [-1]
 */
+
+
 
 int getInt(   int *pNumero,
 		      char *mensaje,
@@ -333,6 +338,15 @@ int getStringNumeros(char *input,int reintentos)
 }
 
 
+void stringAmayuscula(char *input,int len)
+{
+	int i;
+
+	for(i=0;i<len;i++)
+	{
+		input[i] = toupper(input[i]);
+	}
+}
 
 /**
 * \Valida si la cadena es alfanumerica, permitiendo espacios.
@@ -375,11 +389,13 @@ int getAlfanumerico(char alfanumerica[QTY_CARACTERES],char *mensaje,char *mensaj
 {
 	int retorno=-1;
 
+
 	if(alfanumerica!=NULL && limite >0)
 	{
 		do
 		{
 			getString(alfanumerica,mensaje,mensajeError,1,49,3);
+			stringAmayuscula(alfanumerica,QTY_CARACTERES);
 			if(esAlfanumerico(alfanumerica)==0)
 			{
 				retorno = 0;
