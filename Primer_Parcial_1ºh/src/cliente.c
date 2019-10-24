@@ -248,7 +248,9 @@ int cliente_buscarClientePorId(sCliente *aCliente,int len, int id)
 			}
 		}
 		if(retorno==-1)
+		{
 			printf("Id no encontrado!\n");
+		}
 	}
 	return retorno;
 }
@@ -325,7 +327,7 @@ int cliente_modificarClientePorId(sCliente *aCliente,int len, int id)
 	{
 		do
 		{
-			if(getStringToInt(&opcion,"\nIngrese: \n1-Modificar Direccion. \n"
+			if(getInt(&opcion,"\nIngrese: \n1-Modificar Direccion. \n"
 					"2-Modificar Localidad\n"
 					"3-Salir \n",
 					"Error, opcion incorrecta\n",
@@ -446,6 +448,14 @@ int cliente_imprimirCuitClientesActivos(sCliente *aCliente, int len)
 	}
 	return retorno;
 }
+
+
+
+
+
+
+
+
 
 
 

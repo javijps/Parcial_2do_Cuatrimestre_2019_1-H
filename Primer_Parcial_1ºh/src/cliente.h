@@ -35,12 +35,10 @@ int cliente_bajaClientePorId(sCliente *aCliente,int cantidad,int id);
 void cliente_clienteForzado(sCliente *aCliente,int len);
 int cliente_imprimirCuitClientesActivos(sCliente *aCliente, int len);
 
-
 int cliente_buscarLocalidadExistente(sCliente *aCliente,int len, char *localidad);
 int cliente_imprimirLocalidades(sCliente *aCliente, int len);
 int cliente_guardarYmostarLocalidades(sCliente *aCliente,int len);
 int cliente_initclienteAux(sCliente *aCliente, int cantidad);
 
 
-//INFORMES
 #endif /* CLIENTE_H_ */
