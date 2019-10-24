@@ -73,7 +73,7 @@ int pedidoCliente_imprimirPedidosPendientes(sPedidoCliente *aPedido, int len)
 		{
 			if(aPedido[i].statusPedido!=STATUS_PENDIENTE)
 				continue;
-			printf("Id Pedido: %d\n"
+			printf("\nId Pedido: %d\n"
 					"Id Cliente: %d\n"
 					" - Status Pedido: %d\n"
 					" - Kilos totales a recolectar: %.2f\n"
@@ -389,11 +389,6 @@ int pedidoCliente_procesarResiduos(sPedidoCliente *aPedido, int cantidad,int idP
 				aPedido[index].kgLDPE = 0;
 				aPedido[index].kgPP = 0;
 					printf("No fue posible procesar el pedido!!\n");
-			}
-			else
-			{
-				pedidoCliente_imprimirUnPedido(aPedido[index]);
-				printf("Pedido procesaod!!\n");
 			}
 		}
 	}

@@ -1,4 +1,4 @@
-15:59:24 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
+16:04:21 **** Incremental Build of configuration Debug for project Primer_Parcial_1ºh ****
 make all 
 Building file: ../src/main.c
 Invoking: GCC C Compiler
@@ -16,5 +16,5 @@ gcc  -o "Primer_Parcial_1ºh"  ./src/cliente.o ./src/informes.o ./src/main.o ./s
 Finished building target: Primer_Parcial_1ºh
  
 
-15:59:25 Build Finished. 0 errors, 0 warnings. (took 701ms)
+16:04:21 Build Finished. 0 errors, 0 warnings. (took 667ms)
 
