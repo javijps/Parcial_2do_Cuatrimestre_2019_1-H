@@ -30,7 +30,7 @@ int pedidoCliente_getDatosPedido(sPedidoCliente *aPedido,int cantidad,int idClie
 int pedidoCliente_buscarPedidoLibre(sPedidoCliente *aPedido,int cantidad);
 int pedidoCliente_buscarPedidoPorId(sPedidoCliente *aPedido,int cantidad, int id);
 int pedidoCliente_buscarPedidoPorIdCliente(sPedidoCliente *aPedido,int cantidad, int bIdCliente);
-int pedidoCliente_altaPedido(sPedidoCliente *aPedido, int cantidad,int idCliente);
+int pedidoCliente_altaPedido(sPedidoCliente *aPedido, int cantidad,sCliente *aCliente, int cantidadCliente);
 int pedidoCliente_initPedido(sPedidoCliente *aPedido, int cantidad);
 int pedidoCliente_procesarResiduos(sPedidoCliente *aPedido, int cantidad,int idPedido);
 void pedidoCliente_pedidoDeClienteForzado(sPedidoCliente *aPedidoCLiente,int len);

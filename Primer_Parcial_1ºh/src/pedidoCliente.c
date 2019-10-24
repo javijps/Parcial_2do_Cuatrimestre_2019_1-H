@@ -170,13 +170,16 @@ int pedidoCliente_getDatosPedido(sPedidoCliente *aPedido,int cantidad,int idClie
 					"Id incorrecto!\n",
 					1,
 					1000
-					,3)!=0)
-				break;
+					,3)==0)
+			{
 			aPedido[i].idCliente = idCliente;
 			aPedido[i].kgTotalesArecolectar = bPedidoCliente.kgTotalesArecolectar;
 			aPedido[i].statusPedido = STATUS_PENDIENTE;
 			aPedido[i].id_pedido = pedidoCliente_generarIdpedido();
 			retorno = 0;
+			}
+			else
+				printf("No fue posible dar de alta el pedido!\n");
 		}
 	}
 	return retorno;
@@ -210,19 +213,26 @@ int pedidoCliente_buscarPedidoLibre(sPedidoCliente *aPedido,int cantidad)
 * \param cantidad Cantidad de altas a realizar.
 * \return Si tuvo exito al realizar el alta devuelve [0] o si fallo [-1]
 */
-int pedidoCliente_altaPedido(sPedidoCliente *aPedido, int cantidad,int idCliente)
+int pedidoCliente_altaPedido(sPedidoCliente *aPedido, int cantidad,sCliente *aCliente, int cantidadCliente)
 {
 
 	int retorno = -1;
 	int index=0;
+	int idCliente;
 
-	if(aPedido != NULL && cantidad>0)
+	if(aPedido != NULL && cantidad>0 && aCliente != NULL && cantidadCliente>0)
 	{
-		index = pedidoCliente_buscarPedidoLibre(aPedido,cantidad);
-		if(index!=-1)
+		if((getInt(&idCliente,"\nIngrese ID de cliente\n","Error id\n",1,100,2)==0)
+				&& (cliente_buscarClientePorId(aCliente,cantidadCliente,idCliente)!=-1))
 		{
-			if(pedidoCliente_getDatosPedido(aPedido,cantidad,idCliente)==0)
+			index = pedidoCliente_buscarPedidoLibre(aPedido,cantidad);
+			if(index!=-1 && pedidoCliente_getDatosPedido(aPedido,cantidad,idCliente)==0)
+			{
 				retorno = 0;
+				printf("Alta exitosa!!\n");
+			}
+			else
+				printf("No fue posible realizar el alta!!\n");
 		}
 	}
 	return retorno;

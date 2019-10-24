@@ -262,7 +262,7 @@ int cliente_buscarClientePorId(sCliente *aCliente,int len, int id)
 * \param id ID de cliente a ser encontrado.
 * \return Si tuvo exito al encontrar el cliente indicado devuelve [0] o si fallo [-1]
 */
-int cliente_buscarClientePorEmpresa(sCliente *aCliente,int len, char empresa[50])
+int cliente_buscarClientePorEmpresa(sCliente *aCliente,int len, char *empresa)//[50]
 {
 	int retorno = -1;
 	int i;
@@ -288,7 +288,7 @@ int cliente_buscarClientePorEmpresa(sCliente *aCliente,int len, char empresa[50]
 * \param cuit cuit de cliente a ser encontrado.
 * \return Si tuvo exito al encontrar el cliente indicado devuelve [0] o si fallo [-1]
 */
-int cliente_buscarClientePorCuit(sCliente *aCliente,int len, char cuit[MAX_CUIT])
+int cliente_buscarClientePorCuit(sCliente *aCliente,int len, char *cuit)
 {
 	int retorno = -1;
 	int i;

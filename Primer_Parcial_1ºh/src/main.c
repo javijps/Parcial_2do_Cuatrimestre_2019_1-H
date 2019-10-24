@@ -80,15 +80,8 @@ int main(void) {
 			break;
 		case 4:
 			cliente_imprimirClientesActivos(fCliente,6);
-			if((getInt(&bIdCliente,"\nIngrese ID de cliente\n","Error id\n",1,MAX_CLIENTES,2)==0) &&
-					(cliente_buscarClientePorId(fCliente,6,bIdCliente)!=-1) &&
-					(pedidoCliente_altaPedido(fPedido,9,bIdCliente)==0))
-			{
-				printf("Alta exitosa!!\n");
+			if(pedidoCliente_altaPedido(aPedido,1,fCliente,9)==0)
 				pedidoCliente_imprimirPedidosPendientes(aPedido,5);
-			}
-			else
-				printf("No fue posible realizar el alta!!\n");
 			break;
 		case 5:
 			pedidoCliente_imprimirPedidosActivos(fPedido,9);
