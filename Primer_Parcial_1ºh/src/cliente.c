@@ -460,3 +460,131 @@ int cliente_imprimirCuitClientesActivos(sCliente *aCliente, int len)
 
 
 
+
+/**
+* \brief Busca si una localidad existe en un array de estructuras cliente.
+* \param sCliente *aCliente puntero a un array de estructura cliente.
+* \param len Tamaño del array.
+* \param localidad puntero a array de caracteres correspondiente a una localidad.
+* \return Si tuvo exito al encontrar la existencia de la localida devuelve [0] o si fallo [-1]
+*/
+int cliente_buscarLocalidadExistente(sCliente *aCliente,int len,char *localidad)
+{
+	int retorno = -1;
+	int i;
+
+	if(aCliente!=NULL && len>0)
+	{
+		for(i=0;i<len;i++)
+		{
+			if(strncmp(aCliente[i].localidad,localidad,50)==0)
+				retorno = 0;
+		}
+	}
+	return retorno;
+}
+
+/**
+* \brief Imprime la informacion correspondiente al campo localidad de estructura cliente.
+* \param sCliente *aCliente puntero a una array de estructuras cliente.
+* \param len Cantidad del array a imprimir
+* \return Si tuvo exito al imprimir devuelve [0] o si fallo [-1]
+*/
+int cliente_imprimirLocalidades(sCliente *aCliente, int len)
+{
+
+	int i;
+	int retorno = -1;
+	if(aCliente != NULL && len>0)
+	{
+		printf("Localidades:\n");
+		for(i=0;i<len;i++)
+		{
+			if(aCliente[i].statusCliente==STATUS_EMPTY)
+				continue;
+			printf("%s\n",aCliente[i].localidad);
+			retorno = 0;
+		}
+	}
+	return retorno;
+}
+
+/**
+* \brief Inicializa las clientes con STATUS_EMPTY.
+* \param sCliente *acliente puntero a una xxxxx de la estructura cliente.
+* \param cantidad Cantidad de clientes a inicializar
+* \return Si tuvo exito al inicializar devuelve [0] o si fallo [-1]
+*/
+int cliente_initclienteAux(sCliente *aCliente, int cantidad)
+{
+
+	int i;
+	int retorno = -1;
+	char init[5] = {'a'};
+
+	if(aCliente != NULL && cantidad > 0)
+	{
+		for(i=0;i<cantidad;i++)
+		{
+			aCliente[i].statusCliente = STATUS_EMPTY;
+			strncpy(aCliente[i].localidad,init,50);
+		}
+		retorno = 0;
+	}
+	return retorno;
+}
+/**
+* \brief
+* \param sCliente *aCliente puntero a una array de estructuras cliente.
+* \param len Cantidad del array a imprimir
+* \return Si tuvo exito al imprimir devuelve [0] o si fallo [-1]
+*/
+int cliente_guardarYmostarLocalidades(sCliente *aCliente,int len)
+{
+	int retorno = -1;
+	int i;
+	sCliente aAuxCliente[100];
+	int indexAuxiliar;
+	int flagPrimerLocalidad=0;
+
+	cliente_initclienteAux(aAuxCliente,len);
+	if(aCliente!=NULL && len>0)
+	{
+		for(i=0;i<len;i++)
+		{
+			if(flagPrimerLocalidad==0)
+			{
+				indexAuxiliar = cliente_buscarclienteLibre(aAuxCliente,len);
+				if(indexAuxiliar!=-1)
+				{
+					aAuxCliente[indexAuxiliar].statusCliente = STATUS_NOT_EMPTY;
+					strncpy(aAuxCliente[indexAuxiliar].localidad,aCliente[i].localidad,50);
+					flagPrimerLocalidad=1;
+				}
+			}
+			else
+			{
+				if(cliente_buscarLocalidadExistente(aAuxCliente,len,aCliente[i].localidad)!=0)
+				{
+					indexAuxiliar = cliente_buscarclienteLibre(aAuxCliente,len);
+					if(indexAuxiliar!=-1)
+					{
+						aAuxCliente[indexAuxiliar].statusCliente = STATUS_NOT_EMPTY;
+						strncpy(aAuxCliente[indexAuxiliar].localidad,aCliente[i].localidad,50);
+						retorno = 0;
+					}
+				}
+			}
+		}
+	}
+	cliente_imprimirLocalidades(aAuxCliente,len);
+	return retorno;
+}
+
+
+
+
+
+
+
+

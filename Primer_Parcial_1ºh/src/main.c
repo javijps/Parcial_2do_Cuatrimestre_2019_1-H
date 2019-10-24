@@ -34,7 +34,6 @@ int main(void) {
 	int bIdPedido;
 	char optionChar;
 	char bcuit[15];
-	char bLocalidad[50];
 	int subOption;
 
 	cliente_initcliente(aCliente,MAX_CLIENTES);
@@ -169,10 +168,8 @@ int main(void) {
 							printf("\nNo fue posible imprimir el informe!\n");
 						break;
 					case 'i':
-						cliente_imprimirClientesActivos(fCliente,6);
-						if((getAlfanumerico(bLocalidad,"Ingrese Localidad:\n","Localidad Incorrecta\n",50,3)!=0) ||
-								(informes_contarPedidosPendientesPorLocalidad(fCliente,6,fPedido,9,bLocalidad)!=0))
-							printf("\nNo fue posible imprimir el informe!\n");
+						cliente_guardarYmostarLocalidades(fCliente,6);//ver xq al reingresar muestra solo CABA
+						informes_contarPedidosPendientesPorLocalidad(fCliente,6,fPedido,9);
 						break;
 					case 'j':
 						if(informes_promedioKgPPrecicladoPorCliente(fCliente,6,fPedido,9)!=0)

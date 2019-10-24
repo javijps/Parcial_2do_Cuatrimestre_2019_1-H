@@ -1920,3 +1920,13 @@ C Model Exception: C Model Status [Element main.c does not exist.]
 	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:210)
 !SUBENTRY 1 org.eclipse.cdt.core 4 969 2019-10-22 12:44:56.278
 !MESSAGE Element main.c does not exist.
+!SESSION 2019-10-23 22:13:34.859 -----------------------------------------------
+eclipse.buildId=4.13.0.I20190916-1045
+java.version=11.0.4
+java.vendor=Debian
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=es_AR
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.cdt.core 1 0 2019-10-23 22:14:20.178
+!MESSAGE Indexed 'Primer_Parcial_1ºh' (5 sources, 60 headers) in 0,871 sec: 1.891 declarations; 4.155 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0 %)

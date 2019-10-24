@@ -542,32 +542,37 @@ int informes_buscarClientePorLocalidad(sCliente *aCliente,int lenAcliente,char *
 int informes_contarPedidosPendientesPorLocalidad(sCliente *aCliente,
 		                                         int lenAcliente,
 												 sPedidoCliente *aPedido,
-												 int lenApedido,
-												 char *localidad)
+												 int lenApedido)
 {
 	int retorno = -1;
 	int cantdidadDePedidos=0;
 	int i;
 	int j;
+	char bLocalidad[51];
 
 	if(aPedido!=NULL && lenApedido>0 && aCliente!=NULL && lenAcliente>0)
 	{
-		for(i=0;i<lenAcliente;i++)
+		if(getAlfanumerico(bLocalidad,"\nIngrese Localidad:\n","Localidad Incorrecta\n",50,3)==0)
 		{
-			if(strncmp(aCliente[i].localidad,localidad,50)==0)
+			for(i=0;i<lenAcliente;i++)
 			{
-				for(j=0;j<lenApedido;j++)
+				if(strncmp(aCliente[i].localidad,bLocalidad,50)==0)
 				{
-					if(aPedido[j].idCliente==aCliente[i].idCliente && aPedido[j].statusPedido == STATUS_PENDIENTE)
+					retorno=0;
+					for(j=0;j<lenApedido;j++)
 					{
-						cantdidadDePedidos++;
-						retorno=0;
+						if(aPedido[j].idCliente==aCliente[i].idCliente && aPedido[j].statusPedido == STATUS_PENDIENTE)
+						{
+							cantdidadDePedidos++;
+						}
 					}
 				}
 			}
+			printf("Cantidad de pedidos pendientes de la localidad ingresada: %d",cantdidadDePedidos);
 		}
-		printf("Cantidad de pedidos pendientes de la localidad ingresada: %d",cantdidadDePedidos);
 	}
+	if(retorno!=0)
+		printf("No fue posible imprimir el informe!\n");
 	return retorno;
 }
 

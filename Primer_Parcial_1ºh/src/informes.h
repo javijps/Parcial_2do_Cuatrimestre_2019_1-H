@@ -40,8 +40,7 @@ int informes_buscarClientePorLocalidad(sCliente *aCliente,int lenAcliente,char *
 int informes_contarPedidosPendientesPorLocalidad(sCliente *aCliente,
 		                                         int lenAcliente,
 												 sPedidoCliente *aPedido,
-												 int lenApedido,
-												 char *localidad);
+												 int lenApedido);
 
 float informes_contarKgPpReciclados(sPedidoCliente *aPedido,int len);
 int informes_contarClientes(sCliente *aCliente,int len);//LO HACE CON CLIENTES ACTIVOS
