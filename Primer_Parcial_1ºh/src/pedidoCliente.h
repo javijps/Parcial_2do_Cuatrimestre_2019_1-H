@@ -34,16 +34,13 @@ int pedidoCliente_altaPedido(sPedidoCliente *aPedido, int cantidad,int idCliente
 int pedidoCliente_initPedido(sPedidoCliente *aPedido, int cantidad);
 int pedidoCliente_procesarResiduos(sPedidoCliente *aPedido, int cantidad,int idPedido);
 void pedidoCliente_pedidoDeClienteForzado(sPedidoCliente *aPedidoCLiente,int len);
-int pedidoCliente_BuscarImprimirPedidosPendientesConInformacionDelCliente(sCliente *aCliente,
-		                                              int lenAcliente,
-													  sPedidoCliente *aPedido,
-													  int lenApedido);
 int imprimirClientesConCantidadDePedidosPendientes(sCliente *aCliente,int lenAcliente,sPedidoCliente *aPedido,int lenApedido);
 int pedidoCliente_contarPedidosPendientePorIDcliente(sPedidoCliente *aPedido,int len, int id);
-
-
-
-int pedidoCliente_BuscarImprimirPedidosProcesadosConInformacionDelCliente(sCliente *aCliente,
+int pedidoCliente_imprimirPedidosPendientesConInformacionDelCliente(sCliente *aCliente,
+		                                                                  int lenAcliente,
+																		  sPedidoCliente *aPedido,
+																		  int lenApedido);
+int pedidoCliente_imprimirPedidosProcesadosConInformacionDelCliente(sCliente *aCliente,
 		                                                                  int lenAcliente,
 																		  sPedidoCliente *aPedido,
 																		  int lenApedido);
